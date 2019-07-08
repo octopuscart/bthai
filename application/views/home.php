@@ -13,7 +13,10 @@
 
         <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/logof.png'; ?>"/>
         <link rel="apple-touch-icon image_src" href="<?php echo base_url() . 'assets/images/logof.png'; ?>"/>
-
+        <link rel="icon" href="http://www.baanthai.hk/wp-content/uploads/2018/11/cropped-Baan-Thai-star-wheel-32x32.jpg" sizes="32x32" />
+        <link rel="icon" href="http://www.baanthai.hk/wp-content/uploads/2018/11/cropped-Baan-Thai-star-wheel-192x192.jpg" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="http://www.baanthai.hk/wp-content/uploads/2018/11/cropped-Baan-Thai-star-wheel-180x180.jpg" />
+        <meta name="msapplication-TileImage" content="http://www.baanthai.hk/wp-content/uploads/2018/11/cropped-Baan-Thai-star-wheel-270x270.jpg" />
         <!-- Stylesheets
         ============================================= -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
@@ -28,6 +31,8 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/responsive.css" type="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="<?php echo base_url(); ?>assets/theme/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+        <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+
 
         <!--[if lt IE 9]>
                 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -70,6 +75,13 @@
             .tp-video-play-button { display: none !important; }
 
             .tp-caption { white-space: nowrap; }
+            .heading-block:after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 40px;
+    border-top: 2px solid #fff;
+}
 
         </style>
 
@@ -86,8 +98,77 @@
                     <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
                     <div id="rev_slider_irestaurant" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.4">
                         <ul>    <!-- SLIDE  -->
+                            <li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="<?php echo base_url(); ?>assets/images/slider/0.jpg"   data-saveperformance="off"  data-title="Welcome to Baan Thai!">
+                                <!-- MAIN IMAGE -->
+                                <img src="<?php echo base_url(); ?>assets/images/slider/0.jpg"  alt="video_typing_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                <!-- LAYERS -->
 
-                            <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/2.jpg" data-delay="12000"  data-saveperformance="off" data-title="Shanghai's Tailor">
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
+                                     data-forcerewind="on"
+                                     data-volume="mute"
+                                     data-videowidth="100%"
+                                     data-videoheight="100%"
+                                     data-videomp4="<?php echo base_url(); ?>assets/images/video1.mp4"
+                                     data-videopreload="preload"
+                                     data-videoloop="none"
+                                     data-forceCover="1"
+                                     data-aspectratio="16:9"
+                                     data-autoplay="true"
+                                     data-autoplayonlyfirsttime="false"
+                                     data-nextslideatend="true">
+                                </div>
+
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
+                                     data-x="center" data-hoffset="0"
+                                     data-y="top" data-voffset="235"
+                                     data-fontsize="['60','60','46','38']"
+                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+                                     data-speed="800"
+                                     data-start="1000"
+                                     data-easing="easeOutQuad"
+                                     data-splitin="none"
+                                     data-splitout="none"
+                                     data-elementdelay="0.01"
+                                     data-endelementdelay="0.1"
+                                     data-endspeed="1000"
+                                     data-textAlign="center"
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;"><img src="<?php echo base_url(); ?>assets/images/logo50.png" style="height: 50px;" alt="Canvas Logo" /></div>
+
+                                <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                                     data-x="center" data-hoffset="0"
+                                     data-y="top" data-voffset="400"
+                                     data-width="['650','650','480','360']"
+                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+                                     data-speed="800"
+                                     data-start="1200"
+                                     data-easing="easeOutQuad"
+                                     data-splitin="none"
+                                     data-splitout="none"
+                                     data-elementdelay="0.01"
+                                     data-endelementdelay="0.1"
+                                     data-endspeed="1000"
+                                     data-textAlign="center"
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;font-size: 20px;">COur menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices.</div>
+
+                                <div class="tp-caption customin ltl tp-resizeme"
+                                     data-x="center" data-hoffset="0"
+                                     data-y="top" data-voffset="503"
+                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+                                     data-speed="800"
+                                     data-start="1350"
+                                     data-easing="easeOutQuad"
+                                     data-splitin="none"
+                                     data-splitout="none"
+                                     data-elementdelay="0.01"
+                                     data-endelementdelay="0.1"
+                                     data-endspeed="1000"
+                                     data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin"><span>Read More</span><i class="icon-angle-right"></i></a></div>
+
+                            </li>
+
+                            <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/2.jpg" data-delay="12000"  data-saveperformance="off" data-title="Our rustic and stylish restaurant">
                                 <!-- MAIN IMAGE -->
                                 <img src="<?php echo base_url(); ?>assets/images/slider/2.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="right center">
                                 <!-- LAYERS -->
@@ -105,7 +186,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;font-size: 20px;font-weight: bold;">Since 1948 </div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3;font-size: 20px;font-weight: bold;">Authentic Thai Cuisine in Hong Kong</div>
 
                                 <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
                                      data-x="597"
@@ -119,7 +200,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; font-size: 60px;">Shanghai's Tailor</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; font-size: 60px;">Welcome to Baan Thai!</div>
 
                                 <div class="tp-caption ltl tp-resizeme revo-slider-desc-text tleft"
                                      data-x="600"
@@ -133,28 +214,14 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;">After the Chinese independence skilled Shanghai's Tailors were started moving to Hong Kong, and since then they has been providing their best Workmanship in Hong Kong.</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;">Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine.</div>
                             </li>
                             <!-- SLIDE  -->
-                            <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/3.jpg" data-delay="10000"  data-saveperformance="off"  data-title="HAND MADE AND HAND CUT">
+                            <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/3.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Special Taste Of Thailand">
                                 <!-- MAIN IMAGE -->
                                 <img src="<?php echo base_url(); ?>assets/images/slider/3.jpg"  alt="kenburns6"  data-bgposition="center top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="center center">
                                 <!-- LAYERS -->
 
-                                <!-- LAYER NR. 2 -->
-                                <div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
-                                     data-x="0"
-                                     data-y="215"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1000"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff;">HAND MADE AND HAND CUT</div>
 
                                 <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
                                      data-x="-3"
@@ -168,7 +235,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff; font-size: 60px;">Visite Our Store</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff; font-size: 60px;">Special Taste Of Thailand</div>
 
                                 <div class="tp-caption ltl tp-resizeme revo-slider-desc-text tleft"
                                      data-x="0"
@@ -182,30 +249,16 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff; max-width: 550px; white-space: normal;">Providing the latest styles, according different body shapes and under the close observations of cut and stitch.</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff; max-width: 550px; white-space: normal;">All our chefs are Thai and therefore ensure that you enjoy that special taste of Thailand when dining at our restaurant.</div>
 
 
                             </li>
                             <!-- SLIDE  -->
-                            <li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/1.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Leading Tailor">
+                            <li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/1.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Thai dining in Hong Kong">
                                 <!-- MAIN IMAGE -->
                                 <img src="<?php echo base_url(); ?>assets/images/slider/1.jpg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="130" data-bgpositionend="right bottom">
                                 <!-- LAYERS -->
 
-                                <!-- LAYER NR. 1 -->
-                                <div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
-                                     data-x="center"
-                                     data-y="300"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1000"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;">Shanghai's tailor</div>
 
                                 <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
                                      data-x="center"
@@ -219,7 +272,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;">Leading Tailor In Hong Kong</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3;">Thai dining in Hong Kong</div>
 
                                 <div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
                                      data-x="center"
@@ -233,7 +286,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;text-align: center">Shanghai's tailor always provides something new in fashion and fabrics quality, which delights it's clients</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;text-align: center">Located in the busy commercial and nightlife section of Wyndham Street in Central, here at Baan Thai Restaurant.</div>
 
                             </li>
                         </ul>
@@ -247,6 +300,10 @@
                     <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
                     <div id="rev_slider_irestaurantm" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.4">
                         <ul>    <!-- SLIDE  -->
+
+
+
+
 
                             <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/2m.jpg" data-delay="12000"  data-saveperformance="off" data-title="Shanghai's Tailor">
                                 <!-- MAIN IMAGE -->
@@ -463,11 +520,11 @@
 
 
                                 <p class="lead nobottommargin">
-                                    Since 1948 after the Chinese independence skilled Shanghai's Tailors were started moving to Hong Kong , and since then they has been providing their best Workmanship in Hong Kong tailoring business, and now they are famous all over the world for their high quality hand tailoring.
-                                </p>
+Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine. Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices. All our chefs are Thai and therefore ensure that you enjoy that special taste of Thailand when dining at our restaurant.
+
                             </div>
                         </div>
-                        <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/hub-suits.png) center center / cover no-repeat; height: 708px;">
+                        <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/hotel.jpg) center center / cover no-repeat; height: 708px;">
                             <div>&nbsp;</div>
                         </div>
 
@@ -475,29 +532,33 @@
                     </div>
 
 
-                    <div class="section nobg " style="margin: 0;
+                    <div class="section  " style="margin: 0;background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;
                          padding-top: 20px;">
                         <div class="container clearfix">
 
                             <div class="col_half nobottommargin center">
 
-                                <img src="<?php echo base_url(); ?>assets/images/suit.jpg" alt="Image" data-animate="fadeInLeft">
+                                <img src="<?php echo base_url(); ?>assets/images/food1.png" alt="Image" data-animate="fadeInLeft">
 
                             </div>
 
                             <div class="col_half nobottommargin col_last">
 
-                                <div class="heading-block" style="padding-top: 40px;">
+                                <div class="heading-block" style="padding-top: 40px;color: white;">
 
-                                    <h2>ORIGINAL ITALIAN FABRICS.</h2>
-                                    <span>Our fabrics are sourced from only a handful of the finest mills across the globe.</span>
+                                    <h3 style="color: white;">Authentic Thai Cuisine in Hong Kong</h3>
+                                    <span style="color: white;">
+                                    We also offer an extensive cocktail and drinks menu to either compliment your meal or simply to enjoy with a snack at happy hour or after dinner drinks. We are easily accessed by public transport, whether coming via the MTR, bus routes or taxi, so come and pay us a visit and sample some delicious Thai cuisine here at Baan Thai Hong Kong!                                
+                                    </span>
 
                                 </div>
 
-                                <p>Every detail is carefully constructed using precision technology and state-of-the-art machinery.   
-                                    <br/>The best men's suits are tailored from the best cloth - this means pure merino wool fabric, <br/>woven in the traditional mills of Italy and England.    </p>
+                                <p style="color: white;">
+                                    We also offer an extensive cocktail and drinks menu to either compliment your meal or simply to enjoy with a snack at happy hour or after dinner drinks. We are easily accessed by public transport, whether coming via the MTR, bus routes or taxi, so come and pay us a visit and sample some delicious Thai cuisine here at Baan Thai Hong Kong!                                
+                                </p>
+   </p>
 
-                                <a href="https://www.manningcompany.com/hong-kong-tailor-made-suit-fabrics.html" class="button button-border button-large button-rounded topmargin-sm noleftmargin" target="_blank">View Fabrics</a>
+                                <a href="https://www.manningcompany.com/hong-kong-tailor-made-suit-fabrics.html" class="button button-border button-large button-rounded topmargin-sm noleftmargin" target="_blank" style="color: white;    border: 2px solid #fff;">View Fabrics</a>
 
                             </div>
 
@@ -581,8 +642,8 @@
             $this->load->view('layout/footer_1');
             ?>
             <div class="modal fade" id="appointmentmodel" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content" style="width: 600px;">
 
 
                         <div class="modal-body" style="padding: 0px;">
