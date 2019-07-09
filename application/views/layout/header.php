@@ -40,6 +40,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.css">
 
 
+        <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
 
         <!-- External JavaScripts
@@ -142,13 +143,14 @@
                         <!-- Logo
                         ============================================= -->
                         <div id="logo">
-                            <a href="<?php echo site_url("/"); ?>" class="standard-logo" data-dark-logo="<?php echo base_url(); ?>images/logo-dark.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
-                            <a href="<?php echo site_url("/"); ?>" class="retina-logo" data-dark-logo="<?php echo base_url(); ?>images/logo-dark@2x.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
+                            <a href="<?php echo site_url("/"); ?>" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
+                            <a href="<?php echo site_url("/"); ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
                         </div><!-- #logo end -->
 
                         <!-- Primary Navigation
                         ============================================= -->
-                        <nav id="primary-menu" class="style-4">
+                        <nav id="primary-menu" class="style-5">
+
                             <ul class="norightborder norightpadding norightmargin">
                                 <?php
                                 include('header_1.php');

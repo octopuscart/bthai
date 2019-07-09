@@ -22,8 +22,16 @@ $menuitems = [
     array(
         "title" => "Book Now",
         "icon" => "ion-ios-create",
-        "link" => site_url("appointment")
+        "link" => site_url("#")
     ),
+    
+    array(
+        "title" => "Loyalty Program",
+        "icon" => "ion-ios-contacts",
+        "link" => site_url("#")
+    ),
+    
+    
     
     array(
         "title" => "Contact Us",

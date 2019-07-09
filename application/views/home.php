@@ -76,12 +76,27 @@
 
             .tp-caption { white-space: nowrap; }
             .heading-block:after {
-    content: '';
-    display: block;
-    margin-top: 30px;
-    width: 40px;
-    border-top: 2px solid #fff;
-}
+                content: '';
+                display: block;
+                margin-top: 30px;
+                width: 40px;
+                border-top: 2px solid #fff;
+            }
+
+            .heading-block h3:after {
+                content: '';
+                display: block;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                /* width: 40px; */
+                border-top: 2px solid #fff;
+            }
+
+            .iconlist li{
+                border-bottom: 1px solid #000;
+                border-bottom-style: dashed;
+                margin-bottom: 10px;
+            }
 
         </style>
 
@@ -462,7 +477,7 @@
 
             <!-- Header
             ============================================= -->
-            <header id="header">
+            <header id="header" >
 
                 <div id="header-wrap">
 
@@ -511,7 +526,7 @@
                     <div class="row clearfix common-height">
 
 
-                        <div class="col-lg-6 center col-padding" style="background-color: rgb(245, 245, 245); height: 708px;">
+                        <div class="col-lg-6 center col-padding" style="background-color: #fff; height: 708px;">
                             <div>
                                 <div class="heading-block nobottomborder">
                                     <span class="before-heading color">Because we are Reliable.</span>
@@ -520,7 +535,7 @@
 
 
                                 <p class="lead nobottommargin">
-Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine. Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices. All our chefs are Thai and therefore ensure that you enjoy that special taste of Thailand when dining at our restaurant.
+                                    Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine. Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices. All our chefs are Thai and therefore ensure that you enjoy that special taste of Thailand when dining at our restaurant.
 
                             </div>
                         </div>
@@ -528,12 +543,11 @@ Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart 
                             <div>&nbsp;</div>
                         </div>
 
-
                     </div>
 
 
                     <div class="section  " style="margin: 0;background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;
-                         padding-top: 20px;">
+                         padding: 20px;">
                         <div class="container clearfix">
 
                             <div class="col_half nobottommargin center">
@@ -544,28 +558,57 @@ Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart 
 
                             <div class="col_half nobottommargin col_last">
 
-                                <div class="heading-block" style="padding-top: 40px;color: white;">
+                                <div class="heading-block" style="color: white;padding-top: 40px;margin-bottom: 0px;">
 
-                                    <h3 style="color: white;">Authentic Thai Cuisine in Hong Kong</h3>
+                                    <h3 style="color: white;font-size: 25px;font-weight: 400px;">Authentic Thai Cuisine in Hong Kong</h3>
                                     <span style="color: white;">
-                                    We also offer an extensive cocktail and drinks menu to either compliment your meal or simply to enjoy with a snack at happy hour or after dinner drinks. We are easily accessed by public transport, whether coming via the MTR, bus routes or taxi, so come and pay us a visit and sample some delicious Thai cuisine here at Baan Thai Hong Kong!                                
+                                        We also offer an extensive cocktail and drinks menu to either compliment your meal or simply to enjoy with a snack at happy hour or after dinner drinks. We are easily accessed by public transport, whether coming via the MTR, bus routes or taxi, so come and pay us a visit and sample some delicious Thai cuisine here at Baan Thai Hong Kong!                                
                                     </span>
 
                                 </div>
 
-                                <p style="color: white;">
-                                    We also offer an extensive cocktail and drinks menu to either compliment your meal or simply to enjoy with a snack at happy hour or after dinner drinks. We are easily accessed by public transport, whether coming via the MTR, bus routes or taxi, so come and pay us a visit and sample some delicious Thai cuisine here at Baan Thai Hong Kong!                                
-                                </p>
-   </p>
 
-                                <a href="https://www.manningcompany.com/hong-kong-tailor-made-suit-fabrics.html" class="button button-border button-large button-rounded topmargin-sm noleftmargin" target="_blank" style="color: white;    border: 2px solid #fff;">View Fabrics</a>
+
+
+                                <a href="#" class="button button-border button-large button-rounded topmargin-sm noleftmargin" target="_blank" style="color: white;    border: 2px solid #fff;">Visit Us</a>
 
                             </div>
 
                         </div>
                     </div>
 
-                    <div class="section parallax dark nobottommargin" style="background-image: url('<?php echo base_url(); ?>assets/images/clientsbackground.jpg'); padding: 100px 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+
+
+                    <div class="row clearfix common-height">
+
+
+                        <div class="col-lg-6 center col-padding" style="background-color: #fff; height: 708px;">
+                            <div>
+
+
+
+                                <p class="lead nobottommargin text-left">
+                                    Check out our Christmas promotion menu <a style="color: #0000ff;" href="http://www.baanthai.hk/wp-content/uploads/2018/12/jpg2pdf-6.pdf" target="_blank" rel="noopener">here!</a>!<br/>
+
+                                    Located in the busy commercial and nightlife section of Wyndham Street in Central, here at Baan Thai Restaurant we not only cater to regular lunch goers and evening diners seeking exceptional Thai food, but we also host private parties, group bookings and offer external catering.
+<br/>
+                                    Whether you need a medium sized space for your office party, annual dinner, social committee gathering, wedding or graduation party, we have the space and dining packages to suit your needs.
+<br/>
+                                    Our tailor-made or general packages suit all tastes and requirements. We offer a range of choice from simple drinks and snacks options for a small group, to full service 3-course dinners or Thai buffets.
+<br/>
+                                    Contact us for more details: info@baanthai.hk
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/slider/3.jpg) center center / cover no-repeat; height: 708px;">
+                            <div>&nbsp;</div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="section parallax dark nobottommargin" style="background-image: url('<?php echo base_url(); ?>assets/images/clientsbackground.jpg');     margin: 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 
                         <div class="heading-block center">
                             <h3>What Clients Say?</h3>
@@ -577,10 +620,10 @@ Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart 
 
                                     <?php
                                     $testimoni = [
-                                        array("name" => "Thank Noel E", "country_city" => "", "review" => "There are many designers out there who offer best of fashion outfits. but seldom offer excellent standards of customer service experience. Aves from Manning Company duly understands my requirements and offer on-time delivery of garments, what more can one ask for."),
-                                        array("name" => "Thank Shelley S", "country_city" => "", "review" => "I got suits and shirts made on their visit to San Antonio and being on a heavier side of weight, i always require fashion clothes that make me look slender. of all the designers that i have tried, Aves from Manning Company is the best and top notch quality!"),
-                                        array("name" => "Redouane R", "country_city" => "", "review" => "I had very bad experience in Shenzhen with my first tuxedo which I couldn't take for my ceremony. One week before I had recommandation from a friend of mine to do new one by manning company and I have to say the service was very professional and the result was a perfect. Very patient and take care of your demands on high level of details. Der service bei Manning company einfach klasse( short comment on German :))"),
-                                        array("name" => "Aysekennedy", "country_city" => "", "review" => "I've been coming to Bespoke Tailors for a few months. They do the most amazing job ! I've had 2 suits and a few shirts made which fit like a glove and are absolutely beautiful! Just bring in a picture and let them create the perfect outfit for you. I highly recommend Bespoke Tailors!"),
+                                        array("name" => "Christine", "country_city" => "", "review" => "Went in for drinks with visiting family members, had a lovely time. The servers were friendly and bubbly, hoping to come back to try the food as it looked delicious on the neighbouring tables."),
+                                        array("name" => "Loire Cheung", "country_city" => "", "review" => "Great location in the less busy zone of Central, very yummy and authentic Thai cuisine. Friendly staff. Considered not expensive in the area."),
+                                        array("name" => "Dimitrios Giannarakis", "country_city" => "", "review" => "Really nice place in the heart of LKF with very helpful staff and surprisingly original thai food. A few outdoors seats don't forget to try the prawns and pomelo salad!"),
+                                        array("name" => "Peggy Lui", "country_city" => "", "review" => "Food is Delicious and Fresh! Good atmosphere and Environment, Really Good Service and good recommendation with the Waitress!"),
                                     ];
                                     foreach ($testimoni as $key => $value) {
                                         ?>
@@ -611,22 +654,54 @@ Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart 
 
 
 
-                    <div class="container clearfix" style="margin-bottom: 20px;">
-                        <div class="heading-block topmargin-sm center" style="    margin-bottom: 1px;">
-                            <h3>Our Fabrics Brands</h3>
+                    <div class="container clearfix" style="    padding: 60px 0px;">
+
+                        <div class="col_one_fourth nobottommargin">
+
+                            <div class="fancy-title title-border">
+                                <h4>Opening Hours</h4>
+                            </div>
+
+                            <p>We serve you all days in a week.</p>
+
+                            <ul class="iconlist nobottommargin">
+                                <li><i class="icon-time color"></i> <strong>Mondays-Wednesday:</strong><br/> 12:00 PM to 12:00 AM</li>
+                                <li><i class="icon-time color"></i> <strong>Thursday - Saturdays:</strong><br/> 12:00 PM to 02:00 AM</li>
+                                <li><i class="icon-time text-danger"></i> <strong>Sundays:</strong> <br/>12:00 PM to 12:00 AM</li>
+                            </ul>
+
                         </div>
-                        <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="60" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
 
-                            <div class="oc-item"><a href="#"><img src="<?php echo base_url(); ?>assets/brand/zegna.jpg" alt="Clients"></a></div>
-                            <div class="oc-item"><a href="#"><img src="<?php echo base_url(); ?>assets/brand/thomasmason.jpg" alt="Clients"></a></div>
-                            <div class="oc-item"><a href="#"><img src="<?php echo base_url(); ?>assets/brand/reda.jpg" alt="Clients"></a></div>
-                            <div class="oc-item"><a href="#"><img src="<?php echo base_url(); ?>assets/brand/loropiana.jpg" alt="Clients"></a></div>
-                            <div class="oc-item"><a href="#"><img src="<?php echo base_url(); ?>assets/brand/hollandsherry.jpg" alt="Clients"></a></div>
-                            <div class="oc-item"><a href="#"><img src="<?php echo base_url(); ?>assets/brand/vbc.jpg" alt="Clients"></a></div>
+                        <div class="col_one_fourth nobottommargin">
 
+                            <div class="fancy-title title-border">
+                                <h4>Our Menu</h4>
+                            </div>
+
+                            <p>Here at Baan Thai Restaurant we not only cater to regular lunch goers and evening diners seeking exceptional Thai food, but we also host private parties, group bookings and offer external catering.</p>
+
+                            <a href="#" class="button button-rounded button-dark noleftmargin"><i class="icon-file-alt"></i> Browse Menu</a>
 
                         </div>
 
+                        <div class="col_half nobottommargin col_last">
+
+                            <div class="fancy-title title-border">
+                                <h4>Gallery</h4>
+                            </div>
+
+                            <div class="masonry-thumbs grid-4 clearfix" data-lightbox="gallery" style="width: 100.3%;">
+
+                                <?php
+                                for ($i = 1; $i <= 8; $i++) {
+                                    ?>
+                                    <a href="<?php echo base_url(); ?>assets/images/food/<?php echo $i; ?>.jpg" data-lightbox="gallery-item"><img class="image_fade" src="<?php echo base_url(); ?>assets/images/food/<?php echo $i; ?>.jpg" alt="Gallery Thumb 1" data-animate="zoomIn"></a>
+
+                                <?php } ?>
+
+                            </div>
+
+                        </div>
 
                     </div>
 

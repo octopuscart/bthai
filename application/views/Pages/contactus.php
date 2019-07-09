@@ -1,7 +1,7 @@
 <?php
 $this->load->view('layout/header');
 ?>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.537609290042!2d114.17099675152589!3d22.295498869329954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400ec9eb6f00d%3A0x1ffe11fbfb9cbb0f!2sManning+Company+Bespoke+Tailors!5e0!3m2!1sen!2sin!4v1491288945320"
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
         width="100%" height="400" frameborder="0" style="border: 0;;" allowfullscreen>
 </iframe>
 
@@ -15,67 +15,16 @@ $this->load->view('layout/header');
 
                 <div class="row">
 
-                    <div class="col-md-6">
-                        <h4 style="    margin-bottom: 11px;">
-                            <i class="icon-location" style="    font-size: 29px;
-                               margin-right: 5px;    margin-top: -6px;
-                               float: left;"></i> <strong>Location</strong>
-                        </h4>
-                        <address style="font-size: 15px;    margin-right: 11px;    margin-left: 29px;">
-
-                            Shop 22B, G/F,
-                            Hankow Centre,<br/>
-                            5-15 Hankow Road
-                            Tsim Sha Tsui,<br/>
-                            Kowloon, Hong Kong                                        
-                        </address>
-
-
-
-
-                        <div class="spost clearfix" style="    margin-top: 44px;">
-                            <div class="entry-c">
-                                <div class="entry-title">
-                                    <h4><i class="icon-email3" style="    font-size: 29px;
-                                           /* line-height: 26px; */
-                                           margin-top: -11px;    margin-right: 5px;
-                                           float: left;"></i> <a href="email:info@manningcompany.com">info@manningcompany.com</a></h4>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-                    <div class="col-md-6">
-
-
+                    <div class="col-md-12">
 
                         <div class="spost clearfix">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
-                                        <div class="footer_icon_container"> <i class="icon-phone3 footer_icon" style="    font-size: 44px;"></i> </div>
+                                        <div class="footer_icon_container"> <i class="icon-location footer_icon" style="    font-size: 31px;"></i> </div>
                                         <div>
-                                            <a href="tel:+852 2739 6165" >+(852) 2111 1955</a><br/>
-                                            <a href="tel:+852 3427 9296" >+(852) 3427 9296</a><br/>
-                                            <a href="tel:+852 2375 3897" >+(852) 2375 3897</a>
-                                        </div>
-                                    </h4></div>
+                                            <address style="margin-bottom: 0px">G/F and M/F, 57 Wyndham St,<br/> Central, Hong Kong</address>
 
-                            </div>
-                        </div>
-                        <div class="spost clearfix" >
-                            <div class="entry-c">
-                                <div class="entry-title">
-                                    <h4>
-
-
-                                        <div class="footer_icon_container"> <i class="fa fa-whatsapp footer_icon" style="    font-size: 20px;"></i>  </div>
-                                        <div class="float_left  m_l_10">
-                                            <a href="https://api.whatsapp.com/send?phone=85293805471">+(852) 9380 5471 </a>
                                         </div>
                                     </h4>
                                 </div>
@@ -86,53 +35,56 @@ $this->load->view('layout/header');
                         <div class="spost clearfix">
                             <div class="entry-c">
                                 <div class="entry-title">
-                                    <div class=" clearfix">
-                                        <a href="#" class="social-icon si-small si-borderless si-facebook">
-                                            <i class="icon-facebook"></i>
-                                            <i class="icon-facebook"></i>
-                                        </a>
-
-                                        <a href="#" class="social-icon si-small si-borderless si-twitter">
-                                            <i class="icon-twitter"></i>
-                                            <i class="icon-twitter"></i>
-                                        </a>
-
-                                        <a href="#" class="social-icon si-small si-borderless si-instagram">
-                                            <i class="icon-instagram"></i>
-                                            <i class="icon-instagram"></i>
-                                        </a>
-
-                                        <a href="#" class="social-icon si-small si-borderless si-pinterest">
-                                            <i class="icon-pinterest"></i>
-                                            <i class="icon-pinterest"></i>
-                                        </a>
-
-
-
-                                        <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                                            <i class="icon-linkedin"></i>
-                                            <i class="icon-linkedin"></i>
-                                        </a>
-                                    </div>
-
-                                    <div class="clear"></div></div>
-
+                                    <h4>
+                                        <div class="footer_icon_container"> <i class="fa fa-whatsapp footer_icon" style="    font-size: 25px;"></i>  </div>
+                                        <div class="float_left  m_l_10">
+                                            <a href="tel:+852 2840 0041" style="    font-size: 20px;">+(852) 2840 0041</a>
+                                        </div>
+                                    </h4>
+                                </div>
                             </div>
                         </div>
+
+
+
+
+
+                        <div class="spost clearfix">
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <h4>
+                                        <div class="footer_icon_container"> <i class="icon-email3 footer_icon" style="    font-size: 25px;"></i>  </div>
+                                        <div class="float_left m_top_5 m_l_10">
+                                            <a href="mailto:info@baanthai.hk" style="    font-size: 20px;">info@baanthai.hk </a>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="spost clearfix">
+                            <div class="entry-c">
+
+                                <div class="fancy-title title-border" style="    margin-bottom: 19px;">
+                                    <h4>Opening Hours</h4>
+                                </div>
+
+
+
+                                <ul class="iconlist nobottommargin">
+                                    <li><i class="icon-time color"></i> <strong>Mondays-Wednesday:</strong><br/> 12:00 PM to 12:00 AM</li>
+                                    <li><i class="icon-time color"></i> <strong>Thursday - Saturdays:</strong><br/> 12:00 PM to 02:00 AM</li>
+                                    <li><i class="icon-time text-danger"></i> <strong>Sundays:</strong> <br/>12:00 PM to 12:00 AM</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        
 
                     </div>
                     <div class="col_full nobottommargin">
 
-                        <div class="fancy-title title-border" style="    margin-bottom: 19px;
-                             margin-top: 30px;">
-                            <h4>Opening Hours</h4>
-                        </div>
-
-
-                        <ul class="iconlist nobottommargin">
-                            <li><i class="icon-time color"></i> <strong class="timeing_open_ele">Mondays-Saturdays:</strong> 09:00AM to 08:30PM</li>
-                            <li><i class="icon-time text-danger"></i> <strong class="timeing_open_ele">Sundays:</strong> 10:00am to 06:00 pm </li>
-                        </ul>
 
                     </div>
 
