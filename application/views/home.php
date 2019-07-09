@@ -108,7 +108,7 @@
         ============================================= -->
         <div id="wrapper" class="clearfix">
 
-            <section id="slider" class="hideonmobile slider-element slider-parallax revslider-wrap full-screen clearfix">
+            <section id="slider" class=" slider-element slider-parallax revslider-wrap full-screen clearfix">
                 <div id="rev_slider_irestaurant_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="default-slider" style="padding:0px;">
                     <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
                     <div id="rev_slider_irestaurant" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.4">
@@ -124,7 +124,7 @@
                                      data-volume="mute"
                                      data-videowidth="100%"
                                      data-videoheight="100%"
-                                     data-videomp4="<?php echo base_url(); ?>assets/images/video1.mp4"
+                                     data-videomp4="<?php echo base_url(); ?>assets/images/Video1.mp4"
                                      data-videopreload="preload"
                                      data-videoloop="none"
                                      data-forceCover="1"
@@ -310,170 +310,7 @@
 
             </section>
 
-            <section id="sliderm" class="showonmobile slider-element slider-parallax revslider-wrap full-screen clearfix">
-                <div id="rev_slider_irestaurant_wrapperm" class="rev_slider_wrapper fullscreen-container" data-alias="default-slider" style="padding:0px;">
-                    <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
-                    <div id="rev_slider_irestaurantm" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.4">
-                        <ul>    <!-- SLIDE  -->
-
-
-
-
-
-                            <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/2m.jpg" data-delay="12000"  data-saveperformance="off" data-title="Shanghai's Tailor">
-                                <!-- MAIN IMAGE -->
-                                <img src="<?php echo base_url(); ?>assets/images/slider/2m.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="130" data-bgpositionend="right center">
-                                <!-- LAYERS -->
-
-                                <!-- LAYER NR. 2 -->
-                                <div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
-                                     data-x="600"
-                                     data-y="215"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1000"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;font-size: 20px;font-weight: bold;">Since 1948 </div>
-
-                                <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-                                     data-x="597"
-                                     data-y="230"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1200"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; font-size: 60px;">Shanghai's Tailor</div>
-
-                                <div class="tp-caption ltl tp-resizeme revo-slider-desc-text tleft"
-                                     data-x="600"
-                                     data-y="340"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1400"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; font-size: 20px!important; max-width: 550px; white-space: normal;">After the Chinese independence skilled Shanghai's Tailors were started moving to Hong Kong, and since then they has been providing their best Workmanship in Hong Kong.</div>
-                            </li>
-                            <!-- SLIDE  -->
-                            <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/3.jpg" data-delay="10000"  data-saveperformance="off"  data-title="HAND MADE AND HAND CUT">
-                                <!-- MAIN IMAGE -->
-                                <img src="<?php echo base_url(); ?>assets/images/slider/3.jpg"  alt="kenburns6"  data-bgposition="center top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="120" data-scaleend="100" data-bgpositionend="center center">
-                                <!-- LAYERS -->
-
-                                <!-- LAYER NR. 2 -->
-                                <div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
-                                     data-x="50"
-                                     data-y="215"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1000"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff;">HAND MADE AND HAND CUT</div>
-
-                                <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-                                     data-x="50"
-                                     data-y="230"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1200"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff; font-size: 60px;">Visite Our Store</div>
-
-                                <div class="tp-caption ltl tp-resizeme revo-slider-desc-text tleft"
-                                     data-x="50"
-                                     data-y="340"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1400"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff; max-width: 550px; white-space: normal;">Providing the latest styles, according different body shapes and under the close observations of cut and stitch.</div>
-
-
-                            </li>
-                            <!-- SLIDE  -->
-                            <li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/1m.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Leading Tailor">
-                                <!-- MAIN IMAGE -->
-                                <img src="<?php echo base_url(); ?>assets/images/slider/1m.jpg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
-                                <!-- LAYERS -->
-
-                                <!-- LAYER NR. 1 -->
-                                <div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
-                                     data-x="center"
-                                     data-y="300"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1000"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;">Shanghai's tailor</div>
-
-                                <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-                                     data-x="center"
-                                     data-y="330"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1200"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;">Leading Tailor In Hong Kong</div>
-
-                                <div class="tp-caption ltl tp-resizeme revo-slider-desc-text tcenter"
-                                     data-x="center"
-                                     data-y="430"
-                                     data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                                     data-speed="800"
-                                     data-start="1400"
-                                     data-easing="easeOutQuad"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.1"
-                                     data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;text-align: center!important;">Shanghai's tailor always provides something new in fashion and fabrics quality, which delights it's clients</div>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
+    
 
             <!-- Header
             ============================================= -->
