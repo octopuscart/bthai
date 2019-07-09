@@ -445,7 +445,7 @@
 
 
 
-                    <div class="section parallax dark nobottommargin" style="background-image: url('<?php echo base_url(); ?>assets/images/clientsbackground.jpg');     margin: 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+                    <div class="section parallax dark nobottommargin" style="background-image: url('<?php echo base_url(); ?>assets/images/clientsbackground.jpg') center center / cover no-repeat ;     margin: 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 
                         <div class="heading-block center">
                             <h3>What Clients Say?</h3>
