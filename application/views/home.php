@@ -165,7 +165,7 @@
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
                                      data-textAlign="center"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;font-size: 20px;">COur menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices.</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;font-size: 20px;">Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices.</div>
 
                                 <div class="tp-caption customin ltl tp-resizeme"
                                      data-x="center" data-hoffset="0"
@@ -179,7 +179,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin"><span>Read More</span><i class="icon-angle-right"></i></a></div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin"><span>Book Now</span><i class="icon-angle-right"></i></a></div>
 
                             </li>
 
