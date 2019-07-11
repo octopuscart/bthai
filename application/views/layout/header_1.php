@@ -8,7 +8,7 @@ $menuitems = [
     array(
         "title" => "About Us",
         "icon" => "ion-ios-list-box",
-        "link" => site_url("#")),
+        "link" => site_url("aboutus")),
     array(
         "title" => "Menu",
         "icon" => "ion-ios-clipboard",
@@ -17,7 +17,7 @@ $menuitems = [
     array(
         "title" => "Gallery",
         "icon" => "ion-ios-images",
-        "link" => site_url("#")
+        "link" => site_url("gallery")
     ),
     array(
         "title" => "Book Now",

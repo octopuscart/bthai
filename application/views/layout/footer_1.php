@@ -3,21 +3,21 @@
         border-top-color: rgb(255, 255, 255);
     }
     footer .social-icon.si-small {
-          width: 39px;
-    height: 34px;
-    font-size: 29px;
-    line-height: 34px !important;
+        width: 39px;
+        height: 34px;
+        font-size: 29px;
+        line-height: 34px !important;
         margin-left: 10px;
     }
     .dark .widget h4 {
-    color: #fff;
-}
-.dark #footer .social-icon.si-borderless, #footer.dark .social-icon.si-borderless {
-    color: #fffdfd !important;
-}
-.dark .spost .entry-title h4 a, .dark .mpost .entry-title h4 a {
-    color: #fff;
-}
+        color: #fff;
+    }
+    .dark #footer .social-icon.si-borderless, #footer.dark .social-icon.si-borderless {
+        color: #fffdfd !important;
+    }
+    .dark .spost .entry-title h4 a, .dark .mpost .entry-title h4 a {
+        color: #fff;
+    }
 </style>
 <!-- Footer
                 ============================================= -->
@@ -68,7 +68,7 @@
                                     <i class="fa fa-tripadvisor"></i>
                                 </a>
 
-                               
+
                                 <a href="#" class="social-icon si-small si-borderless nobottommargin si-linkedin">
                                     <i class="icon-linkedin"></i>
                                     <i class="icon-linkedin"></i>
@@ -124,9 +124,21 @@
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
-                                        <div class="footer_icon_container"> <i class="fa fa-whatsapp footer_icon" style="    font-size: 25px;"></i>  </div>
+                                        <div class="footer_icon_container"> <i class="fa fa-phone footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left  m_l_10">
-                                            <a href="tel:+852 2840 0041" style="    font-size: 20px;">+(852) 2840 0041</a>
+                                            <a href="tel:+852 2840 0041" style="    font-size: 15px;">+(852) 2840 0041</a>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="spost clearfix">
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <h4>
+                                        <div class="footer_icon_container"> <i class="fa fa-whatsapp footer_icon" style="    font-size: 20px;"></i>  </div>
+                                        <div class="float_left  m_l_10">
+                                            <a href="https://api.whatsapp.com/send?phone=85262918128" style="    font-size: 15px;">+(852) 6291 8128</a>
                                         </div>
                                     </h4>
                                 </div>
@@ -137,13 +149,14 @@
 
 
 
+
                         <div class="spost clearfix">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
-                                        <div class="footer_icon_container"> <i class="icon-email3 footer_icon" style="    font-size: 25px;"></i>  </div>
+                                        <div class="footer_icon_container"> <i class="icon-email3 footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left m_top_5 m_l_10">
-                                            <a href="mailto:info@baanthai.hk" style="    font-size: 20px;">info@baanthai.hk </a>
+                                            <a href="mailto:info@baanthai.hk" style="    font-size: 15px;">info@baanthai.hk </a>
                                         </div>
                                     </h4>
                                 </div>
@@ -170,12 +183,12 @@
         <div class="container clearfix" >
 
             <div class="col_full center" style="    padding: 6px;
-    color: white;">
-              
-                Copyrights &copy; <?php echo date("Y");?> All Rights Reserved by Baan Thai.
+                 color: white;">
+
+                Copyrights &copy; <?php echo date("Y"); ?> All Rights Reserved by Baan Thai.
             </div>
 
-          
+
 
         </div>
 

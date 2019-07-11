@@ -1,46 +1,30 @@
 <?php
 $this->load->view('layout/header');
-$clients = [1, 2, 3, 4, 5, 6,7,8,9,10,11,12];
+$clients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25];
 ?>
 
-<div id="page-menu" class="no-sticky">
-
-    <div id="page-menu-wrap" style="    background-color: #333333;">
-
-        <div class="container clearfix">
-
-            <div class="menu-title">Gallery</div>
-
-
-
-
-        </div>
-
-    </div>
-
-</div>
 
 
 
 
 
-<div class="section_offset" ng-controller="lookBookController">
-    
-            <div class="container clearfix m_t_30">
-
-            <div class="col_full">
-
-                <div class="heading-block center nobottomborder">
-                    <h2 class="m_t_30">The Gallery Of Our Worldwide Clients</h2>
-                    <span>Shanghai's tailor always provides something new in fashion and fabrics quality, which delights it's clients.</span>
-                </div>
 
 
+
+<div class="section_offset" ng-controller="lookBookController" style="background: url(<?php echo base_url(); ?>assets/images/gallary.jpg) ;background-repeat: no-repeat;background-size: cover;    height: 600px;
+     overflow-y: scroll;">
+
+    <div class="container clearfix m_t_30">
+
+        <div class="col_full1">
+            <div class="heading-block1 center nobottomborder">
+                <span class="before-heading " style="    font-size: 47px;
+                      color: white;">Our Gallery</span>
             </div>
-
         </div>
-    <div class="container">
-        <div class="content">
+    </div>
+    <div class="container" style="">
+        <div class="content" style="">
             <!--contact-->
             <!--clients area-->
             <div class="latest-w3">
@@ -58,11 +42,11 @@ $clients = [1, 2, 3, 4, 5, 6,7,8,9,10,11,12];
                             foreach ($clients as $key => $value) {
                                 ?>
 
-                                <li style="    padding: 10px;" >
+                                <li style="    padding: 0px;" >
                                     <div class="panel panel-default" style="border:none;margin: 0px;">
                                         <div class="panel-body" style="    padding: 5px;">
                                             <div class="thumbnail lookbook_thumb" >
-                                                <img src="<?php echo base_url(); ?>assets/images/clients/<?php echo $value; ?>.jpg" alt="img01" style=""/>
+                                                <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01" style=""/>
 
                                             </div>
                                         </div>
@@ -84,7 +68,7 @@ $clients = [1, 2, 3, 4, 5, 6,7,8,9,10,11,12];
                                 ?>
                                 <li >
                                 <center>
-                                    <img src="<?php echo base_url(); ?>assets/images/clients/<?php echo $value; ?>.jpg" alt="img01"  style="    height:500px;"/>
+                                    <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01"  style="    height:500px;"/>
                                 </center>
                                 </li>
 

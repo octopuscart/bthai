@@ -310,7 +310,7 @@
 
             </section>
 
-    
+
 
             <!-- Header
             ============================================= -->
@@ -373,7 +373,7 @@
 
                                 <p class="lead nobottommargin">
                                     Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine. Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices. All our chefs are Thai and therefore ensure that you enjoy that special taste of Thailand when dining at our restaurant.
-
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/hotel.jpg) center center / cover no-repeat; height: 708px;">
@@ -428,11 +428,11 @@
                                     Check out our Christmas promotion menu <a style="color: #0000ff;" href="http://www.baanthai.hk/wp-content/uploads/2018/12/jpg2pdf-6.pdf" target="_blank" rel="noopener">here!</a>!<br/>
 
                                     Located in the busy commercial and nightlife section of Wyndham Street in Central, here at Baan Thai Restaurant we not only cater to regular lunch goers and evening diners seeking exceptional Thai food, but we also host private parties, group bookings and offer external catering.
-<br/>
+                                    <br/>
                                     Whether you need a medium sized space for your office party, annual dinner, social committee gathering, wedding or graduation party, we have the space and dining packages to suit your needs.
-<br/>
+                                    <br/>
                                     Our tailor-made or general packages suit all tastes and requirements. We offer a range of choice from simple drinks and snacks options for a small group, to full service 3-course dinners or Thai buffets.
-<br/>
+                                    <br/>
                                     Contact us for more details: info@baanthai.hk
                                 </p>
                             </div>
