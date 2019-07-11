@@ -54,6 +54,7 @@ $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-@\=';
 $route['default_controller'] = 'Shop';
 $route['404_override'] = 'Shop/error404';
 $route['translate_uri_dashes'] = FALSE;
+$route['our-menu'] = 'Shop/menu';
 $route['contact-us'] = 'Shop/contactus';
 $route['appointment'] = 'Shop/appointment';
 $route['subscribe'] = 'Shop/subscribe';

@@ -19,6 +19,10 @@ class Shop extends CI_Controller {
     public function index() {
         $this->load->view('home');
     }
+    
+    public function menu() {
+        $this->load->view('Pages/menu');
+    }
 
     public function contactus() {
         $data['checksent'] = 0;
@@ -46,37 +50,7 @@ class Shop extends CI_Controller {
             $sendername = email_sender_name;
             $email_bcc = email_bcc;
             $sendernameeq = $this->input->post('full_name');
-            if ($this->input->post('email')) {
-                $this->email->set_newline("\r\n");
-                $this->email->from(email_bcc, $sendername);
-                $this->email->to($this->input->post('email'));
-                $this->email->bcc(email_bcc);
-                $subjectt = $this->input->post('subject');
-                $orderlog = array(
-                    'log_type' => 'Enquiry',
-                    'log_datetime' => date('Y-m-d H:i:s'),
-                    'user_id' => 'ENQ',
-                    'log_detail' => "Enquiry from website - " . $this->input->post('subject')
-                );
-                $this->db->insert('system_log', $orderlog);
-
-                $subject = "Enquiry from website - " . $this->input->post('subject');
-                $this->email->subject($subject);
-
-                $web_enquiry['web_enquiry'] = $web_enquiry;
-
-                $htmlsmessage = $this->load->view('Email/web_enquiry', $web_enquiry, true);
-                $this->email->message($htmlsmessage);
-
-                $this->email->print_debugger();
-                $send = $this->email->send();
-                if ($send) {
-                    $data['checksent'] = 1;
-                } else {
-                    $data['checksent'] = 2;
-                    $error = $this->email->print_debugger(array('headers'));
-                }
-            }
+       
 
 //redirect('contact-us');
         }

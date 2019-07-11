@@ -12,7 +12,7 @@ $menuitems = [
     array(
         "title" => "Menu",
         "icon" => "ion-ios-clipboard",
-        "link" => site_url("#")
+        "link" => site_url("our-menu")
     ),
     array(
         "title" => "Gallery",
