@@ -53,6 +53,24 @@ $this->load->view('layout/header');
                             </ul>
                         </div>
                     </figure>
+                    
+                    <figure>
+                        <div class="book" data-book="book-3"></div>
+                        <div class="buttons"><a href="#">Look inside</a><a href="#">Details</a></div>
+                        <figcaption><h2 style="margin-top: 0px;">Drinks <span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
+                        <div class="details">
+                            <ul>
+                                <li>Scotch & Malts<br/>
+                                    Rum</br> 
+                                    Bourbon<br/>
+                                    Vodka<br/>
+                                    Gin<br/>
+                                    Tequila<br/>
+                              
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
 
                 </div>
             </div><!-- /main -->
@@ -121,6 +139,43 @@ $this->load->view('layout/header');
                 <a href="#" class="bb-nav-close">Close</a>
             </nav>
         </div><!-- /bb-custom-wrapper -->
+        
+        
+        
+        <div class="bb-custom-wrapper" id="book-3">
+            <div class="bb-bookblock">
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/1.jpg"/>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/2.jpg"/>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/3.jpg"/>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/4.jpg"/>
+                    </div>
+                </div>
+            </div><!-- /bb-bookblock -->
+            <nav>
+                <a href="#" class="bb-nav-prev">Previous</a>
+                <a href="#" class="bb-nav-next">Next</a>
+                <a href="#" class="bb-nav-close">Close</a>
+            </nav>
+        </div><!-- /bb-custom-wrapper -->
+        
 
         <script src="<?php echo base_url(); ?>assets/book/bookblock.min.js"></script>
         <script src="<?php echo base_url(); ?>assets/book/classie.js"></script>
