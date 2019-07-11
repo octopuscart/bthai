@@ -44,15 +44,11 @@ $this->load->view('layout/header');
                         <figcaption><h2 style="margin-top: 0px;">Snacks <span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
                         <div class="details">
                             <ul>
-                                <li>Soups<br/>
-                                    Salads</br> 
-                                    Appetisers And Snacks<br/>
-                                    Curries<br/>
-                                    Seafood<br/>
-                                    Stir-Fried Dishes<br/>
-                                    Noodels & Rice<br/>
-                                    Vegetarian<br/>
-                                    Desserts<br/>
+                                <li>Potato Wedges<br/>
+                                    Fried Fish Snacks</br> 
+                                    Pandan Chicken<br/>
+                                    Spicy Shrimp<br/>
+                              
                                 </li>
                             </ul>
                         </div>
@@ -112,33 +108,10 @@ $this->load->view('layout/header');
                 <div class="bb-item">
                     <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/menu/food/1.jpg"/>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/snacks/1.jpg"/>
                     </div>
                 </div>
-                <div class="bb-item">
-                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
-
-                        <img src="<?php echo base_url(); ?>assets/images/menu/food/2.jpg"/>
-                    </div>
-                </div>
-                <div class="bb-item">
-                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
-
-                        <img src="<?php echo base_url(); ?>assets/images/menu/food/3.jpg"/>
-                    </div>
-                </div>
-                <div class="bb-item">
-                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
-
-                        <img src="<?php echo base_url(); ?>assets/images/menu/food/4.jpg"/>
-                    </div>
-                </div>
-                <div class="bb-item">
-                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
-
-                        <img src="<?php echo base_url(); ?>assets/images/menu/food/5.jpg"/>
-                    </div>
-                </div>
+                
 
 
             </div><!-- /bb-bookblock -->
