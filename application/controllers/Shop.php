@@ -19,7 +19,7 @@ class Shop extends CI_Controller {
     public function index() {
         $this->load->view('home');
     }
-    
+
     public function menu() {
         $this->load->view('Pages/menu');
     }
@@ -50,7 +50,7 @@ class Shop extends CI_Controller {
             $sendername = email_sender_name;
             $email_bcc = email_bcc;
             $sendernameeq = $this->input->post('full_name');
-       
+
 
 //redirect('contact-us');
         }
@@ -60,6 +60,55 @@ class Shop extends CI_Controller {
     public function aboutus() {
         $this->load->view('Pages/aboutus');
     }
+    
+    
+    public function loyaltyProgram() {
+        $data = array();
+        $data['submitdata'] = "";
+        if (isset($_POST['submit'])) {
+            $web_input = array(
+                'last_name' => $this->input->post('first_name'),
+                'first_name' => $this->input->post('last_name'),
+                'email' => $this->input->post('email'),
+                'contact' => $this->input->post('contact_no'),
+                'address' => $this->input->post('address'),
+                'birth_date' => $this->input->post('birth_date'),
+                'language' => $this->input->post('language'),
+                'country' => $this->input->post('country'),
+                'city' => $this->input->post('city'),
+                'datetime' => date("Y-m-d H:i:s a"),
+            );
+            $this->db->insert('web_loyalprogram', $web_input);
+            $data['submitdata'] = 'yes';
+        }
+        $this->load->view('Pages/loyalprogram', $data);
+    }
+    
+    
+
+    //End of book now
+    public function booknow() {
+        $data = array();
+        $data['submitdata'] = "";
+        if (isset($_POST['submit'])) {
+            $web_order = array(
+                'last_name' => $this->input->post('first_name'),
+                'first_name' => $this->input->post('last_name'),
+                'email' => $this->input->post('email'),
+                'contact' => $this->input->post('contact_no'),
+                'select_date' => $this->input->post('select_date'),
+                'select_time' => $this->input->post('select_time'),
+                'booking_type' => $this->input->post('booking_type'),
+                'extra_remark' => $this->input->post('extra_remark'),
+                'datetime' => date("Y-m-d H:i:s a"),
+            );
+            $this->db->insert('web_order', $web_order);
+            $data['submitdata'] = 'yes';
+        }
+        $this->load->view('Pages/booknow', $data);
+    }
+    
+    
 
     public function appointment() {
         $this->load->view('Pages/appointment');

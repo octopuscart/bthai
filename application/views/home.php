@@ -179,7 +179,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin"><span>Book Now</span><i class="icon-angle-right"></i></a></div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="<?php echo site_url('booknow');?>" class="button button-border button-white button-light button-large button-rounded tright nomargin"><span>Book Now</span><i class="icon-angle-right"></i></a></div>
 
                             </li>
 
@@ -407,7 +407,7 @@
 
 
 
-                                <a href="#" class="button button-border button-large button-rounded topmargin-sm noleftmargin" target="_blank" style="color: white;    border: 2px solid #fff;">Visit Us</a>
+                                <a href="<?php echo site_url('contact-us');?>" class="button button-border button-large button-rounded topmargin-sm noleftmargin" target="_blank" style="color: white;    border: 2px solid #fff;">Visit Us</a>
 
                             </div>
 
@@ -517,7 +517,7 @@
 
                             <p>Here at Baan Thai Restaurant we not only cater to regular lunch goers and evening diners seeking exceptional Thai food, but we also host private parties, group bookings and offer external catering.</p>
 
-                            <a href="#" class="button button-rounded button-dark noleftmargin"><i class="icon-file-alt"></i> Browse Menu</a>
+                            <a href="<?php echo site_url("our-menu");?>" class="button button-rounded button-dark noleftmargin"><i class="icon-file-alt"></i> Browse Menu</a>
 
                         </div>
 
