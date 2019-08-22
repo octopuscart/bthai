@@ -419,6 +419,8 @@ $this->load->view('layout/header');
 if ($submitdata == 'yes') {
     ?>
             $(function(){
+                let newmail = new Audio("<?php echo base_url(); ?>assets/sound/sendemail.mp3");
+            newmail.play();
             $("#thanksModal").modal("show");
             $('#thanksModal').on('hidden.bs.modal', function (e) {
             window.location = "<?php echo site_url('loyalprogram'); ?>";
