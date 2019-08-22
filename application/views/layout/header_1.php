@@ -28,7 +28,7 @@ $menuitems = [
     array(
         "title" => "Loyalty Program",
         "icon" => "ion-ios-contacts",
-        "link" => site_url("#")
+        "link" => site_url("loyalprogram")
     ),
     
     
