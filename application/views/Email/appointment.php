@@ -62,33 +62,20 @@
           padding: 0;
           background: rgb(225, 225, 225);
           font-family: sans-serif;">
-        <div class="" style="padding:50px 0px">
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding: 0 20px">
+        <div class="" style="padding:50px 0px;">
+
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding: 0 20px;background:url(http://localhost/baanthai/assets/images/woodback.jpg) ">
                 <tr>
                     <td >
-                        <center><img src="<?php echo site_mail_logo; ?>" style="margin: 10px;
-                                     height: 80px;
-                                     width: auto;"/><br/>
-                            <h4 style="color: black;    margin-top: 0px;"> Your Appointment Has Been Booked <br>
-                                    <?php
-                                    if ($appointment['country'] == 'Hong Kong') {
-                                        $appointmentdater = $appointment['select_date'];
-                                        $appointmentdate = explode("T", $appointmentdater)[0];
-                                        $appointmentdate = str_replace('"', "", $appointmentdate);
-                                        $appointment['select_date'] = $appointmentdate;
-                                        ?>
-                                        <small>
-                                            Appointment Date & Time: <?php echo date_format(date_create($appointmentdate . ' ' . $appointment['select_time']), "l, d F Y"); ?> (<?php echo $appointment['select_time']; ?>)
-                                        </small>
-                                        <?php
-                                    } else {
-                                        ?>
-                                        <small>
-                                            Appointment Date & Time: <?php echo date_format(date_create($appointment['select_date'] . ' ' . $appointment['select_time']), "l, d F Y"); ?> (<?php echo $appointment['select_time']; ?>)
-                                        </small>
-                                        <?php
-                                    }
-                                    ?>
+                        <center><img src="<?php echo site_mail_logo; ?>" style="margin: 10px; height: 80px;    background: white;border-radius: 15px;width: auto;"/>
+                            <br/>
+                            <h4 style="color: white;    margin-top: 0px;"> Thanks you for booking <br>
+
+                                    <small>
+                                        Date & Time: <?php echo date_format(date_create($appointment['select_date']), "l, d F Y"); ?> (<?php echo $appointment['select_time']; ?>)
+                                    </small>
+
                             </h4>
                         </center>
                     </td>
@@ -97,75 +84,44 @@
 
             </table>
 
-            <table class="carttable"  border-color= "#9E9E9E" align="center" border="1" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding:20px">
+            <table class="carttable"  border-color= "#9E9E9E" align="center" border="1" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding:20px;background:url(http://localhost/baanthai/assets/images/woodback.jpg)">
 
-                <tr>
-                    <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Name</th>
-                    <td><?php echo $appointment['first_name']; ?></td>
-                </tr>
-                <tr>
-                    <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Email</th>
-                    <td><?php echo $appointment['email']; ?></td>
-                </tr>
-                <tr>
-                    <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Contact No.</th>
-                    <td><?php echo $appointment['contact_no']; ?></td>
-                </tr>
-                <tr>
-                    <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Country</th>
-                    <td><?php echo $appointment['country']; ?></td>
-                </tr>
-
-                <?php
-                if ($appointment['country'] == 'Hong Kong') {
-                    $appointmentdater = $appointment['select_date'];
-                    ?>
-
+                <tbody style="    background: white;">
                     <tr>
-                        <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Location</th>
-                        <td><?php echo $appointment['address']; ?></td>
-                    </tr>
-                    <?php
-                } else {
-                    ?>
-                    <tr>
-                        <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">State/City</th>
-                        <td><?php echo $appointment['city_state']; ?> (<?php echo $appointment['city_days']; ?>)</td>
+                        <th style="background: white;text-align: right;width:200px;padding-right: 10px;">Name</th>
+                        <td><?php echo $appointment['first_name']; ?> <?php echo $appointment['last_name']; ?></td>
                     </tr>
                     <tr>
-                        <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Hotel Name</th>
-                        <td><?php echo $appointment['hotel']; ?></td>
+                        <th style="background: white;text-align: right;width:200px;padding-right: 10px;">Email</th>
+                        <td><?php echo $appointment['email']; ?></td>
                     </tr>
                     <tr>
-                        <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Hotel Address</th>
-                        <td><?php echo $appointment['address']; ?></td>
+                        <th style="background: white;text-align: right;width:200px;padding-right: 10px;">Contact No.</th>
+                        <td><?php echo $appointment['contact']; ?></td>
                     </tr>
-                    <?php
-                }
-                ?>
 
-                <tr>
-                    <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Date</th>
-                    <td><?php echo $appointment['select_date']; ?></td>
-                </tr>
+                    <tr>
+                        <th style="background: white;text-align: right;width:200px;padding-right: 10px;">Date</th>
+                        <td><?php echo $appointment['select_date']; ?></td>
+                    </tr>
 
-                <tr>
-                    <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Time</th>
-                    <td><?php echo $appointment['select_time']; ?></td>
-                </tr>
-                <tr>
-                    <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Remark</th>
-                    <td style="width: 250px"><?php echo $appointment['remark']; ?></td>
-                </tr>
-
+                    <tr>
+                        <th style="background: white;text-align: right;width:200px;padding-right: 10px;">Time</th>
+                        <td><?php echo $appointment['select_time']; ?></td>
+                    </tr>
+                    <tr>
+                        <th style="background: white;text-align: right;width:200px;padding-right: 10px;">Remark</th>
+                        <td style="width: 250px"><?php echo $appointment['extra_remark']?$appointment['extra_remark']:'----'; ?></td>
+                    </tr>
+                </tbody>
 
 
             </table>
 
-            <table class="carttable"  align="center" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding:20px">
+            <table class="carttable"  align="center" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding:0px">
                 <tr>
-                    <td style="text-align: center;color:red;font-weight: bold;">
-                        (Note: Please bring your best fitted suit along with you.)
+                    <td style="text-align: center;color:red;font-weight: bold;padding:0px">
+                        <img src="http://localhost/baanthai/assets/images/ad.jpg" style="width: 100%"  />
                     </td>
                 </tr>
             </table>

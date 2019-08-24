@@ -24,23 +24,26 @@ $this->load->view('layout/header');
     .blog-posts article {
         margin-bottom: 10px;
     }
+    .table th, .table td {
+    padding: 0px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
 </style>
 
-<div class="inner-page-banner-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="breadcrumb-area">
-                    <h1>My Orders</h1>
-                    <ul>
-                        <li><a href="#">Home</a> /</li>
-                        <li>Account</li>
-                    </ul>
-                </div>
-            </div>
+<section class="sub-bnr" data-stellar-background-ratio="0.5" style="margin-bottom: 10px;">
+    <div class="position-center-center">
+        <div class="container">
+            <h4>My Profile</h4>
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Account</li>
+            </ol>
         </div>
     </div>
-</div>
+</section>
 
 
 
@@ -65,29 +68,50 @@ $this->load->view('layout/header');
                         foreach ($orderslist as $key => $value) {
                             ?>
                             <div class="row  "> 
-                                <div class="pricing">
+                                <div class="pricing" style="width: 100%">
 
                                     <article class="order_box" style="padding: 10px">
-                                        <div class="col-md-12">
-                                            <h6>
-                                                Order No. #<?php echo $value->order_no; ?>
-                                                <span style="float: right;margin: 0px">
-                                                    <i class="fa fa-calendar"></i><?php echo $value->order_date; ?>  <?php echo $value->order_time; ?>
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div class="col-md-4">
-                                            Total Amount: {{<?php echo $value->total_price; ?>|currency:"Rs. "}}
-                                            <br/>
-                                            Total Products: {{<?php echo $value->total_quantity; ?>}}
-                                        </div>
-                                        <div class="col-md-4">
-                                            Status: <?php echo $value->status; ?>
 
-                                        </div>
-                                        <div class="col-md-4">
-                                            <a href="<?php echo site_url('order/orderdetails/' . $value->order_key); ?>" class="btn btn-inverse btn-small" style="margin: 0px;    float: right;">View Order</a>
-                                        </div>
+                                        <table class="table">
+                                            <tr>
+                                                <td colspan="2">
+                                                    <h6>
+                                                        Order No. #<?php echo $value->id; ?>
+                                                        <span style="float: right;margin: 0px">
+                                                            <i class="fa fa-calendar"></i><?php echo $value->select_date; ?>  <?php echo $value->select_time; ?>
+                                                        </span>
+                                                    </h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100px;">
+                                                    Guest(s)
+                                                </td>
+                                                <td>
+                                                    <?php echo $value->people; ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Table No.
+                                                </td>
+                                                <td>
+                                                    <?php echo $value->select_table; ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Status
+                                                </td>
+                                                <td>
+                                                    <?php echo $value->booking_type; ?>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
+
+
                                     </article>
 
                                 </div>

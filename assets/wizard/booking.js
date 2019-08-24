@@ -3,11 +3,21 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         "book_type": 'Reserve',
         "people": 1,
         "select_date": today,
-        "select_time": "--:--:--"
+        "select_time": "--:--:--",
+        "select_table": "--",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+       "usertype":"Guest",
+        "contact_no": ""
     };
+
+
+
+
     $scope.changeWizard = function () {
         if ($scope.bookingArray.select_time != "--:--:--") {
-            $("#nav-profile-tab").tab("show");
+            $("#nav-table-tab").tab("show");
         }
     }
 
@@ -19,9 +29,23 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
     $scope.changeWizardTime = function () {
         $("#nav-datetime-tab").tab("show");
     }
-    
-    $scope.bookType = function(btype){
+
+    $scope.changeWizardTble = function () {
+        $("#nav-table-tab").tab("show");
+    }
+
+    $scope.bookType = function (btype) {
         $scope.bookingArray.book_type = btype;
+    }
+
+
+    $scope.selectTable = function (table) {
+        $scope.bookingArray.select_table = table;
+        $scope.changeWizardProfile();
+    }
+
+    $scope.loginNow = function () {
+        $scope.initWizard.logincheck = 0;
     }
 
 
@@ -43,6 +67,10 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
     $scope.selectTime = function (ttime) {
         $scope.bookingArray.select_time = ttime;
         $scope.changeWizard();
+    }
+
+    $scope.continueWithoutLogin = function () {
+        $scope.initWizard.logincheck = 2;
     }
 
 
@@ -85,8 +113,50 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
             "MWS": ['12', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11'],
         },
         "selecttime": {4: "TS", 5: "TS", 6: "TS", 0: "MWS", 1: "MWS", 2: "MWS", 3: "MWS"},
-        "timeslot": []
+        "timeslot": [],
+        "tables": {
+            "zone_g": ["ZG1", "ZG2", "ZG3", "ZG4", "ZG5", "ZG6"],
+            "zone_f": ["ZF1", "ZF2", "ZF3", "ZF4", "ZF5", "ZF6", "ZF7", "ZF8"],
+        },
+        "logincheck": 0,
+        "login": {"email": "", "password": ""}
     }
+
+    $scope.getLoginDetails = function () {
+        var loginurl = baseurl + "Api/loginOperation"
+        $http.get(loginurl).then(function (rdata) {
+            let userdata = rdata.data;
+            if (userdata) {
+                $scope.bookingArray.first_name = userdata.first_name;
+                $scope.bookingArray.last_name = userdata.last_name;
+                $scope.bookingArray.email = userdata.email;
+                $scope.bookingArray.contact_no = userdata.contact_no;
+                $scope.bookingArray.usertype = userdata.id;
+                $scope.initWizard.logincheck = 3;
+            }
+        })
+    }
+
+    $scope.getLoginDetails();
+
+
+    $scope.loginFunction = function () {
+        console.log($scope.initWizard.login)
+        var form = new FormData()
+        form.append('email', $scope.initWizard.login.email);
+        form.append('password', $scope.initWizard.login.password);
+        var loginurl = baseurl + "Api/loginOperation"
+        $http.post(loginurl, form).then(function (rdata) {
+            let userdata = rdata.data;
+            $scope.bookingArray.first_name = userdata.first_name;
+            $scope.bookingArray.last_name = userdata.last_name;
+            $scope.bookingArray.email = userdata.email;
+            $scope.bookingArray.contact_no = userdata.contact_no;
+            $scope.bookingArray.usertype = userdata.id;
+            $scope.initWizard.logincheck = 3;
+        })
+    }
+
 
     $scope.selectedDate(today);
     $scope.initWiz = function (today) {
@@ -96,12 +166,12 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         }).on("click", function (e) {
             let sdate = ($('#datepicker-inline').datepicker("getDate"));
             $timeout(function () {
-                if(sdate){
-                $scope.selectedDate(sdate);
-                let datecheck = moment(sdate);
-                var dateformated = datecheck.format('YYYY-MM-DD');
-                $scope.bookingArray.select_date = dateformated;
-            }
+                if (sdate) {
+                    $scope.selectedDate(sdate);
+                    let datecheck = moment(sdate);
+                    var dateformated = datecheck.format('YYYY-MM-DD');
+                    $scope.bookingArray.select_date = dateformated;
+                }
             });
         });
     }

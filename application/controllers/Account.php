@@ -11,6 +11,7 @@ class Account extends CI_Controller {
         $this->load->model('User_model');
         $this->load->model('Product_model');
         $session_user = $this->session->userdata('logged_in');
+        $this->session_user_data = $this->session->userdata('logged_in');
         if ($session_user) {
             $this->user_id = $session_user['login_id'];
         } else {
@@ -19,11 +20,43 @@ class Account extends CI_Controller {
     }
 
     public function index() {
-        redirect('Account/profile');
+        if ($this->user_id) {
+            redirect('Account/profile');
+        }
+    }
+
+    public function mywallet() {
+
+
+        if ($this->user_id == 0) {
+            redirect('Account/login');
+        }
+        $data = array();
+        $this->load->view('Account/mywallet', $data);
+    }
+
+    public function giftcoupons() {
+
+
+        if ($this->user_id == 0) {
+            redirect('Account/login');
+        }
+        $data = array();
+        $this->load->view('Account/giftcoupons', $data);
+    }
+
+    public function newsletter() {
+
+
+        if ($this->user_id == 0) {
+            redirect('Account/login');
+        }
+        $data = array();
+        $this->load->view('Account/newsletter', $data);
     }
 
     //Profile page
-    public function profile() {
+    public function profile2() {
 
         $query = $this->db->get('country');
         $countrylist = $query->result();
@@ -80,6 +113,10 @@ class Account extends CI_Controller {
     //login page
     //login page
     function login() {
+      
+            redirect('/');
+        
+//        redirect("CartGuest/checkoutInit");
         $data1['msg'] = "";
 
         $query = $this->db->get('country');
@@ -115,6 +152,16 @@ class Account extends CI_Controller {
                     $productlist = $session_cart['products'];
 
                     $this->Product_model->cartOperationCustomCopy($user_id);
+                    $first_name = $userdata['first_name'];
+                    $last_name = $userdata['last_name'];
+                    $orderlog = array(
+                        'log_type' => "Login",
+                        'log_datetime' => date('Y-m-d H:i:s'),
+                        'user_id' => $user_id,
+                        'order_id' => "",
+                        'log_detail' => "$first_name $last_name Login Succesful",
+                    );
+                    $this->db->insert('system_log', $orderlog);
 
                     $this->session->set_userdata('logged_in', $sess_data);
 
@@ -172,6 +219,15 @@ class Account extends CI_Controller {
                         'login_id' => $user_id,
                     );
 
+                    $orderlog = array(
+                        'log_type' => "Registration",
+                        'log_datetime' => date('Y-m-d H:i:s'),
+                        'user_id' => $user_id,
+                        'order_id' => "",
+                        'log_detail' => "$first_name $last_name Login Succesful",
+                    );
+                    $this->db->insert('system_log', $orderlog);
+
 
                     try {
                         $this->User_model->registration_mail($user_id);
@@ -206,6 +262,17 @@ class Account extends CI_Controller {
             'logged_in' => FALSE,
         );
 
+        $first_name = $this->session_user_data['first_name'];
+        $last_name = $this->session_user_data['last_name'];
+        $orderlog = array(
+            'log_type' => "Logout",
+            'log_datetime' => date('Y-m-d H:i:s'),
+            'user_id' => $this->user_id,
+            'order_id' => "",
+            'log_detail' => "$first_name $last_name Logout Succesful",
+        );
+
+        $this->db->insert('system_log', $orderlog);
         $this->session->unset_userdata($newdata);
         $this->session->sess_destroy();
 
@@ -217,8 +284,8 @@ class Account extends CI_Controller {
         if ($this->user_id == 0) {
             redirect('Account/login');
         }
-        $this->db->where('user_id', $this->user_id);
-        $query = $this->db->get('user_order');
+        $this->db->where('usertype', $this->user_id);
+        $query = $this->db->get('web_order');
         $orderlist = $query->result();
 
         $orderslistr = [];
@@ -228,8 +295,14 @@ class Account extends CI_Controller {
             $this->db->where('order_id', $value->id);
             $query = $this->db->get('user_order_status');
             $status = $query->row();
-            $value->status = $status ? $status->status : $value->status;
-            array_push($orderslistr, $value);
+            if ($status) {
+                $value->status = $status ? $status->status : $value->status;
+               
+            }
+            else{
+                $value->status = "--";
+            }
+             array_push($orderslistr, $value);
         }
         $data['orderslist'] = $orderslistr;
 
@@ -239,6 +312,9 @@ class Account extends CI_Controller {
 
     //Address management
     function address() {
+        if ($this->user_id == 0) {
+            redirect('Account/login');
+        }
         $user_address_details = $this->User_model->user_address_details($this->user_id);
         $data['user_address_details'] = $user_address_details;
 
@@ -262,10 +338,12 @@ class Account extends CI_Controller {
             $this->db->update('shipping_address');
 
             $category_array = array(
-                'address' => $this->input->post('address'),
+                'address1' => $this->input->post('address1'),
+                'address2' => $this->input->post('address2'),
                 'city' => $this->input->post('city'),
                 'state' => $this->input->post('state'),
-                'pincode' => $this->input->post('pincode'),
+//                'pincode' => $this->input->post('pincode'),
+                'country' => $this->input->post('country'),
                 'user_id' => $this->user_id,
                 'status' => 'default',
             );
@@ -277,7 +355,141 @@ class Account extends CI_Controller {
         $this->load->view('Account/address', $data);
     }
 
-  
+    //function credits
+    function credits() {
+
+        if ($this->user_id == 0) {
+            redirect('Account/login');
+        }
+
+        $user_id = $this->user_id;
+
+        $user_credits = $this->User_model->user_credits($this->user_id);
+        $data['user_credits'] = $user_credits;
+
+        $querys = "select * from (
+                   select credit, '' as debit, order_id, remark, c_date, c_time  FROM `user_credit` 
+                   where user_id = $user_id and credit>0
+                    union
+                   select '' as credit, credit as debit, order_id, remark, c_date, c_time  FROM `user_debit`
+                   where user_id = $user_id  and credit>0
+                   ) as credit order by c_date desc";
+
+        $query = $this->db->query($querys);
+        $creditlist = $query->result();
+        $data['creditlist'] = $creditlist;
+
+
+        $this->load->view('Account/credits', $data);
+    }
+
+    function profile() {
+
+        if ($this->user_id == 0) {
+            redirect('Account/login');
+        }
+
+        $data = array();
+        // echo password_hash('rasmuslerdorf', PASSWORD_DEFAULT)."\n";
+        $userid = $this->user_id;
+        $query = $this->db->get_where("admin_users", array("id" => $userid));
+        $userdata = $query->row();
+        $data['userdata'] = $userdata;
+
+
+        $query = $this->db->get("country");
+        $countrydata = $query->result_array();
+        $data['country'] = $countrydata;
+
+        $config['upload_path'] = 'assets/profile_image';
+        $config['allowed_types'] = '*';
+
+        if (isset($_POST['changePassword'])) {
+            $c_password = $this->input->post('c_password');
+            $n_password = $this->input->post('n_password');
+            $r_password = $this->input->post('r_password');
+            $dc_password = $userdata->password;
+            if (md5($c_password) == $dc_password) {
+                if ($r_password == $n_password) {
+                    $message = array(
+                        'title' => 'Password Changed.',
+                        'text' => 'Your password has been changed successfully.',
+                        'show' => true,
+                        'icon' => 'happy.png'
+                    );
+                    $this->session->set_flashdata("checklogin", $message);
+
+
+                    $passowrd = array("password" => md5($n_password), "password2" => $n_password);
+                    $this->db->set($passowrd);
+                    $this->db->where("id", $userid);
+                    $this->db->update("admin_users");
+
+                    redirect("profile");
+                } else {
+                    $message = array(
+                        'title' => 'Password Error.',
+                        'text' => 'Entered password does not match.',
+                        'show' => true,
+                        'icon' => 'warn.png'
+                    );
+                    $this->session->set_flashdata("checklogin", $message);
+                }
+            } else {
+                $message = array(
+                    'title' => 'Password Errors.',
+                    'text' => 'Current password does not match.',
+                    'show' => true,
+                    'icon' => 'warn.png'
+                );
+                $this->session->set_flashdata("checklogin", $message);
+            }
+        }
+
+
+        $this->load->view('Account/profile2', $data);
+    }
+
+    function testReg() {
+        if ($this->user_id == 0) {
+            redirect('Account/login');
+        }
+        $user_id = $this->user_id;
+        $this->User_model->registration_mail($user_id);
+    }
+
+    function userMeausrements() {
+        if ($this->user_id == 0) {
+            redirect('Account/login');
+        }
+        $userid = $this->user_id;
+
+
+        $data = array();
+
+        $this->db->where('user_id', $userid);
+        $query = $this->db->get('custom_measurement_profile');
+        $measurement_items = $query->result_array();
+        $measurement_array = array();
+        foreach ($measurement_items as $mskey => $msvalue) {
+            $msid = $msvalue['id'];
+            $this->db->where('custom_measurement_profile', $msid);
+            $this->db->order_by('display_index');
+            $query = $this->db->get('custom_measurement');
+            $measurements = $query->result_array();
+            $tempmes = array();
+            $measurement_array[$msvalue['id']] = $msvalue;
+            foreach ($measurements as $mk => $mv) {
+                $mestitle = $mv['measurement_key'];
+                $mesvalue = $mv['measurement_value'];
+                $tempmes[$mestitle] = $mesvalue;
+            }
+
+            $measurement_array[$msid]['measurements'] = $tempmes;
+        }
+        $data['measurements'] = $measurement_array;
+        $this->load->view('Account/measurements', $data);
+    }
 
 }
 

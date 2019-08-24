@@ -160,6 +160,7 @@
                                     ?>
                                     <li><a href="<?php echo $value['link']; ?>"><div><i class="<?php echo $value['icon']; ?>"></i><?php echo $value['title']; ?></div></a></li>
                                 <?php } ?>
+                                    <!--{{userLogin}}-->
                             </ul>
 
                         </nav><!-- #primary-menu end -->

@@ -7,6 +7,8 @@ class Shop extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('Product_model');
+        $this->load->model('User_model');
+
         $this->load->library('session');
         $this->user_id = $this->session->userdata('logged_in')['login_id'];
         $this->session_user = $this->session->userdata('admin_login');
@@ -60,8 +62,7 @@ class Shop extends CI_Controller {
     public function aboutus() {
         $this->load->view('Pages/aboutus');
     }
-    
-    
+
     public function loyaltyProgram() {
         $data = array();
         $data['submitdata'] = "";
@@ -83,8 +84,6 @@ class Shop extends CI_Controller {
         }
         $this->load->view('Pages/loyalprogram', $data);
     }
-    
-    
 
     //End of book now
     public function booknow() {
@@ -100,15 +99,88 @@ class Shop extends CI_Controller {
                 'select_time' => $this->input->post('select_time'),
                 'booking_type' => $this->input->post('booking_type'),
                 'extra_remark' => $this->input->post('extra_remark'),
+                'select_table' => $this->input->post('select_table'),
+                'people' => $this->input->post('people'),
+                "usertype"=>$this->input->post('usertype'),
                 'datetime' => date("Y-m-d H:i:s a"),
             );
             $this->db->insert('web_order', $web_order);
             $data['submitdata'] = 'yes';
+
+            $password = rand(10000, 99999);
+            $email = $this->input->post('email');
+
+            $user_check = $this->User_model->check_user($email);
+            if ($user_check) {
+                $data1['msg'] = 'Email Address Already Registered.';
+            } else {
+                $userarray = array(
+                    'last_name' => $this->input->post('first_name'),
+                    'first_name' => $this->input->post('last_name'),
+                    'email' => $this->input->post('email'),
+                    'password' => md5($password),
+                    'password2' => $password,
+                    'profession' => "",
+                    'country' => "",
+                    'gender' => "",
+                    'birth_date' => "",
+                    'registration_datetime' => date("Y-m-d h:i:s A")
+                );
+                $checkregistration = $this->input->post('registrationyes');
+                if ($checkregistration) {
+                    $this->db->insert('admin_users', $userarray);
+                    $user_id = $this->db->insert_id();
+
+                    $sess_data = array(
+                        'username' => $this->input->post('email'),
+                        'first_name' => $this->input->post('first_name'),
+                        'last_name' => $this->input->post('last_name'),
+                        'login_id' => $user_id,
+                    );
+                    $this->session->set_userdata('logged_in', $sess_data);
+                }
+            }
         }
+
+
+
+        //email sending
+        $emailsender = email_sender;
+        $sendername = email_sender_name;
+        $email_bcc = email_bcc;
+
+        if ($this->input->post('email')) {
+            $this->email->set_newline("\r\n");
+            $this->email->from(email_bcc, $sendername);
+            $this->email->to($this->input->post('email'));
+            $this->email->bcc(email_bcc);
+            $subjectt = "Thank you for your booking.";
+            $subject = $subjectt;
+            $this->email->subject($subject);
+            $appointment['appointment'] = $web_order;
+            $htmlsmessage = $this->load->view('Email/weborder', $appointment, true);
+
+            if (REPORT_MODE == 1) {
+                $this->email->message($htmlsmessage);
+                $this->email->print_debugger();
+
+                $send = $this->email->send();
+                if ($send) {
+                    // redirect(site_url("booknow"));
+                } else {
+                    $error = $this->email->print_debugger(array('headers'));
+                    //    redirect(site_url("booknow"));
+                }
+            } else {
+                echo $htmlsmessage;
+            }
+        }
+        //end of email
+
+
+
         $this->load->view('Pages/booknow', $data);
     }
-    
-    
 
     public function appointment() {
         $this->load->view('Pages/appointment');

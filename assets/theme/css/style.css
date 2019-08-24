@@ -13574,7 +13574,7 @@ body:not(.no-transition) #wrapper,
 #primary-menu ul li > a {
     display: block;
     line-height: 22px;
-    padding: 39px 15px;
+    padding: 39px 9px;
     color: #000;
     font-weight: bold;
     font-size: 13px;
