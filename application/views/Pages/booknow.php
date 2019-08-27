@@ -141,6 +141,15 @@ $this->load->view('layout/header');
         border-radius: 32px;
         margin:20px 50px;
     }
+    .registrationblock{
+            padding: 10px;
+    background: #db0000;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    }
+    .registrationblock label {
+    color: white;
+}
 
 </style>
 
@@ -339,7 +348,7 @@ $this->load->view('layout/header');
                                                         <center>
                                                             <div class="form-row" style="width:150px; ">
                                                                 <span class="booking_lable" style="    float: left;
-                                                                      width: 100%;">Select people</span>
+                                                                      width: 100%;">Total no. of guest(s)</span>
                                                                 <div class="input-group input-group-sm">
                                                                     <span class="input-group-btn ">
                                                                         <button class="btn btn-primary btn-sm button_minus" type="button" ng-click="changePeople('minus')"><i class="fa fa-minus"></i></button>
@@ -383,10 +392,11 @@ $this->load->view('layout/header');
                                                         </div>
 
 
-
-                                                        <div class="custom-control custom-checkbox" style="    text-align: left;    margin-bottom: 20px;">
-                                                            <input type="checkbox" class="custom-control-input" name="registrationyes" checked="true" id="customCheck1" >
-                                                            <label class="custom-control-label" for="customCheck1" >Register to baanthai to get free stuff. </label>
+                                                        <div class="registrationblock">
+                                                            <div class="custom-control custom-checkbox" style="    text-align: left;   ">
+                                                                <input type="checkbox" class="custom-control-input" name="registrationyes" checked="true" id="customCheck1" >
+                                                                <label class="custom-control-label" for="customCheck1" >Register to baanthai to get free stuff. </label>
+                                                            </div>
                                                         </div>
 
 
@@ -413,7 +423,7 @@ $this->load->view('layout/header');
                                                         <center>
                                                             <div class="form-row" style="width:150px; ">
                                                                 <span class="booking_lable" style="    float: left;
-                                                                      width: 100%;">Select people</span>
+                                                                      width: 100%;">Total no. of guest(s)</span>
                                                                 <div class="input-group input-group-sm">
                                                                     <span class="input-group-btn ">
                                                                         <button class="btn btn-primary btn-sm button_minus" type="button" ng-click="changePeople('minus')"><i class="fa fa-minus"></i></button>

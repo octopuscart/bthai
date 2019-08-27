@@ -87,6 +87,14 @@ class Shop extends CI_Controller {
 
     //End of book now
     public function booknow() {
+
+        if ($this->session_user) {
+            $usertype = $this->user_id;
+        } else {
+            $usertype = 'guest';
+        }
+
+
         $data = array();
         $data['submitdata'] = "";
         if (isset($_POST['submit'])) {
@@ -101,10 +109,36 @@ class Shop extends CI_Controller {
                 'extra_remark' => $this->input->post('extra_remark'),
                 'select_table' => $this->input->post('select_table'),
                 'people' => $this->input->post('people'),
-                "usertype"=>$this->input->post('usertype'),
+                "usertype" => $this->input->post('usertype'),
                 'datetime' => date("Y-m-d H:i:s a"),
+                "order_source" => "Website",
+                'order_date' => date("Y-m-d"),
+                'status' => "0",
             );
             $this->db->insert('web_order', $web_order);
+            
+            $last_id = $this->db->insert_id();
+            $ordertype = $this->input->post('booking_type');
+            $orderlog = array(
+                    'log_type' => "Order Received",
+                    'log_datetime' => date('Y-m-d H:i:s'),
+                    'user_id' => "",
+                    'order_id' => $last_id,
+                    'log_detail' => "Order No. #$last_id  $ordertype From Website",
+                );
+                $this->db->insert('system_log', $orderlog);
+
+            $ordertype = $this->input->post('booking_type');
+//            $order_status_data = array(
+//                'c_date' => date('Y-m-d'),
+//                'c_time' => date('H:i:s'),
+//                'order_id' => $last_id,
+//                'status' => "Received",
+//                'user_id' => $usertype,
+//                'remark' => "Order $ordertype From Website",
+//            );
+//            $this->db->insert('user_order_status', $order_status_data);
+
             $data['submitdata'] = 'yes';
 
             $password = rand(10000, 99999);
