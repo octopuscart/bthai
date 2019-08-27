@@ -116,17 +116,18 @@ class Shop extends CI_Controller {
                 'status' => "0",
             );
             $this->db->insert('web_order', $web_order);
-            
+
             $last_id = $this->db->insert_id();
+            $oderid = $last_id;
             $ordertype = $this->input->post('booking_type');
             $orderlog = array(
-                    'log_type' => "Order Received",
-                    'log_datetime' => date('Y-m-d H:i:s'),
-                    'user_id' => "",
-                    'order_id' => $last_id,
-                    'log_detail' => "Order No. #$last_id  $ordertype From Website",
-                );
-                $this->db->insert('system_log', $orderlog);
+                'log_type' => "Order Received",
+                'log_datetime' => date('Y-m-d H:i:s'),
+                'user_id' => "",
+                'order_id' => $last_id,
+                'log_detail' => "Order No. #$last_id  $ordertype From Website",
+            );
+            $this->db->insert('system_log', $orderlog);
 
             $ordertype = $this->input->post('booking_type');
 //            $order_status_data = array(
@@ -174,41 +175,43 @@ class Shop extends CI_Controller {
                     $this->session->set_userdata('logged_in', $sess_data);
                 }
             }
-        }
+            //email sending
+            $emailsender = email_sender;
+            $sendername = email_sender_name;
+            $email_bcc = email_bcc;
 
+            if ($this->input->post('email')) {
+                $this->email->set_newline("\r\n");
+                $this->email->from(email_bcc, $sendername);
+                $this->email->to($this->input->post('email'));
+                $this->email->bcc(email_bcc);
+                $subjectt = "Thank you for your booking.";
+                $subject = $subjectt;
+                $this->email->subject($subject);
+                $appointment['appointment'] = $web_order;
+                $appointment['orderid'] = $oderid;
+                $htmlsmessage = $this->load->view('Email/weborder', $appointment, true);
 
+                if (REPORT_MODE == 1) {
+                    $this->email->message($htmlsmessage);
+                    $this->email->print_debugger();
 
-        //email sending
-        $emailsender = email_sender;
-        $sendername = email_sender_name;
-        $email_bcc = email_bcc;
-
-        if ($this->input->post('email')) {
-            $this->email->set_newline("\r\n");
-            $this->email->from(email_bcc, $sendername);
-            $this->email->to($this->input->post('email'));
-            $this->email->bcc(email_bcc);
-            $subjectt = "Thank you for your booking.";
-            $subject = $subjectt;
-            $this->email->subject($subject);
-            $appointment['appointment'] = $web_order;
-            $htmlsmessage = $this->load->view('Email/weborder', $appointment, true);
-
-            if (REPORT_MODE == 1) {
-                $this->email->message($htmlsmessage);
-                $this->email->print_debugger();
-
-                $send = $this->email->send();
-                if ($send) {
-                    // redirect(site_url("booknow"));
+                    $send = $this->email->send();
+                    if ($send) {
+                        // redirect(site_url("booknow"));
+                    } else {
+                        $error = $this->email->print_debugger(array('headers'));
+                        //    redirect(site_url("booknow"));
+                    }
                 } else {
-                    $error = $this->email->print_debugger(array('headers'));
-                    //    redirect(site_url("booknow"));
+                    echo $htmlsmessage;
                 }
-            } else {
-                echo $htmlsmessage;
             }
         }
+
+
+
+
         //end of email
 
 
@@ -223,6 +226,16 @@ class Shop extends CI_Controller {
     public function faqs() {
         $this->load->view('Pages/faqs');
     }
+    
+     public function cancleOrder($oderid) {
+        $this->db->where('id', $oderid);
+        $query = $this->db->get('web_order');
+        $odata = $query->row();
+        $data['order_data'] = $odata;
+        $this->load->view('Pages/cancleorder', $data);
+    }
+    
+    
 
     public function locallogin() {
 

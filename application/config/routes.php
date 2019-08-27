@@ -60,6 +60,8 @@ $route['appointment'] = 'Shop/appointment';
 $route['subscribe'] = 'Shop/subscribe';
 $route['lookbook'] = 'Shop/lookbook';
 $route['aboutus'] = 'Shop/aboutus';
+$route['cancleOrder/(:any)'] = 'Shop/cancleOrder/$1';
+
 
 $route['booknow'] = 'Shop/booknow';
 $route['loyalprogram'] = 'Shop/loyaltyProgram';
