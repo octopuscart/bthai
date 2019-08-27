@@ -247,7 +247,7 @@ class Shop extends CI_Controller {
                 "process_user" => "Guest"
             );
             $this->db->insert('user_order_status', $order_status_data);
-            redirect("cancleOrder/" . $oderid);
+             redirect("booknow");
         }
         $this->load->view('Pages/cancleorder', $data);
     }

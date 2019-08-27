@@ -395,7 +395,7 @@ $this->load->view('layout/header');
                                                         <div class="registrationblock">
                                                             <div class="custom-control custom-checkbox" style="    text-align: left;   ">
                                                                 <input type="checkbox" class="custom-control-input" name="registrationyes" checked="true" id="customCheck1" >
-                                                                <label class="custom-control-label" for="customCheck1" >Register to baan thai to get free stuff. </label>
+                                                                <label class="custom-control-label" for="customCheck1" >Register at baan thai to get free stuff(s). </label>
                                                             </div>
                                                         </div>
 
@@ -490,24 +490,17 @@ $this->load->view('layout/header');
     <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Thanks you for booking.</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h2>
-                        Thank You for giving us the opportunity to serve you.<br/> We will do our best to be sure you enjoy our services.
-                    </h2>
+                 <div class="modal-content" style="width: 600px;">
 
-                    <figure class="figure" style="    width: 100%;margin-top: 20px;
-                            text-align: center;">
-                        <img src="<?php echo base_url(); ?>assets/images/logo50.png" class="figure-img img-fluid rounded" alt="Baan Thai" style="height:40px">
-                        <figcaption class="figure-caption">The signature flavors of authentic Thai cuisine.</figcaption>
-                    </figure>
 
-                </div>
+                        <div class="modal-body" style="padding: 0px;">
+                            <button type="button" class="close" data-dismiss="modal" style="    position: absolute;
+                                    right: 8px;
+                                    color: #000;">&times;</button>
+
+                            <img src="<?php echo base_url(); ?>assets/images/popupthankyou.jpg">
+                        </div>
+                    </div><!-- /.modal-content -->
 
             </div>
         </div>
