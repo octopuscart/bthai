@@ -395,7 +395,7 @@ $this->load->view('layout/header');
                                                         <div class="registrationblock">
                                                             <div class="custom-control custom-checkbox" style="    text-align: left;   ">
                                                                 <input type="checkbox" class="custom-control-input" name="registrationyes" checked="true" id="customCheck1" >
-                                                                <label class="custom-control-label" for="customCheck1" >Register to baanthai to get free stuff. </label>
+                                                                <label class="custom-control-label" for="customCheck1" >Register to baan thai to get free stuff. </label>
                                                             </div>
                                                         </div>
 

@@ -119,8 +119,10 @@ $this->load->view('layout/header');
         </table>
         <center>
         <div class="btn-group">
-            <button class="btn btn-primary btn-lg button_minus" type="button" ><i class="fa fa-times"></i>  Cancel Booking </button>
-            <button class="btn btn-primary btn-lg button_plus" type="button" >Update Booking  <i class="fa fa-arrow-right"></i></button>
+            <form action="#" method="post">
+            <button class="btn btn-primary btn-lg button_minus" type="submit" name="cancle"><i class="fa fa-times"></i>  Cancel Booking </button>
+            <button class="btn btn-primary btn-lg button_plus" type="submit" name="update" >Update Booking  <i class="fa fa-arrow-right"></i></button>
+            </form>
         </div>
         </center>
     </div>

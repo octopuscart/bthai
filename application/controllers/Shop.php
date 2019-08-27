@@ -226,16 +226,31 @@ class Shop extends CI_Controller {
     public function faqs() {
         $this->load->view('Pages/faqs');
     }
-    
-     public function cancleOrder($oderid) {
+
+    public function cancleOrder($oderid) {
         $this->db->where('id', $oderid);
         $query = $this->db->get('web_order');
         $odata = $query->row();
         $data['order_data'] = $odata;
+        if (isset($_POST['update'])) {
+            redirect("booknow");
+        }
+        if (isset($_POST['cancle'])) {
+            $order_status_data = array(
+                'c_date' => date('Y-m-d'),
+                'c_time' => date('H:i:s'),
+                'order_id' => $oderid,
+                'status' => "Cancelled",
+                'user_id' => "",
+                'remark' => "Order has been cancelled",
+                "process_by" => "",
+                "process_user" => "Guest"
+            );
+            $this->db->insert('user_order_status', $order_status_data);
+            redirect("cancleOrder/" . $oderid);
+        }
         $this->load->view('Pages/cancleorder', $data);
     }
-    
-    
 
     public function locallogin() {
 
