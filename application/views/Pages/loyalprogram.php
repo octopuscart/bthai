@@ -386,50 +386,54 @@ $this->load->view('layout/header');
         </div>
 
 
-  <!-- Modal -->
-    <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Thanks you for joining.</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <!-- Modal -->
+        <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thanks you for joining.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>
+                            Thank you for joining our customer loyalty program.
+                        </h2>
+
+                        <figure class="figure" style="    width: 100%;margin-top: 20px;
+                                text-align: center;">
+                            <img src="<?php echo base_url(); ?>assets/images/logo50.png" class="figure-img img-fluid rounded" alt="Baan Thai" style="height:40px">
+                            <figcaption class="figure-caption">The signature flavors of authentic Thai cuisine.</figcaption>
+                        </figure>
+
+                    </div>
+
                 </div>
-                <div class="modal-body">
-                    <h2>
-                        Thank you for joining our customer loyalty program.
-                    </h2>
-
-                    <figure class="figure" style="    width: 100%;margin-top: 20px;
-                            text-align: center;">
-                        <img src="<?php echo base_url(); ?>assets/images/logo50.png" class="figure-img img-fluid rounded" alt="Baan Thai" style="height:40px">
-                        <figcaption class="figure-caption">The signature flavors of authentic Thai cuisine.</figcaption>
-                    </figure>
-
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <script>
+        <script>
 
 <?php
 if ($submitdata == 'yes') {
     ?>
-            $(function(){
-                let newmail = new Audio("<?php echo base_url(); ?>assets/sound/sendemail.mp3");
-            newmail.play();
-            $("#thanksModal").modal("show");
-            $('#thanksModal').on('hidden.bs.modal', function (e) {
-            window.location = "<?php echo site_url('loyalprogram'); ?>";
-            });
-            })
+                $(function () {
+                    let newmail = new Audio("<?php echo base_url(); ?>assets/sound/sendemail.mp3");
+                    newmail.play();
+                    $("#thanksModal").modal("show");
+                    $('#thanksModal').on('hidden.bs.modal', function (e) {
+                        window.location = "<?php echo site_url('loyalprogram'); ?>";
+                    });
+                    setTimeout(function () {
+                        $("#thanksModal").modal("hide");
+                        window.location = "<?php echo site_url('loyalprogram'); ?>";
+                    }, 10000)
+                })
     <?php
 }
 ?>
-       </script>
+        </script>
 
 
 
