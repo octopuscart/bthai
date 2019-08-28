@@ -142,14 +142,14 @@ $this->load->view('layout/header');
         margin:20px 50px;
     }
     .registrationblock{
-            padding: 10px;
-    background: #db0000;
-    margin-bottom: 20px;
-    border-radius: 20px;
+        padding: 10px;
+        background: #db0000;
+        margin-bottom: 20px;
+        border-radius: 20px;
     }
     .registrationblock label {
-    color: white;
-}
+        color: white;
+    }
 
 </style>
 
@@ -490,17 +490,17 @@ $this->load->view('layout/header');
     <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                 <div class="modal-content" style="width: 600px;">
+                <div class="modal-content" style="width: 600px;">
 
 
-                        <div class="modal-body" style="padding: 0px;">
-                            <button type="button" class="close" data-dismiss="modal" style="    position: absolute;
-                                    right: 8px;
-                                    color: #000;">&times;</button>
+                    <div class="modal-body" style="padding: 0px;">
+                        <button type="button" class="close" data-dismiss="modal" style="    position: absolute;
+                                right: 8px;
+                                color: #000;">&times;</button>
 
-                            <img src="<?php echo base_url(); ?>assets/images/popupthankyou.jpg">
-                        </div>
-                    </div><!-- /.modal-content -->
+                        <img src="<?php echo base_url(); ?>assets/images/popupthankyou.jpg">
+                    </div>
+                </div><!-- /.modal-content -->
 
             </div>
         </div>
@@ -512,12 +512,17 @@ $this->load->view('layout/header');
 if ($submitdata == 'yes') {
     ?>
             $(function () {
-            let newmail = new Audio("<?php echo base_url(); ?>assets/sound/sendemail.mp3");
-            newmail.play();
-            $("#thanksModal").modal("show");
-            $('#thanksModal').on('hidden.bs.modal', function (e) {
-            //            window.location = "<?php echo site_url('booknow'); ?>";
-            });
+                let newmail = new Audio("<?php echo base_url(); ?>assets/sound/sendemail.mp3");
+                newmail.play();
+                $("#thanksModal").modal("show");
+                $('#thanksModal').on('hidden.bs.modal', function (e) {
+                    window.location = "<?php echo site_url('booknow'); ?>";
+                });
+                
+                setTimeout(function(){
+                    $("#thanksModal").modal("hide");
+                     window.location = "<?php echo site_url('booknow'); ?>";
+                },10000)
             })
     <?php
 }
