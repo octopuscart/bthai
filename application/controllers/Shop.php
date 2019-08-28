@@ -247,7 +247,10 @@ class Shop extends CI_Controller {
                 "process_user" => "Guest"
             );
             $this->db->insert('user_order_status', $order_status_data);
-             redirect("booknow");
+            $emaillink = "http://baanadmin.costcokart.com/index.php/LocalApi/sendEmailOrderCancle/123";
+            file_get_contents($emaillink);
+           redirect("booknow");
+            
         }
         $this->load->view('Pages/cancleorder', $data);
     }
