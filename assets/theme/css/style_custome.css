@@ -1,12 +1,12 @@
 .footer_icon{
     font-size: 29px;
- 
+
     margin-right: 5px;
     float: left;
 }
 .footer_icon_container{
-        float: left;
- 
+    float: left;
+
 }
 
 .m_l_10{
@@ -34,7 +34,7 @@
 
 
 .timeing_open_ele{
-        width: 134px;
+    width: 134px;
     float: left;
 }
 @media only screen and (max-width: 768px) {
@@ -80,7 +80,7 @@
 }
 
 .lookbook_thumb{
-          border: 4px solid #fff;
+    border: 4px solid #fff;
     border-radius: 16px;
 }
 
@@ -96,20 +96,197 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000; 
+    background: #000; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #5a2d2d; 
+    background: #5a2d2d; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #000; 
+    background: #000; 
+}
+
+
+/*booking css*/
+
+.datepicker-inline {
+    /*width: 450px;*/
+}
+.datepicker table{
+    /*width:100%;*/
+}
+.datepicker td, .datepicker th {
+    padding: 5px;
+    color: black;
+}
+.datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #151515;
+}
+
+.btnbooking{
+    background: black!important;
+    border-color: black!important;
+    border-radius: 15px;
+}
+.button_plus{
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: black!important;
+    border-color: black!important;
+}
+
+.button_minus{
+    border-radius: 15px;
+    border-top-right-radius:  0;
+    border-bottom-right-radius: 0;
+    background: black!important;
+    border-color: black!important;
+}
+
+span.booking_lable {
+    font-size: 16px;
+    color: black;
+}
+
+.form-row{
+    /*        border-bottom: 1px solid #000;
+            padding-bottom: 15px;*/
+}
+
+.stimeslot .btn {
+
+    padding: 5px;
+    margin: 5px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 12px;
+    display: inline-block
+}
+
+.tabimage{
+    height: 40px;
+}
+
+.tabtitle{
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: black
+}
+.titleblockwix {
+    float: left;
+    width: 100%;
+    background: black;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 20px;
+}
+
+.tableimg{
+    height: 40px;
+}
+.tabletop {
+    padding: 5px;
+    background: #ececec;
+    display:  inline-block;
+    margin: 5px;
+    text-align: center;
+    border: 3px solid #ececec;
+}
+
+.tabletop:hover{
+    border: 3px solid black;
+}
+
+.tabletop.active {
+    border: 3px solid #000000;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #000000;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    border-color: #000000 #000000 #fff;
+}
+
+.userloginform{
+    padding: 10px 40px;
+    background: #f6f6f6;
+    border-radius: 32px;
+    margin:20px 50px;
+}
+.registrationblock{
+    padding: 10px;
+    background: #db0000;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.registrationblock label {
+    color: white;
+}
+
+
+
+.bookingpanel{
+    padding: 20px 155px;
+}
+
+.bookingfigure{
+    width: fit-content;
+}
+
+#wizard1 .nav-tabs .nav-link {
+
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    width: 33%;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .datepicker-inline {
+        width: 100%!important; 
+    }
+    .bookingpanel{
+        padding: 15px;
+    }
+    #wizard1 .nav-tabs .nav-link {
+
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        width: 33%;
+        padding: 10px 5px;
+    }
+
+    .datepicker table {
+        width: 100%!important;
+    }
+
+    .userloginform {
+        padding: 10px 15px;
+        background: #f6f6f6;
+        border-radius: 5px;
+        margin: 20px 0px;
+    }
+    .bookingpanel .btn-lg{
+            font-size: 15px;
+    line-height: 15px;
+    padding: 10px 5px;
+    }
 }

@@ -28,131 +28,6 @@ $this->load->view('layout/header');
 <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
-<style>
-    .datepicker-inline {
-        /*width: 450px;*/
-    }
-    .datepicker table{
-        /*width:100%;*/
-    }
-    .datepicker td, .datepicker th {
-        padding: 5px;
-        color: black;
-    }
-    .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
-        color: #ffffff;
-        background-color: #000000;
-        border-color: #151515;
-    }
-
-    .btnbooking{
-        background: black!important;
-        border-color: black!important;
-        border-radius: 15px;
-    }
-    .button_plus{
-        border-radius: 15px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        background: black!important;
-        border-color: black!important;
-    }
-
-    .button_minus{
-        border-radius: 15px;
-        border-top-right-radius:  0;
-        border-bottom-right-radius: 0;
-        background: black!important;
-        border-color: black!important;
-    }
-
-    span.booking_lable {
-        font-size: 16px;
-        color: black;
-    }
-
-    .form-row{
-        /*        border-bottom: 1px solid #000;
-                padding-bottom: 15px;*/
-    }
-
-    .stimeslot .btn {
-        float: left;
-        padding: 5px;
-        margin: 5px;
-        background: black;
-        color: white;
-        border-radius: 15px;
-        font-size: 12px;
-    }
-
-    .tabimage{
-        height: 40px;
-    }
-
-    .tabtitle{
-        margin-bottom: 0px;
-        font-size: 12px;
-        color: black
-    }
-    .titleblockwix {
-        float: left;
-        width: 100%;
-        background: black;
-        color: white;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin-top: 20px;
-    }
-
-    .tableimg{
-        height: 40px;
-    }
-    .tabletop {
-        padding: 5px;
-        background: #ececec;
-        display:  inline-block;
-        margin: 5px;
-        text-align: center;
-        border: 3px solid #ececec;
-    }
-
-    .tabletop:hover{
-        border: 3px solid black;
-    }
-
-    .tabletop.active {
-        border: 3px solid #000000;
-    }
-
-    .nav-tabs {
-        border-bottom: 1px solid #000000;
-    }
-    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-        color: #495057;
-        background-color: #fff;
-        border-color: #000000 #000000 #fff;
-    }
-
-    .userloginform{
-        padding: 10px 40px;
-        background: #f6f6f6;
-        border-radius: 32px;
-        margin:20px 50px;
-    }
-    .registrationblock{
-        padding: 10px;
-        background: #db0000;
-        margin-bottom: 20px;
-        border-radius: 20px;
-    }
-    .registrationblock label {
-        color: white;
-    }
-
-</style>
-
 <script>
 
 
@@ -165,15 +40,13 @@ $this->load->view('layout/header');
 
     <div class="content-wrap" style="padding: 0px;">
 
-        <div class="row clearfix common-height">
+        <div class="row1 clearfix">
 
-            <div class=" row center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/clientsbackground.jpg) center;; height: 708px;    width: 100%;    padding-top: 20px;">
+            <div class=" row1 " style="background: url(<?php echo base_url(); ?>assets/images/clientsbackground.jpg) center; padding-top: 20px;">
 
-                <div class="col-lg-2 center col-padding" >
-                    <div>&nbsp;</div>
-                </div>
 
-                <div class="col-lg-10 center " style="    width: 100%;">
+
+                <div class="col-md-12 center bookingpanel " >
                     <div>
                         <!-- begin row -->
                         <div class=" ">
@@ -194,8 +67,11 @@ $this->load->view('layout/header');
 
 
                                     <div class="inner">
-                                        <div class="image-holder1">
-                                            <div class="form-header" style="    position: absolute;top:20px;left: 8.5%;">
+                                        <div class="image-holder1 hideonmobile">
+                                            <div class="form-header" style="    position: absolute;
+                                                 /* width: 100%; */
+                                                 left: 240px;
+                                                 top: 44px;">
                                                 <h3 style="background: white">Book Now</h3>
                                             </div>
                                             <img src="<?php echo base_url(); ?>assets/wizard/images/form-wizard-1.jpg" alt="">
@@ -210,7 +86,7 @@ $this->load->view('layout/header');
                                                     <!--datetime-->
                                                     <a class="nav-item nav-link active" id="nav-datetime-tab"  href="#nav-datetime" role="tab" aria-controls="nav-datetime" aria-selected="true">
 
-                                                        <figure class="figure" style="width: 150px;">
+                                                        <figure class="figure bookingfigure" >
                                                             <img src="<?php echo base_url(); ?>assets/wizard/images/time.svg" class="figure-img img-fluid rounded tabimage" alt="...">
                                                             <figcaption class="figure-caption">
                                                                 <p class="tabtitle">{{bookingArray.select_date}}</p>
@@ -221,7 +97,7 @@ $this->load->view('layout/header');
                                                     </a>
 
                                                     <a class="nav-item nav-link" id="nav-table-tab"  href="#nav-table" role="tab" aria-controls="nav-table" aria-selected="false">
-                                                        <figure class="figure" style="width: 150px;">
+                                                        <figure class="figure bookingfigure" >
                                                             <img src="<?php echo base_url(); ?>assets/wizard/images/table.png" class="figure-img img-fluid rounded tabimage" alt="...">
                                                             <figcaption class="figure-caption">
                                                                 <p class="tabtitle">Table</p>
@@ -232,7 +108,7 @@ $this->load->view('layout/header');
 
 
                                                     <a class="nav-item nav-link" id="nav-profile-tab"  href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
-                                                        <figure class="figure" style="width: 150px;">
+                                                        <figure class="figure bookingfigure" >
                                                             <img src="<?php echo base_url(); ?>assets/wizard/images/profile.png" class="figure-img img-fluid rounded tabimage" alt="...">
                                                             <figcaption class="figure-caption">
                                                                 <p class="tabtitle">{{bookingArray.book_type}}</p>
@@ -264,7 +140,7 @@ $this->load->view('layout/header');
                                                         </div>
                                                         <div class="col-md-7">
                                                             <span class="titleblockwix">Select Time</span>
-                                                            <div class="stimeslot" style="    padding-left: 13px;">
+                                                            <div class="stimeslot" style="">
 
                                                                 <button class="btn btn-primary btn-inverse btn-sm" ng-repeat="time in initWizard.timeslot" ng-click="selectTime(time)">{{time}}</button>
                                                                 <div style="clear:both"></div>
@@ -490,7 +366,7 @@ $this->load->view('layout/header');
     <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-content" style="width: 600px;">
+                <div class="modal-content" >
 
 
                     <div class="modal-body" style="padding: 0px;">
@@ -512,17 +388,16 @@ $this->load->view('layout/header');
 if ($submitdata == 'yes') {
     ?>
             $(function () {
-                let newmail = new Audio("<?php echo base_url(); ?>assets/sound/sendemail.mp3");
-                newmail.play();
-                $("#thanksModal").modal("show");
-                $('#thanksModal').on('hidden.bs.modal', function (e) {
-                    window.location = "<?php echo site_url('booknow'); ?>";
-                });
-                
-                setTimeout(function(){
-                    $("#thanksModal").modal("hide");
-                     window.location = "<?php echo site_url('booknow'); ?>";
-                },10000)
+            let newmail = new Audio("<?php echo base_url(); ?>assets/sound/sendemail.mp3");
+            newmail.play();
+            $("#thanksModal").modal("show");
+            $('#thanksModal').on('hidden.bs.modal', function (e) {
+            window.location = "<?php echo site_url('booknow'); ?>";
+            });
+            setTimeout(function(){
+            $("#thanksModal").modal("hide");
+            window.location = "<?php echo site_url('booknow'); ?>";
+            }, 10000)
             })
     <?php
 }

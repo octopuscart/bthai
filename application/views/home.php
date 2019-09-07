@@ -555,7 +555,7 @@
             ?>
             <div class="modal fade" id="appointmentmodel" tabindex="-1" role="dialog">
                 <div class="modal-dialog " role="document">
-                    <div class="modal-content" style="width: 600px;">
+                    <div class="modal-content" >
 
 
                         <div class="modal-body" style="padding: 0px;">
