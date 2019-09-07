@@ -102,7 +102,7 @@ class Shop extends CI_Controller {
                     $this->email->message($htmlsmessage);
                     $this->email->print_debugger();
 
-                   echo  $send = $this->email->send();
+                    $send = $this->email->send();
                     if ($send) {
                         // redirect(site_url("booknow"));
                     } else {
