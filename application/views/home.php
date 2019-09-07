@@ -179,7 +179,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="<?php echo site_url('booknow');?>" class="button button-border button-white button-light button-large button-rounded tright nomargin"><span>Book Now</span><i class="icon-angle-right"></i></a></div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="<?php echo site_url('booknow');?>" class="button button-border button-white button-light button-large button-rounded tright nomargin hideonmobile"><span>Book Now</span><i class="icon-angle-right"></i></a></div>
 
                             </li>
 
