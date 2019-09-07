@@ -81,6 +81,38 @@ class Shop extends CI_Controller {
             );
             $this->db->insert('web_loyalprogram', $web_input);
             $data['submitdata'] = 'yes';
+
+            //email sending
+            $emailsender = email_sender;
+            $sendername = email_sender_name;
+            $email_bcc = email_bcc;
+
+            if ($this->input->post('email')) {
+                $this->email->set_newline("\r\n");
+                $this->email->from(email_bcc, $sendername);
+                $this->email->to($this->input->post('email'));
+                $this->email->bcc(email_bcc);
+                $subjectt = "Thanks you for joining";
+                $subject = $subjectt;
+                $this->email->subject($subject);
+                $appointment['appointment'] = $web_input;
+                $htmlsmessage = $this->load->view('Email/loyalprogrammail', $appointment, true);
+
+                if (REPORT_MODE == 1) {
+                    $this->email->message($htmlsmessage);
+                    $this->email->print_debugger();
+
+                   echo  $send = $this->email->send();
+                    if ($send) {
+                        // redirect(site_url("booknow"));
+                    } else {
+                        $error = $this->email->print_debugger(array('headers'));
+                        //    redirect(site_url("booknow"));
+                    }
+                } else {
+                    echo $htmlsmessage;
+                }
+            }
         }
         $this->load->view('Pages/loyalprogram', $data);
     }
@@ -249,8 +281,7 @@ class Shop extends CI_Controller {
             $this->db->insert('user_order_status', $order_status_data);
             $emaillink = "http://baanadmin.costcokart.com/index.php/LocalApi/sendEmailOrderCancle/$oderid";
             file_get_contents($emaillink);
-           redirect("booknow");
-            
+            redirect("booknow");
         }
         $this->load->view('Pages/cancleorder', $data);
     }
