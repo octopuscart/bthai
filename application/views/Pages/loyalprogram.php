@@ -423,11 +423,11 @@ if ($submitdata == 'yes') {
                     newmail.play();
                     $("#thanksModal").modal("show");
                     $('#thanksModal').on('hidden.bs.modal', function (e) {
-                      //  window.location = "<?php echo site_url('loyalprogram'); ?>";
+                        window.location = "<?php echo site_url('loyalprogram'); ?>";
                     });
                     setTimeout(function () {
                         $("#thanksModal").modal("hide");
-                      //  window.location = "<?php echo site_url('loyalprogram'); ?>";
+                       window.location = "<?php echo site_url('loyalprogram'); ?>";
                     }, 10000)
                 })
     <?php
