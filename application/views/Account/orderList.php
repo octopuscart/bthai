@@ -76,7 +76,7 @@ $this->load->view('layout/header');
                                             <tr>
                                                 <td colspan="2">
                                                     <h6>
-                                                        Order No. #<?php echo $value->id; ?>
+                                                        Booking No. #<?php echo $value->id; ?>
                                                         <span style="float: right;margin: 0px">
                                                             <i class="fa fa-calendar"></i><?php echo $value->select_date; ?>  <?php echo $value->select_time; ?>
                                                         </span>
