@@ -153,11 +153,11 @@ class Shop extends CI_Controller {
             $oderid = $last_id;
             $ordertype = $this->input->post('booking_type');
             $orderlog = array(
-                'log_type' => "Order Received",
+                'log_type' => "Reservation Received",
                 'log_datetime' => date('Y-m-d H:i:s'),
                 'user_id' => "",
                 'order_id' => $last_id,
-                'log_detail' => "Order No. #$last_id  $ordertype From Website",
+                'log_detail' => "Booking No. #$last_id  $ordertype From Website",
             );
             $this->db->insert('system_log', $orderlog);
 
@@ -274,7 +274,7 @@ class Shop extends CI_Controller {
                 'order_id' => $oderid,
                 'status' => "Cancelled",
                 'user_id' => "",
-                'remark' => "Order has been cancelled",
+                'remark' => "Reservation has been cancelled",
                 "process_by" => "",
                 "process_user" => "Guest"
             );
