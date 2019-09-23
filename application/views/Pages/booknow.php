@@ -74,7 +74,7 @@ $this->load->view('layout/header');
                                                  top: 44px;">
                                                 <h3 style="background: white">Book Now</h3>
                                             </div>
-                                            <img src="<?php echo base_url(); ?>assets/wizard/images/form-wizard-1.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/wizard/images/form-wizard-1.jpg" alt="" style="height: 600px;">
                                         </div>
                                         <div class="form-content" >
 
@@ -160,10 +160,9 @@ $this->load->view('layout/header');
                                                             <div class="">
                                                                 <span class="titleblockwix">Ground Floor</span>
                                                                 <div class="tableview">
-                                                                    <div class="tabletop {{bookingArray.select_table==table?'active':''}}" ng-repeat="table in initWizard.tables.zone_g" ng-click="selectTable(table)">
+                                                                    <div class="tabletop {{bookingArray.select_table=='Ground Floor'?'active':''}}"  ng-click="selectTable('Ground Floor')">
                                                                         <figure class="figure">
-                                                                            <img src="<?php echo base_url(); ?>assets/wizard/images/dining_table.png" class="figure-img img-fluid rounded tableimg" alt="...">
-                                                                            <figcaption class="figure-caption">{{table}}</figcaption>
+                                                                            <img src="<?php echo base_url(); ?>assets/book/groundfloot.jpg" class="figure-img img-fluid  tableimg" alt="...">
                                                                         </figure>
                                                                     </div>
                                                                     <div style="clear:both"></div>
@@ -173,14 +172,11 @@ $this->load->view('layout/header');
                                                         <div class="col-md-6">
                                                             <span class="titleblockwix">First Floor</span>
                                                             <div class="tableview">
-                                                                <center>
-                                                                    <div class="tabletop {{bookingArray.select_table==table?'active':''}}" ng-repeat="table in initWizard.tables.zone_f" ng-click="selectTable(table)">
-                                                                        <figure class="figure">
-                                                                            <img src="<?php echo base_url(); ?>assets/wizard/images/dining_table.png" class="figure-img img-fluid rounded tableimg" alt="...">
-                                                                            <figcaption class="figure-caption">{{table}}</figcaption>
-                                                                        </figure>
-                                                                    </div>
-                                                                </center>
+                                                                <div class="tabletop {{bookingArray.select_table=='First Floor'?'active':''}}"  ng-click="selectTable('First Floor')">
+                                                                    <figure class="figure">
+                                                                        <img src="<?php echo base_url(); ?>assets/book/firstfloor.jpg" class="figure-img img-fluid  tableimg" alt="...">
+                                                                    </figure>
+                                                                </div>
                                                                 <div style="clear:both"></div>
                                                             </div>
 

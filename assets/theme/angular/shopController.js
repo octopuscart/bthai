@@ -15,6 +15,11 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
         })
     }
     $scope.getLoginDetails2();
+    $timeout(function(){
+        jQuery(jQuery("i.ion-ios-create").parents("li")[0]).addClass("active")
+    },1000)
+    
+    
 
 
 

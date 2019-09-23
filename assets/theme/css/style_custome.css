@@ -195,13 +195,13 @@ span.booking_lable {
 }
 
 .tableimg{
-    height: 40px;
+   
 }
 .tabletop {
-    padding: 5px;
+ 
     background: #ececec;
     display:  inline-block;
-    margin: 5px;
+
     text-align: center;
     border: 3px solid #ececec;
 }
@@ -289,4 +289,25 @@ span.booking_lable {
     line-height: 15px;
     padding: 10px 5px;
     }
+}
+
+
+nav#primary-menu li.active {
+    background: red;
+    color: white;
+}
+
+nav#primary-menu li.active a{
+    background: red;
+    color: white;
+}
+
+.figure {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.figure-img {
+     margin-bottom: 0rem; 
+    line-height: 1;
 }

@@ -36,10 +36,10 @@ $paymentstatus = "";
 
 <section class="page_title_1 bg_light_2 t_align_c relative wrapper">
     <div class="container">
-        <h3 class="color_dark fw_light m_bottom_20 m_top_15 ">Order No. #<?php echo $order_data->order_no; ?></h3>
+        <h3 class="color_dark fw_light m_bottom_20 m_top_15 ">Booking No. #<?php echo $order_data->order_no; ?></h3>
         <!--breadcrumbs-->
 <!--        <ul class="hr_list d_inline_m breadcrumbs m_bottom_5">
-            <li>Order No. #<?php echo $order_data->order_no; ?></li>
+            <li>Booking No. #<?php echo $order_data->order_no; ?></li>
         </ul>-->
     </div>
 </section>
@@ -81,14 +81,14 @@ $paymentstatus = "";
                     <div class="col-md-4">
                         <article class="order_box color_dark">
                             <div class="list-group">
-                                <li class="list-group-item list-group-item-default active"><i class="icon-clipboard"></i>  Order Information </li>
+                                <li class="list-group-item list-group-item-default active"><i class="icon-clipboard"></i>  Reservation  Information </li>
 
                                 <li class="list-group-item list-group-item-default" style="height: 120px;"> <i class=" fa fa-chevron-circle-right"></i> <?php echo $order_data->order_no; ?><br/>
                                <i class="fa fa-calendar"></i> <?php echo $order_data->order_date; ?> <br/>
                                 <i class="fa fa-clock-o"></i>  <?php echo $order_data->order_time; ?> <br/>
                                 
                                     <button class="btn btn-default btn-xs" ng-click="sendOrderMail('<?php echo $order_data->order_no; ?>')">
-                                        Request Order Copy On Mail
+                                        Request Booking Copy On Mail
                                     </button>
                                 </li>
                             </div>
