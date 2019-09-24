@@ -29,7 +29,7 @@
                                                                         <img src="http://baanthai.costcokart.com/assets/images/ad.jpg" style="margin: 10px; height:400px;    background: white;width: auto;"/>
 
                                     <b>Dear <?php echo $appointment['first_name']; ?> <?php echo $appointment['last_name']; ?>,</b>
-                                    <p>Thank You for giving us the opportunity to serve you. We will do our best to be sure you enjoy our services. <br/>Your Booking/Enquiry details are as follow.</p>
+                                    <p>Thank You for giving us the opportunity to serve you. We will do our best to be sure you enjoy our services. <br/>Your Reservation details are as follow.</p>
 
                                     <table style="font-size: 12px;    font-size: 12px;
                                            text-align: center;
