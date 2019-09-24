@@ -23,7 +23,7 @@ $this->load->view('layout/header');
 <section id="content">
 
     <div class="content-wrap" style="    padding: 15px;">
-        <h3 class="text-center">Order no. #<?php echo $order_data->id; ?></h3>
+        <h3 class="text-center">Reservation no. #<?php echo $order_data->id; ?></h3>
         <table class="detailstable" align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="background: #fff">
             <tr>
                 <td style="font-size: 12px;width: 50%" >
@@ -56,7 +56,7 @@ $this->load->view('layout/header');
                     <table class="gn_table">
 
                         <tr>
-                            <th>Order No.</th>
+                            <th>Reservation No.</th>
                             <td>: <?php echo $order_data->id; ?> </td>
                         </tr>
                         <tr>
@@ -65,7 +65,7 @@ $this->load->view('layout/header');
                         </tr>
 
                         <tr>
-                            <th>Order Source</th>
+                            <th>Reservation Source</th>
                             <td>: <?php echo $order_data->order_source; ?>   </td>
                         </tr>
 
