@@ -75,7 +75,7 @@
                                         </tr>
                                     </table>
 
-                                    <p><a href="<?php echo site_url("cancleOrder/".$orderid);?>" target="_blank" style="color:white">Click here</a> cancel/update this order.</p>
+                                    <p><a href="<?php echo site_url("cancleOrder/".$orderid);?>" target="_blank" style="color:white">Click here</a> cancel/update this reservation.</p>
                                     <b>- Thanks</b> 
                                     <br/>
                                     <img src="<?php echo site_mail_logo; ?>" style="margin: 10px; height: 25px;    background: white;width: auto;"/>
