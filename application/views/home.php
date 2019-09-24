@@ -383,31 +383,7 @@
                     </div>
 
 
-                    <div class="row clearfix common-height" style="margin: 0;background: #009688;;
-                         padding: 20px;">
-
-
-                        <div class="col-lg-6 center col-padding" style="background-color: #fff; height: 150px;">
-                            <div>
-                              
-
-
-                                <p class="lead nobottommargin">
-                                    <img src="<?php echo base_url(); ?>assets/images/trpadvisorratting.JPG" style="margin-top: 20px;">
-                                </p>
-                                 <p class="lead nobottommargin">
-                                    There aren't enough food, service, value or atmosphere ratings for Baan Thai Restaurant, China yet. Be one of the first to write a review!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 center col-padding" style="height: 150px;">
-                            <div>
-                                <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 50px;">
-                                <a class="btn btn-success" href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
+                   
 
 
                     <div class="section  " style="margin: 0;background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;
