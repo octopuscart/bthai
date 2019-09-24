@@ -56,7 +56,7 @@ $this->load->view('layout/header');
                     <table class="gn_table">
 
                         <tr>
-                            <th>Reservation No.</th>
+                            <th>Booking No.</th>
                             <td>: <?php echo $order_data->id; ?> </td>
                         </tr>
                         <tr>
