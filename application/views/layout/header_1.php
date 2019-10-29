@@ -5,43 +5,43 @@ $menuitems = [
         "title" => "Home",
         "icon" => "ion-ios-home",
         "link" => site_url("/"),
-        "class_1" => ""
+        "activeclass" => ""
     ),
     array(
         "title" => "About Us",
         "icon" => "ion-ios-list-box",
         "link" => site_url("aboutus"),
-        "class_1" => ""
+        "activeclass" => ""
     ),
     array(
         "title" => "Menu",
         "icon" => "ion-ios-clipboard",
         "link" => site_url("our-menu"),
-        "class_1" => ""
+        "activeclass" => ""
     ),
     array(
         "title" => "Book Now",
         "icon" => "ion-ios-create",
         "link" => site_url('booknow'),
-        "class_1" => "highlight",
+        "activeclass" => "highlight",
     ),
     array(
         "title" => "Gallery",
         "icon" => "ion-ios-images",
         "link" => site_url("gallery"),
-        "class_1" => ""
+        "activeclass" => ""
     ),
     array(
         "title" => "Loyalty Program",
         "icon" => "ion-ios-contacts",
         "link" => site_url("loyalprogram"),
-        "class_1" => ""
+        "activeclass" => ""
     ),
     array(
         "title" => "Contact Us",
         "icon" => "ion-ios-map",
         "link" => site_url('contact-us'),
-        "class_1" => ""
+        "activeclass" => ""
     ),
 ];
 
