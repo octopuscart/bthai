@@ -158,7 +158,7 @@
                                 <?php
                                 foreach ($menuitems as $key => $value) {
                                     ?>
-                                    <li  ><a href="<?php echo $value['link']; ?>" class="<?php echo $value['activeclass']; ?>"><div ><i class="<?php echo $value['icon']; ?>"></i><?php echo $value['title']; ?></div></a></li>
+                                    <li  ><a href="<?php echo $value['link']; ?>" class="<?php echo $value['class']; ?>"><div ><i class="<?php echo $value['icon']; ?>"></i><?php echo $value['title']; ?></div></a></li>
                                 <?php } ?>
                                     <!--{{userLogin}}-->
                             </ul>
