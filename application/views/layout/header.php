@@ -154,9 +154,12 @@
                             <ul class="norightborder norightpadding norightmargin">
                                 <?php
                                 include('header_1.php');
+                                print_r($menuitems);
                                 ?>
+                                
                                 <?php
                                 foreach ($menuitems as $key => $value) {
+                                    
                                     ?>
                                     <li  ><a href="<?php echo $value['link']; ?>" class="<?php echo $value['activeclass']; ?>"><div ><i class="<?php echo $value['icon']; ?>"></i><?php echo $value['title']; ?></div></a></li>
                                 <?php } ?>
