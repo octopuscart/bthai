@@ -309,7 +309,24 @@
                 </div>
 
             </section>
+ <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
 
+            <!-- Modal -->
+            <div class="modal fade" id="deliverymodel" tabindex="-1" role="dialog" aria-labelledby="deliverymodel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content " >
+
+                        <div class="modal-body deliverymodal">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    position: absolute;
+                                    right: 5px;"><span aria-hidden="true">&times;</span></button>
+                                    <a href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
+                                <img src="<?php echo base_url(); ?>assets/images/delivery.jpg">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
             <!-- Header
