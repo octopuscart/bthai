@@ -71,6 +71,21 @@ $this->load->view('layout/header');
                             </ul>
                         </div>
                     </figure>
+                    
+                    
+                    <figure>
+                        <div class="book" data-book="book-4"></div>
+                        <div class="buttons"><a href="#">Look inside</a><a href="#">Details</a></div>
+                        <figcaption><h2 style="margin-top: 0px;">Cocktail <span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
+                        <div class="details">
+                            <ul>
+                                <li>cocktail<br/>
+                                   
+                              
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
 
                 </div>
             </div><!-- /main -->
@@ -168,6 +183,23 @@ $this->load->view('layout/header');
                         <img src="<?php echo base_url(); ?>assets/images/menu/drink/4.jpg"/>
                     </div>
                 </div>
+            </div><!-- /bb-bookblock -->
+            <nav>
+                <a href="#" class="bb-nav-prev">Previous</a>
+                <a href="#" class="bb-nav-next">Next</a>
+                <a href="#" class="bb-nav-close">Close</a>
+            </nav>
+        </div><!-- /bb-custom-wrapper -->
+        
+        <div class="bb-custom-wrapper" id="book-4">
+            <div class="bb-bookblock">
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/1.jpg"/>
+                    </div>
+                </div>
+                
             </div><!-- /bb-bookblock -->
             <nav>
                 <a href="#" class="bb-nav-prev">Previous</a>

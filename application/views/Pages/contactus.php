@@ -124,7 +124,7 @@ $this->load->view('layout/header');
                                     <input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control">
                                 </div>
 
-                                <div class="col_one_third col_last">
+                                <div class="col_one_third col_last" style="display: none">
                                     <label for="template-contactform-service">Services</label>
                                     <input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control">
 

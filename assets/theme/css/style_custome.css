@@ -256,8 +256,32 @@ span.booking_lable {
     width: 33%;
 }
 
+.deliveryButton {
+
+   z-index: 299;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    background-color: rgb(246, 17, 0);
+    font-size: 15px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 50%;
+    top: auto;
+    left: auto;
+    right: 30px;
+    bottom: 50px;
+    cursor: pointer;
+    /* border-radius: 2px; */
+    box-shadow: 0px 0px 36px -8px #000;
+}
 
 
+.deliverymodal{
+   padding: 0px;
+}
 
 @media only screen and (max-width: 768px) {
     .datepicker-inline {
@@ -310,4 +334,8 @@ nav#primary-menu li.active a{
 .figure-img {
      margin-bottom: 0rem; 
     line-height: 1;
+}
+
+li.activemenu {
+    background: #F5F5F5;
 }
