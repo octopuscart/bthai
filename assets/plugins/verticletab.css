@@ -1,0 +1,25 @@
+.tabimage {
+    height: 77px;
+}
+
+.tabtitle {
+    margin-bottom: 0px;
+    font-size: 23px;
+    color: black;
+    text-align: center;
+}
+
+.figure {
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 0px 29px;
+    text-align: center;
+    /* background: #000; */
+}
+
+.taginntercontaint{
+    border: 1px solid #000;
+    background: white;
+    border-top: none;
+    border-top-right-radius: 0px;
+}
