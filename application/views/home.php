@@ -124,7 +124,7 @@
                                      data-volume="mute"
                                      data-videowidth="100%"
                                      data-videoheight="100%"
-                                     data-videomp4="<?php echo base_url(); ?>assets/images/Video1.mp4"
+                                     data-videomp4="<?php echo base_url(); ?>assets/images/video2.mp4"
                                      data-videopreload="preload"
                                      data-videoloop="none"
                                      data-forceCover="1"
@@ -750,7 +750,7 @@
                             jsFileLocation: "<?php echo base_url(); ?>assets/theme/include/rs-plugin/js/",
                             dottedOverlay: "none",
                             sliderLayout: "fullscreen",
-                            delay: 16000,
+                            delay: 26000,
                             gridwidth: 1140,
                             gridheight: 720,
                             hideThumbs: 200,
