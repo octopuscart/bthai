@@ -631,7 +631,7 @@
                             jsFileLocation: "<?php echo base_url(); ?>assets/theme/include/rs-plugin/js/",
                             dottedOverlay: "none",
                             sliderLayout: "fullscreen",
-                            delay: 16000,
+                            delay: 26000,
                             gridwidth: 1140,
                             gridheight: 720,
                             hideThumbs: 200,
