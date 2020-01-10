@@ -1,6 +1,7 @@
 <?php
 $this->load->view('layout/header');
-$clients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25];
+$clients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21];
+$event = [22, 23, 24, 25];
 ?>
 
 
@@ -13,7 +14,11 @@ $clients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 2
 
 <script src="<?php echo base_url(); ?>assets/theme/GridGallery/js/modernizr.custom.js"></script>
 
-
+<style>
+    .lookbook_thumb img{
+        /*height: 200px;*/
+    }
+</style>
 
 <div class="section_offset" ng-controller="lookBookController" style="background: url(<?php echo base_url(); ?>assets/images/gallary.jpg) ;background-repeat: no-repeat;background-size: cover;    height: 600px;
      overflow-y: scroll;">
@@ -115,7 +120,7 @@ $clients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 2
                                         <?php
                                     }
                                     ?>
-
+                                    <div style="clear:both"></div>
 
                                 </ul>
                                 <div style="clear:both"></div>
@@ -148,19 +153,58 @@ $clients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 2
                         </div><!-- // grid-gallery -->
                     </div>
                     <div class="tab-pane fade" id="nav-snacks" role="tabpanel" aria-labelledby="nav-snacks-tab">
-
                     </div>
                     <div class="tab-pane fade" id="nav-drinks" role="tabpanel" aria-labelledby="nav-drinks-tab">
-
                     </div>
                     <div class="tab-pane fade" id="nav-cocktail" role="tabpanel" aria-labelledby="nav-cocktail-tab">
-
                     </div>
                     <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
-
                     </div>
                     <div class="tab-pane fade" id="nav-venue" role="tabpanel" aria-labelledby="nav-venue-tab">
+                        <div id="grid-gallery_event" class="grid-gallery taginntercontaint" >
+                            <section class="grid-wrap">
+                                <ul class="grid">
+                                    <li class="grid-sizer"></li><!-- for Masonry column width -->
+                                    <?php
+                                    foreach ($event as $key => $value) {
+                                        ?>
+                                        <li style="    padding: 0px;" >
+                                            <div class="panel panel-default" style="border:none;margin: 0px;">
+                                                <div class="panel-body" style="    padding: 5px;">
+                                                    <div class="thumbnail lookbook_thumb" >
+                                                        <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01" style=""/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <?php
+                                    }
+                                    ?>
+                                </ul>
+                                <div style="clear:both"></div>
+                            </section><!-- // grid-wrap -->
+                            <section class="slideshow" >
+                                <ul>
+                                    <?php
+                                    foreach ($clients as $key => $value) {
+                                        ?>
+                                        <li >
+                                        <center>
+                                            <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01"  style="height:500px;"/>
+                                        </center>
+                                        </li>
+                                        <?php
+                                    }
+                                    ?>
+                                </ul>
+                                <nav>
+                                    <span class="icon nav-prev"></span>
+                                    <span class="icon nav-next"></span>
+                                    <span class="icon nav-close"></span>
+                                </nav>
 
+                            </section><!-- // slideshow -->
+                        </div><!-- // grid-gallery -->
                     </div>
 
                 </div>
@@ -194,6 +238,8 @@ $clients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 2
         $scope.styleArray = {"title": "", "loading": 1, "style_list": [], "enquery_list": {}};
         $timeout(function () {
             $scope.girdgallary = new CBPGridGallery(document.getElementById('grid-gallery'));
+            $scope.girdgallary2 = new CBPGridGallery(document.getElementById('grid-gallery_event'));
+
         }, 500)
 
 
