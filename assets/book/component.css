@@ -125,6 +125,10 @@ body {
     letter-spacing: 1px;
     font-size: 0.65em;
     line-height: 1.5;
+    font-size: 1.65em;
+    line-height: 1.5;
+    background: red;
+    margin: 5px 0px;
 }
 
 .buttons a:first-child:not(:only-child) { border-right: 1px solid rgba(100, 105, 106, 0.3) }

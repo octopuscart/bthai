@@ -309,6 +309,9 @@
                 </div>
 
             </section>
+              <a class="btn btn-danger deliveryButton" href="<?php echo site_url('booknow'); ?>" style="    bottom: 150px;
+               background: #FF9800;line-height: 64px;"> Book Now</a>
+
             <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
 
             <!-- Modal -->
@@ -383,8 +386,7 @@
                         <div class="col-lg-6 center col-padding" style="background-color: #fff; height: 708px;">
                             <div>
                                 <div class="heading-block nobottomborder">
-                                    <span class="before-heading color">Welcome to Baan Thai</span>
-                                    <h3>Who We Are.</h3>
+                                    <h3>Welcome to Baan Thai</h3>
                                 </div>
 
 
