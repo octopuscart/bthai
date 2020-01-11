@@ -176,7 +176,7 @@
             </header><!-- #header end -->
             <div class="clear"></div>
             <a class="btn btn-danger deliveryButton" href="<?php echo site_url('booknow'); ?>" style="    bottom: 150px;
-               background: #FF9800;line-height: 64px;"> Book Now</a>
+               background: #ff0000;line-height: 64px;"> Book Now</a>
 
             <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
 

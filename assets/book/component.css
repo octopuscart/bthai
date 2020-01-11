@@ -125,7 +125,7 @@ body {
     letter-spacing: 1px;
     font-size: 0.65em;
     line-height: 1.5;
-    font-size: 1.65em;
+    font-size: 15px;
     line-height: 1.5;
     background: red;
     margin: 5px 0px;
@@ -231,7 +231,7 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 1px;
+    width: 3px;
     height: 100%;
     background: #fff;
     content: '';
