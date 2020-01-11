@@ -68,7 +68,7 @@ $route['loyalprogram'] = 'Shop/loyaltyProgram';
 
 $route['reviews'] = 'Shop/reviews';
 $route['faqs'] = 'Shop/faqs';
-$route['gallery'] = 'Shop/gallery';
+$route['gallery/(:any)'] = 'Shop/gallery/$1';
 $route['sitemap\.xml'] = "Sitemap/index";
 $route['sitemap'] = "Sitemap/general";
 $route['admin'] = "Shop/locallogin";

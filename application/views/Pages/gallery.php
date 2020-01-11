@@ -2,6 +2,15 @@
 $this->load->view('layout/header');
 $clients = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21];
 $event = [22, 23, 24, 25];
+
+$galleryArray = array(
+    "food" => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21],
+    "venue" => [22, 23, 24, 25],
+    "snacks" => [],
+    "drinks" => [],
+    "cocktail" => [],
+    "events" => [],
+);
 ?>
 
 
@@ -41,7 +50,7 @@ $event = [22, 23, 24, 25];
 
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-food-tab" data-toggle="tab" href="#nav-food" role="tab" aria-controls="nav-food" aria-selected="true">
+                        <a class="nav-item nav-link " id="nav-food-tab"  href="<?php echo site_url('gallery/food') ?>" role="tab" aria-controls="nav-food" aria-selected="true">
                             <figure class="figure bookingfigure" >
                                 <img src="<?php echo base_url(); ?>assets/icons/food.png" class="figure-img img-fluid rounded tabimage" alt="...">
                                 <figcaption class="figure-caption">
@@ -50,7 +59,7 @@ $event = [22, 23, 24, 25];
                                 </figcaption>
                             </figure>
                         </a>
-                        <a class="nav-item nav-link" id="nav-snacks-tab" data-toggle="tab" href="#nav-snacks" role="tab" aria-controls="nav-snacks" aria-selected="false">
+                        <a class="nav-item nav-link" id="nav-snacks-tab"  href="<?php echo site_url('gallery/snacks') ?>" role="tab" aria-controls="nav-snacks" aria-selected="false">
                             <figure class="figure bookingfigure" >
                                 <img src="<?php echo base_url(); ?>assets/icons/snacks.png" class="figure-img img-fluid rounded tabimage" alt="...">
                                 <figcaption class="figure-caption">
@@ -59,7 +68,7 @@ $event = [22, 23, 24, 25];
                                 </figcaption>
                             </figure>
                         </a>
-                        <a class="nav-item nav-link" id="nav-drinks-tab" data-toggle="tab" href="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                        <a class="nav-item nav-link" id="nav-drinks-tab"  href="<?php echo site_url('gallery/drinks') ?>" role="tab" aria-controls="nav-drinks" aria-selected="false">
                             <figure class="figure bookingfigure" >
                                 <img src="<?php echo base_url(); ?>assets/icons/drinks.png" class="figure-img img-fluid rounded tabimage" alt="...">
                                 <figcaption class="figure-caption">
@@ -68,7 +77,7 @@ $event = [22, 23, 24, 25];
                                 </figcaption>
                             </figure>
                         </a>
-                        <a class="nav-item nav-link" id="nav-cocktail-tab" data-toggle="tab" href="#nav-cocktail" role="tab" aria-controls="nav-cocktail" aria-selected="false">
+                        <a class="nav-item nav-link" id="nav-cocktail-tab"  href="<?php echo site_url('gallery/cocktail') ?>" role="tab" aria-controls="nav-cocktail" aria-selected="false">
                             <figure class="figure bookingfigure" >
                                 <img src="<?php echo base_url(); ?>assets/icons/cocktail.png" class="figure-img img-fluid rounded tabimage" alt="...">
                                 <figcaption class="figure-caption">
@@ -78,7 +87,7 @@ $event = [22, 23, 24, 25];
                             </figure>
                         </a>
 
-                        <a class="nav-item nav-link" id="nav-events-tab" data-toggle="tab" href="#nav-events" role="tab" aria-controls="nav-events" aria-selected="false">
+                        <a class="nav-item nav-link" id="nav-events-tab"  href="<?php echo site_url('gallery/events') ?>" role="tab" aria-controls="nav-events" aria-selected="false">
                             <figure class="figure bookingfigure" >
                                 <img src="<?php echo base_url(); ?>assets/icons/events.png" class="figure-img img-fluid rounded tabimage" alt="...">
                                 <figcaption class="figure-caption">
@@ -86,7 +95,7 @@ $event = [22, 23, 24, 25];
                                 </figcaption>
                             </figure>
                         </a>
-                        <a class="nav-item nav-link" id="nav-venue-tab" data-toggle="tab" href="#nav-venue" role="tab" aria-controls="nav-venue" aria-selected="false">
+                        <a class="nav-item nav-link" id="nav-venue-tab"  href="<?php echo site_url('gallery/venue') ?>" role="tab" aria-controls="nav-venue" aria-selected="false">
                             <figure class="figure bookingfigure" >
                                 <img src="<?php echo base_url(); ?>assets/icons/venue.png" class="figure-img img-fluid rounded tabimage" alt="...">
                                 <figcaption class="figure-caption">
@@ -97,115 +106,71 @@ $event = [22, 23, 24, 25];
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-food" role="tabpanel" aria-labelledby="nav-food-tab">
-                        <div id="grid-gallery" class="grid-gallery taginntercontaint" >
-                            <section class="grid-wrap">
-                                <ul class="grid">
-                                    <li class="grid-sizer"></li><!-- for Masonry column width -->
+                   
+                    <?php
+                    foreach ($galleryArray as $ckey => $cvalue) {
+                        ?>
+                        <div class="tab-pane fade" id="nav-<?php echo $ckey; ?>" role="tabpanel" aria-labelledby="nav-<?php echo $ckey; ?>-tab">
 
-                                    <?php
-                                    foreach ($clients as $key => $value) {
-                                        ?>
+                            <div id="grid-gallery" class="grid-gallery taginntercontaint" >
+                                <section class="grid-wrap">
+                                    <ul class="grid">
+                                        <li class="grid-sizer"></li><!-- for Masonry column width -->
 
-                                        <li style="    padding: 0px;" >
-                                            <div class="panel panel-default" style="border:none;margin: 0px;">
-                                                <div class="panel-body" style="    padding: 5px;">
-                                                    <div class="thumbnail lookbook_thumb" >
-                                                        <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01" style=""/>
+                                        <?php
+                                        foreach ($cvalue as $key => $value) {
+                                            ?>
 
+                                            <li style="    padding: 0px;" >
+                                                <div class="panel panel-default" style="border:none;margin: 0px;">
+                                                    <div class="panel-body" style="    padding: 5px;">
+                                                        <div class="thumbnail lookbook_thumb" >
+                                                            <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01" style=""/>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <?php
-                                    }
-                                    ?>
+                                            </li>
+                                            <?php
+                                        }
+                                        ?>
+                                        <div style="clear:both"></div>
+
+                                    </ul>
                                     <div style="clear:both"></div>
-
-                                </ul>
-                                <div style="clear:both"></div>
-                            </section><!-- // grid-wrap -->
-                            <section class="slideshow" >
-                                <ul>
-
-                                    <?php
-                                    foreach ($clients as $key => $value) {
-                                        ?>
-                                        <li >
-                                        <center>
-                                            <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01"  style="    height:500px;"/>
-                                        </center>
-                                        </li>
+                                </section><!-- // grid-wrap -->
+                                <section class="slideshow" >
+                                    <ul>
 
                                         <?php
-                                    }
-                                    ?>
+                                        foreach ($clients as $key => $value) {
+                                            ?>
+                                            <li >
+                                            <center>
+                                                <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01"  style="    height:500px;"/>
+                                            </center>
+                                            </li>
 
-                                </ul>
-
-                                <nav>
-                                    <span class="icon nav-prev"></span>
-                                    <span class="icon nav-next"></span>
-                                    <span class="icon nav-close"></span>
-                                </nav>
-
-                            </section><!-- // slideshow -->
-                        </div><!-- // grid-gallery -->
-                    </div>
-                    <div class="tab-pane fade" id="nav-snacks" role="tabpanel" aria-labelledby="nav-snacks-tab">
-                    </div>
-                    <div class="tab-pane fade" id="nav-drinks" role="tabpanel" aria-labelledby="nav-drinks-tab">
-                    </div>
-                    <div class="tab-pane fade" id="nav-cocktail" role="tabpanel" aria-labelledby="nav-cocktail-tab">
-                    </div>
-                    <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
-                    </div>
-                    <div class="tab-pane fade" id="nav-venue" role="tabpanel" aria-labelledby="nav-venue-tab">
-                        <div id="grid-gallery_event" class="grid-gallery taginntercontaint" >
-                            <section class="grid-wrap">
-                                <ul class="grid">
-                                    <li class="grid-sizer"></li><!-- for Masonry column width -->
-                                    <?php
-                                    foreach ($event as $key => $value) {
+                                            <?php
+                                        }
                                         ?>
-                                        <li style="    padding: 0px;" >
-                                            <div class="panel panel-default" style="border:none;margin: 0px;">
-                                                <div class="panel-body" style="    padding: 5px;">
-                                                    <div class="thumbnail lookbook_thumb" >
-                                                        <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01" style=""/>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <?php
-                                    }
-                                    ?>
-                                </ul>
-                                <div style="clear:both"></div>
-                            </section><!-- // grid-wrap -->
-                            <section class="slideshow" >
-                                <ul>
-                                    <?php
-                                    foreach ($clients as $key => $value) {
-                                        ?>
-                                        <li >
-                                        <center>
-                                            <img src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="img01"  style="height:500px;"/>
-                                        </center>
-                                        </li>
-                                        <?php
-                                    }
-                                    ?>
-                                </ul>
-                                <nav>
-                                    <span class="icon nav-prev"></span>
-                                    <span class="icon nav-next"></span>
-                                    <span class="icon nav-close"></span>
-                                </nav>
 
-                            </section><!-- // slideshow -->
-                        </div><!-- // grid-gallery -->
-                    </div>
+                                    </ul>
+
+                                    <nav>
+                                        <span class="icon nav-prev"></span>
+                                        <span class="icon nav-next"></span>
+                                        <span class="icon nav-close"></span>
+                                    </nav>
+
+                                </section><!-- // slideshow -->
+                            </div><!-- // grid-gallery -->
+
+                        </div>
+                        <?php
+                    }
+                    ?>
+
 
                 </div>
 
@@ -236,9 +201,14 @@ $event = [22, 23, 24, 25];
 
     App.controller('lookBookController', function ($scope, $http, $timeout, $interval) {
         $scope.styleArray = {"title": "", "loading": 1, "style_list": [], "enquery_list": {}};
+          $("#nav-<?php echo $gtype; ?>-tab").addClass("active");
+            $("#nav-<?php echo $gtype; ?>").addClass("active show");
         $timeout(function () {
+
+          
+
             $scope.girdgallary = new CBPGridGallery(document.getElementById('grid-gallery'));
-            $scope.girdgallary2 = new CBPGridGallery(document.getElementById('grid-gallery_event'));
+        
 
         }, 500)
 

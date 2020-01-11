@@ -360,8 +360,9 @@ class Shop extends CI_Controller {
         $this->load->view('Pages/lookbook_style');
     }
 
-    public function gallery() {
-        $this->load->view('Pages/gallery');
+    public function gallery($gallerytype = 'food') {
+        $data['gtype'] = $gallerytype;
+        $this->load->view('Pages/gallery', $data);
     }
 
     public function reviews() {

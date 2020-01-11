@@ -28,7 +28,7 @@ $menuitems = [
     array(
         "title" => "Gallery",
         "icon" => "ion-ios-images",
-        "link" => site_url("gallery"),
+        "link" => site_url("gallery/food"),
         "class" => ""
     ),
     array(

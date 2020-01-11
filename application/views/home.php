@@ -383,7 +383,7 @@
                         <div class="col-lg-6 center col-padding" style="background-color: #fff; height: 708px;">
                             <div>
                                 <div class="heading-block nobottomborder">
-                                    <span class="before-heading color">Because we are Reliable.</span>
+                                    <span class="before-heading color">Welcome to Baan Thai</span>
                                     <h3>Who We Are.</h3>
                                 </div>
 
@@ -468,7 +468,7 @@
                     <div class="section parallax dark nobottommargin" style="background-image: url('<?php echo base_url(); ?>assets/images/clientsbackground.jpg');background-size: cover;     margin: 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 
                         <div class="heading-block center">
-                            <h3>What Clients Say?</h3>
+                            <h3>What Customers Say?</h3>
                         </div>
 
                         <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="true">

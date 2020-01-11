@@ -34,7 +34,7 @@ $this->load->view('layout/header');
 
         <div class="section parallax dark nobottommargin" style="background-image: url('<?php echo base_url(); ?>assets/images/clientsbackground.jpg');background-size: cover;     margin: 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 
-            <h4 class="uppercase center">What <span>Clients</span> Say?</h4>
+            <h4 class="uppercase center">What <span>Customers</span> Say?</h4>
 
             <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="true">
                 <div class="flexslider">
