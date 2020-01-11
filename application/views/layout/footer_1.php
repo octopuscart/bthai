@@ -29,7 +29,7 @@
             ?>
             <div class="item">
                 <div class="thumbnail">
-                    <img src="<?php echo base_url(); ?>assets/promotion/1.png"/>
+                    <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $i;?>.jpg"/>
                 </div>
             </div>
             <?php
