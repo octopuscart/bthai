@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Click here to find out about our latest promotions, special offers, packages and discounts. You are also welcome to send us an enquiry about offers, group packages, private parties and tailor made menus.
+                       Find out about our latest promotions, special offers, packages and discounts. You are also welcome to send us an enquiry about offers, group packages, private parties and tailor made menus.
 
 For party package and party event or private catering write us at info@baanthai.hk
                     </p>
