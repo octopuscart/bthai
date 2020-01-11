@@ -129,6 +129,7 @@ body {
     line-height: 1.5;
     background: red;
     margin: 5px 0px;
+        margin: 5px 5px
 }
 
 .buttons a:first-child:not(:only-child) { border-right: 1px solid rgba(100, 105, 106, 0.3) }
