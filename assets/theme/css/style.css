@@ -103,11 +103,12 @@
 }
 
 @media (min-width: 992px) {
-	.container { max-width: 970px; }
+	.container {    max-width: 100%;
+    zoom: 90%;}
 }
 
 @media (min-width: 1200px) {
-	.container { max-width: 1170px; }
+	.container {     max-width: 100%; zoom: 100%;}
 }
 
 

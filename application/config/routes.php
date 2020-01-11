@@ -66,6 +66,8 @@ $route['cancleOrder/(:any)'] = 'Shop/cancleOrder/$1';
 $route['booknow'] = 'Shop/booknow';
 $route['loyalprogram'] = 'Shop/loyaltyProgram';
 
+$route['private_parties'] = 'Shop/private_parties';
+
 $route['reviews'] = 'Shop/reviews';
 $route['faqs'] = 'Shop/faqs';
 $route['gallery/(:any)'] = 'Shop/gallery/$1';

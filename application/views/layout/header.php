@@ -64,7 +64,7 @@
         <!--owl slider-->
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/owl/owl.carousel.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/owl/owl.theme.default.min.css">
-         <script src="<?php echo base_url(); ?>assets/owl/owl.carousel.js"></script>
+        <script src="<?php echo base_url(); ?>assets/owl/owl.carousel.js"></script>
 
         <!--owl--> 
 
@@ -116,10 +116,10 @@
         <div ng-controller="ShopController" id="wrapper" class="clearfix">
             <script>
                 var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
-                    //$interpolateProvider.startSymbol('{$');
-                    //$interpolateProvider.endSymbol('$}');
-                    $httpProvider.defaults.headers.common = {};
-                    $httpProvider.defaults.headers.post = {};
+                //$interpolateProvider.startSymbol('{$');
+                //$interpolateProvider.endSymbol('$}');
+                $httpProvider.defaults.headers.common = {};
+                $httpProvider.defaults.headers.post = {};
                 });
                 var baseurl = "<?php echo base_url(); ?>index.php/";
                 var imageurlg = "<?php echo imageserver; ?>";
@@ -137,8 +137,50 @@
 
 
             <header id="header">
+                <div class="container topmenuheader" style="">
+                    <span class="lefttopmenu">
+                        <a href="mailto:info@baanthai.hk" style="color:white"><i class="fa fa-envelope-o"></i> info@baanthai.hk</a> 
+                    </span>
+                    <span class="lefttopmenu">
+                        <a href="tel:info@baanthai.hk" style="color:white"><i class="fa fa-phone"></i> +(852) 2840 0041</a> 
+                    </span>
+                    <div class="topmenuright">
+                        <div class=" clearfix">
+                            <a href="#" class="si-facebook">
+                                <i class="icon-facebook"></i>
 
-                <div id="header-wrap">
+                            </a>
+
+                            <a href="#" class="si-twitter">
+                                <i class="icon-twitter"></i>
+
+                            </a>
+
+                            <a href="#" class="si-instagram">
+                                <i class="icon-instagram"></i>
+
+                            </a>
+
+                            <a href="#" class="si-pinterest">
+                                <i class="icon-pinterest"></i>
+
+                            </a>
+
+                            <a href="#" class="si-tripadvisor">
+                                <i class="fa fa-tripadvisor"></i>
+
+                            </a>
+
+
+                            <a href="#" class="si-linkedin">
+                                <i class="icon-linkedin"></i>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="header-wrap" >
 
                     <div class="container clearfix">
 

@@ -365,6 +365,10 @@ class Shop extends CI_Controller {
         $this->load->view('Pages/gallery', $data);
     }
 
+    public function private_parties(){
+          $this->load->view('Pages/private_parties');
+    }
+    
     public function reviews() {
         $this->load->view('Pages/reviews');
     }

@@ -31,6 +31,13 @@ $menuitems = [
         "link" => site_url("gallery/food"),
         "class" => ""
     ),
+    
+    array(
+        "title" => "Private Parties/Catering",
+        "icon" => "ion-ios-beer",
+        "link" => site_url("private_parties"),
+        "class" => ""
+    ),
     array(
         "title" => "Loyalty Program",
         "icon" => "ion-ios-contacts",

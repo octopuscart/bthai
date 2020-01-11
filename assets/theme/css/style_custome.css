@@ -195,10 +195,10 @@ span.booking_lable {
 }
 
 .tableimg{
-   
+
 }
 .tabletop {
- 
+
     background: #ececec;
     display:  inline-block;
 
@@ -258,7 +258,7 @@ span.booking_lable {
 
 .deliveryButton {
 
-   z-index: 299;
+    z-index: 299;
     position: fixed;
     width: 80px;
     height: 80px;
@@ -280,7 +280,7 @@ span.booking_lable {
 
 
 .deliverymodal{
-   padding: 0px;
+    padding: 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -309,9 +309,9 @@ span.booking_lable {
         margin: 20px 0px;
     }
     .bookingpanel .btn-lg{
-            font-size: 15px;
-    line-height: 15px;
-    padding: 10px 5px;
+        font-size: 15px;
+        line-height: 15px;
+        padding: 10px 5px;
     }
 }
 
@@ -332,7 +332,7 @@ nav#primary-menu li.active a{
 }
 
 .figure-img {
-     margin-bottom: 0rem; 
+    margin-bottom: 0rem; 
     line-height: 1;
 }
 
@@ -345,7 +345,7 @@ li.activemenu {
 }
 
 .footertripadvisor{
-        padding: 15px;
+    padding: 15px;
     background: #009688;
     border-radius: 15px;
     text-align: center;
@@ -353,7 +353,7 @@ li.activemenu {
 
 .footertripadvisor p{
     color:white;
-        margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 
@@ -363,4 +363,46 @@ li.activemenu {
 
 .footertripadvisor h2 small{
     font-size: 15px;
+}
+
+span.lefttopmenu {
+    float: left;
+    margin-right: 15px;
+}
+
+.topmenuheader{
+    background: white;    background: black;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+}
+
+.sticky-header .topmenuheader{
+       position: fixed!important;
+    top:0px;
+    z-index: 50;
+}
+
+.topmenuright {
+    float: right;
+}
+
+.topmenuright a {
+
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    background: white;
+    border-radius: 50%;
+}
+
+.topmenuright a i{
+    color:black;
+}
+
+#header.sticky-header #header-wrap {
+    position: fixed;
+    top: 26px;
 }

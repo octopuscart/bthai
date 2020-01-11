@@ -582,8 +582,8 @@
 
                         <div class="modal-body" style="padding: 0px;">
                             <button type="button" class="close" data-dismiss="modal" style="    position: absolute;
-                                    right: 8px;
-                                    color: #000;">&times;</button>
+                                    right: 8px;opacity: 1;
+                                    color: #fff;">&times;</button>
                                     <a href="<?php echo site_url('loyalprogram');?>">
                                 <img src="<?php echo base_url(); ?>assets/images/ad.jpg">
                             </a>
