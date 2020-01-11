@@ -61,8 +61,12 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/include/rs-plugin/css/navigation.css">
 
 
+        <!--owl slider-->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/owl/owl.theme.default.min.css">
+         <script src="<?php echo base_url(); ?>assets/owl/owl.carousel.js"></script>
 
-
+        <!--owl--> 
 
     </head>  
 
@@ -112,10 +116,10 @@
         <div ng-controller="ShopController" id="wrapper" class="clearfix">
             <script>
                 var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
-                //$interpolateProvider.startSymbol('{$');
-                //$interpolateProvider.endSymbol('$}');
-                $httpProvider.defaults.headers.common = {};
-                $httpProvider.defaults.headers.post = {};
+                    //$interpolateProvider.startSymbol('{$');
+                    //$interpolateProvider.endSymbol('$}');
+                    $httpProvider.defaults.headers.common = {};
+                    $httpProvider.defaults.headers.post = {};
                 });
                 var baseurl = "<?php echo base_url(); ?>index.php/";
                 var imageurlg = "<?php echo imageserver; ?>";
@@ -171,6 +175,8 @@
 
             </header><!-- #header end -->
             <div class="clear"></div>
+            <a class="btn btn-danger deliveryButton" href="<?php echo site_url('booknow'); ?>" style="    bottom: 150px;
+               background: #FF9800;line-height: 64px;"> Book Now</a>
 
             <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
 
@@ -182,7 +188,7 @@
                         <div class="modal-body deliverymodal">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    position: absolute;
                                     right: 5px;"><span aria-hidden="true">&times;</span></button>
-                                    <a href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
+                            <a href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
                                 <img src="<?php echo base_url(); ?>assets/images/delivery.jpg">
                             </a>
                         </div>

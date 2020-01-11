@@ -20,38 +20,32 @@
     }
 </style>
 
- <div class="row clearfix common-height" style="margin: 0;background: #009688;;
-                         padding: 20px;">
+<div class="row clearfix common-height" style="margin: 0;padding: 20px;">
 
 
-                        <div class="col-lg-6 center col-padding" style="background-color: #fff; height: 150px;">
-                            <div>
-                              
+    <div class="owl-carousel owl-theme">
+        <?php
+        for ($i = 1; $i <= 6; $i++) {
+            ?>
+        <div class="item">
+            <div class="thumbnail">
+                <img src="<?php echo base_url(); ?>assets/promotion/1.png"/>
+            </div>
+        </div>
+            <?php
+        }
+        ?>
 
+    </div>
 
-                                <p class="lead nobottommargin">
-                                    <img src="<?php echo base_url(); ?>assets/images/trpadvisorratting.JPG" style="margin-top: 20px;">
-                                </p>
-                                 <p class="lead nobottommargin">
-                                    There aren't enough food, service, value or atmosphere ratings for Baan Thai Restaurant, China yet. Be one of the first to write a review!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 center col-padding" style="height: 150px;">
-                            <div>
-                                <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 50px;">
-                                <a class="btn btn-success" href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
+</div>
 
 <!-- Footer
                 ============================================= -->
 <footer id="footer" class="dark" style="background: url('<?php echo base_url(); ?>assets/images/woodback.jpg') repeat fixed; ">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
-       frameborder="0" style="border: 0;;height: 300px;width: 100%" allowfullscreen>
-</iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
+            frameborder="0" style="border: 0;;height: 300px;width: 100%" allowfullscreen>
+    </iframe>
 
     <div class="container">
 
@@ -59,56 +53,18 @@
         ============================================= -->
         <div class="footer-widgets-wrap clearfix">
 
-            <div class="col_two_third">
+            <div class="col_one_third">
 
                 <div class="widget clearfix">
-
-                    <img src="<?php echo base_url(); ?>assets/images/logo50.png" alt="" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;    height: 41px;">
-
-                    <p style="    color: white;">Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine.</p>
-
-                    <div class="line" style="margin: 30px 0;"></div>
-
-                    <div class="col_half">
-                        <div class="widget clearfix" style="    margin-top: 30px;">
-
-                            <div class=" clearfix">
-                                <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
-                                    <i class="icon-facebook"></i>
-                                    <i class="icon-facebook"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
-                                    <i class="icon-twitter"></i>
-                                    <i class="icon-twitter"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-small si-borderless nobottommargin si-instagram">
-                                    <i class="icon-instagram"></i>
-                                    <i class="icon-instagram"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-small si-borderless nobottommargin si-pinterest">
-                                    <i class="icon-pinterest"></i>
-                                    <i class="icon-pinterest"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-small si-borderless nobottommargin si-tripadvisor">
-                                    <i class="fa fa-tripadvisor"></i>
-                                    <i class="fa fa-tripadvisor"></i>
-                                </a>
-
-
-                                <a href="#" class="social-icon si-small si-borderless nobottommargin si-linkedin">
-                                    <i class="icon-linkedin"></i>
-                                    <i class="icon-linkedin"></i>
-                                </a>
-                            </div>
-
-                        </div>
+                    <div class="footerfirtblock">
+                        <img src="<?php echo base_url(); ?>assets/images/logo50.png" alt="" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;    height: 41px;">
                     </div>
-
-                    <div class="col_half col_last">
+                    <div class="footerfirtblock">
+                        <p style="    color: white;    text-align: left;">Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine.</p>
+                    </div>
+                    <div class="line" style="margin: 0px 0;"></div>
+                    <div class="widget clearfix" style="margin-top: 20px;
+                         margin-bottom: 20px;">
                         <div class="widget subscribe-widget clearfix">
                             <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
                             <div class="widget-subscribe-form-result"></div>
@@ -125,12 +81,53 @@
                             </form>
                         </div>
                     </div>
+                    <div class="line" style="margin: 10px 0;"></div>
+                    <div class="widget clearfix" style="    margin-top: 30px;">
+
+                        <div class=" clearfix">
+                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-instagram">
+                                <i class="icon-instagram"></i>
+                                <i class="icon-instagram"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-pinterest">
+                                <i class="icon-pinterest"></i>
+                                <i class="icon-pinterest"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-tripadvisor">
+                                <i class="fa fa-tripadvisor"></i>
+                                <i class="fa fa-tripadvisor"></i>
+                            </a>
+
+
+                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+
 
                 </div>
 
             </div>
 
-            <div class="col_one_third col_last">
+            <div class="col_one_third">
                 <div class="widget clearfix">
                     <h4>Contact Us</h4>
 
@@ -162,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="spost clearfix">
+                        <div class="spost clearfix">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
@@ -202,6 +199,28 @@
 
             </div>
 
+            <div class="col_one_third col_last">
+                <div class="widget clearfix">
+                    <div class="footertripadvisor">
+                        <p>Ratings and reviews</p>
+                        <p>
+                            There aren't enough food, service, value or atmosphere ratings for Baan Thai Restaurant, China yet. Be one of the first to write a review!
+                        </p>
+                        <h2>4.5 <small>(25 reviews)</small></h2>
+                        <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 25px;">
+                        <a class="btn btn-success" href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div> 
+
+
+
+
+
+
         </div><!-- .footer-widgets-wrap end -->
 
     </div>
@@ -229,5 +248,26 @@
 </div><!-- #wrapper end 'images/footer-bg.jpg'-->
 
 
-
+<script>
+    $(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay:true,
+            nav: true,
+            dots:false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    })
+</script>
 

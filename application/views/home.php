@@ -309,7 +309,7 @@
                 </div>
 
             </section>
- <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
+            <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
 
             <!-- Modal -->
             <div class="modal fade" id="deliverymodel" tabindex="-1" role="dialog" aria-labelledby="deliverymodel">
@@ -319,7 +319,7 @@
                         <div class="modal-body deliverymodal">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    position: absolute;
                                     right: 5px;"><span aria-hidden="true">&times;</span></button>
-                                    <a href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
+                            <a href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
                                 <img src="<?php echo base_url(); ?>assets/images/delivery.jpg">
                             </a>
                         </div>
@@ -400,7 +400,7 @@
                     </div>
 
 
-                   
+
 
 
                     <div class="section  " style="margin: 0;background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;
@@ -582,8 +582,9 @@
                             <button type="button" class="close" data-dismiss="modal" style="    position: absolute;
                                     right: 8px;
                                     color: #000;">&times;</button>
-
-                            <img src="<?php echo base_url(); ?>assets/images/ad.jpg">
+                                    <a href="<?php echo site_url('loyalprogram');?>">
+                                <img src="<?php echo base_url(); ?>assets/images/ad.jpg">
+                            </a>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->

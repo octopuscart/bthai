@@ -49,13 +49,15 @@ $this->load->view('layout/header');
             </div>
             <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;; height: 708px;">
                 <div>
-                    <div class="heading-block nobottomborder" >
+                    <div class="heading-block nobottomborder" style="margin-bottom: 0px;">
                         <h3 style="color: white;">Loyalty Program</h3>
                     </div>
                     <div id="wizard1">
                         <!--<form action="#" class="" id="wizard">-->
                         <!-- SECTION 1 -->
-                        <h2></h2>
+                        <h2 style="font-size: 26px;
+                            color: white;
+                            margin: 15px 0px 20px;">Join Baanthai Spice Club </h2>
                         <section>
 
 
@@ -427,7 +429,7 @@ if ($submitdata == 'yes') {
                     });
                     setTimeout(function () {
                         $("#thanksModal").modal("hide");
-                       window.location = "<?php echo site_url('loyalprogram'); ?>";
+                        window.location = "<?php echo site_url('loyalprogram'); ?>";
                     }, 10000)
                 })
     <?php
