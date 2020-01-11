@@ -27,11 +27,11 @@
         <?php
         for ($i = 1; $i <= 6; $i++) {
             ?>
-        <div class="item">
-            <div class="thumbnail">
-                <img src="<?php echo base_url(); ?>assets/promotion/1.png"/>
+            <div class="item">
+                <div class="thumbnail">
+                    <img src="<?php echo base_url(); ?>assets/promotion/1.png"/>
+                </div>
             </div>
-        </div>
             <?php
         }
         ?>
@@ -39,6 +39,76 @@
     </div>
 
 </div>
+
+
+<div class="row clearfix common-height" style="margin: 0;padding: 20px;background: url('<?php echo base_url(); ?>assets/images/woodback.jpg') repeat fixed;">
+    <div class="col-md-4">
+        <div class="pomotion">
+            <h2>Not a Member Yet?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="promotionicon">
+                        <i class="fa fa-group"></i>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Baan Thai Restaurant has a great loyalty program called the 'Spice Club'. Our club members earn credits each time they visit and dine at Baan Thai and after a certain amount of visits, they earn a significant discount on their next bill. 
+
+                    </p>
+                    <a href="<?php echo site_url('loyalprogram'); ?>">Enroll Here</a>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="pomotion">
+            <h2>Subscribe</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="promotionicon">
+                        <i class="fa fa-envelope-open"></i>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Each month, Baan Thai Restaurant sends out a simple and brief email newsletter which up-dates our customers on news, promotions and offers. If you would like to receive the newsletter, simply click here and just provide us with you name, contact number and email address.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="pomotion">
+            <h2>Private Parties/Catering</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="promotionicon">
+                        <i class="ion-ios-beer"></i>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Click here to find out about our latest promotions, special offers, packages and discounts. You are also welcome to send us an enquiry about offers, group packages, private parties and tailor made menus.
+
+For party package and party event or private catering write us at info@baanthai.hk
+                    </p>
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 
 <!-- Footer
                 ============================================= -->
@@ -253,9 +323,9 @@
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
-            autoplay:true,
+            autoplay: true,
             nav: true,
-            dots:false,
+            dots: false,
             responsive: {
                 0: {
                     items: 1

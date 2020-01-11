@@ -378,7 +378,7 @@ span.lefttopmenu {
 }
 
 .sticky-header .topmenuheader{
-       position: fixed!important;
+    position: fixed!important;
     top:0px;
     z-index: 50;
 }
@@ -405,4 +405,53 @@ span.lefttopmenu {
 #header.sticky-header #header-wrap {
     position: fixed;
     top: 26px;
+}
+#header {
+    position: relative;
+    background-color: #FFF;
+    border-bottom: 1px solid #FFF; 
+}
+
+.pomotion {
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 14px; 
+    min-height: 220px;
+
+    text-align: center;
+}
+
+.pomotion p{
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.pomotion h2{
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.promotionicon {
+    font-size: 63px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.pomotion a{
+    background: #f00;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 42px;
+    display: block;
+    color: white;
 }
