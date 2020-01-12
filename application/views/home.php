@@ -44,8 +44,15 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/include/rs-plugin/css/navigation.css">
 
         <!-- Document Title
+        
         ============================================= -->
+  <!--owl slider-->
+     <script src="<?php echo base_url(); ?>assets/theme/js/jquery.js"></script>
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/owl/owl.theme.default.min.css">
+        <script src="<?php echo base_url(); ?>assets/owl/owl.carousel.js"></script>
 
+        <!--owl--> 
         <style>
 
             .revo-slider-emphasis-text {
@@ -897,6 +904,28 @@
             });
 
         </script><!-- END REVOLUTION SLIDER -->
+<script>
+    $(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    })
+</script>
 
     </body>
 </html>

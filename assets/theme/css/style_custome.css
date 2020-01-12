@@ -370,6 +370,11 @@ span.lefttopmenu {
     margin-right: 15px;
 }
 
+
+.container.topmenuheader {
+    height: 26px;
+        z-index: 2000;
+}
 .topmenuheader{
     background: white;    background: black;
     height: 26px;
@@ -380,7 +385,7 @@ span.lefttopmenu {
 .sticky-header .topmenuheader{
     position: fixed!important;
     top:0px;
-    z-index: 50;
+    z-index: 2000;
 }
 
 .topmenuright {
