@@ -29,7 +29,7 @@
             ?>
             <div class="item">
                 <div class="thumbnail">
-                    <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $i;?>.jpg"/>
+                    <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $i; ?>.jpg"/>
                 </div>
             </div>
             <?php
@@ -84,7 +84,7 @@
 
         </div>
     </div>
-    
+
     <div class="col-md-4">
         <div class="pomotion">
             <h2>Private Parties/Catering</h2>
@@ -96,11 +96,11 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                       Find out about our latest promotions, special offers, packages and discounts. You are also welcome to send us an enquiry about offers, group packages, private parties and tailor made menus.
+                        Find out about our latest promotions, special offers, packages and discounts. You are also welcome to send us an enquiry about offers, group packages, private parties and tailor made menus.
 
-For party package and party event or private catering write us at info@baanthai.hk
+                        For party package and party event or private catering write us at info@baanthai.hk
                     </p>
-                   
+
                 </div>
             </div>
 
@@ -185,7 +185,7 @@ For party package and party event or private catering write us at info@baanthai.
                                 <i class="icon-linkedin"></i>
                                 <i class="icon-linkedin"></i>
                             </a>
-                            
+
                             <a href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="social-icon si-small si-borderless nobottommargin si-yelp">
                                 <i class="icon-yelp"></i>
                                 <i class="icon-yelp"></i>
@@ -193,6 +193,7 @@ For party package and party event or private catering write us at info@baanthai.
                         </div>
 
                     </div>
+                   
 
 
 
@@ -265,6 +266,19 @@ For party package and party event or private catering write us at info@baanthai.
                             </div>
                         </div>
 
+                        
+                        <div class="spost clearfix">
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <h4>
+                                        <div class="footer_icon_container"> <i class="icon-group footer_icon" style="    font-size: 20px;"></i>  </div>
+                                        <div class="float_left m_top_5 m_l_10">
+                                            <a href="#" style="    font-size: 15px;">Join Our Team </a>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
 
 
 
@@ -284,6 +298,18 @@ For party package and party event or private catering write us at info@baanthai.
                         <h2>4.5 <small>(25 reviews)</small></h2>
                         <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 25px;">
                         <a class="btn btn-success" href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                     <div class="line" style="margin: 10px 0;"></div>
+                    <div class="widget clearfix" style="    margin-top: 30px;">
+
+                        <div class=" clearfix">
+                           
+                                <h4 style="margin: 0;"> We Accept</h4>
+
+                            <br/>
+                            <img src="<?php echo base_url(); ?>assets/images/payments.png" style="  height: 50px;">
+
+                        </div>
                     </div>
                 </div>
 
