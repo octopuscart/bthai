@@ -10,7 +10,7 @@ $this->load->view('layout/header');
 
         <div class="row clearfix common-height">
 
-            <div class="col-lg-6 center col-padding hideonmobile" style="background: url(<?php echo base_url(); ?>assets/images/party.jpg) center center / cover no-repeat; height: 708px;">
+            <div class="col-lg-6 center col-padding hideonmobile" style="background: url(<?php echo base_url(); ?>assets/images/party2.jpg) center center / cover no-repeat; height: 708px;">
                 <div>&nbsp;</div>
             </div>
             <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;; height: 708px;">

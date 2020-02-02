@@ -10,7 +10,7 @@ $this->load->view('layout/header');
 
         <div class="row clearfix common-height">
 
-            <div class="col-lg-6 center col-padding hideonmobile" style="background: url(<?php echo base_url(); ?>assets/images/food/26.jpg) center center / cover no-repeat; height: 708px;">
+            <div class="col-lg-6 center col-padding hideonmobile" style="background: url(<?php echo base_url(); ?>assets/images/nutcha.jpg) center center / cover no-repeat; height: 1000px;">
                 <div>&nbsp;</div>
             </div>
             <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;; height: 708px;">
@@ -32,7 +32,7 @@ $this->load->view('layout/header');
 
 
 
-        <div class="section parallax dark nobottommargin" style="background-image: url('<?php echo base_url(); ?>assets/images/clientsbackground.jpg');background-size: cover;     margin: 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+        <div class="section parallax dark nobottommargin" style="background-image: url('<?php echo base_url(); ?>assets/images/clientsbackground3.jpg');background-size: cover;     margin: 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 
             <h4 class="uppercase center">What <span>Customers</span> Say?</h4>
 

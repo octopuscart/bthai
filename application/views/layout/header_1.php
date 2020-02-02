@@ -23,7 +23,7 @@ $menuitems = [
         "title" => "Book Now",
         "icon" => "ion-ios-create",
         "link" => site_url('booknow'),
-        "class" => "highlight",
+        "class" => "",
     ),
     array(
         "title" => "Gallery",

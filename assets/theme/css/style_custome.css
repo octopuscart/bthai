@@ -317,13 +317,13 @@ span.booking_lable {
 
 
 nav#primary-menu li.active {
-    background: red;
-    color: white;
+/*    background: red;
+    color: white;*/
 }
 
 nav#primary-menu li.active a{
-    background: red;
-    color: white;
+/* background: red;
+    color: white;*/
 }
 
 .figure {
@@ -337,7 +337,7 @@ nav#primary-menu li.active a{
 }
 
 li.activemenu {
-    background: #F5F5F5;
+    /*background: #F5F5F5;*/
 }
 .footerfirtblock{
     display: flex;
@@ -380,6 +380,7 @@ span.lefttopmenu {
     height: 26px;
     line-height: 26px;
     position: relative;
+    font-size: 12px;
 }
 
 .sticky-header .topmenuheader{

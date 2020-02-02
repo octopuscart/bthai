@@ -136,7 +136,7 @@
 
 
 
-            <header id="header">
+            <header id="header" class="sticky-header">
                 <div class="container topmenuheader" style="">
                     <span class="lefttopmenu">
                         <a href="mailto:info@baanthai.hk" style="color:white"><i class="fa fa-envelope-o"></i> info@baanthai.hk</a> 
@@ -174,6 +174,10 @@
 
                             <a href="#" class="si-linkedin">
                                 <i class="icon-linkedin"></i>
+
+                            </a>
+                             <a href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="si-yelp">
+                                <i class="icon-yelp"></i>
 
                             </a>
                         </div>

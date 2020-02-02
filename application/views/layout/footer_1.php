@@ -185,6 +185,11 @@ For party package and party event or private catering write us at info@baanthai.
                                 <i class="icon-linkedin"></i>
                                 <i class="icon-linkedin"></i>
                             </a>
+                            
+                            <a href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="social-icon si-small si-borderless nobottommargin si-yelp">
+                                <i class="icon-yelp"></i>
+                                <i class="icon-yelp"></i>
+                            </a>
                         </div>
 
                     </div>

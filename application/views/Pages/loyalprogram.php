@@ -114,7 +114,8 @@ $this->load->view('layout/header');
                                                 </div>
                                                 <div class="form-holder">
                                                     <select name="language"  class="form-control" required="">
-                                                        <option value="English">English</option>
+                                                        <option value="Male">Male</option>
+                                                         <option value="Female">Female</option>
                                                     </select>
                                                 </div>
                                             </div>
