@@ -292,9 +292,7 @@
                 <div class="widget clearfix">
                     <div class="footertripadvisor">
                         <p>Ratings and reviews</p>
-                        <p>
-                            There aren't enough food, service, value or atmosphere ratings for Baan Thai Restaurant, China yet. Be one of the first to write a review!
-                        </p>
+                        
                         <h2>4.5 <small>(25 reviews)</small></h2>
                         <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 25px;">
                         <a class="btn btn-success" href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
@@ -307,7 +305,7 @@
                                 <h4 style="margin: 0;"> We Accept</h4>
 
                             <br/>
-                            <img src="<?php echo base_url(); ?>assets/images/payments.png" style="  height: 50px;">
+                            <img src="<?php echo base_url(); ?>assets/images/payments.png" style="  height: 100px;">
 
                         </div>
                     </div>
