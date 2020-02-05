@@ -305,7 +305,7 @@
                                 <h4 style="margin: 0;"> We Accept</h4>
 
                             <br/>
-                            <img src="<?php echo base_url(); ?>assets/images/payments.png" style="  height: 100px;">
+                            <img src="<?php echo base_url(); ?>assets/images/payments.png" style="  height: 70px;">
 
                         </div>
                     </div>
