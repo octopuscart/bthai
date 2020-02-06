@@ -48,12 +48,12 @@ $this->load->view('layout/header');
                                     Fried Fish Snacks</br> 
                                     Pandan Chicken<br/>
                                     Spicy Shrimp<br/>
-                              
+
                                 </li>
                             </ul>
                         </div>
                     </figure>
-                    
+
                     <figure>
                         <div class="book" data-book="book-3"></div>
                         <div class="buttons"><a href="#">Look inside</a><a href="#">Details</a></div>
@@ -66,22 +66,23 @@ $this->load->view('layout/header');
                                     Vodka<br/>
                                     Gin<br/>
                                     Tequila<br/>
-                              
+
                                 </li>
                             </ul>
                         </div>
                     </figure>
-                    
-                    
+
+
                     <figure>
                         <div class="book" data-book="book-4"></div>
                         <div class="buttons"><a href="#">Look inside</a><a href="#">Details</a></div>
-                        <figcaption><h2 style="margin-top: 0px;">Cocktail <span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
+                        <figcaption><h2 style="margin-top: 0px;">Cocktails<span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
                         <div class="details">
                             <ul>
-                                <li>cocktail<br/>
-                                   
-                              
+                                <li>Signature Cocktails<br/>
+                                    Mocktails
+
+
                                 </li>
                             </ul>
                         </div>
@@ -136,7 +137,7 @@ $this->load->view('layout/header');
             </nav>
         </div><!-- /bb-custom-wrapper -->
 
-         <div class="bb-custom-wrapper" id="book-2">
+        <div class="bb-custom-wrapper" id="book-2">
             <div class="bb-bookblock">
                 <div class="bb-item">
                     <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
@@ -144,7 +145,7 @@ $this->load->view('layout/header');
                         <img src="<?php echo base_url(); ?>assets/images/menu/snacks/1.jpg"/>
                     </div>
                 </div>
-                
+
 
 
             </div><!-- /bb-bookblock -->
@@ -154,35 +155,30 @@ $this->load->view('layout/header');
                 <a href="#" class="bb-nav-close">Close</a>
             </nav>
         </div><!-- /bb-custom-wrapper -->
-        
-        
-        
+
+
+
         <div class="bb-custom-wrapper" id="book-3">
             <div class="bb-bookblock">
                 <div class="bb-item">
                     <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/1.jpg"/>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink2/1.jpg"/>
                     </div>
                 </div>
                 <div class="bb-item">
                     <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/2.jpg"/>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink2/2.jpg"/>
                     </div>
                 </div>
                 <div class="bb-item">
                     <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/3.jpg"/>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink2/3.jpg"/>
                     </div>
                 </div>
-                <div class="bb-item">
-                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/4.jpg"/>
-                    </div>
-                </div>
             </div><!-- /bb-bookblock -->
             <nav>
                 <a href="#" class="bb-nav-prev">Previous</a>
@@ -190,16 +186,16 @@ $this->load->view('layout/header');
                 <a href="#" class="bb-nav-close">Close</a>
             </nav>
         </div><!-- /bb-custom-wrapper -->
-        
+
         <div class="bb-custom-wrapper" id="book-4">
             <div class="bb-bookblock">
                 <div class="bb-item">
                     <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/menu/drink/1.jpg"/>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/cocktailos/4.jpg"/>
                     </div>
                 </div>
-                
+
             </div><!-- /bb-bookblock -->
             <nav>
                 <a href="#" class="bb-nav-prev">Previous</a>
@@ -207,7 +203,7 @@ $this->load->view('layout/header');
                 <a href="#" class="bb-nav-close">Close</a>
             </nav>
         </div><!-- /bb-custom-wrapper -->
-        
+
 
         <script src="<?php echo base_url(); ?>assets/book/bookblock.min.js"></script>
         <script src="<?php echo base_url(); ?>assets/book/classie.js"></script>
