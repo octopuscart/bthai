@@ -288,7 +288,7 @@
             <div class="col_one_third col_last">
                 <div class="widget clearfix">
                     <a href="https://www.google.com/search?sxsrf=ACYBGNTfZqg3NiOqwcFBmovGQRHDsH2bzA%3A1580712554623&source=hp&ei=asI3Xu-ZI4L8wQPmx6OACA&q=baanthai.hk&oq=baanthai.hk&gs_l=psy-ab.3..38.611.4107..5317...0.0..0.260.932.3j3j1......0....1..gws-wiz.......35i39j0j0i10j0i10i30j0i30j0i13i30.HI9dhSgMR7w&ved=0ahUKEwjv9rqS5bTnAhUCfnAKHebjCIAQ4dUDCAY&uact=5#lrd=0x3404007b252e2283:0xbdca9c199b4fbb62,1" target="_blank" style="
-                       margin-top: -63px;
+                  
                        float: left;
                        width: 100%;
                        background: white;
