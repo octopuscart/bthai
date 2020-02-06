@@ -461,3 +461,31 @@ span.lefttopmenu {
     display: block;
     color: white;
 }
+
+.termandconditon p{
+    line-height: 20px!important;
+    font-size: 14px;
+    text-align: left;
+    color: black;
+}
+
+.headandtextblock p{
+      line-height: inherit!important;
+    font-size: 15px;;
+    text-align: left;
+    color: black;
+}
+
+.headandtextblock span{
+    font-size: 30px;
+    /* line-height: 47px; */
+    padding-top: 4px;
+    /* float: left; */
+    font-weight: 1000;
+}
+
+.verticaletext{
+        font-size: 20px;
+    font-style: italic;
+    font-family: initial;
+}

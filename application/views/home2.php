@@ -62,7 +62,75 @@ $this->load->view('layout/header');
             <div id="rev_slider_irestaurant" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.4">
                 <ul>    <!-- SLIDE  -->
 
+                    <li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"   data-saveperformance="off"  data-title="Welcome to Baan Thai!">
+                        <!-- MAIN IMAGE -->
+                        <img src="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"  alt="video_typing_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
 
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
+                             data-forcerewind="on"
+                             data-volume="mute"
+                             data-videowidth="100%"
+                             data-videoheight="100%"
+                             data-videomp4="<?php echo base_url(); ?>assets/images/video2.mp4"
+                             data-videopreload="preload"
+                             data-videoloop="none"
+                             data-forceCover="1"
+                             data-aspectratio="16:9"
+                             data-autoplay="true"
+                             data-autoplayonlyfirsttime="false"
+                             data-nextslideatend="true">
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
+                             data-x="center" data-hoffset="0"
+                             data-y="top" data-voffset="235"
+                             data-fontsize="['60','60','46','38']"
+                             data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+                             data-speed="800"
+                             data-start="1000"
+                             data-easing="easeOutQuad"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-elementdelay="0.01"
+                             data-endelementdelay="0.1"
+                             data-endspeed="1000"
+                             data-textAlign="center"
+                             data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;"><img src="<?php echo base_url(); ?>assets/images/logo50.png" style="height: 50px;" alt="Canvas Logo" /></div>
+
+                        <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                             data-x="center" data-hoffset="0"
+                             data-y="top" data-voffset="400"
+                             data-width="['650','650','480','360']"
+                             data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+                             data-speed="800"
+                             data-start="1200"
+                             data-easing="easeOutQuad"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-elementdelay="0.01"
+                             data-endelementdelay="0.1"
+                             data-endspeed="1000"
+                             data-textAlign="center"
+                             data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;font-size: 20px;">Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices.</div>
+
+                        <div class="tp-caption customin ltl tp-resizeme"
+                             data-x="center" data-hoffset="0"
+                             data-y="top" data-voffset="503"
+                             data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+                             data-speed="800"
+                             data-start="1350"
+                             data-easing="easeOutQuad"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-elementdelay="0.01"
+                             data-endelementdelay="0.1"
+                             data-endspeed="1000"
+                             data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="<?php echo site_url('booknow'); ?>" class="button button-border button-white button-light button-large button-rounded tright nomargin hideonmobile"><span>Book Now</span><i class="icon-angle-right"></i></a></div>
+
+                    </li>
                     <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/22.jpg" data-delay="12000"  data-saveperformance="off" data-title="Our rustic and stylish restaurant">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo base_url(); ?>assets/images/slider/22.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="right center">

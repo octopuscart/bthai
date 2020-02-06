@@ -42,10 +42,58 @@ $this->load->view('layout/header');
 
     <div class="content-wrap" style="padding: 0px;">
 
-        <div class="row clearfix common-height">
+        <div class="row clearfix ">
 
             <div class="col-lg-6 center col-padding hideonmobile" >
-                <img src="<?php echo base_url(); ?>assets/images/loyalprogram.png">
+                <h3 style="   ">
+                    * ENROLL NOW AND RECEIVE A DRINK ON THE HOUSE !	
+                </h3>
+                <img src="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg" style="height: 200px;"/>
+
+                <p>
+                    Welcome to the Baan Thai Spice Club
+                    Join our customer loyalty program and earn cash vouchers based on numbers of visits to Baan Thai ! 
+
+                </p>
+                <p class="verticaletext">
+                    In addition, we will send you up-dates on promotions, new member benefits and special offers available at Baan Thai. What’s more, celebrate your birthday at Baan Thai Restaurant and receive a free bottle of wine on us!
+                </p>
+                <div class="headandtextblock">
+                    <p>
+                        <span>Visits </span>
+                        Each time you visit Baan Thai, you earn loyalty ‘visits’. The more you visit and spend, the faster you earn vouchers!
+                    </p>
+                    <p>
+                        <span>Redeem Cash Vouchers </span>
+                        Your loyalty visits that you’ve accumulated can now be converted to cash vouchers for spending on food and beverages at Baan Thai.
+                    </p>
+                    <p>
+                        <span>Spend Cash Vouchers </span>
+                        Dine at Baan Thai and pay towards your bill by using your cash vouchers. It’s that simple!
+                    </p>
+                </div>
+
+
+                <div class="termandconditon">
+                    <h3>
+                        Terms and Conditions
+                    </h3>
+                    <p>-Spice Club Members agree to receive email notices regarding promotions, special offers, news and discount offers.</p>
+                    <p>-	Baan Thai’s Spice Club membership is renewable on an annual basis.</p>
+                    <p>-	Baan Thai Restaurant has the right to adjust its terms, conditions and redemption offers from time to time, or as it sees fit.</p>
+                    <p>-	Spice Club members must register their attendance at the restaurant via their wallet App, on their mobile phone with our QR code reader.</p>
+                    <p>-	Each time you visit and spend, upon your 10th visit, you will automatically receive  gift voucher - which would be equivalent to 10% of your total spending.</p>
+                    <p>After gift vouchers are redeemed, Spice Club members can continue to spend and accumulate points to receive more gift vouchers <small>(for as long as the loyalty program is operating)</small>.</p>
+                    <p>-	Gift vouchers are valid for 1 months after the issue date.</p>
+                    <p>-	The gift voucher redemption can only be applied to A La Carte menu items and not for set meals, package offers, already discounted items and happy hour drinks.</p>
+                    <p>-	Once gift vouchers are redeemed, the loyalty program will restart with new loyalty points (for as long as the loyalty program is operating).</p>
+                    <p>-	Gift vouchers may not be redeemed at Baan Thai Restaurant on special dates, private functions or dates when the restaurant is fully booked.</p>
+                    <p>-	Gift vouchers are not transferable to non Spice Club members.</p>
+                    <p>-	Gift vouchers are not transferable for cash.</p>
+                    <p>-	In case of any disputes, Baan Thai Restaurant will have the final say.</p>
+                </div>
+
+
             </div>
             <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;; height: 708px;">
                 <div>
@@ -115,7 +163,7 @@ $this->load->view('layout/header');
                                                 <div class="form-holder">
                                                     <select name="language"  class="form-control" required="">
                                                         <option value="Male">Male</option>
-                                                         <option value="Female">Female</option>
+                                                        <option value="Female">Female</option>
                                                     </select>
                                                 </div>
                                             </div>

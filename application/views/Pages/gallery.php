@@ -5,12 +5,12 @@ $event = [22, 23, 24, 25];
 
 $galleryArray = array(
     "food" => array(
-        "1. Pad Thai Lobster" => "1_Pad_Thai_Lobster.jpg", "7. Tom Yum Kung Soup" => "7_Tom_Yum_Kung_Soup.jpg",
-        "2. Green Curry Chicken" => "2_Green_Curry_Chicken.jpg", "8. Stir Fried Kee Mau Prawns" => "8_Stir_Fried_Kee_Mau_Prawns.jpg",
-        "3. Char-grilled Beef Salad" => "3_Char_Grilled_Beef_Salad.jpg", "9. Panang Pork Curry" => "9_Panang_Pork_Curry.jpg",
-        "4. Spicy Green Mango Salad" => "4_Spicy Green_Mango_Salad.jpg", "10. Baan Thai Basil Minced Chicken" => "10_Baan_Thai_Basil_Minced_Chicken.jpg",
-        "5. Pad Thai Chicken" => "5_Pad_Thai_Chicken.jpg", "11. Duck Breast Red Curry" => "11_Duck_Beast_Red_Curry.jpg",
-        "6. Giant King Prawns with Yellow Curry" => "6_Giant_King_Prawns_With_Yellow_curry.jpg", "12. Pork Laab" => "12_Pork_Laab.jpg",
+        "Pad Thai Lobster" => "1_Pad_Thai_Lobster.jpg", "Tom Yum Kung Soup" => "7_Tom_Yum_Kung_Soup.jpg",
+        "Green Curry Chicken" => "2_Green_Curry_Chicken.jpg", "Stir Fried Kee Mau Prawns" => "8_Stir_Fried_Kee_Mau_Prawns.jpg",
+        "Char-grilled Beef Salad" => "3_Char_Grilled_Beef_Salad.jpg", "Panang Pork Curry" => "9_Panang_Pork_Curry.jpg",
+        "Spicy Green Mango Salad" => "4_Spicy Green_Mango_Salad.jpg", "Baan Thai Basil Minced Chicken" => "10_Baan_Thai_Basil_Minced_Chicken.jpg",
+        "Pad Thai Chicken" => "5_Pad_Thai_Chicken.jpg", "Duck Breast Red Curry" => "11_Duck_Beast_Red_Curry.jpg",
+        "Giant King Prawns with Yellow Curry" => "6_Giant_King_Prawns_With_Yellow_curry.jpg", "Pork Laab" => "12_Pork_Laab.jpg",
     ),
     "venue" => array(
         "1" => "20180602_095632.jpg",
@@ -24,17 +24,21 @@ $galleryArray = array(
         "9" => "20191010_165215.jpg"
     ),
     "snacks" => array(
-        "1. Chicken Satay" => "1_Chicken_Satays.jpg", "5. Fried Chicken Wings" => "5_Crispy_Fried_Chicken_Wings.jpg",
-        "2. Garlic Bread" => "2_Garlic_Bread.jpg", "6. Fresh Prawn Rice Paper Rolls" => "6_Fresh_Prawn_Rice_Paper_Rolls.jpg",
-        "3. Pork Laab Mini Burgers" => "3_Pork_Laab_Mini_Burger.jpg", "7. Potato Wedges" => "7_Potato_Wedges.jpg",
-        "4. Crispy Fried Vegetarian Spring Rolls" => "4_Crispy_Fried_Vegetarian_Spring_Rolls.jpg", "8. Spicy Fried Shrimp" => "8_Spicy_Shrimp.jpg",
+        "Chicken Satay" => "1_Chicken_Satays.jpg",
+        "Fried Chicken Wings" => "5_Crispy_Fried_Chicken_Wings.jpg",
+        "Garlic Bread" => "2_Garlic_Bread.jpg", 
+        "Fresh Prawn Rice Paper Rolls" => "6_Fresh_Prawn_Rice_Paper_Rolls.jpg",
+        "Pork Laab Mini Burgers" => "3_Pork_Laab_Mini_Burger.jpg",
+        "Potato Wedges" => "7_Potato_Wedges.jpg",
+        "Crispy Fried Vegetarian Spring Rolls" => "4_Crispy_Fried_Vegetarian_Spring_Rolls.jpg",
+        "Spicy Fried Shrimp" => "8_Spicy_Shrimp.jpg",
     ),
     "drinks" => array(
-        "1. Asahi Super Dry Draft Beer" => "1_Asahi_Super_Dry_Draft_Beer.jpg",
-        "2. Brooklyn Draft Larger" => "2_Brooklyn_Draft_Larger.jpg",
-        "3. Goose Island IPA Draft" => "3_Goose_Island_IPA_Draft.jpg",
-        "4. Pressman's Bottled Cider" => "4_Pressmans_Bottled_Cider.jpg",
-        "5. Giusti Rosalia Prosecco" => "5_Giusti_Rosalia_Prosecco.jpg",
+        "Asahi Super Dry Draft Beer" => "1_Asahi_Super_Dry_Draft_Beer.jpg",
+        "Brooklyn Draft Larger" => "2_Brooklyn_Draft_Larger.jpg",
+        "Goose Island IPA Draft" => "3_Goose_Island_IPA_Draft.jpg",
+        "Pressman's Bottled Cider" => "4_Pressmans_Bottled_Cider.jpg",
+        "Giusti Rosalia Prosecco" => "5_Giusti_Rosalia_Prosecco.jpg",
     ),
     "cocktail" => array(
         "1" => "IMG_8925.jpg",
