@@ -105,7 +105,7 @@ $this->load->view('layout/header');
                         <!-- SECTION 1 -->
                         <h2 style="font-size: 26px;
                             color: white;
-                            margin: 15px 0px 20px;">Join Baan thai Spice Club </h2>
+                            margin: 15px 0px 20px;">Join Baan Thai Spice Club </h2>
                         <section>
 
 
