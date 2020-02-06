@@ -193,7 +193,7 @@
                         </div>
 
                     </div>
-                   
+
 
 
 
@@ -266,7 +266,7 @@
                             </div>
                         </div>
 
-                        
+
                         <div class="spost clearfix">
                             <div class="entry-c">
                                 <div class="entry-title">
@@ -290,19 +290,32 @@
 
             <div class="col_one_third col_last">
                 <div class="widget clearfix">
+                    <a href="https://www.google.com/search?sxsrf=ACYBGNTfZqg3NiOqwcFBmovGQRHDsH2bzA%3A1580712554623&source=hp&ei=asI3Xu-ZI4L8wQPmx6OACA&q=baanthai.hk&oq=baanthai.hk&gs_l=psy-ab.3..38.611.4107..5317...0.0..0.260.932.3j3j1......0....1..gws-wiz.......35i39j0j0i10j0i10i30j0i30j0i13i30.HI9dhSgMR7w&ved=0ahUKEwjv9rqS5bTnAhUCfnAKHebjCIAQ4dUDCAY&uact=5#lrd=0x3404007b252e2283:0xbdca9c199b4fbb62,1" target="_blank" style="
+                       margin-top: -63px;
+                       float: left;
+                       width: 100%;
+                       background: white;
+                       text-align: center;
+                       border-radius: 21px;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/google-review-link.jpg" style="    margin-top: 0px;    height: 80px;">
+
+                    </a>
+                </div>
+                <div class="widget clearfix" style="margin-top: 40px;">
                     <div class="footertripadvisor">
                         <p>Ratings and reviews</p>
-                        
-                        <h2>4.5 <small>(25 reviews)</small></h2>
-                        <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 25px;">
+
+                        <h2 style="margin: 0;font-size: 25px;">4.5 <small>(25 reviews)</small></h2>
+                        <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 0px;height: 50px;">
                         <a class="btn btn-success" href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
                     </div>
-                     <div class="line" style="margin: 10px 0;"></div>
-                    <div class="widget clearfix" style="    margin-top: 30px;">
+                    <div class="line" style="margin: 10px 0;"></div>
+                    <div class="widget clearfix" style="    margin-top: 0px;">
 
                         <div class=" clearfix">
-                           
-                                <h4 style="margin: 0;"> We Accept</h4>
+
+                            <h4 style="margin: 0;"> We Accept</h4>
 
                             <br/>
                             <img src="<?php echo base_url(); ?>assets/images/payments.png" style="  height: 70px;">
