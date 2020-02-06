@@ -161,10 +161,7 @@
 
                             </a>
 
-                            <a href="#" class="si-pinterest">
-                                <i class="icon-pinterest"></i>
-
-                            </a>
+                        
 
                             <a href="#" class="si-tripadvisor">
                                 <i class="fa fa-tripadvisor"></i>

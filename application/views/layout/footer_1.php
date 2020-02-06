@@ -170,10 +170,7 @@
                                 <i class="icon-instagram"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-pinterest">
-                                <i class="icon-pinterest"></i>
-                                <i class="icon-pinterest"></i>
-                            </a>
+                        
 
                             <a href="#" class="social-icon si-small si-borderless nobottommargin si-tripadvisor">
                                 <i class="fa fa-tripadvisor"></i>
