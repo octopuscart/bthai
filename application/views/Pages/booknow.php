@@ -42,7 +42,7 @@ $this->load->view('layout/header');
 
         <div class="row1 clearfix">
 
-            <div class=" row1 " style="background: url(<?php echo base_url(); ?>assets/images/clientsbackground.jpg) center; padding-top: 20px;">
+            <div class=" row1 " style="background: url(<?php echo base_url(); ?>assets/images/clientsbackground3.jpg) center; padding-top: 20px;">
 
 
 
