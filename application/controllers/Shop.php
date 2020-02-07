@@ -404,7 +404,7 @@ class Shop extends CI_Controller {
                         redirect(site_url("/"));
                     }
                 } else {
-                     $htmlsmessage;
+                    echo $htmlsmessage;
                 }
             }
         }
