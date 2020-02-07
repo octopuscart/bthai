@@ -20,8 +20,8 @@
     }
     .subscribmodel{
         background: #C6FFDD;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
 </style>
@@ -59,22 +59,42 @@ background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+
 </div>
 
 
+<div class="modal fade" id="promotionModel" tabindex="-1" role="dialog" aria-labelledby="Subscribe" aria-hidden="true">
+    <div class="modal-dialog modal-lg"  role="document">
+        <div class="modal-content subscribmodel">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Baan Thai Valentine's Menu 2020</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <img src="<?php echo base_url(); ?>assets/promotion/33.jpg">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 
 <div class="row clearfix common-height" style="margin: 0;padding: 20px;">
 
 
     <div class="owl-carousel owl-theme">
         <?php
-        for ($i = 1; $i <= 6; $i++) {
+        $promotion = [1, 2, 33];
+        foreach ($promotion as $key => $value) {
             ?>
-            <div class="item">
+            <div class="item" data-toggle="modal" data-target="#promotionModel">
                 <div class="thumbnail">
-                    <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $i; ?>.jpg"/>
+                    <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $value; ?>.jpg"/>
                 </div>
             </div>
-            <?php
-        }
-        ?>
+    <?php
+}
+?>
 
     </div>
 
@@ -119,7 +139,7 @@ background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+
                     <p>
                         Each month, Baan Thai Restaurant sends out a simple and brief email newsletter which up-dates our customers on news, promotions and offers. If you would like to receive the newsletter, simply click here and just provide us with you name, contact number and email address.
                     </p>
-                   
+
                     <a href="#"  data-toggle="modal" data-target="#subscribe">Click Here</a>
 
                 </div>
@@ -182,7 +202,7 @@ background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+
                             <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
                             <div class="widget-subscribe-form-result"></div>
                             <button class="btn btn-success" type="button" data-toggle="modal" data-target="#subscribe">Click Here To Subscribe</button>
-                                    
+
                         </div>
                     </div>
                     <div class="line" style="margin: 10px 0;"></div>
