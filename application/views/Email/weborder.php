@@ -25,8 +25,11 @@
                     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;color:white">
                         <tbody>
                             <tr>
-                                <td class="">
-                                    <img src="https://baanthaihk.com/assets/images/ad.jpg" style=" padding: 40px;   background: none;width: 100%;"/>
+                                <td class="" style="text-align: center;">
+                                    <img src="https://baanthaihk.com/assets/images/ad.jpg" style="background: none;
+    width: auto;
+    height: 250px;
+    margin-bottom: 30px"/>
 
                                 </td>
                             </tr>
