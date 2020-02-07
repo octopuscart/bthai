@@ -87,7 +87,7 @@
         $promotion = [1, 2, 33];
         foreach ($promotion as $key => $value) {
             ?>
-            <div class="item" data-toggle="modal" data-target="#promotionModel">
+            <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;">
                 <div class="thumbnail">
                     <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $value; ?>.jpg"/>
                 </div>
