@@ -26,7 +26,7 @@
                         <tbody>
                             <tr>
                                 <td style="    text-align: center;font-size: 18px;">
-                                                                        <img src="https://baanthaihk.com/assets/images/ad.jpg" style="margin: 10px; height:400px;    background: white;width: auto;"/>
+                                                                        <img src="https://baanthaihk.com/assets/images/ad.jpg" style="margin: 10px; height:300px;    background: white;width: auto;"/>
 
                                     <b>Dear <?php echo $appointment['first_name']; ?> <?php echo $appointment['last_name']; ?>,</b>
                                     <p>Thank you for your reservation which is now a confirmed booking as follows:</p>
