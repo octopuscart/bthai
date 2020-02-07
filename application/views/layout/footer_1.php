@@ -18,11 +18,17 @@
     .dark .spost .entry-title h4 a, .dark .mpost .entry-title h4 a {
         color: #fff;
     }
+    .subscribmodel{
+        background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
 </style>
 
 <div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="Subscribe" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content subscribmodel">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Subscribe us</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -175,17 +181,8 @@
                         <div class="widget subscribe-widget clearfix">
                             <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
                             <div class="widget-subscribe-form-result"></div>
-                            <form  action="<?php echo site_url("subscribe"); ?>" role="form" method="post" class="nobottommargin">
-                                <div class="input-group divcenter">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="icon-email2"></i></div>
-                                    </div>
-                                    <input type="email" id="widget-subscribe-form-email2" name="email" class="form-control required email" placeholder="Enter your Email">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-success" name="submit" type="submit">Subscribe</button>
-                                    </div>
-                                </div>
-                            </form>
+                            <button class="btn btn-success" type="button" data-toggle="modal" data-target="#subscribe">Click Here To Subscribe</button>
+                                    
                         </div>
                     </div>
                     <div class="line" style="margin: 10px 0;"></div>
