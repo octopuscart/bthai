@@ -20,6 +20,40 @@
     }
 </style>
 
+<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="Subscribe" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Subscribe us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2>
+                    Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:                        </h2>
+
+                <div class="widget-subscribe-form-result1"></div>
+                <form  action="<?php echo site_url("subscribe"); ?>" role="form" method="post" class="nobottommargin">
+                    <div class="input-group divcenter">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="icon-email2"></i></div>
+                        </div>
+                        <input type="email" id="widget-subscribe-form-email2" name="email" class="form-control required email" placeholder="Enter your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" name="submit" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
 <div class="row clearfix common-height" style="margin: 0;padding: 20px;">
 
 
@@ -48,7 +82,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="promotionicon">
-                        <i class="fa fa-group"></i>
+                        <img src="<?php echo base_url(); ?>assets/icons/group.svg">
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -72,13 +106,16 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="promotionicon">
-                        <i class="fa fa-envelope-open"></i>
+                        <img src="<?php echo base_url(); ?>assets/icons/bell.svg">
                     </div>
                 </div>
                 <div class="col-md-8">
                     <p>
                         Each month, Baan Thai Restaurant sends out a simple and brief email newsletter which up-dates our customers on news, promotions and offers. If you would like to receive the newsletter, simply click here and just provide us with you name, contact number and email address.
                     </p>
+                   
+                    <a href="#"  data-toggle="modal" data-target="#subscribe">Click Here</a>
+
                 </div>
             </div>
 
@@ -91,7 +128,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="promotionicon">
-                        <i class="ion-ios-beer"></i>
+                        <img src="<?php echo base_url(); ?>assets/icons/food.svg">
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -100,7 +137,7 @@
 
                         For party package and party event or private catering write us at info@baanthai.hk
                     </p>
-
+                    <a href="<?php echo site_url('private_parties'); ?>">Click Here</a>
                 </div>
             </div>
 
@@ -138,14 +175,14 @@
                         <div class="widget subscribe-widget clearfix">
                             <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
                             <div class="widget-subscribe-form-result"></div>
-                            <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+                            <form  action="<?php echo site_url("subscribe"); ?>" role="form" method="post" class="nobottommargin">
                                 <div class="input-group divcenter">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="icon-email2"></i></div>
                                     </div>
-                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+                                    <input type="email" id="widget-subscribe-form-email2" name="email" class="form-control required email" placeholder="Enter your Email">
                                     <div class="input-group-append">
-                                        <button class="btn btn-success" type="submit">Subscribe</button>
+                                        <button class="btn btn-success" name="submit" type="submit">Subscribe</button>
                                     </div>
                                 </div>
                             </form>
@@ -170,7 +207,7 @@
                                 <i class="icon-instagram"></i>
                             </a>
 
-                        
+
 
                             <a href="#" class="social-icon si-small si-borderless nobottommargin si-tripadvisor">
                                 <i class="fa fa-tripadvisor"></i>
@@ -288,7 +325,7 @@
             <div class="col_one_third col_last">
                 <div class="widget clearfix">
                     <a href="https://www.google.com/search?sxsrf=ACYBGNTfZqg3NiOqwcFBmovGQRHDsH2bzA%3A1580712554623&source=hp&ei=asI3Xu-ZI4L8wQPmx6OACA&q=baanthai.hk&oq=baanthai.hk&gs_l=psy-ab.3..38.611.4107..5317...0.0..0.260.932.3j3j1......0....1..gws-wiz.......35i39j0j0i10j0i10i30j0i30j0i13i30.HI9dhSgMR7w&ved=0ahUKEwjv9rqS5bTnAhUCfnAKHebjCIAQ4dUDCAY&uact=5#lrd=0x3404007b252e2283:0xbdca9c199b4fbb62,1" target="_blank" style="
-                  
+
                        float: left;
                        width: 100%;
                        background: white;

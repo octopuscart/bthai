@@ -423,28 +423,34 @@ span.lefttopmenu {
     padding: 10px;
     border-radius: 15px;
     margin-bottom: 14px; 
-    min-height: 220px;
+    min-height: 250px;
 
     text-align: center;
+    background: #833ab4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .pomotion p{
     font-size: 13px;
     margin-bottom: 10px;
     text-align: left;
+    color:white;
 
 }
 
 .pomotion h2{
     text-align: center;
     margin-bottom: 5px;
+    color:white;
 
 }
 
 .promotionicon {
     font-size: 63px;
     text-align: center;
-    border: 1px solid #000;
+   
     border-radius: 50%;
     height: 100px;
     width: 100px;

@@ -91,21 +91,24 @@
                     <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Email</th>
                     <td><?php echo $appointment['email']; ?></td>
                 </tr>
-                <tr>
-                    <th style="background: lightgray;text-align: right;width:200px;padding-right: 10px;">Country</th>
-                    <td><?php echo $appointment['country']; ?></td>
-                </tr>
 
 
-        
+
+
 
             </table>
             <table class="carttable"  align="center" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding:20px">
 
                 <tr>
+                    <td colspan="6">
+                        <img src="https://baanthaihk.com/assets/images/ad.jpg" style="margin: 10px; height:400px;    background: white;width: auto;"/>
+
+                    </td>
+                </tr>
+                <tr>
                     <td colspan="6" style="font-size: 12px;padding-top: 50px;">
 
-                        <?php echo EMAIL_FOOTER; ?>
+                        <img src="<?php echo site_mail_logo; ?>" style="margin: 10px; height: 25px;    background: white;width: auto;"/>
                     </td>
                 </tr>
             </table>

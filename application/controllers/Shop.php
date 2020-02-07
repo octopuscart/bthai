@@ -366,7 +366,7 @@ class Shop extends CI_Controller {
     public function subscribe() {
         if (isset($_POST['submit'])) {
             $appointment = array(
-                "country" => $this->input->post('country'),
+        
                 'email' => $this->input->post('email'),
             );
 // print_r($appointment);
@@ -386,7 +386,7 @@ class Shop extends CI_Controller {
                     'log_type' => 'Thank You For Subscribing',
                     'log_datetime' => date('Y-m-d H:i:s'),
                     'user_id' => 'Subscribing User',
-                    'log_detail' => $sendernameeq . "  " . $subjectt
+                    'log_detail' =>   "  " . $subjectt
                 );
                 $this->db->insert('system_log', $orderlog);
                 $subject = $subjectt;
@@ -404,7 +404,7 @@ class Shop extends CI_Controller {
                         redirect(site_url("/"));
                     }
                 } else {
-                    echo $htmlsmessage;
+                     $htmlsmessage;
                 }
             }
         }

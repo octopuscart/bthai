@@ -2,21 +2,27 @@
 $this->load->view('layout/header');
 ?>
 
+<div class="section_offset" ng-controller="lookBookController" style="background: url(<?php echo base_url(); ?>assets/images/gallary.jpg) ;background-repeat: no-repeat;background-size: cover;    height: 600px;
+     overflow-y: scroll;">
 
+    <div class="container clearfix m_t_30">
+
+        <div class="col_full1">
+            <div class="heading-block1 center nobottomborder">
+                <span class="before-heading " style="    font-size: 47px;
+                      color: white;">Thank You For Subscribing</span>
+            </div>
+        </div>
+    </div>
+</div>
 <!--content-->
-<section class="section_offset">
-    <section class="page_title translucent_bg_red image_fixed t_align_c relative wrapper" style="margin-top: 0px;">
-        <img src="images/page_404.jpg" alt="" class="page_404 d_xs_none">
-        <h1 class="color_light fw_light m_bottom_12">Thank You For Subscribing</h1>
 
-    </section>
-</section>
 
 <script>
 
-setTimeout(function(){
+    setTimeout(function () {
     window.location = "<?php echo site_url("/"); ?>";
-},5000)
+    }, 5000)
 
 </script>
 
