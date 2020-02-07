@@ -117,6 +117,61 @@ class Shop extends CI_Controller {
         $this->load->view('Pages/loyalprogram', $data);
     }
 
+    public function joinTeam() {
+        $data = array();
+        $data['submitdata'] = "";
+        if (isset($_POST['submit'])) {
+            $web_input = array(
+                'last_name' => $this->input->post('first_name'),
+                'first_name' => $this->input->post('last_name'),
+                'email' => $this->input->post('email'),
+                'contact' => $this->input->post('contact_no'),
+                'birth_date' => $this->input->post('birth_date'),
+                'job_title' => $this->input->post('job_title'),
+                'experience' => $this->input->post('experience'),
+                'language' => $this->input->post('language'),
+                'country' => $this->input->post('country'),
+                'city' => $this->input->post('city'),
+                'datetime' => date("Y-m-d H:i:s a"),
+            );
+     
+            $data['submitdata'] = 'yes';
+
+            //email sending
+            $emailsender = email_sender;
+            $sendername = email_sender_name;
+            $email_bcc = email_bcc;
+
+            if ($this->input->post('email')) {
+                $this->email->set_newline("\r\n");
+                $this->email->from(email_bcc, $sendername);
+                $this->email->to($this->input->post('email'));
+                $this->email->bcc(email_bcc);
+                $subjectt = "Thanks you for joining";
+                $subject = $subjectt;
+                $this->email->subject($subject);
+                $appointment['appointment'] = $web_input;
+                $htmlsmessage = $this->load->view('Email/jointeam', $appointment, true);
+
+                if (REPORT_MODE == 1) {
+                    $this->email->message($htmlsmessage);
+                    $this->email->print_debugger();
+
+                    $send = $this->email->send();
+                    if ($send) {
+                        // redirect(site_url("booknow"));
+                    } else {
+                        $error = $this->email->print_debugger(array('headers'));
+                        //    redirect(site_url("booknow"));
+                    }
+                } else {
+                    echo $htmlsmessage;
+                }
+            }
+        }
+        $this->load->view('Pages/jointeam', $data);
+    }
+
     //End of book now
     public function booknow() {
 
@@ -365,10 +420,10 @@ class Shop extends CI_Controller {
         $this->load->view('Pages/gallery', $data);
     }
 
-    public function private_parties(){
-          $this->load->view('Pages/private_parties');
+    public function private_parties() {
+        $this->load->view('Pages/private_parties');
     }
-    
+
     public function reviews() {
         $this->load->view('Pages/reviews');
     }

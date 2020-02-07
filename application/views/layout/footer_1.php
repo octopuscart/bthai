@@ -270,7 +270,7 @@
                                     <h4>
                                         <div class="footer_icon_container"> <i class="icon-group footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left m_top_5 m_l_10">
-                                            <a href="#" style="    font-size: 15px;">Join Our Team </a>
+                                            <a href="<?php echo site_url('joinourteam'); ?>" style="    font-size: 15px;">Join Our Team </a>
                                         </div>
                                     </h4>
                                 </div>
@@ -358,8 +358,8 @@
 
 
 <script>
-    $(function () {
-        $('.owl-carousel').owlCarousel({
+    jQuery(function () {
+        jQuery('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
             autoplay: true,
