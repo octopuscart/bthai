@@ -29,7 +29,7 @@
                                                                         <img src="https://baanthaihk.com/assets/images/ad.jpg" style="margin: 10px; height:400px;    background: white;width: auto;"/>
 
                                     <b>Dear <?php echo $appointment['first_name']; ?> <?php echo $appointment['last_name']; ?>,</b>
-                                    <p>Thank You for giving us the opportunity to serve you. We will do our best to be sure you enjoy our services. <br/>Your Reservation details are as follow.</p>
+                                    <p>Thank you for your reservation which is now a confirmed booking as follows:</p>
 
                                     <table style="font-size: 12px;    font-size: 12px;
                                            text-align: center;
@@ -75,7 +75,7 @@
                                         </tr>
                                     </table>
 
-                                    <p><a href="<?php echo site_url("cancleOrder/".$orderid);?>" target="_blank" style="color:white">Click here</a> cancel/update this reservation.</p>
+                                    <p><a href="<?php echo site_url("cancleOrder/".$orderid);?>" target="_blank" style="color:white">Click here</a> to cancel or update this reservation..</p>
                                     <b>- Thanks -</b> 
                                     <br/>
                                     <img src="<?php echo site_mail_logo; ?>" style="margin: 10px; height: 25px;    background: white;width: auto;"/>
