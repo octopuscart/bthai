@@ -15,7 +15,7 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; padding-bottom:30px;" align="center">
-                                <a href="<?php echo site_url("/");?>" target="_blank">
+                                <a href="<?php echo site_url("/"); ?>" target="_blank">
                                     <img src="<?php echo site_mail_logo; ?>" alt="Baan Thai" style="border:none;height:50px;"/></a>
                             </td>
                         </tr>
@@ -25,8 +25,14 @@
                     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;color:white">
                         <tbody>
                             <tr>
+                                <td class="">
+                                    <img src="https://baanthaihk.com/assets/images/ad.jpg" style=" padding: 40px;   background: none;width: 100%;"/>
+
+                                </td>
+                            </tr>
+                            <tr>
                                 <td style="    text-align: center;font-size: 18px;">
-                                                                        <img src="https://baanthaihk.com/assets/images/ad.jpg" style="margin: 10px; height:300px;    background: white;width: auto;"/>
+
 
                                     <b>Dear <?php echo $appointment['first_name']; ?> <?php echo $appointment['last_name']; ?>,</b>
                                     <p>Thank you for your reservation which is now a confirmed booking as follows:</p>
@@ -64,22 +70,22 @@
                                             <th style="text-align: right;width:200px;padding-right: 10px;">Table No.</th>
                                             <td style="    text-align: left;"><?php echo $appointment['select_table']; ?></td>
                                         </tr>
-                                         <tr>
+                                        <tr>
                                             <th style="text-align: right;width:200px;padding-right: 10px;">Guest(s)</th>
                                             <td style="    text-align: left;"><?php echo $appointment['people']; ?></td>
                                         </tr>
-                                        
+
                                         <tr>
                                             <th style="text-align: right;width:200px;padding-right: 10px;">Remark</th>
                                             <td style="width: 250px;text-align: left;"><?php echo $appointment['extra_remark'] ? $appointment['extra_remark'] : '----'; ?></td>
                                         </tr>
                                     </table>
 
-                                    <p><a href="<?php echo site_url("cancleOrder/".$orderid);?>" target="_blank" style="color:white">Click here</a> to cancel or update this reservation..</p>
+                                    <p><a href="<?php echo site_url("cancleOrder/" . $orderid); ?>" target="_blank" style="color:white">Click here</a> to cancel or update this reservation..</p>
                                     <b>- Thanks -</b> 
                                     <br/>
                                     <img src="<?php echo site_mail_logo; ?>" style="margin: 10px; height: 25px;    background: white;width: auto;"/>
-                               
+
                                 </td>
                             </tr>
 
@@ -89,9 +95,9 @@
                 <div style="text-align: center; font-size: 12px; color: #b2b2b5; margin-top: 20px">
                     <p> 
                         <br>
-                </div>
-            </div>
-        </div>
-    </body>
+                            </div>
+                            </div>
+                            </div>
+                            </body>
 
-</html>
+                            </html>

@@ -388,11 +388,11 @@ if ($submitdata == 'yes') {
             newmail.play();
             $("#thanksModal").modal("show");
             $('#thanksModal').on('hidden.bs.modal', function (e) {
-            window.location = "<?php echo site_url('booknow'); ?>";
+          //  window.location = "<?php echo site_url('booknow'); ?>";
             });
             setTimeout(function(){
             $("#thanksModal").modal("hide");
-            window.location = "<?php echo site_url('booknow'); ?>";
+           // window.location = "<?php echo site_url('booknow'); ?>";
             }, 10000)
             })
     <?php
