@@ -71,6 +71,18 @@ $galleryArray = array(
         "22" => "IMG-20180519-WA0011.jpg",
     ),
 );
+
+
+
+$galleryArrayIncType = array(
+    "food" => "txt",
+    "venue" =>"inc",
+    "snacks" =>"txt",
+    "drinks" => "txt",
+    "cocktail" => "inc",
+    "events" => "inc",
+);
+
 ?>
 
 
@@ -169,6 +181,7 @@ $galleryArray = array(
 
                     <?php
                     $loopdata = $galleryArray[$gtype];
+                    $viewtype = $galleryArrayIncType[$gtype];
                     if (1) {
                         ?>
                         <div class="tab-pane fade" id="nav-<?php echo $gtype; ?>" role="tabpanel" aria-labelledby="nav-<?php echo $gtype; ?>-tab">
@@ -179,6 +192,7 @@ $galleryArray = array(
                                         <li class="grid-sizer"></li><!-- for Masonry column width -->
 
                                         <?php
+                                        $inctype = 1;
                                         foreach ($loopdata as $key => $value) {
                                             ?>
 
@@ -186,18 +200,28 @@ $galleryArray = array(
                                                 <div class="panel panel-default" style="border:none;margin: 0px;">
                                                     <div class="panel-body" style="    padding: 5px;">
                                                         <div class="thumbnail lookbook_thumb" >
+                                                            
                                                             <img src="<?php echo base_url() . "assets/images/gallery/$gtype/$value"; ?>" alt="img01" style="border-radius: 0;"/>
                                                             <div class="caption" style="background: black;
                                                                  color: white;
                                                                  text-align: center;
                                                                  padding: 1px 5px;">
-                                                                <p><?php echo $key; ?></p>
+                                                                <p><?php 
+                                                                if($viewtype == 'txt'){
+                                                                    echo $key;
+                                                                }
+                                                                else{
+                                                                    echo $inctype;
+                                                                }
+                                                                
+                                                                ?></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <?php
+                                            $inctype++;
                                         }
                                         ?>
                                         <div style="clear:both"></div>
