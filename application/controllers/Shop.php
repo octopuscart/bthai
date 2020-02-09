@@ -147,7 +147,7 @@ class Shop extends CI_Controller {
                 $this->email->from(email_bcc, $sendername);
                 $this->email->to($this->input->post('email'));
                 $this->email->bcc(email_bcc);
-                $subjectt = "Thank you for interest in Baan Thai";
+                $subjectt = "Thank you for your job interest in Baan Thai";
                 $subject = $subjectt;
                 $this->email->subject($subject);
                 $appointment['appointment'] = $web_input;
