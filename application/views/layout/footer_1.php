@@ -63,14 +63,14 @@
     <div class="modal-dialog modal-lg"  role="document">
         <div class="modal-content subscribmodel">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Baan Thai Valentine's Menu 2020</h5>
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
 
-                <img src="<?php echo base_url(); ?>assets/promotion/33.jpg">
+                <img src="{{promotionImage.img}}">
             </div>
 
         </div>
@@ -84,10 +84,10 @@
 
     <div class="owl-carousel owl-theme">
         <?php
-        $promotion = [1, 2, 33];
+        $promotion = [77, 33, 1, 2];
         foreach ($promotion as $key => $value) {
             ?>
-            <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;">
+            <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;" ng-click="selectePromotionImage('<?php echo base_url(); ?>assets/promotion/<?php echo $value; ?>.jpg')">
                 <div class="thumbnail">
                     <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $value; ?>.jpg"/>
                 </div>

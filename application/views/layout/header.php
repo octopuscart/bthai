@@ -112,8 +112,8 @@
     </style>
 
 
-    <body ng-app="App" class="stretched">
-        <div ng-controller="ShopController" id="wrapper" class="clearfix">
+    <body ng-app="App" class="stretched" ng-controller="ShopController">
+        <div  id="wrapper" class="clearfix">
             <script>
                 var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
                 //$interpolateProvider.startSymbol('{$');

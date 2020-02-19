@@ -2,7 +2,7 @@
  Shop Cart product controllers
  */
 App.controller('ShopController', function ($scope, $http, $timeout, $interval, $filter) {
-   $scope.userLogin = {};
+    $scope.userLogin = {};
 
     $scope.getLoginDetails2 = function () {
         var loginurl = baseurl + "Api/loginOperation"
@@ -10,16 +10,21 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
             let userdata = rdata.data;
             console.log(userdata)
             if (userdata) {
-              $scope.userLogin = userdata
+                $scope.userLogin = userdata
             }
         })
     }
     $scope.getLoginDetails2();
-    $timeout(function(){
+    $timeout(function () {
         jQuery(jQuery("i.ion-ios-create").parents("li")[0]).addClass("active")
-    },1000)
-    
-    
+    }, 1000)
+
+
+    $scope.promotionImage = {"img": ""};
+    $scope.selectePromotionImage = function (image) {
+        console.log(image)
+        $scope.promotionImage.img = image;
+    }
 
 
 
