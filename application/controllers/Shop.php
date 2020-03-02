@@ -146,7 +146,8 @@ class Shop extends CI_Controller {
                 $this->email->set_newline("\r\n");
                 $this->email->from(email_bcc, $sendername);
                 $this->email->to($this->input->post('email'));
-                $this->email->bcc(email_bcc);
+                $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
+                
                 $subjectt = "Thank you for your job interest in Baan Thai";
                 $subject = $subjectt;
                 $this->email->subject($subject);
@@ -271,7 +272,7 @@ class Shop extends CI_Controller {
                 $this->email->set_newline("\r\n");
                 $this->email->from(email_bcc, $sendername);
                 $this->email->to($this->input->post('email'));
-                $this->email->bcc(email_bcc);
+                $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
                 $subjectt = "Thank you for your booking.";
                 $subject = $subjectt;
                 $this->email->subject($subject);
@@ -380,7 +381,7 @@ class Shop extends CI_Controller {
                 $this->email->set_newline("\r\n");
                 $this->email->from(email_bcc, $sendername);
                 $this->email->to($this->input->post('email'));
-                $this->email->bcc(email_bcc);
+                $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
                 $subjectt = "Thank you for your subscription";
                 $orderlog = array(
                     'log_type' => 'Thank You For Subscribing',
