@@ -69,8 +69,9 @@
                 </button>
             </div>
             <div class="modal-body">
-
-                <img src="{{promotionImage.img}}">
+                <a href='{{promotionImage.link}}'>
+                    <img src="<?php echo base_url(); ?>assets/promotion/{{promotionImage.img}}.jpg">
+                </a>
             </div>
 
         </div>
@@ -84,17 +85,23 @@
 
     <div class="owl-carousel owl-theme">
         <?php
-        $promotion = [77, 33, 1, 2];
-        foreach ($promotion as $key => $value) {
+        $promotion = [77, 1, 2];
+        $promotionlink = array(
+            "77" => site_url("gallery/events"),
+            "1" => site_url("loyalprogram"),
+            "2" => site_url("private_parties"),
+        );
+
+        foreach ($promotionlink as $key => $value) {
             ?>
-            <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;" ng-click="selectePromotionImage('<?php echo base_url(); ?>assets/promotion/<?php echo $value; ?>.jpg')">
+            <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;" ng-click="selectePromotionImage('<?php echo $key; ?>', '<?php echo $value; ?>')">
                 <div class="thumbnail">
-                    <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $value; ?>.jpg"/>
+                    <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
                 </div>
             </div>
-    <?php
-}
-?>
+            <?php
+        }
+        ?>
 
     </div>
 

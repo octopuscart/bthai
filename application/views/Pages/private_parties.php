@@ -21,7 +21,7 @@ $this->load->view('layout/header');
 
 
                     <p class="lead nobottommargin" style="color: white;">
-                        Click here to find out about our latest promotions, special offers, packages and discounts. You are also welcome to send us an enquiry about offers, group packages, private parties and tailor made menus. 
+                You are also welcome to send us an enquiry about offers, group packages, private parties and tailor made menus. 
                     </p>
                     
                        <p class="lead nobottommargin" style="color: white;">

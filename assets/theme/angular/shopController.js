@@ -20,10 +20,13 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
     }, 1000)
 
 
-    $scope.promotionImage = {"img": ""};
-    $scope.selectePromotionImage = function (image) {
-        console.log(image)
+    
+
+    $scope.promotionImage = {"img": "", "link":""};
+    $scope.selectePromotionImage = function (image, link) {
+        console.log(image, link)
         $scope.promotionImage.img = image;
+        $scope.promotionImage.link = link;
     }
 
 
