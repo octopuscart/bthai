@@ -21,12 +21,22 @@ $galleryArray = array(
         "6" => "20180602_095957B.jpg",
         "7" => "20181115_180409.jpg",
         "8" => "20190411_165934.jpg",
-        "9" => "20191010_165215.jpg"
+        "9" => "20191010_165215.jpg",
+        "10" => "20180602_095632.jpg",
+        "11" => "20191010_165215.jpg",
+        "12" => "20180602_095957B.jpg",
+        "13" => "20191010_165316.jpg",
+        "14" => "20181011_191809.jpg",
+        "15" => "20181115_180409.jpg",
+        "16" => "20190411_165934.jpg",
+        "17" => "IMG-20180519-WA0007.jpg",
+        "18" => "20190418_1625321.jpg",
+        
     ),
     "snacks" => array(
         "Chicken Satay" => "1_Chicken_Satays.jpg",
         "Fried Chicken Wings" => "5_Crispy_Fried_Chicken_Wings.jpg",
-        "Garlic Bread" => "2_Garlic_Bread.jpg", 
+        "Garlic Bread" => "2_Garlic_Bread.jpg",
         "Fresh Prawn Rice Paper Rolls" => "6_Fresh_Prawn_Rice_Paper_Rolls.jpg",
         "Pork Laab Mini Burgers" => "3_Pork_Laab_Mini_Burger.jpg",
         "Potato Wedges" => "7_Potato_Wedges.jpg",
@@ -47,28 +57,20 @@ $galleryArray = array(
         "4" => "IMG-20190324-WA0021.jpg",
     ),
     "events" => array(
-        "1" => "20180602_095632.jpg",
-        "2" => "20191010_165215.jpg",
-        "3" => "IMG-20180912-WA0016.jpg",
-        "4" => "20180602_095957B.jpg",
-        "5" => "20191010_165316.jpg",
-        "6" => "IMG-20190312-WA0035.jpg",
-        "7" => "20180926_211922.jpg",
-        "8" => "20191216_005558.jpg",
-        "9" => "IMG-20190312-WA0037.jpg",
-        "10" => "20181011_191809.jpg",
-        "11" => "36030821_2073974522924619_6425072445463461888_o.jpg",
-        "12" => "IMG-20190324-WA00191.jpg",
-        "13" => "20181115_180409.jpg",
-        "14" => "77181538_10159702910009848_4585822172047474688_o.jpg",
-        "15" => "IMG-20190413-WA0026.jpg",
-        "16" => "20190411_1658231.jpg",
-        "17" => "82522726_10220927776888197_5155124364919701504_o1.jpg",
-        "18" => "IMG-20190904-WA0016.jpg",
-        "19" => "20190411_165934.jpg",
-        "20" => "IMG-20180519-WA0007.jpg",
-        "21" => "20190418_1625321.jpg",
-        "22" => "IMG-20180519-WA0011.jpg",
+        "1" => "IMG-20180912-WA0016.jpg",
+        "2" => "IMG-20190312-WA0035.jpg",
+        "3" => "20180926_211922.jpg",
+        "4" => "20191216_005558.jpg",
+        "5" => "IMG-20190312-WA0037.jpg",
+        "6" => "36030821_2073974522924619_6425072445463461888_o.jpg",
+        "7" => "IMG-20190324-WA00191.jpg",
+        "8" => "77181538_10159702910009848_4585822172047474688_o.jpg",
+        "9" => "IMG-20190413-WA0026.jpg",
+        "10" => "20190411_1658231.jpg",
+        "11" => "82522726_10220927776888197_5155124364919701504_o1.jpg",
+        "12" => "IMG-20190904-WA0016.jpg",
+        "13" => "wpimage.jpeg",
+        "14" => "IMG-20180519-WA0011.jpg",
     ),
 );
 
@@ -76,13 +78,12 @@ $galleryArray = array(
 
 $galleryArrayIncType = array(
     "food" => "txt",
-    "venue" =>"inc",
-    "snacks" =>"txt",
+    "venue" => "inc",
+    "snacks" => "txt",
     "drinks" => "txt",
     "cocktail" => "inc",
     "events" => "inc",
 );
-
 ?>
 
 
@@ -179,11 +180,11 @@ $galleryArrayIncType = array(
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
 
-                    <?php
-                    $loopdata = $galleryArray[$gtype];
-                    $viewtype = $galleryArrayIncType[$gtype];
-                    if (1) {
-                        ?>
+<?php
+$loopdata = $galleryArray[$gtype];
+$viewtype = $galleryArrayIncType[$gtype];
+if (1) {
+    ?>
                         <div class="tab-pane fade" id="nav-<?php echo $gtype; ?>" role="tabpanel" aria-labelledby="nav-<?php echo $gtype; ?>-tab">
 
                             <div id="grid-gallery" class="grid-gallery taginntercontaint" >
@@ -191,39 +192,37 @@ $galleryArrayIncType = array(
                                     <ul class="grid">
                                         <li class="grid-sizer"></li><!-- for Masonry column width -->
 
-                                        <?php
-                                        $inctype = 1;
-                                        foreach ($loopdata as $key => $value) {
-                                            ?>
+    <?php
+    $inctype = 1;
+    foreach ($loopdata as $key => $value) {
+        ?>
 
                                             <li style="    padding: 0px;" >
                                                 <div class="panel panel-default" style="border:none;margin: 0px;">
                                                     <div class="panel-body" style="    padding: 5px;">
                                                         <div class="thumbnail lookbook_thumb" >
-                                                            
+
                                                             <img src="<?php echo base_url() . "assets/images/gallery/$gtype/$value"; ?>" alt="img01" style="border-radius: 0;"/>
                                                             <div class="caption" style="background: black;
                                                                  color: white;
                                                                  text-align: center;
                                                                  padding: 1px 5px;">
-                                                                <p><?php 
-                                                                if($viewtype == 'txt'){
-                                                                    echo $key;
-                                                                }
-                                                                else{
-                                                                    echo $inctype;
-                                                                }
-                                                                
-                                                                ?></p>
+                                                                <p><?php
+                                    if ($viewtype == 'txt') {
+                                        echo $key;
+                                    } else {
+                                        echo $inctype;
+                                    }
+        ?></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <?php
-                                            $inctype++;
-                                        }
-                                        ?>
+        <?php
+        $inctype++;
+    }
+    ?>
                                         <div style="clear:both"></div>
 
                                     </ul>
@@ -232,9 +231,9 @@ $galleryArrayIncType = array(
                                 <section class="slideshow" >
                                     <ul>
 
-                                        <?php
-                                        foreach ($loopdata as $key => $value) {
-                                            ?>
+    <?php
+    foreach ($loopdata as $key => $value) {
+        ?>
                                             <li >
                                             <center>
                                                 <img src="<?php echo base_url() . "assets/images/gallery/$gtype/$value"; ?>" alt="img01"  style="    height:500px;"/>
@@ -245,9 +244,9 @@ $galleryArrayIncType = array(
                                                 text-align: center;"><?php echo $key; ?></h4> 
                                             </li>
 
-                                            <?php
-                                        }
-                                        ?>
+        <?php
+    }
+    ?>
 
                                     </ul>
 
@@ -261,9 +260,9 @@ $galleryArrayIncType = array(
                             </div><!-- // grid-gallery -->
 
                         </div>
-                        <?php
-                    }
-                    ?>
+    <?php
+}
+?>
 
 
                 </div>
