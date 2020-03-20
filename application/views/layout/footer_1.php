@@ -58,7 +58,6 @@
     </div>
 </div>
 
-
 <div class="modal fade" id="promotionModel" tabindex="-1" role="dialog" aria-labelledby="Subscribe" aria-hidden="true">
     <div class="modal-dialog modal-lg"  role="document">
         <div class="modal-content subscribmodel">
@@ -68,7 +67,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" ng-if="promotionImage.img!=''">
                 <a href='{{promotionImage.link}}'>
                     <img src="<?php echo base_url(); ?>assets/promotion/{{promotionImage.img}}.jpg">
                 </a>

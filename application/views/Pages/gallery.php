@@ -49,6 +49,7 @@ $galleryArray = array(
         "Goose Island IPA Draft" => "3_Goose_Island_IPA_Draft.jpg",
         "Pressman's Bottled Cider" => "4_Pressmans_Bottled_Cider.jpg",
         "Giusti Rosalia Prosecco" => "5_Giusti_Rosalia_Prosecco.jpg",
+        "Yau Beer"=>"YauBeer.jpeg"
     ),
     "cocktail" => array(
         "1" => "IMG_8925.jpg",
@@ -71,6 +72,8 @@ $galleryArray = array(
         "11" => "IMG-20190904-WA0016.jpg",
         "12" => "wpimage.jpeg",
         "13" => "IMG-20180519-WA0011.jpg",
+        "14"=>"19032020.jpeg",
+        "15"=>"19032020_1.jpeg",
     ),
 );
 
