@@ -45,11 +45,27 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="icon-email2"></i></div>
                         </div>
+
                         <input type="email" id="widget-subscribe-form-email2" name="email" class="form-control required email" placeholder="Enter your Email">
+
+                    </div>
+                    <hr/>
+             
+                    <div class="input-group divcenter">
+                        <div class="input-group-prepend">
+
+                            <img src="<?php echo site_url("Api/createCaptha/subscribe") ?>" id='captchaimg' style="height: fit-content;" /> 
+
+                        </div>
+
+                        <input type="text" id="widget-subscribe-form-email2" name="captcha" class="form-control required email" required=""  placeholder="Type Here">
                         <div class="input-group-append">
                             <button class="btn btn-success" name="submit" type="submit">Subscribe</button>
                         </div>
                     </div>
+
+                    <small class='details'>Can't read the image? click <a href="#" onclick="refreshCaptcha()">here</a> to refresh</small>
+
                 </form>
 
             </div>
@@ -67,7 +83,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body" ng-if="promotionImage.img!=''">
+            <div class="modal-body" ng-if="promotionImage.img != ''">
                 <a href='{{promotionImage.link}}'>
                     <img src="<?php echo base_url(); ?>assets/promotion/{{promotionImage.img}}.jpg">
                 </a>
@@ -418,7 +434,14 @@
 
 
 <script>
+    function refreshCaptcha()
+        {
+            var img = document.images['captchaimg'];
+            img.src = img.src;
+        }
     jQuery(function () {
+        
+
         jQuery('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,

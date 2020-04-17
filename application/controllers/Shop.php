@@ -134,7 +134,7 @@ class Shop extends CI_Controller {
                 'city' => $this->input->post('city'),
                 'datetime' => date("Y-m-d H:i:s a"),
             );
-     
+
             $data['submitdata'] = 'yes';
 
             //email sending
@@ -142,32 +142,42 @@ class Shop extends CI_Controller {
             $sendername = email_sender_name;
             $email_bcc = email_bcc;
 
-            if ($this->input->post('email')) {
-                $this->email->set_newline("\r\n");
-                $this->email->from(email_bcc, $sendername);
-                $this->email->to($this->input->post('email'));
-                $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
-                
-                $subjectt = "Thank you for your job interest in Baan Thai";
-                $subject = $subjectt;
-                $this->email->subject($subject);
-                $appointment['appointment'] = $web_input;
-                $htmlsmessage = $this->load->view('Email/jointeam', $appointment, true);
+            $captchatext = $this->session->userdata("captchacode_join");
 
-                if (REPORT_MODE == 1) {
-                    $this->email->message($htmlsmessage);
-                    $this->email->print_debugger();
+            $checkcaptcha = $this->input->post("captcha");
+            if ($captchatext == $checkcaptcha) {
 
-                    $send = $this->email->send();
-                    if ($send) {
-                        // redirect(site_url("booknow"));
+                if ($this->input->post('email')) {
+                    $this->email->set_newline("\r\n");
+                    $this->email->from(email_bcc, $sendername);
+                    $this->email->to($this->input->post('email'));
+                    $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
+
+                    $subjectt = "Thank you for your job interest in Baan Thai";
+                    $subject = $subjectt;
+                    $this->email->subject($subject);
+                    $appointment['appointment'] = $web_input;
+                    $htmlsmessage = $this->load->view('Email/jointeam', $appointment, true);
+
+                    if (REPORT_MODE == 1) {
+                        $this->email->message($htmlsmessage);
+                        $this->email->print_debugger();
+
+                        $send = $this->email->send();
+                        if ($send) {
+                            // redirect(site_url("booknow"));
+                        } else {
+                            $error = $this->email->print_debugger(array('headers'));
+                            //    redirect(site_url("booknow"));
+                        }
                     } else {
-                        $error = $this->email->print_debugger(array('headers'));
-                        //    redirect(site_url("booknow"));
+                        echo $htmlsmessage;
                     }
                 } else {
-                    echo $htmlsmessage;
+                    redirect(site_url("joinourteam"));
                 }
+            } else {
+                redirect(site_url("/"));
             }
         }
         $this->load->view('Pages/jointeam', $data);
@@ -186,38 +196,44 @@ class Shop extends CI_Controller {
         $data = array();
         $data['submitdata'] = "";
         if (isset($_POST['submit'])) {
-            $web_order = array(
-                'last_name' => $this->input->post('first_name'),
-                'first_name' => $this->input->post('last_name'),
-                'email' => $this->input->post('email'),
-                'contact' => $this->input->post('contact_no'),
-                'select_date' => $this->input->post('select_date'),
-                'select_time' => $this->input->post('select_time'),
-                'booking_type' => $this->input->post('booking_type'),
-                'extra_remark' => $this->input->post('extra_remark'),
-                'select_table' => $this->input->post('select_table'),
-                'people' => $this->input->post('people'),
-                "usertype" => $this->input->post('usertype'),
-                'datetime' => date("Y-m-d H:i:s a"),
-                "order_source" => "Website",
-                'order_date' => date("Y-m-d"),
-                'status' => "0",
-            );
-            $this->db->insert('web_order', $web_order);
 
-            $last_id = $this->db->insert_id();
-            $oderid = $last_id;
-            $ordertype = $this->input->post('booking_type');
-            $orderlog = array(
-                'log_type' => "Reservation Received",
-                'log_datetime' => date('Y-m-d H:i:s'),
-                'user_id' => "",
-                'order_id' => $last_id,
-                'log_detail' => "Booking No. #$last_id  $ordertype From Website",
-            );
-            $this->db->insert('system_log', $orderlog);
+            $captchatext = $this->session->userdata("captchacode_booking");
 
-            $ordertype = $this->input->post('booking_type');
+            $checkcaptcha = $this->input->post("captcha");
+            if ($captchatext == $checkcaptcha) {
+               
+                $web_order = array(
+                    'last_name' => $this->input->post('first_name'),
+                    'first_name' => $this->input->post('last_name'),
+                    'email' => $this->input->post('email'),
+                    'contact' => $this->input->post('contact_no'),
+                    'select_date' => $this->input->post('select_date'),
+                    'select_time' => $this->input->post('select_time'),
+                    'booking_type' => $this->input->post('booking_type'),
+                    'extra_remark' => $this->input->post('extra_remark'),
+                    'select_table' => $this->input->post('select_table'),
+                    'people' => $this->input->post('people'),
+                    "usertype" => $this->input->post('usertype'),
+                    'datetime' => date("Y-m-d H:i:s a"),
+                    "order_source" => "Website",
+                    'order_date' => date("Y-m-d"),
+                    'status' => "0",
+                );
+                $this->db->insert('web_order', $web_order);
+
+                $last_id = $this->db->insert_id();
+                $oderid = $last_id;
+                $ordertype = $this->input->post('booking_type');
+                $orderlog = array(
+                    'log_type' => "Reservation Received",
+                    'log_datetime' => date('Y-m-d H:i:s'),
+                    'user_id' => "",
+                    'order_id' => $last_id,
+                    'log_detail' => "Booking No. #$last_id  $ordertype From Website",
+                );
+                $this->db->insert('system_log', $orderlog);
+
+                $ordertype = $this->input->post('booking_type');
 //            $order_status_data = array(
 //                'c_date' => date('Y-m-d'),
 //                'c_time' => date('H:i:s'),
@@ -228,72 +244,75 @@ class Shop extends CI_Controller {
 //            );
 //            $this->db->insert('user_order_status', $order_status_data);
 
-            $data['submitdata'] = 'yes';
+                $data['submitdata'] = 'yes';
 
-            $password = rand(10000, 99999);
-            $email = $this->input->post('email');
+                $password = rand(10000, 99999);
+                $email = $this->input->post('email');
 
-            $user_check = $this->User_model->check_user($email);
-            if ($user_check) {
-                $data1['msg'] = 'Email Address Already Registered.';
-            } else {
-                $userarray = array(
-                    'last_name' => $this->input->post('first_name'),
-                    'first_name' => $this->input->post('last_name'),
-                    'email' => $this->input->post('email'),
-                    'password' => md5($password),
-                    'password2' => $password,
-                    'profession' => "",
-                    'country' => "",
-                    'gender' => "",
-                    'birth_date' => "",
-                    'registration_datetime' => date("Y-m-d h:i:s A")
-                );
-                $checkregistration = $this->input->post('registrationyes');
-                if ($checkregistration) {
-                    $this->db->insert('admin_users', $userarray);
-                    $user_id = $this->db->insert_id();
-
-                    $sess_data = array(
-                        'username' => $this->input->post('email'),
-                        'first_name' => $this->input->post('first_name'),
-                        'last_name' => $this->input->post('last_name'),
-                        'login_id' => $user_id,
-                    );
-                    $this->session->set_userdata('logged_in', $sess_data);
-                }
-            }
-            //email sending
-            $emailsender = email_sender;
-            $sendername = email_sender_name;
-            $email_bcc = email_bcc;
-
-            if ($this->input->post('email')) {
-                $this->email->set_newline("\r\n");
-                $this->email->from(email_bcc, $sendername);
-                $this->email->to($this->input->post('email'));
-                $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
-                $subjectt = "Thank you for your booking.";
-                $subject = $subjectt;
-                $this->email->subject($subject);
-                $appointment['appointment'] = $web_order;
-                $appointment['orderid'] = $oderid;
-                $htmlsmessage = $this->load->view('Email/weborder', $appointment, true);
-
-                if (REPORT_MODE == 1) {
-                    $this->email->message($htmlsmessage);
-                    $this->email->print_debugger();
-
-                    $send = $this->email->send();
-                    if ($send) {
-                        // redirect(site_url("booknow"));
-                    } else {
-                        $error = $this->email->print_debugger(array('headers'));
-                        //    redirect(site_url("booknow"));
-                    }
+                $user_check = $this->User_model->check_user($email);
+                if ($user_check) {
+                    $data1['msg'] = 'Email Address Already Registered.';
                 } else {
-                    echo $htmlsmessage;
+                    $userarray = array(
+                        'last_name' => $this->input->post('first_name'),
+                        'first_name' => $this->input->post('last_name'),
+                        'email' => $this->input->post('email'),
+                        'password' => md5($password),
+                        'password2' => $password,
+                        'profession' => "",
+                        'country' => "",
+                        'gender' => "",
+                        'birth_date' => "",
+                        'registration_datetime' => date("Y-m-d h:i:s A")
+                    );
+                    $checkregistration = $this->input->post('registrationyes');
+                    if ($checkregistration) {
+                        $this->db->insert('admin_users', $userarray);
+                        $user_id = $this->db->insert_id();
+
+                        $sess_data = array(
+                            'username' => $this->input->post('email'),
+                            'first_name' => $this->input->post('first_name'),
+                            'last_name' => $this->input->post('last_name'),
+                            'login_id' => $user_id,
+                        );
+                        $this->session->set_userdata('logged_in', $sess_data);
+                    }
                 }
+                //email sending
+                $emailsender = email_sender;
+                $sendername = email_sender_name;
+                $email_bcc = email_bcc;
+
+                if ($this->input->post('email')) {
+                    $this->email->set_newline("\r\n");
+                    $this->email->from(email_bcc, $sendername);
+                    $this->email->to($this->input->post('email'));
+                    $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
+                    $subjectt = "Thank you for your booking.";
+                    $subject = $subjectt;
+                    $this->email->subject($subject);
+                    $appointment['appointment'] = $web_order;
+                    $appointment['orderid'] = $oderid;
+                    $htmlsmessage = $this->load->view('Email/weborder', $appointment, true);
+
+                    if (REPORT_MODE == 1) {
+                        $this->email->message($htmlsmessage);
+                        $this->email->print_debugger();
+
+                        $send = $this->email->send();
+                        if ($send) {
+                            // redirect(site_url("booknow"));
+                        } else {
+                            $error = $this->email->print_debugger(array('headers'));
+                            //    redirect(site_url("booknow"));
+                        }
+                    } else {
+                        echo $htmlsmessage;
+                    }
+                }
+            } else {
+                redirect(site_url("booknow"));
             }
         }
 
@@ -367,7 +386,6 @@ class Shop extends CI_Controller {
     public function subscribe() {
         if (isset($_POST['submit'])) {
             $appointment = array(
-        
                 'email' => $this->input->post('email'),
             );
 // print_r($appointment);
@@ -377,36 +395,43 @@ class Shop extends CI_Controller {
             $sendername = email_sender_name;
             $email_bcc = email_bcc;
 
-            if ($this->input->post('email')) {
-                $this->email->set_newline("\r\n");
-                $this->email->from(email_bcc, $sendername);
-                $this->email->to($this->input->post('email'));
-                $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
-                $subjectt = "Thank you for your subscription";
-                $orderlog = array(
-                    'log_type' => 'Thank You For Subscribing',
-                    'log_datetime' => date('Y-m-d H:i:s'),
-                    'user_id' => 'Subscribing User',
-                    'log_detail' =>   "  " . $subjectt
-                );
-                $this->db->insert('system_log', $orderlog);
-                $subject = $subjectt;
-                $this->email->subject($subject);
-                $appointment['appointment'] = $appointment;
-                $htmlsmessage = $this->load->view('Email/subscribing', $appointment, true);
-                if (REPORT_MODE == 1) {
-                    $this->email->message($htmlsmessage);
-                    $this->email->print_debugger();
-                    $send = $this->email->send();
-                    if ($send) {
-                        redirect(site_url("/"));
+            $captchatext = $this->session->userdata("captchacode_subscribe");
+
+            $checkcaptcha = $this->input->post("captcha");
+            if ($captchatext == $checkcaptcha) {
+                if ($this->input->post('email')) {
+                    $this->email->set_newline("\r\n");
+                    $this->email->from(email_bcc, $sendername);
+                    $this->email->to($this->input->post('email'));
+                    $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
+                    $subjectt = "Thank you for your subscription";
+                    $orderlog = array(
+                        'log_type' => 'Thank You For Subscribing',
+                        'log_datetime' => date('Y-m-d H:i:s'),
+                        'user_id' => 'Subscribing User',
+                        'log_detail' => "  " . $subjectt
+                    );
+                    $this->db->insert('system_log', $orderlog);
+                    $subject = $subjectt;
+                    $this->email->subject($subject);
+                    $appointment['appointment'] = $appointment;
+                    $htmlsmessage = $this->load->view('Email/subscribing', $appointment, true);
+                    if (REPORT_MODE == 1) {
+                        $this->email->message($htmlsmessage);
+                        $this->email->print_debugger();
+                        $send = $this->email->send();
+                        if ($send) {
+                            redirect(site_url("/"));
+                        } else {
+                            $error = $this->email->print_debugger(array('headers'));
+                            redirect(site_url("/"));
+                        }
                     } else {
-                        $error = $this->email->print_debugger(array('headers'));
-                        redirect(site_url("/"));
+                        echo $htmlsmessage;
                     }
-                } else {
-                    echo $htmlsmessage;
                 }
+            } else {
+                redirect(site_url("/"));
             }
         }
         $this->load->view('Pages/subscribe');
@@ -428,9 +453,5 @@ class Shop extends CI_Controller {
     public function reviews() {
         $this->load->view('Pages/reviews');
     }
-
-  
-
-  
 
 }

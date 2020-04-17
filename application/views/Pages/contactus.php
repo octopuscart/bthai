@@ -141,6 +141,22 @@ $this->load->view('layout/header');
                                     <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control">
                                 </div>
 
+                                <div class="captchaarea">
+                                    <div class="input-group divcenter">
+                                        <div class="input-group-prepend">
+
+                                            <img src="<?php echo site_url("Api/createCaptha/contact") ?>" id='captchaimg' style="height: fit-content;" /> 
+
+                                        </div>
+
+                                        <input type="text" id="widget-subscribe-form-email2" name="captcha" class="form-control required email" required=""  placeholder="Type Here">
+
+                                    </div>
+
+                                    <small class='details'>Can't read the image? click <a href="#" onclick="refreshCaptcha()">here</a> to refresh</small>
+                                </div>
+                                <hr/>
+
                                 <div class="col_full">
                                     <button name="submit" type="submit" id="submit-button" tabindex="5" value="Submit" class="button button-3d ">Submit Comment</button>
                                 </div>

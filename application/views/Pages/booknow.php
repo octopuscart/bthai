@@ -270,6 +270,22 @@ $this->load->view('layout/header');
                                                                 <label class="custom-control-label" for="customCheck1" >Register at baan thai to get free stuff. </label>
                                                             </div>
                                                         </div>
+                                                        
+                                                         <div class="captchaarea">
+                                                            <div class="input-group divcenter">
+                                                                <div class="input-group-prepend">
+
+                                                                    <img src="<?php echo site_url("Api/createCaptha/booking") ?>" id='captchaimg' style="height: fit-content;" /> 
+
+                                                                </div>
+
+                                                                <input type="text" id="widget-subscribe-form-email2" name="captcha" class="form-control required email" required="" placeholder="Type Here">
+
+                                                            </div>
+
+                                                            <small class='details'>Can't read the image? click <a href="#" onclick="refreshCaptcha()">here</a> to refresh</small>
+                                                        </div>
+                                                        <hr/>
 
 
                                                         <button class="btn btn-primary btn-lg button_minus" type="button"  ng-click="changeWizardTble()"><i class="fa fa-arrow-left"></i></button>
@@ -321,7 +337,7 @@ $this->load->view('layout/header');
                                                             </div>
                                                         </div>
 
-
+                                                        
 
 
                                                         <div class="form-row">
@@ -330,6 +346,22 @@ $this->load->view('layout/header');
                                                                 <input type="text" name="extra_remark" placeholder="Special Request (Optional)" class="form-control" >
                                                             </div>
                                                         </div>
+                                                        
+                                                        <div class="captchaarea">
+                                                            <div class="input-group divcenter">
+                                                                <div class="input-group-prepend">
+
+                                                                    <img src="<?php echo site_url("Api/createCaptha/booking") ?>" id='captchaimg' style="height: fit-content;" /> 
+
+                                                                </div>
+
+                                                                <input type="text" id="widget-subscribe-form-email2" name="captcha" class="form-control required email" placeholder="Type Here">
+
+                                                            </div>
+
+                                                            <small class='details'>Can't read the image? click <a href="#" onclick="refreshCaptcha()">here</a> to refresh</small>
+                                                        </div>
+                                                        <hr/>
 
 
                                                         <button class="btn btn-primary btn-lg button_minus" type="button"  ng-click="changeWizardTble()"><i class="fa fa-arrow-left"></i></button>

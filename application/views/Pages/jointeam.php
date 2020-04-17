@@ -359,10 +359,21 @@ $this->load->view('layout/header');
 
                                             </div>
 
+                                            <div class="captchaarea">
+                                                <div class="input-group divcenter">
+                                                    <div class="input-group-prepend">
 
+                                                        <img src="<?php echo site_url("Api/createCaptha/join") ?>" id='captchaimg' style="height: fit-content;" /> 
 
+                                                    </div>
 
+                                                    <input type="text" id="widget-subscribe-form-email2" name="captcha" class="form-control required email" required=""  placeholder="Type Here">
 
+                                                </div>
+
+                                                <small class='details'>Can't read the image? click <a href="#" onclick="refreshCaptcha()">here</a> to refresh</small>
+                                            </div>
+                                            <hr/>
 
                                             <button class="btn btn-primary btn-lg btnbooking" type="submit" name="submit"><i class="fa fa-arrow-down"></i> Join Now</button>
                                         </form>
