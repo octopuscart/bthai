@@ -37,7 +37,7 @@
             </div>
             <div class="modal-body">
                 <h2>
-                    Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:                        </h2>
+                   Subscribe to our newsletter and get updates on Baan Thai news, promotions and offers !                       </h2>
 
                 <div class="widget-subscribe-form-result1"></div>
                 <form  action="<?php echo site_url("subscribe"); ?>" role="form" method="post" class="nobottommargin">
