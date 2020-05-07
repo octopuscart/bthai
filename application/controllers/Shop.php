@@ -195,13 +195,21 @@ class Shop extends CI_Controller {
 
         $data = array();
         $data['submitdata'] = "";
+        $disabledates = array(
+            "2020-05-11" => "2020-05-11",
+        );
+
         if (isset($_POST['submit'])) {
 
             $captchatext = $this->session->userdata("captchacode_booking");
+            $selectdate = $this->input->post('select_date');
+            if (isset($disabledates[$selectdate])) {
+                redirect(site_url("booknow"));
+            }
 
             $checkcaptcha = $this->input->post("captcha");
             if ($captchatext == $checkcaptcha) {
-               
+
                 $web_order = array(
                     'last_name' => $this->input->post('first_name'),
                     'first_name' => $this->input->post('last_name'),

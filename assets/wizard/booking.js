@@ -8,7 +8,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         "first_name": "",
         "last_name": "",
         "email": "",
-       "usertype":"Guest",
+        "usertype": "Guest",
         "contact_no": ""
     };
 
@@ -53,7 +53,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 
 
     $scope.changePeople = function (func) {
-        console.log(func)
+        
         if (func == 'plus') {
             $scope.bookingArray.people += 1;
         } else {
@@ -99,7 +99,6 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 //                        selectTimeSlot.push(timetemp);
                 }
 
-                console.log(selectTimeSlot)
 
             }
         }
@@ -141,7 +140,6 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 
 
     $scope.loginFunction = function () {
-        console.log($scope.initWizard.login)
         var form = new FormData()
         form.append('email', $scope.initWizard.login.email);
         form.append('password', $scope.initWizard.login.password);
@@ -160,9 +158,27 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 
     $scope.selectedDate(today);
     $scope.initWiz = function (today) {
+        var disableDates = ["2020-05-11"];
+
+
         $('#datepicker-inline').datepicker({
             format: 'yyyy-mm-dd',
-            startDate: today
+            startDate: today,
+            beforeShowDay: function (date) {
+
+                dmy = moment(date).format('YYYY-MM-DD');
+
+                if (disableDates.indexOf(dmy) != -1) {
+
+                    return false;
+
+                } else {
+
+                    return true;
+
+                }
+
+            }
         }).on("click", function (e) {
             let sdate = ($('#datepicker-inline').datepicker("getDate"));
             $timeout(function () {
