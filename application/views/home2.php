@@ -64,7 +64,7 @@ $this->load->view('layout/header');
 
                     <li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"   data-saveperformance="off"  data-title="Welcome to Baan Thai!">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"  alt="video_typing_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <img src="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"  alt=" Baanthai video_typing_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -98,7 +98,7 @@ $this->load->view('layout/header');
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
                              data-textAlign="center"
-                             data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;"><img src="<?php echo base_url(); ?>assets/images/logo50.png" style="height: 50px;" alt="Canvas Logo" /></div>
+                             data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;"><img src="<?php echo base_url(); ?>assets/images/logo50.png" style="height: 50px;" alt=" Baanthai Baanthai Logo" /></div>
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
                              data-x="center" data-hoffset="0"
@@ -133,7 +133,7 @@ $this->load->view('layout/header');
                     </li>
                     <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/22.jpg" data-delay="12000"  data-saveperformance="off" data-title="Our rustic and stylish restaurant">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>assets/images/slider/22.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="right center">
+                        <img src="<?php echo base_url(); ?>assets/images/slider/22.jpg"  alt=" Baanthai kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="right center">
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 2 -->
@@ -182,7 +182,7 @@ $this->load->view('layout/header');
                     <!-- SLIDE  -->
                     <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/33.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Special Taste Of Thailand">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>assets/images/slider/33.jpg"  alt="kenburns6"  data-bgposition="center top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="center center">
+                        <img src="<?php echo base_url(); ?>assets/images/slider/33.jpg"  alt=" Baanthai kenburns6"  data-bgposition="center top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="center center">
                         <!-- LAYERS -->
 
 
@@ -219,7 +219,7 @@ $this->load->view('layout/header');
                     <!-- SLIDE  -->
                     <li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/11.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Thai dining in Hong Kong">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>assets/images/slider/11.jpg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="130" data-bgpositionend="right bottom">
+                        <img src="<?php echo base_url(); ?>assets/images/slider/11.jpg"  alt=" Baanthai kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="130" data-bgpositionend="right bottom">
                         <!-- LAYERS -->
 
 
@@ -292,7 +292,7 @@ $this->load->view('layout/header');
 
                     <div class="col_half nobottommargin center">
 
-                        <img src="<?php echo base_url(); ?>assets/images/food11.png" alt="Image" data-animate="fadeInLeft">
+                        <img src="<?php echo base_url(); ?>assets/images/food11.png" alt=" Baanthai Image" data-animate="fadeInLeft">
 
                     </div>
 
@@ -396,7 +396,7 @@ $this->load->view('layout/header');
                         <?php
                         for ($i = 1; $i <= 8; $i++) {
                             ?>
-                            <a href="<?php echo base_url(); ?>assets/images/food/<?php echo $i; ?>.jpg" data-lightbox="gallery-item"><img class="image_fade" src="<?php echo base_url(); ?>assets/images/food/<?php echo $i; ?>.jpg" alt="Gallery Thumb 1" data-animate="zoomIn"></a>
+                            <a href="<?php echo base_url(); ?>assets/images/food/<?php echo $i; ?>.jpg" data-lightbox="gallery-item"><img class="image_fade" src="<?php echo base_url(); ?>assets/images/food/<?php echo $i; ?>.jpg" alt=" Baanthai Gallery Thumb 1" data-animate="zoomIn"></a>
 
                         <?php } ?>
 
