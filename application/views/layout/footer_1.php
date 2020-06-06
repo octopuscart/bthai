@@ -3,10 +3,10 @@
         border-top-color: rgb(255, 255, 255);
     }
     footer .social-icon.si-small {
-        width: 39px;
-        height: 34px;
+        width: 50px;
+        height: 50px;
         font-size: 29px;
-        line-height: 34px !important;
+        line-height: 50px !important;
         margin-left: 10px;
     }
     .dark .widget h4 {
@@ -53,17 +53,13 @@
              
                     <div class="input-group divcenter">
                         <div class="input-group-prepend">
-
                             <img src="<?php echo site_url("Api/createCaptha/subscribe") ?>" id='captchaimg' alt="Baanthai Captcha Image" style="height: fit-content;" /> 
-
                         </div>
-
                         <input type="text" id="widget-subscribe-form-email2" name="captcha" class="form-control required email" required=""  placeholder="Type Here">
                         <div class="input-group-append">
                             <button class="btn btn-success" name="submit" type="submit">Subscribe</button>
                         </div>
                     </div>
-
                     <small class='details'>Can't read the image? click <a hreflang="en-us"  href="#" onclick="refreshCaptcha()">here</a> to refresh</small>
 
                 </form>
