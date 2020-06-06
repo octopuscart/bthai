@@ -15,6 +15,7 @@ class Shop extends CI_Controller {
     }
 
     public function error404() {
+        set_status_header('404');
         $this->load->view('errors/error_404');
     }
 
