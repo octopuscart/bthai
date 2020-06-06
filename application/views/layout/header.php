@@ -144,7 +144,7 @@
                     <span class="lefttopmenu">
                         <a hreflang="en-us"  href="tel:info@baanthai.hk" style="color:white"><i class="fa fa-phone"></i> +(852) 2840 0041</a> 
                     </span>
-                    <div class="topmenuright">
+                    <div class="topmenuright hideonmobile">
                         <div class=" clearfix">
                             <a hreflang="en-us"  href="https://www.facebook.com/baanthaihk/" class="si-facebook">
                                 <i class="icon-facebook"></i>
