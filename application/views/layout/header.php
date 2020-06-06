@@ -68,6 +68,15 @@
 
         <!--owl--> 
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168688916-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-168688916-1');</script>
+
+
     </head>  
 
 
@@ -161,7 +170,7 @@
 
                             </a>
 
-                        
+
 
                             <a hreflang="en-us"  href="https://www.tripadvisor.in/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" class="si-tripadvisor">
                                 <i class="fa fa-tripadvisor"></i>
@@ -169,16 +178,16 @@
                             </a>
 
 
-        
-                            
-                             <a hreflang="en-us"  href="https://www.youtube.com/channel/UCrer3PmSJf5hlYvfETUS2Ew" class="si-youtube">
+
+
+                            <a hreflang="en-us"  href="https://www.youtube.com/channel/UCrer3PmSJf5hlYvfETUS2Ew" class="si-youtube">
                                 <i class="icon-youtube"></i>
 
                             </a>
-                            
-                            
-                            
-                             <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="si-yelp">
+
+
+
+                            <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="si-yelp">
                                 <i class="icon-yelp"></i>
 
                             </a>
