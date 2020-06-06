@@ -69,6 +69,7 @@ class Sitemap extends CI_Controller {
      * More information about sitemap indexes: http://www.sitemaps.org/protocol.html#index
      */
     public function index() {
+        header('Content-Type: application/xml');
         $this->SitemapModel->add(base_url(), NULL, 'monthly', 1);
         foreach ($this->menuitems as $key => $value) {
             $this->SitemapModel->add($value['link'], NULL, 'monthly', 0.9);
@@ -80,7 +81,7 @@ class Sitemap extends CI_Controller {
      * Generate a sitemap both based on static urls and an array of urls
      */
     public function general() {
-        
+        header('Content-Type: application/xml');
         $sitemap = [];
         foreach ($this->menuitems as $key => $value) {
             $element = array('title' => $value['title'], 'url' => $value['link'], 'suburl' => array());
