@@ -93,4 +93,8 @@ class Sitemap extends CI_Controller {
     /**
      * Generate a sitemap only on an array of urls
      */
+    public function articles() {
+
+        $this->SitemapModel->output();
+    }
 }
