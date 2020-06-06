@@ -64,7 +64,7 @@
                         </div>
                     </div>
 
-                    <small class='details'>Can't read the image? click <a href="#" onclick="refreshCaptcha()">here</a> to refresh</small>
+                    <small class='details'>Can't read the image? click <a hreflang="en-us"  href="#" onclick="refreshCaptcha()">here</a> to refresh</small>
 
                 </form>
 
@@ -138,7 +138,7 @@
                         Baan Thai Restaurant has a great loyalty program called the 'Spice Club'. Our club members earn credits each time they visit and dine at Baan Thai and after a certain amount of visits, they earn a significant discount on their next bill. 
 
                     </p>
-                    <a href="<?php echo site_url('loyalprogram'); ?>">Enroll Here</a>
+                    <a hreflang="en-us"  href="<?php echo site_url('loyalprogram'); ?>">Enroll Here</a>
                 </div>
             </div>
 
@@ -162,7 +162,7 @@
                         Each month, Baan Thai Restaurant sends out a simple and brief email newsletter which up-dates our customers on news, promotions and offers. If you would like to receive the newsletter, simply click here and just provide us with you name, contact number and email address.
                     </p>
 
-                    <a href="#"  data-toggle="modal" data-target="#subscribe">Click Here</a>
+                    <a hreflang="en-us"  href="#"  data-toggle="modal" data-target="#subscribe">Click Here</a>
 
                 </div>
             </div>
@@ -185,7 +185,7 @@
 
                         For party package and party event or private catering write us at info@baanthai.hk
                     </p>
-                    <a href="<?php echo site_url('private_parties'); ?>">Click Here</a>
+                    <a hreflang="en-us"  href="<?php echo site_url('private_parties'); ?>">Click Here</a>
                 </div>
             </div>
 
@@ -212,7 +212,7 @@
 
                 <div class="widget clearfix">
                     <div class="footerfirtblock">
-                        <img src="<?php echo base_url(); ?>assets/images/logo50.png" alt="" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;    height: 41px;">
+                        <img src="<?php echo base_url(); ?>assets/images/logo50.png" alt="Baan Thai Hong Kong" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;    height: 41px;">
                     </div>
                     <div class="footerfirtblock">
                         <p style="    color: white;    text-align: left;">Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine.</p>
@@ -231,35 +231,35 @@
                     <div class="widget clearfix" style="    margin-top: 30px;">
 
                         <div class=" clearfix">
-                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
+                            <a hreflang="en-us"  href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
                                 <i class="icon-facebook"></i>
                                 <i class="icon-facebook"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                            <a hreflang="en-us"  href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
                                 <i class="icon-twitter"></i>
                                 <i class="icon-twitter"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-instagram">
+                            <a hreflang="en-us"  href="#" class="social-icon si-small si-borderless nobottommargin si-instagram">
                                 <i class="icon-instagram"></i>
                                 <i class="icon-instagram"></i>
                             </a>
 
 
 
-                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-tripadvisor">
+                            <a hreflang="en-us"  href="#" class="social-icon si-small si-borderless nobottommargin si-tripadvisor">
                                 <i class="fa fa-tripadvisor"></i>
                                 <i class="fa fa-tripadvisor"></i>
                             </a>
 
 
-                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-linkedin">
+                            <a hreflang="en-us"  href="#" class="social-icon si-small si-borderless nobottommargin si-linkedin">
                                 <i class="icon-linkedin"></i>
                                 <i class="icon-linkedin"></i>
                             </a>
 
-                            <a href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="social-icon si-small si-borderless nobottommargin si-yelp">
+                            <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="social-icon si-small si-borderless nobottommargin si-yelp">
                                 <i class="icon-yelp"></i>
                                 <i class="icon-yelp"></i>
                             </a>
@@ -302,7 +302,7 @@
                                     <h4>
                                         <div class="footer_icon_container"> <i class="fa fa-phone footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left  m_l_10">
-                                            <a href="tel:+852 2840 0041" style="    font-size: 15px;">+(852) 2840 0041</a>
+                                            <a hreflang="en-us"  href="tel:+852 2840 0041" style="    font-size: 15px;">+(852) 2840 0041</a>
                                         </div>
                                     </h4>
                                 </div>
@@ -314,7 +314,7 @@
                                     <h4>
                                         <div class="footer_icon_container"> <i class="fa fa-whatsapp footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left  m_l_10">
-                                            <a href="https://api.whatsapp.com/send?phone=85262918128" style="    font-size: 15px;">+(852) 6291 8128</a>
+                                            <a hreflang="en-us"  href="https://api.whatsapp.com/send?phone=85262918128" style="    font-size: 15px;">+(852) 6291 8128</a>
                                         </div>
                                     </h4>
                                 </div>
@@ -332,7 +332,7 @@
                                     <h4>
                                         <div class="footer_icon_container"> <i class="icon-email3 footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left m_top_5 m_l_10">
-                                            <a href="mailto:info@baanthai.hk" style="    font-size: 15px;">info@baanthai.hk </a>
+                                            <a hreflang="en-us"  href="mailto:info@baanthai.hk" style="    font-size: 15px;">info@baanthai.hk </a>
                                         </div>
                                     </h4>
                                 </div>
@@ -346,7 +346,7 @@
                                     <h4>
                                         <div class="footer_icon_container"> <i class="icon-group footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left m_top_5 m_l_10">
-                                            <a href="<?php echo site_url('joinourteam'); ?>" style="    font-size: 15px;">Join Our Team </a>
+                                            <a hreflang="en-us"  href="<?php echo site_url('joinourteam'); ?>" style="    font-size: 15px;">Join Our Team </a>
                                         </div>
                                     </h4>
                                 </div>
@@ -363,7 +363,7 @@
 
             <div class="col_one_third col_last">
                 <div class="widget clearfix">
-                    <a href="https://www.google.com/search?sxsrf=ACYBGNTfZqg3NiOqwcFBmovGQRHDsH2bzA%3A1580712554623&source=hp&ei=asI3Xu-ZI4L8wQPmx6OACA&q=baanthai.hk&oq=baanthai.hk&gs_l=psy-ab.3..38.611.4107..5317...0.0..0.260.932.3j3j1......0....1..gws-wiz.......35i39j0j0i10j0i10i30j0i30j0i13i30.HI9dhSgMR7w&ved=0ahUKEwjv9rqS5bTnAhUCfnAKHebjCIAQ4dUDCAY&uact=5#lrd=0x3404007b252e2283:0xbdca9c199b4fbb62,1" target="_blank" style="
+                    <a hreflang="en-us"  href="https://www.google.com/search?sxsrf=ACYBGNTfZqg3NiOqwcFBmovGQRHDsH2bzA%3A1580712554623&source=hp&ei=asI3Xu-ZI4L8wQPmx6OACA&q=baanthai.hk&oq=baanthai.hk&gs_l=psy-ab.3..38.611.4107..5317...0.0..0.260.932.3j3j1......0....1..gws-wiz.......35i39j0j0i10j0i10i30j0i30j0i13i30.HI9dhSgMR7w&ved=0ahUKEwjv9rqS5bTnAhUCfnAKHebjCIAQ4dUDCAY&uact=5#lrd=0x3404007b252e2283:0xbdca9c199b4fbb62,1" target="_blank" style="
 
                        float: left;
                        width: 100%;
@@ -381,7 +381,7 @@
 
                         <h2 style="margin: 0;font-size: 25px;">4.5 <small>(25 reviews)</small></h2>
                         <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 0px;height: 50px;">
-                        <a class="btn btn-success" href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
+                        <a class="btn btn-success" hreflang="en-us"  href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                     <div class="line" style="margin: 10px 0;"></div>
                     <div class="widget clearfix" style="    margin-top: 0px;">

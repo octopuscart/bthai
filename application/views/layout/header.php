@@ -8,23 +8,23 @@
         meta_tags();
         ?>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/logof.png'; ?>" type="image/x-icon">
-        <link rel="icon" href="<?php echo base_url() . 'assets/images/logof.png'; ?>" type="image/x-icon">
+        <link rel="shortcut icon" hreflang="en-us"  href="<?php echo base_url() . 'assets/images/logof.png'; ?>" type="image/x-icon">
+        <link rel="icon" hreflang="en-us"  href="<?php echo base_url() . 'assets/images/logof.png'; ?>" type="image/x-icon">
 
-        <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/logof.png'; ?>"/>
-        <link rel="apple-touch-icon image_src" href="<?php echo base_url() . 'assets/images/logof.png'; ?>"/>
+        <link rel="shortcut icon" hreflang="en-us"  href="<?php echo base_url() . 'assets/images/logof.png'; ?>"/>
+        <link rel="apple-touch-icon image_src" hreflang="en-us"  href="<?php echo base_url() . 'assets/images/logof.png'; ?>"/>
 
         <!-- Stylesheets
         ============================================= -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/bootstrap.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/style.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/dark.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/font-icons.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/animate.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/magnific-popup.css" type="text/css" />
+        <link hreflang="en-us"  href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/style.css" type="text/css" />
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/dark.css" type="text/css" />
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/font-icons.css" type="text/css" />
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/animate.css" type="text/css" />
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/magnific-popup.css" type="text/css" />
 
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/responsive.css" type="text/css" />
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/responsive.css" type="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lt IE 9]>
                 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -32,15 +32,15 @@
 
 
 
-        <link href="<?php echo base_url(); ?>assets/theme/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+        <link hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
 
 
         <!--sweet alert-->
         <script src="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.js"></script>
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.css">
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.css">
 
 
-        <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+        <link hreflang="en-us"  href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
 
         <!-- External JavaScripts
@@ -49,21 +49,21 @@
         <script src="<?php echo base_url(); ?>assets/theme/js/plugins.js"></script>
         <!-- Footer Scripts
         ============================================= -->
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/style_custome.css" type="text/css" />
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/style_custome.css" type="text/css" />
 
         <!--angular js-->
         <script src="<?php echo base_url(); ?>assets/theme/angular/angular.min.js"></script>
 
         <!-- Google Tag Manager -->
         <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/include/rs-plugin/css/settings.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/include/rs-plugin/css/layers.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/include/rs-plugin/css/navigation.css">
+        <link rel="stylesheet" type="text/css" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/include/rs-plugin/css/settings.css" media="screen" />
+        <link rel="stylesheet" type="text/css" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/include/rs-plugin/css/layers.css">
+        <link rel="stylesheet" type="text/css" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/include/rs-plugin/css/navigation.css">
 
 
         <!--owl slider-->
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/owl/owl.carousel.min.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/owl/owl.theme.default.min.css">
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/owl/owl.carousel.min.css">
+        <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/owl/owl.theme.default.min.css">
         <script src="<?php echo base_url(); ?>assets/owl/owl.carousel.js"></script>
 
         <!--owl--> 
@@ -139,41 +139,41 @@
             <header id="header" class="sticky-header">
                 <div class="container topmenuheader" style="">
                     <span class="lefttopmenu">
-                        <a href="mailto:info@baanthai.hk" style="color:white"><i class="fa fa-envelope-o"></i> info@baanthai.hk</a> 
+                        <a hreflang="en-us"  href="mailto:info@baanthai.hk" style="color:white"><i class="fa fa-envelope-o"></i> info@baanthai.hk</a> 
                     </span>
                     <span class="lefttopmenu">
-                        <a href="tel:info@baanthai.hk" style="color:white"><i class="fa fa-phone"></i> +(852) 2840 0041</a> 
+                        <a hreflang="en-us"  href="tel:info@baanthai.hk" style="color:white"><i class="fa fa-phone"></i> +(852) 2840 0041</a> 
                     </span>
                     <div class="topmenuright">
                         <div class=" clearfix">
-                            <a href="#" class="si-facebook">
+                            <a hreflang="en-us"  href="#" class="si-facebook">
                                 <i class="icon-facebook"></i>
 
                             </a>
 
-                            <a href="#" class="si-twitter">
+                            <a hreflang="en-us"  href="#" class="si-twitter">
                                 <i class="icon-twitter"></i>
 
                             </a>
 
-                            <a href="#" class="si-instagram">
+                            <a hreflang="en-us"  href="#" class="si-instagram">
                                 <i class="icon-instagram"></i>
 
                             </a>
 
                         
 
-                            <a href="#" class="si-tripadvisor">
+                            <a hreflang="en-us"  href="#" class="si-tripadvisor">
                                 <i class="fa fa-tripadvisor"></i>
 
                             </a>
 
 
-                            <a href="#" class="si-linkedin">
+                            <a hreflang="en-us"  href="#" class="si-linkedin">
                                 <i class="icon-linkedin"></i>
 
                             </a>
-                             <a href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="si-yelp">
+                             <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="si-yelp">
                                 <i class="icon-yelp"></i>
 
                             </a>
@@ -190,8 +190,8 @@
                         <!-- Logo
                         ============================================= -->
                         <div id="logo">
-                            <a href="<?php echo site_url("/"); ?>" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
-                            <a href="<?php echo site_url("/"); ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
+                            <a hreflang="en-us"  href="<?php echo site_url("/"); ?>" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
+                            <a hreflang="en-us"  href="<?php echo site_url("/"); ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
                         </div><!-- #logo end -->
 
                         <!-- Primary Navigation
@@ -205,7 +205,7 @@
                                 <?php
                                 foreach ($menuitems as $key => $value) {
                                     ?>
-                                    <li  class="<?php echo current_url() == $value['link'] ? 'activemenu' : '' ?>"><a href="<?php echo $value['link']; ?>" class="<?php echo $value['class']; ?>"><div ><i class="<?php echo $value['icon']; ?>"></i><?php echo $value['title']; ?></div></a></li>
+                                    <li  class="<?php echo current_url() == $value['link'] ? 'activemenu' : '' ?>"><a hreflang="en-us"  href="<?php echo $value['link']; ?>" class="<?php echo $value['class']; ?>"><div ><i class="<?php echo $value['icon']; ?>"></i><?php echo $value['title']; ?></div></a></li>
                                 <?php } ?>
                                 <!--{{userLogin}}-->
                             </ul>
@@ -218,7 +218,7 @@
 
             </header><!-- #header end -->
             <div class="clear"></div>
-            <a class="btn btn-danger deliveryButton" href="<?php echo site_url('booknow'); ?>" style="    bottom: 150px;
+            <a class="btn btn-danger deliveryButton" hreflang="en-us"  href="<?php echo site_url('booknow'); ?>" style="    bottom: 150px;
                background: #ff0000;line-height: 64px;"> Book Now</a>
 
             <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
@@ -231,7 +231,7 @@
                         <div class="modal-body deliverymodal">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    position: absolute;
                                     right: 5px;"><span aria-hidden="true">&times;</span></button>
-                            <a href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
+                            <a hreflang="en-us"  href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
                                 <img src="<?php echo base_url(); ?>assets/images/delivery.jpg">
                             </a>
                         </div>
