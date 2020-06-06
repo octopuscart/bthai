@@ -76,7 +76,7 @@ if (!function_exists('meta_tags')) {
         if ($enable['twitter']) {
             $output .= '<meta name="twitter:card" content="summary"/>'
                     . '<meta name="twitter:title" content="' . $title . '"/>'
-                     '<meta name="twitter:site" content="' . $url . '"/>'
+                    . '<meta name="twitter:site" content="' . $url . '"/>'
                     . '<meta name="twitter:url" content="' . $url . '"/>'
                     . '<meta name="twitter:description" content="' . $desc . '"/>'
                     . '<meta name="twitter:image" content="' . $imgurl . '"/>';
