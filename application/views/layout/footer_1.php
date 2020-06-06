@@ -5,8 +5,8 @@
     footer .social-icon.si-small {
         width: 50px;
         height: 50px;
-        font-size: 29px;
-        line-height: 50px !important;
+        font-size: 23px;
+        line-height: 38px !important;
         margin-left: 10px;
     }
     .dark .widget h4 {
