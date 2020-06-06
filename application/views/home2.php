@@ -385,7 +385,7 @@ $this->load->view('layout/header');
 
                 </div>
 
-                <div class="col_half nobottommargin col_last">
+                <div class="col_half nobottommargin col_last hideonmobile">
 
                     <div class="fancy-title title-border">
                         <h4>Gallery</h4>
