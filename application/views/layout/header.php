@@ -146,33 +146,38 @@
                     </span>
                     <div class="topmenuright">
                         <div class=" clearfix">
-                            <a hreflang="en-us"  href="#" class="si-facebook">
+                            <a hreflang="en-us"  href="https://www.facebook.com/baanthaihk/" class="si-facebook">
                                 <i class="icon-facebook"></i>
 
                             </a>
 
-                            <a hreflang="en-us"  href="#" class="si-twitter">
+                            <a hreflang="en-us"  href="https://twitter.com/baanthaihk" class="si-twitter">
                                 <i class="icon-twitter"></i>
 
                             </a>
 
-                            <a hreflang="en-us"  href="#" class="si-instagram">
+                            <a hreflang="en-us"  href="https://www.instagram.com/baanthaihk/" class="si-instagram">
                                 <i class="icon-instagram"></i>
 
                             </a>
 
                         
 
-                            <a hreflang="en-us"  href="#" class="si-tripadvisor">
+                            <a hreflang="en-us"  href="https://www.tripadvisor.in/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" class="si-tripadvisor">
                                 <i class="fa fa-tripadvisor"></i>
 
                             </a>
 
 
-                            <a hreflang="en-us"  href="#" class="si-linkedin">
-                                <i class="icon-linkedin"></i>
+        
+                            
+                             <a hreflang="en-us"  href="https://www.youtube.com/channel/UCrer3PmSJf5hlYvfETUS2Ew" class="si-youtube">
+                                <i class="icon-youtube"></i>
 
                             </a>
+                            
+                            
+                            
                              <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="si-yelp">
                                 <i class="icon-yelp"></i>
 
