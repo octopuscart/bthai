@@ -130,7 +130,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="promotionicon">
-                        <img src="<?php echo base_url(); ?>assets/icons/group.svg">
+                        <img src="<?php echo base_url(); ?>assets/icons/group.svg" alt="Baanthai group">
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -154,7 +154,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="promotionicon">
-                        <img src="<?php echo base_url(); ?>assets/icons/bell.svg">
+                        <img src="<?php echo base_url(); ?>assets/icons/bell.svg" alt="Baanthai bell">
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -176,7 +176,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="promotionicon">
-                        <img src="<?php echo base_url(); ?>assets/icons/food.svg" alt="Baanthai Food>
+                        <img src="<?php echo base_url(); ?>assets/icons/food.svg" alt="Baanthai Food">
                     </div>
                 </div>
                 <div class="col-md-8">
