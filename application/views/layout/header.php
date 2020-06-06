@@ -195,8 +195,8 @@
                         <!-- Logo
                         ============================================= -->
                         <div id="logo">
-                            <a hreflang="en-us"  href="<?php echo site_url("/"); ?>" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
-                            <a hreflang="en-us"  href="<?php echo site_url("/"); ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Canvas Logo"></a>
+                            <a hreflang="en-us"  href="<?php echo site_url("/"); ?>" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Baanthai Logo"></a>
+                            <a hreflang="en-us"  href="<?php echo site_url("/"); ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Baanthai Logo"></a>
                         </div><!-- #logo end -->
 
                         <!-- Primary Navigation
@@ -237,7 +237,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    position: absolute;
                                     right: 5px;"><span aria-hidden="true">&times;</span></button>
                             <a hreflang="en-us"  href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
-                                <img src="<?php echo base_url(); ?>assets/images/delivery.jpg">
+                                <img src="<?php echo base_url(); ?>assets/images/delivery.jpg" alt="Baanthai Deliery">
                             </a>
                         </div>
 

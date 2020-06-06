@@ -37,7 +37,7 @@
             </div>
             <div class="modal-body">
                 <h2>
-                   Subscribe to our newsletter and get updates on Baan Thai news, promotions and offers !                       </h2>
+                   Subscribe to our newsletter and get updates on Baanthai news, promotions and offers !                       </h2>
 
                 <div class="widget-subscribe-form-result1"></div>
                 <form  action="<?php echo site_url("subscribe"); ?>" role="form" method="post" class="nobottommargin">
@@ -54,7 +54,7 @@
                     <div class="input-group divcenter">
                         <div class="input-group-prepend">
 
-                            <img src="<?php echo site_url("Api/createCaptha/subscribe") ?>" id='captchaimg' style="height: fit-content;" /> 
+                            <img src="<?php echo site_url("Api/createCaptha/subscribe") ?>" id='captchaimg' alt="Baanthai Captcha Image" style="height: fit-content;" /> 
 
                         </div>
 
@@ -74,7 +74,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="promotionModel" tabindex="-1" role="dialog" aria-labelledby="Subscribe" aria-hidden="true">
+<div class="modal fade" ng-if="promotionImage.img != ''" id="promotionModel" tabindex="-1" role="dialog" aria-labelledby="Subscribe" aria-hidden="true">
     <div class="modal-dialog modal-lg"  role="document">
         <div class="modal-content subscribmodel">
             <div class="modal-header">
@@ -83,9 +83,9 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body" ng-if="promotionImage.img != ''">
+            <div class="modal-body" >
                 <a href='{{promotionImage.link}}'>
-                    <img src="<?php echo base_url(); ?>assets/promotion/{{promotionImage.img}}.jpg">
+                    <img alt="Baanthai Promotion" src="<?php echo base_url(); ?>assets/promotion/{{promotionImage.img}}.jpg">
                 </a>
             </div>
 
@@ -111,7 +111,7 @@
             ?>
             <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;" ng-click="selectePromotionImage('<?php echo $key; ?>', '<?php echo $value; ?>')">
                 <div class="thumbnail">
-                    <img src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
+                    <img alt="Baanthai Promotion <?php echo $key;?>" src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
                 </div>
             </div>
             <?php
@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Baan Thai Restaurant has a great loyalty program called the 'Spice Club'. Our club members earn credits each time they visit and dine at Baan Thai and after a certain amount of visits, they earn a significant discount on their next bill. 
+                        Baanthai Restaurant has a great loyalty program called the 'Spice Club'. Our club members earn credits each time they visit and dine at Baanthai and after a certain amount of visits, they earn a significant discount on their next bill. 
 
                     </p>
                     <a hreflang="en-us"  href="<?php echo site_url('loyalprogram'); ?>">Enroll Here</a>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Each month, Baan Thai Restaurant sends out a simple and brief email newsletter which up-dates our customers on news, promotions and offers. If you would like to receive the newsletter, simply click here and just provide us with you name, contact number and email address.
+                        Each month, Baanthai Restaurant sends out a simple and brief email newsletter which up-dates our customers on news, promotions and offers. If you would like to receive the newsletter, simply click here and just provide us with you name, contact number and email address.
                     </p>
 
                     <a hreflang="en-us"  href="#"  data-toggle="modal" data-target="#subscribe">Click Here</a>
@@ -176,7 +176,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="promotionicon">
-                        <img src="<?php echo base_url(); ?>assets/icons/food.svg">
+                        <img src="<?php echo base_url(); ?>assets/icons/food.svg" alt="Baanthai Food>
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -212,10 +212,10 @@
 
                 <div class="widget clearfix">
                     <div class="footerfirtblock">
-                        <img src="<?php echo base_url(); ?>assets/images/logo50.png" alt="Baan Thai Hong Kong" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;    height: 41px;">
+                        <img src="<?php echo base_url(); ?>assets/images/logo50.png" alt="Baanthai Hong Kong" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;    height: 41px;">
                     </div>
                     <div class="footerfirtblock">
-                        <p style="    color: white;    text-align: left;">Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine.</p>
+                        <p style="    color: white;    text-align: left;">Baanthai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine.</p>
                     </div>
                     <div class="line" style="margin: 0px 0;"></div>
                     <div class="widget clearfix" style="margin-top: 20px;
@@ -368,7 +368,7 @@
                        text-align: center;
                        border-radius: 21px;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/google-review-link.jpg" style="    margin-top: 0px;    height: 80px;">
+                        <img src="<?php echo base_url(); ?>assets/images/google-review-link.jpg" alt="Baanthai Google Review" style="    margin-top: 0px;    height: 80px;">
 
                     </a>
                 </div>
@@ -377,7 +377,7 @@
                         <p>Ratings and reviews</p>
 
                         <h2 style="margin: 0;font-size: 25px;">4.5 <small>(25 reviews)</small></h2>
-                        <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" style="    margin-top: 0px;height: 50px;">
+                        <img src="<?php echo base_url(); ?>assets/images/tripadvisor.svg" alt="Baanthai tripadvisor" style="    margin-top: 0px;height: 50px;">
                         <a class="btn btn-success" hreflang="en-us"  href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" target="_blank" style="color:white;">Write A Review <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                     <div class="line" style="margin: 10px 0;"></div>
@@ -388,7 +388,7 @@
                             <h4 style="margin: 0;"> We Accept</h4>
 
                             <br/>
-                            <img src="<?php echo base_url(); ?>assets/images/payments.png" style="  height: 70px;">
+                            <img src="<?php echo base_url(); ?>assets/images/payments.png" alt="Baanthai payment" style="  height: 70px;">
 
                         </div>
                     </div>
@@ -416,7 +416,7 @@
             <div class="col_full center" style="    padding: 6px;
                  color: white;">
 
-                Copyrights &copy; <?php echo date("Y"); ?> All Rights Reserved by Baan Thai.
+                Copyrights &copy; <?php echo date("Y"); ?> All Rights Reserved by Baanthai.
             </div>
 
 
