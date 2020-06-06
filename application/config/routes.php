@@ -74,6 +74,7 @@ $route['faqs'] = 'Shop/faqs';
 $route['gallery/(:any)'] = 'Shop/gallery/$1';
 $route['sitemap\.xml'] = "Sitemap/index";
 $route['sitemap'] = "Sitemap/general";
+$route['sitemap_index\.xml'] = "Sitemap/index";
 $route['admin'] = "Shop/locallogin";
 
 
