@@ -37,7 +37,7 @@
             </div>
             <div class="modal-body">
                 <h2>
-                   Subscribe to our newsletter and get updates on Baanthai news, promotions and offers !                       </h2>
+                    Subscribe to our newsletter and get updates on Baanthai news, promotions and offers !                       </h2>
 
                 <div class="widget-subscribe-form-result1"></div>
                 <form  action="<?php echo site_url("subscribe"); ?>" role="form" method="post" class="nobottommargin">
@@ -50,7 +50,7 @@
 
                     </div>
                     <hr/>
-             
+
                     <div class="input-group divcenter">
                         <div class="input-group-prepend">
                             <img src="<?php echo site_url("Api/createCaptha/subscribe") ?>" id='captchaimg' alt="Baanthai Captcha Image" style="height: fit-content;" /> 
@@ -107,7 +107,7 @@
             ?>
             <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;" ng-click="selectePromotionImage('<?php echo $key; ?>', '<?php echo $value; ?>')">
                 <div class="thumbnail">
-                    <img alt="Baanthai Promotion <?php echo $key;?>" src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
+                    <img alt="Baanthai Promotion <?php echo $key; ?>" src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
                 </div>
             </div>
             <?php
@@ -194,9 +194,11 @@
 <!-- Footer
                 ============================================= -->
 <footer id="footer" class="dark" style="background: url('<?php echo base_url(); ?>assets/images/woodback.jpg') repeat fixed; ">
-    <iframe class="hideonmobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
-            frameborder="0" style="border: 0;;height: 300px;width: 100%" allowfullscreen>
-    </iframe>
+    <div class="hideonmobile" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
+                frameborder="0" style="border: 0;;height: 300px;width: 100%" allowfullscreen>
+        </iframe>
+    </div>
 
     <div class="container">
 
@@ -250,7 +252,7 @@
                             </a>
 
 
-                        
+
 
                             <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="social-icon si-small si-borderless nobottommargin si-yelp">
                                 <i class="icon-yelp"></i>
@@ -428,12 +430,12 @@
 
 <script>
     function refreshCaptcha()
-        {
-            var img = document.images['captchaimg'];
-            img.src = img.src;
-        }
+    {
+        var img = document.images['captchaimg'];
+        img.src = img.src;
+    }
     jQuery(function () {
-        
+
 
         jQuery('.owl-carousel').owlCarousel({
             loop: true,
