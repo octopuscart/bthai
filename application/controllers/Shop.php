@@ -9,6 +9,7 @@ class Shop extends CI_Controller {
         $this->load->model('Product_model');
         $this->load->model('User_model');
 
+        $this->load->library('user_agent');
         $this->load->library('session');
         $this->user_id = $this->session->userdata('logged_in')['login_id'];
         $this->session_user = $this->session->userdata('admin_login');
