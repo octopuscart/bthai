@@ -13,6 +13,8 @@ class Shop extends CI_Controller {
         $this->load->library('session');
         $this->user_id = $this->session->userdata('logged_in')['login_id'];
         $this->session_user = $this->session->userdata('admin_login');
+        $checkmobile = $this->agent->is_mobile();
+        $this->session->set_userdata('checkmobile', $checkmobile);
     }
 
     public function error404() {
