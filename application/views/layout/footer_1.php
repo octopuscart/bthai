@@ -190,7 +190,7 @@
 </div>
 
 <?php
-$this->load->library('user_agent');
+
 $useragent = $this->user_agent->is_mobile();
 echo $useragent, "has mobile";
 ?>
