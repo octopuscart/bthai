@@ -189,7 +189,10 @@
     </div>
 </div>
 
-
+<?php
+$useragent = $this->user_agent->is_mobile();
+echo $useragent, "has mobile";
+?>
 
 <!-- Footer
                 ============================================= -->
