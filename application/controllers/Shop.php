@@ -20,10 +20,7 @@ class Shop extends CI_Controller {
     }
 
     public function index() {
-        $this->agent = $this->load->library('user_agent');
-        $mobile = $this->agent->is_mobile();
-        
-        
+    
         $this->load->view('home2');
     }
 
