@@ -68,7 +68,7 @@ $route['booknow'] = 'Shop/booknow';
 $route['loyalprogram'] = 'Shop/loyaltyProgram';
 $route['joinourteam'] = 'Shop/joinTeam';
 
-$route['private_parties'] = 'Shop/private_parties';
+$route['privateparties'] = 'Shop/private_parties';
 
 $route['reviews'] = 'Shop/reviews';
 $route['faqs'] = 'Shop/faqs';

@@ -502,3 +502,17 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
     border: 1px solid #9E9E9E;
     border-radius: 10px;
 }
+
+span.keywordtxt {
+    text-transform: uppercase;
+    margin: 5px;
+    /* float: left; */
+    display: inline-block;
+    background: #0006;
+    padding: 2px 6px;
+}
+
+.keywordsection {
+    white-space: normal;
+    text-align: center;
+}

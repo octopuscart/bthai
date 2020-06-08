@@ -100,7 +100,7 @@
         $promotionlink = array(
             "77" => site_url("gallery/events"),
             "1" => site_url("loyalprogram"),
-            "2" => site_url("private_parties"),
+            "2" => site_url("privateparties"),
         );
 
         foreach ($promotionlink as $key => $value) {
@@ -181,7 +181,7 @@
 
                         For party package and party event or private catering write us at info@baanthai.hk
                     </p>
-                    <a hreflang="en-us"  href="<?php echo site_url('private_parties'); ?>">Click Here</a>
+                    <a hreflang="en-us"  href="<?php echo site_url('privateparties'); ?>">Click Here</a>
                 </div>
             </div>
 
@@ -190,19 +190,57 @@
 </div>
 
 <?php
-$mobilecheck =  $this->session->userdata('checkmobile');
+$mobilecheck = $this->session->userdata('checkmobile');
+$keywordsList = [
+    "thaifood",
+    "baanthai",
+    "thaifoodhongkong",
+    "bestthaifoodinhongkong",
+    "Bestthairestaurantinhongkong",
+    "baanthaifoodinhongkong",
+    "topthairestaurantinhongkong",
+    "topthaifoodinhongkong",
+    "mostpopularthaifoodinhonkong",
+    "thaicuisine",
+    "thaicuisineonline",
+    "homedeliverythaifood",
+    "homedeliverythaicuisine",
+    "onlinethaifood",
+    "orderonlinethaifood",
+    "specialthaifood",
+    "purethaifoodinhongkong",
+    "purethaifood",
+    "thaifoodnearme",
+    "Baanthaicentral",
+    "Thaifoodinhoongkong",
+    "baanthaimenu",
+    "baanthairestaurant",
+    "baanthai",
+    "takeawaythaifood",
+    "popularthaifood",
+    "thaifooddishes",
+    "thaidishes",
+    "lowcostthaifood",
+    "top10thairestaurantinhongkong",
+    "top5thairestaurantinhongkong",
+    "thaifoodinlankawifong",
+    "bestthaifoodinlankawifong"
+];
 ?>
 
 <!-- Footer
                 ============================================= -->
 <footer id="footer" class="dark" style="background: url('<?php echo base_url(); ?>assets/images/woodback.jpg') repeat fixed; ">
     <div class="" >
-        <?php if($mobilecheck){}
-        else{?>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
-                frameborder="0" style="border: 0;;height: 300px;width: 100%" allowfullscreen>
-        </iframe>
         <?php
+        if ($mobilecheck) {
+            
+        } else {
+            ?>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
+                    frameborder="0" style="border: 0;;height: 300px;width: 100%" allowfullscreen>
+            </iframe>
+            <?php
         }
         ?>
     </div>
@@ -259,6 +297,10 @@ $mobilecheck =  $this->session->userdata('checkmobile');
                             </a>
 
 
+                            <a hreflang="en-us"  href="https://www.youtube.com/channel/UCrer3PmSJf5hlYvfETUS2Ew" class="social-icon si-small si-borderless nobottommargin si-youtube">
+                                <i class="icon-youtube"></i>
+                                <i class="icon-youtube"></i>
+                            </a>
 
 
                             <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="social-icon si-small si-borderless nobottommargin si-yelp">
@@ -409,6 +451,14 @@ $mobilecheck =  $this->session->userdata('checkmobile');
 
 
         </div><!-- .footer-widgets-wrap end -->
+
+        <div class="keywordsection">
+            <?php
+            foreach ($keywordsList as $key => $value) {
+                echo "<span class='keywordtxt'>$value</span>";
+            }
+            ?>
+        </div>
 
     </div>
 

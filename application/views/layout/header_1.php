@@ -35,7 +35,7 @@ $menuitems = [
     array(
         "title" => "Private Parties/Catering",
         "icon" => "ion-ios-beer",
-        "link" => site_url("private_parties"),
+        "link" => site_url("privateparties"),
         "class" => ""
     ),
     array(
