@@ -74,7 +74,7 @@ $this->load->view('layout/header');
 
                                     <div class="inner">
                                         <div class="image-holder1 hideonmobile">
-                                            <div class="form-header" style="    position: absolute;
+<!--                                            <div class="form-header" style="    position: absolute;
                                                  /* width: 100%; */
                                                  left: 240px;
                                                  top: 44px;">
@@ -83,7 +83,7 @@ $this->load->view('layout/header');
                                                 <a class="btn btn-success btn-lg googlebooking" href="https://www.google.com/maps/reserve/v/dine/c/srRT-hmWx0E?source=pa&hl=en-IN&gei=qg7AXsuuApOM4-EPgJqbyAM&sourceurl=https://www.google.com/search?q%3Dbaanthai%2Bhong%2Bkong%26rlz%3D1C1CHBF_enIN843IN843%26oq%3Dbaanthai%2Bhong%26aqs%3Dchrome.0.69i59j0j69i57j0l2j69i60l2j69i65.4210j0j7%26sourceid%3Dchrome%26ie%3DUTF-8" target="_blank">
                                                     <img src="<?php echo base_url(); ?>assets/images/googlefavicon.png" style="height: 25px;"/> Google Booking
                                                 </a>
-                                            </div>
+                                            </div>-->
                                             <img src="<?php echo base_url(); ?>assets/wizard/images/form-wizard-1.jpg" alt="" style="height: 600px;">
                                         </div>
                                         <div class="form-content" >

@@ -452,13 +452,13 @@ $keywordsList = [
 
         </div><!-- .footer-widgets-wrap end -->
 
-        <div class="keywordsection">
+<!--        <div class="keywordsection">
             <?php
             foreach ($keywordsList as $key => $value) {
                 echo "<span class='keywordtxt'>$value</span>";
             }
             ?>
-        </div>
+        </div>-->
 
     </div>
 
