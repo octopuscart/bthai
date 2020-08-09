@@ -367,7 +367,7 @@ class Shop extends CI_Controller {
                 "process_user" => "Guest"
             );
             $this->db->insert('user_order_status', $order_status_data);
-            $emaillink = "http://baanadmin.costcokart.com/index.php/LocalApi/sendEmailOrderCancle/$oderid";
+            $emaillink = "http://admin.baanthaihk.com/index.php/LocalApi/sendEmailOrderCancle/$oderid";
             file_get_contents($emaillink);
             redirect("booknow");
         }
