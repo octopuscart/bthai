@@ -96,11 +96,14 @@
 
     <div class="owl-carousel owl-theme">
         <?php
-        $promotion = [77, 1, 2];
+        $promotion = [77, 1, 2, 8];
         $promotionlink = array(
             "77" => site_url("gallery/events"),
             "1" => site_url("loyalprogram"),
+            "8" => site_url("aboutus"),
             "2" => site_url("privateparties"),
+             
+            
         );
 
         foreach ($promotionlink as $key => $value) {
