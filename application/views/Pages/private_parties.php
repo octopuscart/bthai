@@ -25,8 +25,7 @@ $this->load->view('layout/header');
                     </p>
                     
                        <p class="lead nobottommargin" style="color: white;">
-                        For party package and party event or private catering write us at <a href="mailto:info@baanthai.hk" style="color: white;
-    font-weight: bold;">info@baanthai.hk</a>   
+                        For party package and party event or private catering write us at info@baanthai.hk  
                     </p>
 
                 </div>
