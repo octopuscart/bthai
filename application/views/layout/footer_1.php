@@ -102,8 +102,6 @@
             "1" => site_url("loyalprogram"),
             "8" => site_url("aboutus"),
             "2" => site_url("privateparties"),
-             
-            
         );
 
         foreach ($promotionlink as $key => $value) {
@@ -113,9 +111,9 @@
                     <img alt="Baanthai Promotion <?php echo $key; ?>" src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
                 </div>
             </div>
-            <?php
-        }
-        ?>
+    <?php
+}
+?>
 
     </div>
 
@@ -235,17 +233,17 @@ $keywordsList = [
                 ============================================= -->
 <footer id="footer" class="dark" style="background: url('<?php echo base_url(); ?>assets/images/woodback.jpg') repeat fixed; ">
     <div class="" >
-        <?php
-        if ($mobilecheck) {
-            
-        } else {
-            ?>
+<?php
+if ($mobilecheck) {
+    
+} else {
+    ?>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
                     frameborder="0" style="border: 0;;height: 300px;width: 100%" allowfullscreen>
             </iframe>
-            <?php
-        }
-        ?>
+    <?php
+}
+?>
     </div>
 
     <div class="container">
@@ -409,18 +407,25 @@ $keywordsList = [
             </div>
 
             <div class="col_one_third col_last">
-                <div class="widget clearfix">
-                    <a hreflang="en-us"  href="https://www.google.com/search?sxsrf=ACYBGNTfZqg3NiOqwcFBmovGQRHDsH2bzA%3A1580712554623&source=hp&ei=asI3Xu-ZI4L8wQPmx6OACA&q=baanthai.hk&oq=baanthai.hk&gs_l=psy-ab.3..38.611.4107..5317...0.0..0.260.932.3j3j1......0....1..gws-wiz.......35i39j0j0i10j0i10i30j0i30j0i13i30.HI9dhSgMR7w&ved=0ahUKEwjv9rqS5bTnAhUCfnAKHebjCIAQ4dUDCAY&uact=5#lrd=0x3404007b252e2283:0xbdca9c199b4fbb62,1" target="_blank" style="
+                <div class="widget clearfix row" style="text-align: center;">
+                    <div class="col-md-7">
+                        <a hreflang="en-us"  href="https://www.google.com/search?sxsrf=ACYBGNTfZqg3NiOqwcFBmovGQRHDsH2bzA%3A1580712554623&source=hp&ei=asI3Xu-ZI4L8wQPmx6OACA&q=baanthai.hk&oq=baanthai.hk&gs_l=psy-ab.3..38.611.4107..5317...0.0..0.260.932.3j3j1......0....1..gws-wiz.......35i39j0j0i10j0i10i30j0i30j0i13i30.HI9dhSgMR7w&ved=0ahUKEwjv9rqS5bTnAhUCfnAKHebjCIAQ4dUDCAY&uact=5#lrd=0x3404007b252e2283:0xbdca9c199b4fbb62,1" target="_blank" style="
 
-                       float: left;
-                       width: 100%;
-                       background: white;
-                       text-align: center;
-                       border-radius: 21px;">
+                           float: left;
+                           width: 100%;
+                               margin-bottom: 20px;
+                           background: white;
+                           text-align: center;
+                           margin-top: 40px;
+                           border-radius: 21px;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/google-review-link.jpg" alt="Baanthai Google Review" style="    margin-top: 0px;    height: 80px;">
+                            <img src="<?php echo base_url(); ?>assets/images/google-review-link.jpg" alt="Baanthai Google Review" style="    margin-top: 0px;    height: 80px;">
 
-                    </a>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet"/><div style="display: inline-block!important;" id="rest_circ5" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.circ_top_title').href);return 0;}"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/Baan-Thai-Hong-Kong" class="circ_bot_title" target="_blank">Baan Thai</a></div></div>
+                    </div>
                 </div>
                 <div class="widget clearfix" style="margin-top: 40px;">
                     <div class="footertripadvisor">
@@ -455,13 +460,13 @@ $keywordsList = [
 
         </div><!-- .footer-widgets-wrap end -->
 
-<!--        <div class="keywordsection">
-            <?php
-            foreach ($keywordsList as $key => $value) {
-                echo "<span class='keywordtxt'>$value</span>";
-            }
-            ?>
-        </div>-->
+        <!--        <div class="keywordsection">
+        <?php
+        foreach ($keywordsList as $key => $value) {
+            echo "<span class='keywordtxt'>$value</span>";
+        }
+        ?>
+                </div>-->
 
     </div>
 
