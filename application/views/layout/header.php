@@ -3,7 +3,9 @@
     <head>
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="author" content="SemiColonWeb" />
+        <meta name="author" content="Baan Thai Hong Kong" />
+        <!-- Startup configuration -->
+        <link rel="manifest" href="<?php echo base_url() . 'assets/manifest.webmanifest';?>">
         <meta name="theme-color" content="#000">
         <?php
         meta_tags();
@@ -18,7 +20,7 @@
         <!-- Stylesheets
         ============================================= -->
         <link hreflang="en-us"  href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/style.css" type="text/css" />
         <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/dark.css" type="text/css" />
         <link rel="stylesheet" hreflang="en-us"  href="<?php echo base_url(); ?>assets/theme/css/font-icons.css" type="text/css" />
