@@ -125,7 +125,7 @@ $this->load->view('layout/header');
                                         <div class="form-content" >
 
                                             <h4 style=" font-size: 12px;
-                                                height: 30px;">  Enter Guest Details </h4>
+                                                height: 30px;">  Enter Booking Details </h4>
 
 
                                             <div class="" id="nav-tabContent">
