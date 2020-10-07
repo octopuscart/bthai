@@ -3,7 +3,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         "book_type": 'Reserve',
         "people": 1,
         "select_date": today,
-        "select_time": "--:--:--",
+        "select_time": "",
         "select_table": "--",
         "first_name": "",
         "last_name": "",
@@ -16,7 +16,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 
 
     $scope.changeWizard = function () {
-        if ($scope.bookingArray.select_time != "--:--:--") {
+        if ($scope.bookingArray.select_time != "") {
             $("#nav-table-tab").tab("show");
         }
     }
@@ -53,7 +53,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 
 
     $scope.changePeople = function (func) {
-        
+
         if (func == 'plus') {
             $scope.bookingArray.people += 1;
         } else {
@@ -179,6 +179,18 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
                 }
 
             }
+        }).on("changeDate", function (e) {
+            let sdate = ($('#datepicker-inline').datepicker("getDate"));
+            $('#datepicker-inline').datepicker("hide");
+            $timeout(function () {
+                if (sdate) {
+                    $scope.selectedDate(sdate);
+                    let datecheck = moment(sdate);
+                    var dateformated = datecheck.format('YYYY-MM-DD');
+                    $scope.bookingArray.select_date = dateformated;
+                }
+            });
+            console.log(sdate);
         }).on("click", function (e) {
             let sdate = ($('#datepicker-inline').datepicker("getDate"));
             $timeout(function () {
