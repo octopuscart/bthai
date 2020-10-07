@@ -153,9 +153,9 @@ $this->load->view('layout/header');
 
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label>Select Table</label>
+                                                                <label>Select Floor</label>
                                                                 <select ng-model="bookingArray.select_table" class="form-control">
-                                                                    <option value="--">Select Table</option>
+                                                                    <option value="--">Select Floor</option>
                                                                     <option value="Ground Floor">Ground Floor</option>
                                                                     <option value="First Floor">First Floor</option>
                                                                 </select>

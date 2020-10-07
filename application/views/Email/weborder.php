@@ -70,7 +70,7 @@
                                             <td style="    text-align: left;"><?php echo $appointment['select_time']; ?></td>
                                         </tr>
                                         <tr>
-                                            <th style="text-align: right;width:200px;padding-right: 10px;">Table No.</th>
+                                            <th style="text-align: right;width:200px;padding-right: 10px;">Floor</th>
                                             <td style="    text-align: left;"><?php echo $appointment['select_table']; ?></td>
                                         </tr>
                                         <tr>
