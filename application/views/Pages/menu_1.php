@@ -2,16 +2,7 @@
 $this->load->view('layout/header');
 ?>
 
-<style>
-    .bb-bookblock .thumbnail{
-        text-align: center;
-    }
 
-    .bb-bookblock img{
-        /*height: 100%;*/
-    }
-
-</style>
 
 <section id="content">
 
@@ -34,29 +25,26 @@ $this->load->view('layout/header');
                         <figcaption><h2 style="margin-top: 0px;">Food <span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
                         <div class="details">
                             <ul>
-                                <li>
-                                    SOUP<br/>
-                                    APPETISERS & SNACKS<br/>
-                                    SALADS<br/>
-                                    CURRIES<br/>
-                                    SEA FOOD<br/>
-                                    STIR-FRIED DISHES<br/>
-                                    NOODLES AND RICE<br/>
-                                    VEGETARIAN<br/>
-                                    SIDES<br/>
-                                    DESSERTS<br/>
+                                <li>Soups<br/>
+                                    Salads</br> 
+                                    Appetisers And Snacks<br/>
+                                    Curries<br/>
+                                    Seafood<br/>
+                                    Stir-Fried Dishes<br/>
+                                    Noodels & Rice<br/>
+                                    Vegetarian<br/>
+                                    Desserts<br/>
                                 </li>
                             </ul>
                         </div>
                     </figure>
-
                     <figure>
                         <div class="book" data-book="book-2"></div>
                         <div class="buttons"><a href="#">Look inside</a><a href="#">Details</a></div>
                         <figcaption><h2 style="margin-top: 0px;">Snacks <span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
                         <div class="details">
                             <ul>
-                                <li style="text-transform: uppercase;">Potato Wedges<br/>
+                                <li>Potato Wedges<br/>
                                     Fried Fish Snacks</br> 
                                     Pandan Chicken<br/>
                                     Spicy Shrimp<br/>
@@ -66,19 +54,19 @@ $this->load->view('layout/header');
                         </div>
                     </figure>
 
-
                     <figure>
                         <div class="book" data-book="book-3"></div>
                         <div class="buttons"><a href="#">Look inside</a><a href="#">Details</a></div>
                         <figcaption><h2 style="margin-top: 0px;">Drinks <span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
                         <div class="details">
                             <ul>
-                                <li>
-                                    SPIRITS<br/>
-                                    WINE & CHAMPAGNE<br/>
-                                    BEER & CIDER<br/>
-                                    COCKTAILS<br/>
-                                    NON ALCOHOLIC<br/>
+                                <li>Scotch & Malts<br/>
+                                    Rum</br> 
+                                    Bourbon<br/>
+                                    Vodka<br/>
+                                    Gin<br/>
+                                    Tequila<br/>
+
                                 </li>
                             </ul>
                         </div>
@@ -91,10 +79,9 @@ $this->load->view('layout/header');
                         <figcaption><h2 style="margin-top: 0px;">Cocktails<span style="    color: #ffffff;">Baan Thai</span></h2></figcaption>
                         <div class="details">
                             <ul>
-                                <li style="text-transform: uppercase;">Signature Cocktails<br/>
-                                    Martinis<br/>
-                                    Classics<br/>
-                                    Mocktails<br/>
+                                <li>Signature Cocktails<br/>
+                                    Mocktails
+
 
                                 </li>
                             </ul>
@@ -110,18 +97,37 @@ $this->load->view('layout/header');
         <!-- for demo purpose we repeat each bookblock -->
         <div class="bb-custom-wrapper" id="book-1">
             <div class="bb-bookblock">
-                <?php
-                for ($i = 1; $i <= 11; $i++) {
-                    ?>
-                    <div class="bb-item">
-                        <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                            <img src="<?php echo base_url(); ?>assets/images/menu2/food/food-<?php echo $i; ?>.jpg"/>
-                        </div>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/food/1.jpg"/>
                     </div>
-                    <?php
-                }
-                ?>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/food/2.jpg"/>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/food/3.jpg"/>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/food/4.jpg"/>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/food/5.jpg"/>
+                    </div>
+                </div>
+
 
             </div><!-- /bb-bookblock -->
             <nav>
@@ -131,13 +137,12 @@ $this->load->view('layout/header');
             </nav>
         </div><!-- /bb-custom-wrapper -->
 
-
         <div class="bb-custom-wrapper" id="book-2">
             <div class="bb-bookblock">
                 <div class="bb-item">
-                    <div class="thumbnail " style="overflow-y: scroll;     height: -webkit-fill-available;">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                        <img src="<?php echo base_url(); ?>assets/images/menu/snacks/1.jpg" style="height: 100%;"/>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/snacks/1.jpg"/>
                     </div>
                 </div>
 
@@ -152,20 +157,27 @@ $this->load->view('layout/header');
         </div><!-- /bb-custom-wrapper -->
 
 
+
         <div class="bb-custom-wrapper" id="book-3">
             <div class="bb-bookblock">
-                <?php
-                for ($i = 1; $i <= 18; $i++) {
-                    ?>
-                    <div class="bb-item">
-                        <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                            <img src="<?php echo base_url(); ?>assets/images/menu2/drink/drinks-<?php echo $i; ?>.jpg"/>
-                        </div>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink2/1.jpg"/>
                     </div>
-                    <?php
-                }
-                ?>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink2/2.jpg"/>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+
+                        <img src="<?php echo base_url(); ?>assets/images/menu/drink2/3.jpg"/>
+                    </div>
+                </div>
 
             </div><!-- /bb-bookblock -->
             <nav>
@@ -177,18 +189,13 @@ $this->load->view('layout/header');
 
         <div class="bb-custom-wrapper" id="book-4">
             <div class="bb-bookblock">
-                <?php
-                for ($i = 1; $i <= 9; $i++) {
-                    ?>
-                    <div class="bb-item">
-                        <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
+                <div class="bb-item">
+                    <div class="thumbnail " style="overflow-y: scroll;    height: -webkit-fill-available;">
 
-                            <img src="<?php echo base_url(); ?>assets/images/menu2/cocktailos/cocktail-<?php echo $i; ?>.jpg"/>
-                        </div>
+                        <img src="<?php echo base_url(); ?>assets/images/menu/cocktailos/4.jpg"/>
                     </div>
-                    <?php
-                }
-                ?>
+                </div>
+
             </div><!-- /bb-bookblock -->
             <nav>
                 <a href="#" class="bb-nav-prev">Previous</a>

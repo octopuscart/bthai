@@ -26,7 +26,21 @@ $this->load->view('layout/header');
                                         <div class="footer_icon_container"> <i class="icon-location footer_icon" style="    font-size: 31px;"></i> </div>
                                         <div>
                                             <address style="margin-bottom: 0px">G/F and M/F, 57 Wyndham St,<br/> Central, Hong Kong</address>
-
+                                         
+                                        </div>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="spost clearfix">
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <h4>
+                                        <div class="footer_icon_container"> <i class="icon-location footer_icon" style="    font-size: 31px;"></i> </div>
+                                        <div>
+                                            <address style="margin-bottom: 0px"> G/F, One South Lane, No. 1 South Lane, <br/>Shek Tong Tsui, Sai Wan, Hong Kong.</address>
+                                         
                                         </div>
                                     </h4>
                                 </div>

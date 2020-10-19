@@ -111,9 +111,9 @@
                     <img alt="Baanthai Promotion <?php echo $key; ?>" src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
                 </div>
             </div>
-            <?php
-        }
-        ?>
+    <?php
+}
+?>
 
     </div>
 
@@ -233,51 +233,17 @@ $keywordsList = [
                 ============================================= -->
 <footer id="footer" class="dark" style="background: url('<?php echo base_url(); ?>assets/images/woodback.jpg') repeat fixed; ">
     <div class="" >
-        <?php
-        if ($mobilecheck) {
-            
-        } else {
-            ?>
-            <div class="google-map-area">
-                <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA319S-ZyrzBQNhbYmjGedtOfl8wm6tY0Y&v=3.exp'></script><div style='overflow:hidden;height:338px;width:100%;'>
-                    <div id='gmap_canvas' style='height:338px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small>
-
-                        </small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-                </div><script type='text/javascript'>
-                function init_map() {
-                    //22.2968045,114.1687551  22.2969039,114.1623853
-                    var myOptions = {zoom: 15, center: new google.maps.LatLng(22.281277,114.15492),
-                        mapTypeId: google.maps.MapTypeId.ROADMAP};
-                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                    marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.281277,114.15492)});
-
-                    marker2 = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.2852291,114.1347675)});
-
-
-
-                    infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F and M/F, 57 Wyndham St,Central, Hong Kong<br></div>'});
-
-                    google.maps.event.addListener(marker, 'click', function () {
-                        infowindow.open(map, marker);
-                    });
-                    infowindow.open(map, marker);
-
-
-
-                    infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>One South Lane</strong><br>G/F, One South Lane, No. 1 South Lane, Shek Tong Tsui, Sai Wan, Hong Kong.<br></div>'});
-
-                    google.maps.event.addListener(marker2, 'click', function () {
-                        infowindow.open(map, marker2);
-                    });
-                    infowindow.open(map, marker2);
-
-                }
-                google.maps.event.addDomListener(window, 'load', init_map);</script>
-
-            </div>
-            <?php
-        }
-        ?>
+<?php
+if ($mobilecheck) {
+    
+} else {
+    ?>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9134546706673!2d114.1527523149544!3d22.281267985333468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b252e2283%3A0xbdca9c199b4fbb62!2sBaan+Thai!5e0!3m2!1sen!2sau!4v1536733116418"
+                    frameborder="0" style="border: 0;;height: 300px;width: 100%" allowfullscreen>
+            </iframe>
+    <?php
+}
+?>
     </div>
 
     <div class="container">
@@ -380,7 +346,7 @@ $keywordsList = [
                                         <div class="footer_icon_container"> <i class="icon-location footer_icon" style="    font-size: 31px;"></i> </div>
                                         <div>
                                             <address style="margin-bottom: 0px"> G/F, One South Lane, No. 1 South Lane, <br/>Shek Tong Tsui, Sai Wan, Hong Kong.</address>
-
+                                         
                                         </div>
                                     </h4>
                                 </div>
@@ -460,7 +426,7 @@ $keywordsList = [
 
                            float: left;
                            width: 100%;
-                           margin-bottom: 20px;
+                               margin-bottom: 20px;
                            background: white;
                            text-align: center;
                            margin-top: 40px;
@@ -471,8 +437,7 @@ $keywordsList = [
                         </a>
                     </div>
                     <div class="col-md-5">
-                        <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet"/><div style="display: inline-block!important;" id="rest_circ5" onclick="if (event.target.nodeName.toLowerCase() != 'a') {
-                                    window.open(this.querySelector('.circ_top_title').href);return 0;}"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/Baan-Thai-Hong-Kong" class="circ_bot_title" target="_blank">Baan Thai</a></div></div>
+                        <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet"/><div style="display: inline-block!important;" id="rest_circ5" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.circ_top_title').href);return 0;}"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/Baan-Thai-Hong-Kong" class="circ_bot_title" target="_blank">Baan Thai</a></div></div>
                     </div>
                 </div>
                 <div class="widget clearfix" style="margin-top: 40px;">
