@@ -264,7 +264,7 @@ $keywordsList = [
 
 
 
-                    infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>One South Lane</strong><br>G/F, One South Lane, No. 1 South Lane, Shek Tong Tsui, Sai Wan, Hong Kong.<br></div>'});
+                    infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F, One South Lane, No. 1 South Lane, Shek Tong Tsui, Sai Wan, Hong Kong.<br></div>'});
 
                     google.maps.event.addListener(marker2, 'click', function () {
                         infowindow.open(map, marker2);
