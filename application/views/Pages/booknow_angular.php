@@ -51,27 +51,27 @@ $this->load->view('layout/header');
     }
 
     label {
-        display: inline-block;
-        font-size: 13px;
-        font-weight: 500;
-        font-family: 'Raleway', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #595959;
-        margin-bottom: 0;
-        cursor: pointer;
-        text-align: start;
-        width: 100%;
-    }
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #595959;
+    margin-bottom: 0;
+    cursor: pointer;
+    text-align: start;
+    width: 100%;
+}
 
     .btn-default{
         background-color: #cbcbcbfa;
     }
-
+    
     .guestselect .btn-default{
         width: 50px;
     }
-
+    
     .select.form-control{
         color:black;
     }
@@ -133,9 +133,49 @@ $this->load->view('layout/header');
 
 
                                                     <div class="row">
+                                                        <div class="col-md-6">
 
+                                                            <div class="form-group">
 
+                                                                <label>Select Date</label>
+                                                                <input type="text" class="form-control" id="datepicker-inline" value="{{bookingArray.select_date}}"  />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Select Time</label>
+                                                                <select ng-model="bookingArray.select_time" class="form-control" required="">
+                                                                    <option value="">Select Time</option>
+                                                                    <option value="{{time}}" ng-repeat="time in initWizard.timeslot">{{time}}</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
 
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Select Floor</label>
+                                                                <select ng-model="bookingArray.select_table" class="form-control">
+                                                                    <option value="--">Select Floor</option>
+                                                                    <option value="Ground Floor">Ground Floor</option>
+                                                                    <option value="First Floor">First Floor</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group guestselect">
+                                                                <label>Total no. of guest(s)</label>
+                                                                <div class="input-group input-group-sm"  style="width:170px; ">
+                                                                    <span class="input-group-btn ">
+                                                                        <button class="btn btn-default btn-sm " type="button" ng-click="changePeople('minus')"><i class="fa fa-minus"></i></button>
+                                                                    </span>
+                                                                    <input type="text" name="people" class="form-control" placeholder="" value="{{bookingArray.people}}" style="height: 32px;" id="people" required="">
+                                                                    <span class="input-group-btn">
+                                                                        <button class="btn btn-default  btn-sm  " type="button" ng-click="changePeople('plus')"><i class="fa fa-plus"></i></button>
+                                                                    </span>
+                                                                </div><!-- /input-group -->
+                                                            </div>
+                                                        </div>
 
 
                                                     </div>
@@ -149,57 +189,13 @@ $this->load->view('layout/header');
 
 
                                                     <form action="#" method="post" >
-
+                                                        <input type="hidden" name="select_date" value="{{bookingArray.select_date}}"/>
+                                                        <input type="hidden" name="select_time" value="{{bookingArray.select_time}}"/>
                                                         <input type="hidden" name="booking_type" value="{{bookingArray.book_type}}"/>
+                                                        <input type="hidden" name="select_table" value="{{bookingArray.select_table}}"/>
                                                         <input type="hidden" name="usertype" value="{{bookingArray.usertype}}"/>
                                                         <input type="hidden" name="people" value="{{bookingArray.people}}"/>
-                                                        <div class="row">
-                                                            <div class="col-md-6">
 
-                                                                <div class="form-group">
-
-                                                                    <label>Select Date</label>
-                                                                    <input type="text" name="select_date"  class="form-control" id="datepicker-inline" value="{{bookingArray.select_date}}"  />
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label>Select Time</label>
-                                                                    <select ng-model="bookingArray.select_time" name="select_time"  class="form-control" required="">
-                                                                        <option value="">Select Time</option>
-                                                                        <option value="{{time}}" ng-repeat="time in initWizard.timeslot">{{time}}</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label>Select Floor</label>
-                                                                    <select ng-model="bookingArray.select_table" class="form-control" name="select_table" required="">
-                                                                        <option value="--">Select Floor</option>
-                                                                        <option value="Ground Floor">Ground Floor</option>
-                                                                        <option value="First Floor">First Floor</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-6">
-                                                                <div class="form-group guestselect">
-                                                                    <label>Total no. of guest(s)</label>
-                                                                    <div class="input-group input-group-sm"  style="width:170px; ">
-                                                                        <span class="input-group-btn ">
-                                                                            <button class="btn btn-default btn-sm " type="button" ng-click="changePeople('minus')"><i class="fa fa-minus"></i></button>
-                                                                        </span>
-                                                                        <input type="text" name="people" class="form-control" placeholder="" value="{{bookingArray.people}}" style="height: 32px;" id="people" required="">
-                                                                        <span class="input-group-btn">
-                                                                            <button class="btn btn-default  btn-sm  " type="button" ng-click="changePeople('plus')"><i class="fa fa-plus"></i></button>
-                                                                        </span>
-                                                                    </div><!-- /input-group -->
-                                                                </div>
-                                                            </div>
-                                                        </div> 
 
                                                         <div class="row">
                                                             <div class="form-holder col-md-6">
