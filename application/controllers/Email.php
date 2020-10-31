@@ -21,7 +21,84 @@ class Email extends CI_Controller {
         redirect('/');
     }
 
-  
+    public function adEmail() {
+        $this->load->view('Email/webad');
+    }
+
+    public function checkEmailSend() {
+        $this->db->select('mailer_contact_id');
+        $query = $this->db->get('mailer_contacts2_check');
+        $mmailer_contacts2_check = $query->result();
+        $emailcheck = array();
+        foreach ($mmailer_contacts2_check as $key => $value) {
+            array_push($emailcheck, $value->mailer_contact_id);
+        }
+        $ignore = $emailcheck;
+        if (count($ignore)) {
+            $this->db->where_not_in('id', $ignore);
+        }
+
+        $this->db->limit(1);
+        $query = $this->db->get('mailer_contacts2');
+        $contactdata = $query->row_array();
+
+        $useremail = $contactdata['email'];
+        $username = $contactdata['last_name'] . " " . $contactdata['first_name'];
+
+        setlocale(LC_MONETARY, 'en_US');
+        $this->db->where('default', '1');
+        $query = $this->db->get('configuration_email');
+        $mailerconf = $query->row();
+
+
+        $configarray = array(
+            'protocol' => 'smtp',
+            'smtp_host' => $mailerconf->smtp_server,
+            'smtp_user' => "apikey",
+            'smtp_pass' => $mailerconf->api_key,
+            'smtp_port' => $mailerconf->smtp_port,
+            'crlf' => "\r\n",
+            'newline' => "\r\n"
+        );
+        //sendgrid setting
+        print_r($configarray);
+
+
+        $this->email->initialize($configarray);
+
+        $emailsender = email_sender;
+        $sendername = email_sender_name;
+        $email_bcc = email_bcc;
+        // ini_set('display_errors', 1);
+        $this->email->set_newline("\r\n");
+
+        $this->email->from("info@baanthai.hk", $sendername);
+        $this->email->to($useremail);
+//        $this->email->to("tailor123hk@gmail.com");
+        $this->email->charset = "UTF-8";
+        $subject = "Baan Thai Opens New Restaurant in Western District";
+        $this->email->subject($subject);
+        $checkcode = REPORT_MODE;
+
+        $emailhtml = $this->load->view('Email/webad', array(), true);
+        $result = "";
+        if ($checkcode == '') {
+            echo $emailhtml;
+        } else {
+            $this->email->message($emailhtml);
+            echo $result = $this->email->send();
+            $this->email->print_debugger();
+        }
+
+        $mailer_contacts2_check = array(
+            "email" => $useremail,
+            "status" => $result,
+            "mailer_contact_id" => $contactdata['id'],
+            "datetime" => date('Y-m-d H:M:S')
+        );
+
+        $this->db->insert('mailer_contacts2_check', $mailer_contacts2_check);
+    }
 
 }
 ?>
