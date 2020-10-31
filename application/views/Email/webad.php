@@ -11,7 +11,7 @@
     <body style="background: #f8f8f8;">
         <div width="100%" style="background: #e5e5e5;padding:30px 0px;font-family:sans-serif; line-height:28px; height:100%;  width: 100%; color: #514d6a;">
             <div style="max-width: 700px; padding:50px 0;  margin: 0px auto; font-size: 14px;
-                 background:url('<?php echo base_url(); ?>assets/images/newhotelback.jpg');  
+                 background:url('https://www.baanthaihk.com/assets/images/newhotelback.jpg');  
               
                  background-size: 700px;
                  background-position: center;
@@ -46,7 +46,7 @@
                             <tr>
                                 <td class="" style="text-align: center;">
 
-                                    <img src="<?php echo base_url(); ?>assets/images/newhotel.jpg" style="height: 400px;"/>
+                                    <img src="https://www.baanthaihk.com/assets/images/newhotel.jpg" style="height: 400px;"/>
                                 </td>
                             </tr>
                             <tr>
