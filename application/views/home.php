@@ -127,7 +127,7 @@
                                 <!-- LAYERS -->
 
                                 <!-- LAYER NR. 1 -->
-                                <div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
+<!--                                <div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
                                      data-forcerewind="on"
                                      data-volume="mute"
                                      data-videowidth="100%"
@@ -140,7 +140,7 @@
                                      data-autoplay="true"
                                      data-autoplayonlyfirsttime="false"
                                      data-nextslideatend="true">
-                                </div>
+                                </div>-->
 
                                 <!-- LAYER NR. 2 -->
                                 <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"

@@ -27,6 +27,7 @@ class Email extends CI_Controller {
 
     public function checkEmailSend() {
         $this->db->select('mailer_contact_id');
+
         $query = $this->db->get('mailer_contacts2_check');
         $mmailer_contacts2_check = $query->result();
         $emailcheck = array();
@@ -37,13 +38,15 @@ class Email extends CI_Controller {
         if (count($ignore)) {
             $this->db->where_not_in('id', $ignore);
         }
+        $this->db->where('mailer_list_id', '');
 
-        $this->db->limit(1);
+        $this->db->limit(10);
         $query = $this->db->get('mailer_contacts2');
-        $contactdata = $query->row_array();
+        $contactdata = $query->result_array();
 
-        $useremail = $contactdata['email'];
-        $username = $contactdata['last_name'] . " " . $contactdata['first_name'];
+
+
+
 
         setlocale(LC_MONETARY, 'en_US');
         $this->db->where('default', '1');
@@ -61,43 +64,51 @@ class Email extends CI_Controller {
             'newline' => "\r\n"
         );
         //sendgrid setting
-        print_r($configarray);
+
+        $emaildata = 0;
+        foreach ($contactdata as $key => $value) {
+            echo $useremail = $value['email'];
 
 
-        $this->email->initialize($configarray);
+            if ($useremail) {
 
-        $emailsender = email_sender;
-        $sendername = email_sender_name;
-        $email_bcc = email_bcc;
-        // ini_set('display_errors', 1);
-        $this->email->set_newline("\r\n");
+                $this->email->initialize($configarray);
 
-        $this->email->from("info@baanthai.hk", $sendername);
-        $this->email->to($useremail);
+                $emailsender = email_sender;
+                $sendername = email_sender_name;
+                $email_bcc = email_bcc;
+                // ini_set('display_errors', 1);
+                $this->email->set_newline("\r\n");
+
+                $this->email->from("info@baanthai.hk", $sendername);
+                $this->email->to($useremail);
 //        $this->email->to("tailor123hk@gmail.com");
-        $this->email->charset = "UTF-8";
-        $subject = "Baan Thai Opens New Restaurant in Western District";
-        $this->email->subject($subject);
-        $checkcode = REPORT_MODE;
+                $this->email->charset = "UTF-8";
+                $subject = "Baan Thai Opens New Restaurant in Western District";
+                $this->email->subject($subject);
+                $checkcode = REPORT_MODE;
 
-        $emailhtml = $this->load->view('Email/webad', array(), true);
-        $result = "";
-        if ($checkcode == '') {
-            echo $emailhtml;
-        } else {
-            $this->email->message($emailhtml);
-            echo $result = $this->email->send();
-            $this->email->print_debugger();
+                $emailhtml = $this->load->view('Email/webad', array(), true);
+                $result = "";
+                if ($checkcode == '') {
+                    echo $emailhtml;
+                } else {
+                    $this->email->message($emailhtml);
+                    echo $result = $this->email->send();
+                    echo "<br/>-----<br/>";
+                    $this->email->print_debugger();
+                }
+
+                $mailer_contacts2_check = array(
+                    "email" => $useremail,
+                    "status" => $result,
+                    "mailer_contact_id" => $value['id'],
+                    "datetime" => date('Y-m-d H:M:S')
+                );
+
+                $this->db->insert('mailer_contacts2_check', $mailer_contacts2_check);
+            }
         }
-
-        $mailer_contacts2_check = array(
-            "email" => $useremail,
-            "status" => $result,
-            "mailer_contact_id" => $contactdata['id'],
-            "datetime" => date('Y-m-d H:M:S')
-        );
-
-        $this->db->insert('mailer_contacts2_check', $mailer_contacts2_check);
     }
 
 }
