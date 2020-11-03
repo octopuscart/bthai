@@ -62,12 +62,12 @@ $this->load->view('layout/header');
             <div id="rev_slider_irestaurant" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.4">
                 <ul>    <!-- SLIDE  -->
 
-                    <li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"   data-saveperformance="off"  data-title="Welcome to Baan Thai!">
-                        <!-- MAIN IMAGE -->
+<!--                    <li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"   data-saveperformance="off"  data-title="Welcome to Baan Thai!">
+                         MAIN IMAGE 
                         <img src="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"  alt=" Baanthai video_typing_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
+                         LAYERS 
 
-                        <!-- LAYER NR. 1 -->
+                         LAYER NR. 1 
                         <div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
                              data-forcerewind="on"
                              data-volume="mute"
@@ -83,7 +83,7 @@ $this->load->view('layout/header');
                              data-nextslideatend="true">
                         </div>
 
-                        <!-- LAYER NR. 2 -->
+                         LAYER NR. 2 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
                              data-x="center" data-hoffset="0"
                              data-y="top" data-voffset="235"
@@ -130,7 +130,7 @@ $this->load->view('layout/header');
                              data-endspeed="1000"
                              data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="<?php echo site_url('booknow'); ?>" class="button button-border button-white button-light button-large button-rounded tright nomargin hideonmobile"><span>Book Now</span><i class="icon-angle-right"></i></a></div>
 
-                    </li>
+                    </li>-->
                     <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/22.jpg" data-delay="12000"  data-saveperformance="off" data-title="Our rustic and stylish restaurant">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo base_url(); ?>assets/images/slider/22.jpg"  alt=" Baanthai kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="right center">
