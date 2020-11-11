@@ -237,6 +237,30 @@ $this->load->view('layout/header');
                                                             </div>
                                                         </div>
 
+                                                        <div class="form-row">
+                                                            <div class="col-md-2"></div>
+                                                            <div class="col-md-4">
+                                                                <div class="checkbox ">
+                                                                    <label>
+                                                                        <input type="radio" value="Central Branch" name="branch_name" checked="true">
+                                                                        Baan Thai<br>
+                                                                        <p style="font-size: 15px;font-weight: 600;">Central Branch</p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="checkbox ">
+                                                                    <label>
+                                                                        <input type="radio" value="Western Branch" name="branch_name">
+                                                                        Baan Thai<br>
+                                                                        <p style="font-size: 15px;font-weight: 600;">Western Branch</p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                             <div class="col-md-2"></div>
+                                                        </div>
+                                                        <br/>
+
 
                                                         <input type="checkbox" class="custom-control-input" name="registrationyes" checked="true" id="customCheck1" >
 

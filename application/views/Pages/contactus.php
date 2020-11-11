@@ -26,29 +26,15 @@ $this->load->view('layout/header');
                                         <div class="footer_icon_container"> <i class="icon-location footer_icon" style="    font-size: 31px;"></i> </div>
                                         <div>
                                             <address style="margin-bottom: 0px">G/F and M/F, 57 Wyndham St,<br/> Central, Hong Kong</address>
-                                         
-                                        </div>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="spost clearfix">
-                            <div class="entry-c">
-                                <div class="entry-title">
-                                    <h4>
-                                        <div class="footer_icon_container"> <i class="icon-location footer_icon" style="    font-size: 31px;"></i> </div>
-                                        <div>
-                                            <address style="margin-bottom: 0px"> G/F, One South Lane, No. 1 South Lane, <br/>Shek Tong Tsui, Sai Wan, Hong Kong.</address>
-                                         
+
                                         </div>
                                     </h4>
                                 </div>
                             </div>
                         </div>
 
-
-                        <div class="spost clearfix">
+                        <div class="spost clearfix" style="    margin-top: 5px;
+    padding-top: 10px;">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
@@ -60,6 +46,36 @@ $this->load->view('layout/header');
                                 </div>
                             </div>
                         </div>
+
+                        <div class="spost clearfix">
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <h4>
+                                        <div class="footer_icon_container"> <i class="icon-location footer_icon" style="    font-size: 31px;"></i> </div>
+                                        <div>
+                                            <address style="margin-bottom: 0px"> G/F, One South Lane, No. 1 South Lane, <br/>Shek Tong Tsui, Sai Wan, Hong Kong.</address>
+
+                                        </div>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spost clearfix" style="    margin-top: 5px;
+    padding-top: 10px;">
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <h4>
+                                        <div class="footer_icon_container"> <i class="fa fa-phone footer_icon" style="    font-size: 20px;"></i>  </div>
+                                        <div class="float_left  m_l_10">
+                                            <a href="tel:+852 2739 9188." style="    font-size: 15px;">+(852) 2739 9188.</a>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                         <div class="spost clearfix">
                             <div class="entry-c">
                                 <div class="entry-title">

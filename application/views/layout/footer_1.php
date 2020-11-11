@@ -246,12 +246,12 @@ $keywordsList = [
                 </div><script type='text/javascript'>
                 function init_map() {
                     //22.2968045,114.1687551  22.2969039,114.1623853
-                    var myOptions = {zoom: 15, center: new google.maps.LatLng(22.281277,114.15492),
+                    var myOptions = {zoom: 15, center: new google.maps.LatLng(22.281277, 114.15492),
                         mapTypeId: google.maps.MapTypeId.ROADMAP};
                     map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                    marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.281277,114.15492)});
+                    marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.281277, 114.15492)});
 
-                    marker2 = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.2852291,114.1347675)});
+                    marker2 = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.2852291, 114.1347675)});
 
 
 
@@ -373,6 +373,20 @@ $keywordsList = [
                                 </div>
                             </div>
                         </div>
+
+                        <div class="spost clearfix" style="    margin-top: 5px;
+    padding-top: 10px;">
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <h4>
+                                        <div class="footer_icon_container"> <i class="fa fa-phone footer_icon" style="    font-size: 20px;"></i>  </div>
+                                        <div class="float_left  m_l_10">
+                                            <a hreflang="en-us"  href="tel:+852 2840 0041" style="    font-size: 15px;">+(852) 2840 0041</a>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
                         <div class="spost clearfix">
                             <div class="entry-c">
                                 <div class="entry-title">
@@ -387,19 +401,22 @@ $keywordsList = [
                             </div>
                         </div>
 
-
-                        <div class="spost clearfix">
+                        <div class="spost clearfix" style="    margin-top: 5px;
+    padding-top: 10px;">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
                                         <div class="footer_icon_container"> <i class="fa fa-phone footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left  m_l_10">
-                                            <a hreflang="en-us"  href="tel:+852 2840 0041" style="    font-size: 15px;">+(852) 2840 0041</a>
+                                            <a href="tel:+852 2739 9188." style="    font-size: 15px;">+(852) 2739 9188.</a>
                                         </div>
                                     </h4>
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="spost clearfix">
                             <div class="entry-c">
                                 <div class="entry-title">
@@ -472,7 +489,9 @@ $keywordsList = [
                     </div>
                     <div class="col-md-5">
                         <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet"/><div style="display: inline-block!important;" id="rest_circ5" onclick="if (event.target.nodeName.toLowerCase() != 'a') {
-                                    window.open(this.querySelector('.circ_top_title').href);return 0;}"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/Baan-Thai-Hong-Kong" class="circ_bot_title" target="_blank">Baan Thai</a></div></div>
+                                    window.open(this.querySelector('.circ_top_title').href);
+                                    return 0;
+                                }"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/Baan-Thai-Hong-Kong" class="circ_bot_title" target="_blank">Baan Thai</a></div></div>
                     </div>
                 </div>
                 <div class="widget clearfix" style="margin-top: 40px;">
