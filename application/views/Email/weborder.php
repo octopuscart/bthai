@@ -59,6 +59,10 @@
                                             <th style="text-align: right;width:200px;padding-right: 10px;">Contact No.</th>
                                             <td style="    text-align: left;"><?php echo $appointment['contact']; ?></td>
                                         </tr>
+                                        <tr>
+                                            <th style="text-align: right;width:200px;padding-right: 10px;">Location</th>
+                                            <td style="    text-align: left;"><?php echo $appointment['location']; ?></td>
+                                        </tr>
 
                                         <tr>
                                             <th style="text-align: right;width:200px;padding-right: 10px;">Date</th>
@@ -69,6 +73,7 @@
                                             <th style="text-align: right;width:200px;padding-right: 10px;">Time</th>
                                             <td style="    text-align: left;"><?php echo $appointment['select_time']; ?></td>
                                         </tr>
+                                        
                                         <tr>
                                             <th style="text-align: right;width:200px;padding-right: 10px;">Floor</th>
                                             <td style="    text-align: left;"><?php echo $appointment['select_table']; ?></td>

@@ -76,6 +76,14 @@ $this->load->view('layout/header');
         color:black;
     }
 
+
+    .border-booking-new{
+        border-radius: 5px;
+        border: 2px solid #e6e6e6;
+        width: 100%;
+        padding: 10px 0px;
+        margin: 0px 5px;
+    }
 </style>
 
 <section id="content" ng-controller="bookingController">
@@ -150,6 +158,30 @@ $this->load->view('layout/header');
 
                                                     <form action="#" method="post" >
 
+                                                        <div class="form-row">
+                                                            <label style="    margin-left: 5px;">Select location</label>
+                                                            <div class="border-booking-new row">
+                                                                <div class="col-md-6">
+                                                                    <div class="checkbox ">
+                                                                        <label>
+                                                                            <input type="radio" value="Central Branch" name="location" checked="true" ng-model="bookingArray.location"  ng-change="changeLocation()">
+                                                                            Central Branch
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="checkbox ">
+                                                                        <label>
+                                                                            <input type="radio" value="Western Branch" name="location" ng-model="bookingArray.location" ng-change="changeLocation()">
+
+                                                                            Western Branch
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
                                                         <input type="hidden" name="booking_type" value="{{bookingArray.book_type}}"/>
                                                         <input type="hidden" name="usertype" value="{{bookingArray.usertype}}"/>
                                                         <input type="hidden" name="people" value="{{bookingArray.people}}"/>
@@ -175,12 +207,19 @@ $this->load->view('layout/header');
 
                                                         <div class="row">
                                                             <div class="col-md-6">
-                                                                <div class="form-group">
+                                                                <div class="form-group" ng-if="bookingArray.location=='Central Branch'">
                                                                     <label>Select Floor</label>
-                                                                    <select ng-model="bookingArray.select_table" class="form-control" name="select_table" required="">
-                                                                        <option value="--">Select Floor</option>
-                                                                        <option value="Ground Floor">Ground Floor</option>
+                                                                    <select  class="form-control" name="select_table" required="">
+                                                                   
+                                                                        <option value="Ground Floor" selected="">Ground Floor</option>
                                                                         <option value="First Floor">First Floor</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group" ng-if="bookingArray.location=='Western Branch'">
+                                                                    <label>Select Floor</label>
+                                                                    <select class="form-control" name="select_table" required="">
+                                                                  
+                                                                        <option value="Ground Floor" selected="">Ground Floor</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -237,28 +276,7 @@ $this->load->view('layout/header');
                                                             </div>
                                                         </div>
 
-                                                        <div class="form-row">
-                                                            <div class="col-md-2"></div>
-                                                            <div class="col-md-4">
-                                                                <div class="checkbox ">
-                                                                    <label>
-                                                                        <input type="radio" value="Central Branch" name="branch_name" checked="true">
-                                                                        Baan Thai<br>
-                                                                        <p style="font-size: 15px;font-weight: 600;">Central Branch</p>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="checkbox ">
-                                                                    <label>
-                                                                        <input type="radio" value="Western Branch" name="branch_name">
-                                                                        Baan Thai<br>
-                                                                        <p style="font-size: 15px;font-weight: 600;">Western Branch</p>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                             <div class="col-md-2"></div>
-                                                        </div>
+
                                                         <br/>
 
 

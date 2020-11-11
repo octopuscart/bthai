@@ -219,6 +219,7 @@ class Shop extends CI_Controller {
                     'last_name' => $this->input->post('first_name'),
                     'first_name' => $this->input->post('last_name'),
                     'email' => $this->input->post('email'),
+                    'location' => $this->input->post('location'),
                     'contact' => $this->input->post('contact_no'),
                     'select_date' => $this->input->post('select_date'),
                     'select_time' => $this->input->post('select_time'),

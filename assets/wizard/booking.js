@@ -9,9 +9,11 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         "last_name": "",
         "email": "",
         "usertype": "Guest",
-        "contact_no": ""
+        "contact_no": "",
+        "location": "Central Branch"
     };
-
+    
+ 
 
 
 
