@@ -67,7 +67,7 @@ $this->load->view('layout/header');
                                     <h4>
                                         <div class="footer_icon_container"> <i class="fa fa-phone footer_icon" style="    font-size: 20px;"></i>  </div>
                                         <div class="float_left  m_l_10">
-                                            <a href="tel:+852 2739 9188." style="    font-size: 15px;">+(852) 2739 9188.</a>
+                                            <a href="tel:+852 2739 9188." style="    font-size: 15px;">+(852) 2739 9188</a>
                                         </div>
                                     </h4>
                                 </div>
