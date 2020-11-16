@@ -12,8 +12,8 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         "contact_no": "",
         "location": "Central Branch"
     };
-    
- 
+
+
 
 
 
@@ -78,7 +78,14 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 
     $scope.selectedDate = function (datef) {
         let ssdate = new Date(datef);
+        let datetemp = moment(datef);
         let selectslot = $scope.initWizard.time[$scope.initWizard.selecttime[ssdate.getDay()]];
+        var dateformated = datetemp.format('YYYY-MM-DD');
+        if ($scope.initWizard.booked_dates.indexOf(dateformated) > -1) {
+            console.log("booked", $scope.initWizard.booked_dates.indexOf(dateformated), dateformated)
+             selectslot = $scope.initWizard.time[$scope.initWizard.selecttime["SPE"]];
+             console.log(selectslot);
+        }
         let datecheck = moment(datef);
         var dateformated = datecheck.format('YYYY-MM-DD');
         let ttslot = ["00", "30", ];
@@ -112,9 +119,11 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         "time": {
             "TS": ['12', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12:AM', '01:AM'],
             "MWS": ['12', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11'],
+            "BKD": ['12', '01', '02', '03', '04']
         },
-        "selecttime": {4: "TS", 5: "TS", 6: "TS", 0: "MWS", 1: "MWS", 2: "MWS", 3: "MWS"},
+        "selecttime": {4: "TS", 5: "TS", 6: "TS", 0: "MWS", 1: "MWS", 2: "MWS", 3: "MWS", "SPE": "BKD"},
         "timeslot": [],
+        "booked_dates": ["2020-11-20", "2020-11-21"],
         "tables": {
             "zone_g": ["ZG1", "ZG2", "ZG3", "ZG4", "ZG5", "ZG6"],
             "zone_f": ["ZF1", "ZF2", "ZF3", "ZF4", "ZF5", "ZF6", "ZF7", "ZF8"],

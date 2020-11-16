@@ -294,7 +294,7 @@ class Shop extends CI_Controller {
                     $this->email->set_newline("\r\n");
                     $this->email->from(email_bcc, $sendername);
                     $this->email->to($this->input->post('email'));
-                    $this->email->bcc(array(email_bcc, "stewart@baanthai.hk"));
+                    $this->email->bcc(array(email_bcc, "stewart@baanthai.hk", "angel@baanthai.hk"));
                     $subjectt = "Thank you for your booking.";
                     $subject = $subjectt;
                     $this->email->subject($subject);
