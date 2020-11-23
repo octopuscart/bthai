@@ -62,75 +62,7 @@ $this->load->view('layout/header');
             <div id="rev_slider_irestaurant" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.4">
                 <ul>    <!-- SLIDE  -->
 
-<!--                    <li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"   data-saveperformance="off"  data-title="Welcome to Baan Thai!">
-                         MAIN IMAGE 
-                        <img src="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg"  alt=" Baanthai video_typing_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-                         LAYERS 
 
-                         LAYER NR. 1 
-                        <div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
-                             data-forcerewind="on"
-                             data-volume="mute"
-                             data-videowidth="100%"
-                             data-videoheight="100%"
-                             data-videomp4="<?php echo base_url(); ?>assets/images/video2.mp4"
-                             data-videopreload="preload"
-                             data-videoloop="none"
-                             data-forceCover="1"
-                             data-aspectratio="16:9"
-                             data-autoplay="true"
-                             data-autoplayonlyfirsttime="false"
-                             data-nextslideatend="true">
-                        </div>
-
-                         LAYER NR. 2 
-                        <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
-                             data-x="center" data-hoffset="0"
-                             data-y="top" data-voffset="235"
-                             data-fontsize="['60','60','46','38']"
-                             data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                             data-speed="800"
-                             data-start="1000"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-textAlign="center"
-                             data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;"><img src="<?php echo base_url(); ?>assets/images/logo50.png" style="height: 50px;" alt=" Baanthai Baanthai Logo" /></div>
-
-                        <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
-                             data-x="center" data-hoffset="0"
-                             data-y="top" data-voffset="400"
-                             data-width="['650','650','480','360']"
-                             data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                             data-speed="800"
-                             data-start="1200"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-textAlign="center"
-                             data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;font-size: 20px;">Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices.</div>
-
-                        <div class="tp-caption customin ltl tp-resizeme"
-                             data-x="center" data-hoffset="0"
-                             data-y="top" data-voffset="503"
-                             data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                             data-speed="800"
-                             data-start="1350"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="<?php echo site_url('booknow'); ?>" class="button button-border button-white button-light button-large button-rounded tright nomargin hideonmobile"><span>Book Now</span><i class="icon-angle-right"></i></a></div>
-
-                    </li>-->
                     <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/22.jpg" data-delay="12000"  data-saveperformance="off" data-title="Our rustic and stylish restaurant">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo base_url(); ?>assets/images/slider/22.jpg"  alt=" Baanthai kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="right center">
@@ -138,8 +70,8 @@ $this->load->view('layout/header');
 
                         <!-- LAYER NR. 2 -->
                         <div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
-                             data-x="600"
-                             data-y="215"
+                             data-x="100"
+                             data-y="70"
                              data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                              data-speed="800"
                              data-start="1000"
@@ -152,8 +84,8 @@ $this->load->view('layout/header');
                              data-endeasing="Power4.easeIn" style="z-index: 3;font-size: 20px;font-weight: bold;">Authentic Thai Cuisine in Hong Kong</div>
 
                         <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-                             data-x="597"
-                             data-y="230"
+                             data-x="100"
+                             data-y="100"
                              data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                              data-speed="800"
                              data-start="1200"
@@ -166,8 +98,8 @@ $this->load->view('layout/header');
                              data-endeasing="Power4.easeIn" style="z-index: 3; font-size: 60px;">Welcome to Baan Thai!</div>
 
                         <div class="tp-caption ltl tp-resizeme revo-slider-desc-text tleft"
-                             data-x="600"
-                             data-y="340"
+                             data-x="100"
+                             data-y="200"
                              data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                              data-speed="800"
                              data-start="1400"
@@ -177,7 +109,7 @@ $this->load->view('layout/header');
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;">Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine.</div>
+                             data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;">Our rustic and stylish restaurants are located in the heart of Central along Wyndham Street, as well as in Western District next to HKU Station, with both restaurants showcasing the signature flavours of authentic Thai cuisine.</div>
                     </li>
                     <!-- SLIDE  -->
                     <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/33.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Special Taste Of Thailand">
@@ -249,7 +181,7 @@ $this->load->view('layout/header');
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;text-align: center">Located in the busy commercial and nightlife section of Wyndham Street in Central, here at Baan Thai Restaurant.</div>
+                             data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;text-align: center">Located in the busy commercial and nightlife segment of Wyndham Street, Central, as well as homely residential area of Western District adjacent to HKU MTR Station, Baan Thai offers great Thai food with authentic Thai flavours, cooked by Thai Chefs.</div>
 
                     </li>
                 </ul>
@@ -266,14 +198,17 @@ $this->load->view('layout/header');
 
                 <div class="col-lg-6 center col-padding" style="background-color: #fff; height: 708px;">
                     <div>
-                        <div class="heading-block nobottomborder">
+                        <div class="heading-block nobottomborder" style="margin-bottom: 0px;">
                             <h3>Welcome to Baan Thai</h3>
                         </div>
 
 
-                        <p class="lead nobottommargin">
-                            Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine. Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices. All our chefs are Thai and therefore ensure that you enjoy that special taste of Thailand when dining at our restaurant.
-                        </p>
+                        <p class="lead nobottommargin">Our rustic and stylish restaurants are located in the heart of Central along Wyndham Street, as well as in Western District next to HKU Station, 
+with both restaurants showcasing the signature flavours of authentic Thai cuisine.
+Our menu is inspired by the popular flavours of Siam cuisine from the great cities of Bangkok and Udon Thani,
+specifically as we serve many small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, 
+that are cooked with fresh herbs and spices. All our chefs in both Central and Western branches are Thai so as to
+ensure customers that they enjoy that special taste of Thailand when dining at a Baan Thai restaurant.                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/hotel.jpg) center center / cover no-repeat; height: 708px;">

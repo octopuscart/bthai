@@ -2,6 +2,13 @@
 $this->load->view('layout/header');
 ?>
 
+<style>
+    .lead {
+        font-size: 1.15rem;
+        font-weight: 300;
+    }
+</style>
+
 
 
 <section id="content">
@@ -21,10 +28,11 @@ $this->load->view('layout/header');
 
 
                     <p class="lead nobottommargin" style="color: white;">
-                        Welcome to Baan Thai! Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine. Our menu is inspired by Siam cuisine specifically and we serve a variety of small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices. All our chefs are Thai and therefore ensure that you enjoy that special taste of Thailand when dining at our restaurant.
-                    </p>
+                        Our rustic and stylish restaurants are located in the heart of Central along Wyndham Street, as well as in Western District next to HKU Station, with both restaurants showcasing the signature flavours of authentic Thai cuisine.                    </p>
                     <p class="lead nobottommargin" style="color: white;">
-                        We also offer an extensive cocktail and drinks menu to either compliment your meal or simply to enjoy with a snack at happy hour or after dinner drinks. We are easily accessed by public transport, whether coming via the MTR, bus routes or taxi, so come and pay us a visit and sample some delicious Thai cuisine here at Baan Thai Hong Kong!
+                        Our menu is inspired by the popular flavours of Siam cuisine from the great cities of Bangkok and Udon Thani, specifically as we serve many small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, that are cooked with fresh herbs and spices. All our chefs in both Central and Western branches are Thai so as to ensure customers that they enjoy that special taste of Thailand when dining at a Baan Thai restaurant.                    </p>
+                    <p class="lead nobottommargin" style="color: white;">
+                        Baan Thai also offers an extensive selection of drinks and cocktails to compliment your delicious meal or snacks. We have a wide range of draught and bottled beers, wines, cocktails, mocktails and of course soft drinks. We have a early starting happy hour and stay open late on certain days of the week. Baan Thai Central is close to the escalator and Baan Thai Western, is next to the MTR station (at HKU).
                     </p>
                 </div>
             </div>
@@ -32,7 +40,7 @@ $this->load->view('layout/header');
 
 
 
-        
+
         <?php
         $this->load->view('clientReviewBlock');
         ?>

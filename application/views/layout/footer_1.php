@@ -132,7 +132,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Baanthai Restaurant has a great loyalty program called the 'Spice Club'. Our club members earn credits each time they visit and dine at Baanthai and after a certain amount of visits, they earn a significant discount on their next bill. 
+                        Our rustic and stylish restaurants are located in the heart of Central along Wyndham Street, as well as in Western District next to HKU Station, with both restaurants showcasing the signature flavours of authentic Thai cuisine.
 
                     </p>
                     <a hreflang="en-us"  href="<?php echo site_url('loyalprogram'); ?>">Enroll Here</a>

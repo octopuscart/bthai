@@ -237,7 +237,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;">Our rustic and stylish restaurants are located in the heart of Central along Wyndham Street, as well as in Western District next to HKU Station, with both restaurants showcasing the signature flavours of authentic Thai cuisine.</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;">Our rustic and stylish restaurant is located in the heart of Central along Wyndham Street and showcases the signature flavors of authentic Thai cuisine.</div>
                             </li>
                             <!-- SLIDE  -->
                             <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/3.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Special Taste Of Thailand">
@@ -309,7 +309,7 @@
                                      data-elementdelay="0.01"
                                      data-endelementdelay="0.1"
                                      data-endspeed="1000"
-                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;text-align: center">Located in the busy commercial and nightlife segment of Wyndham Street, Central, as well as homely residential area of Western District adjacent to HKU MTR Station, Baan Thai offers great Thai food with authentic Thai flavours, cooked by Thai Chefs.</div>
+                                     data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;text-align: center">Located in the busy commercial and nightlife section of Wyndham Street in Central, here at Baan Thai Restaurant.</div>
 
                             </li>
                         </ul>
