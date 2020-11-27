@@ -123,7 +123,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         },
         "selecttime": {4: "TS", 5: "TS", 6: "TS", 0: "MWS", 1: "MWS", 2: "MWS", 3: "MWS", "SPE": "BKD"},
         "timeslot": [],
-        "booked_dates": ["2020-11-20", "2020-11-21"],
+        "booked_dates": ["2020-11-20", "2020-11-21", "2020-11-27", "2020-11-28"],
         "tables": {
             "zone_g": ["ZG1", "ZG2", "ZG3", "ZG4", "ZG5", "ZG6"],
             "zone_f": ["ZF1", "ZF2", "ZF3", "ZF4", "ZF5", "ZF6", "ZF7", "ZF8"],
