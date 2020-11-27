@@ -387,5 +387,5 @@ $this->load->view('layout/footer');
 
 
 <script>
-    var today = "<?php echo date('Y-m-d'); ?>";</script>
+    var today = "2020-11-29";</script>
 <script src="<?php echo base_url(); ?>assets/wizard/booking.js"></script>
