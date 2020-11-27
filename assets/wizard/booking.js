@@ -169,7 +169,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 
     $scope.selectedDate(today);
     $scope.initWiz = function (today) {
-        var disableDates = ["2020-05-11"];
+        var disableDates = ["2020-05-11", "2020-11-28", "2020-11-27"];
 
 
         $('#datepicker-inline').datepicker({
