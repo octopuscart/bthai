@@ -52,11 +52,11 @@ $this->load->view('layout/header');
 
         <div class="row clearfix ">
 
-            <div class="col-lg-6 center col-padding hideonmobile" >
+            <div class="col-lg-12 center col-padding hideonmobile" >
                 <h3 style="   ">
                     * ENROLL NOW AND RECEIVE A DRINK ON THE HOUSE !	
                 </h3>
-                <img src="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg" style="height: 200px;"/>
+                <!--<img src="<?php echo base_url(); ?>assets/images/slider/clientsbackground3.jpg" style="height: 200px;"/>-->
 
                 <p>
                     Welcome to the Baan Thai Spice Club
@@ -103,9 +103,9 @@ $this->load->view('layout/header');
 
 
             </div>
-            <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;padding: 35px 10px;">
+<!--            <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/woodback.jpg) center;padding: 35px 10px;">
                 <iframe src="https://baanthai.haricrm.com/"></iframe>
-                <!--                <div>
+                                <div>
                     <div class="heading-block nobottomborder" style="margin-bottom: 0px;">
                         <h3 style="color: white;">Loyalty Program</h3>
                     </div>
@@ -442,8 +442,8 @@ $this->load->view('layout/header');
                         </section>
 
                     </div>
-                </div>-->
-            </div>
+                </div>
+            </div>-->
         </div>
 
 
