@@ -77,14 +77,15 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
 
 
     $scope.selectedDate = function (datef) {
+        console.log(datef);
         let ssdate = new Date(datef);
         let datetemp = moment(datef);
         let selectslot = $scope.initWizard.time[$scope.initWizard.selecttime[ssdate.getDay()]];
         var dateformated = datetemp.format('YYYY-MM-DD');
         if ($scope.initWizard.booked_dates.indexOf(dateformated) > -1) {
             console.log("booked", $scope.initWizard.booked_dates.indexOf(dateformated), dateformated)
-             selectslot = $scope.initWizard.time[$scope.initWizard.selecttime["SPE"]];
-             console.log(selectslot);
+            selectslot = $scope.initWizard.time[$scope.initWizard.selecttime["SPE"]];
+            console.log(selectslot);
         }
         let datecheck = moment(datef);
         var dateformated = datecheck.format('YYYY-MM-DD');
@@ -113,6 +114,32 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         }
         $scope.initWizard.timeslot = selectTimeSlot;
     }
+//date blocking code
+    var datearray = listofbookeddate;
+    $scope.getnextDate = function (tdate) {
+        var next_date = moment(tdate).add(1, 'days');
+        return (next_date.format("YYYY-MM-DD"));
+    }
+    var nextAvailableDate = moment().format("YYYY-MM-DD");
+    var nextAvailableDate2 = moment().format("YYYY-MM-DD");
+
+
+    for (dt in datearray) {
+        var ddt = $scope.getnextDate(datearray[dt]);
+        var ddt2 = datearray[Number(dt) + 1];
+        if (ddt != ddt2) {
+            nextAvailableDate = ddt;
+            break
+        }
+    }
+    var initdate = nextAvailableDate;
+    if (datearray.indexOf(nextAvailableDate2) > (-1)) {
+        var initdate = nextAvailableDate;
+    } else {
+        var initdate = nextAvailableDate2;
+    }
+
+    //date blocking code
 
     $scope.initWizard = {
         "split": ["00", "15", "30", "45"],
@@ -123,7 +150,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         },
         "selecttime": {4: "TS", 5: "TS", 6: "TS", 0: "MWS", 1: "MWS", 2: "MWS", 3: "MWS", "SPE": "BKD"},
         "timeslot": [],
-        "booked_dates": ["2020-11-20", "2020-11-21", "2020-11-27", "2020-11-28"],
+        "booked_dates": listofbookeddate,
         "tables": {
             "zone_g": ["ZG1", "ZG2", "ZG3", "ZG4", "ZG5", "ZG6"],
             "zone_f": ["ZF1", "ZF2", "ZF3", "ZF4", "ZF5", "ZF6", "ZF7", "ZF8"],
@@ -167,9 +194,9 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
     }
 
 
-    $scope.selectedDate(today);
+    $scope.selectedDate(initdate);
     $scope.initWiz = function (today) {
-        var disableDates = ["2020-05-11", "2020-11-28", "2020-11-27"];
+        var disableDates = listofbookeddate;
 
 
         $('#datepicker-inline').datepicker({
@@ -216,7 +243,9 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
     }
 
     $timeout(function () {
-        $scope.initWiz(today)
+       
+        $scope.bookingArray.select_date  = initdate;
+        $scope.initWiz(initdate)
     });
 })
 

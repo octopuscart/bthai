@@ -23,7 +23,7 @@ class Shop extends CI_Controller {
     }
 
     public function index() {
-    
+
         $this->load->view('home2');
     }
 
@@ -200,10 +200,19 @@ class Shop extends CI_Controller {
 
         $data = array();
         $data['submitdata'] = "";
-        $disabledates = array(
-            "2020-05-11" => "2020-05-11",
-        );
+        
+        $cdate = date("Y-m-d");
+        $this->db->where('select_date >=', $cdate);
+        $this->db->order_by("select_date");
+        $query = $this->db->get('booking_date_block');
+        $listofdatetemp = $query->result_array();
+        $listofdate = array();
+        foreach ($listofdatetemp as $key => $value) {
+            array_push($listofdate, $value['select_date']);
+            $disabledates[$value['select_date']] = $value['select_date'];
+        }
 
+        $data['datelist'] = $listofdate;
         if (isset($_POST['submit'])) {
 
             $captchatext = $this->session->userdata("captchacode_booking");
@@ -294,7 +303,7 @@ class Shop extends CI_Controller {
                     $this->email->set_newline("\r\n");
                     $this->email->from(email_bcc, $sendername);
                     $this->email->to($this->input->post('email'));
-                     $this->email->cc(array("angel@baanthai.hk"));
+                    $this->email->cc(array("angel@baanthai.hk"));
                     $this->email->bcc(array(email_bcc, "stewart@baanthai.hk", "angel@baanthai.hk"));
                     $subjectt = "Thank you for your booking.";
                     $subject = $subjectt;

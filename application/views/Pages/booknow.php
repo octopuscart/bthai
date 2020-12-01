@@ -348,7 +348,7 @@ $this->load->view('layout/header');
     </div>
 
     <script>
-
+var listofbookeddate = <?php echo json_encode($datelist);?>;
 <?php
 if ($submitdata == 'yes') {
     ?>
@@ -387,5 +387,5 @@ $this->load->view('layout/footer');
 
 
 <script>
-    var today = "2020-11-29";</script>
+    var today = "<?php echo date("Y-m-d");?>";</script>
 <script src="<?php echo base_url(); ?>assets/wizard/booking.js"></script>
