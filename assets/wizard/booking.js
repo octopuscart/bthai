@@ -87,6 +87,15 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
             selectslot = $scope.initWizard.time[$scope.initWizard.selecttime["SPE"]];
             console.log(selectslot);
         }
+
+
+        if ($scope.initWizard.partbooking.indexOf(dateformated) > -1) {
+            console.log("booked", $scope.initWizard.partbooking.indexOf(dateformated), dateformated)
+            selectslot = $scope.initWizard.time[$scope.initWizard.selecttime["SPE"]];
+        }
+
+
+
         let datecheck = moment(datef);
         var dateformated = datecheck.format('YYYY-MM-DD');
         let ttslot = ["00", "30", ];
@@ -140,8 +149,24 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
     }
 
     //date blocking code
+    
+    
+    $scope.changeLocation = function(){
+   
+        if($scope.bookingArray.location == 'Central Branch'){
+            console.log($scope.bookingArray.select_date, $scope.bookingArray.location);
+        }
+        else{
+            
+        }
+    }
+    
+    
 
     $scope.initWizard = {
+        "enablebookingbutton":"1",
+        "enablemessage":"",
+        
         "split": ["00", "15", "30", "45"],
         "time": {
             "TS": ['12', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12:AM', '01:AM'],
@@ -151,6 +176,10 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         "selecttime": {4: "TS", 5: "TS", 6: "TS", 0: "MWS", 1: "MWS", 2: "MWS", 3: "MWS", "SPE": "BKD"},
         "timeslot": [],
         "booked_dates": listofbookeddate,
+        "partbooking": [
+            "2020-12-10", "2020-12-11", "2020-12-12", "2020-12-13", "2020-12-14", "2020-12-15", "2020-12-16", "2020-12-17",
+            "2020-12-18", "2020-12-19", "2020-12-20", "2020-12-21", "2020-12-22", "2020-12-23"
+        ],
         "tables": {
             "zone_g": ["ZG1", "ZG2", "ZG3", "ZG4", "ZG5", "ZG6"],
             "zone_f": ["ZF1", "ZF2", "ZF3", "ZF4", "ZF5", "ZF6", "ZF7", "ZF8"],
@@ -243,8 +272,8 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
     }
 
     $timeout(function () {
-       
-        $scope.bookingArray.select_date  = initdate;
+
+        $scope.bookingArray.select_date = initdate;
         $scope.initWiz(initdate)
     });
 })
