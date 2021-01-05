@@ -37,7 +37,7 @@ $this->load->view('layout/header');
 
 <style>
     .googlebooking{
-        background: var(--gm-fillbutton-container-color,#1a73e8);
+      
         border-color: #1a73e8;
     }
 

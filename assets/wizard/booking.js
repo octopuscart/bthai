@@ -83,14 +83,11 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         let selectslot = $scope.initWizard.time[$scope.initWizard.selecttime[ssdate.getDay()]];
         var dateformated = datetemp.format('YYYY-MM-DD');
         if ($scope.initWizard.booked_dates.indexOf(dateformated) > -1) {
-            console.log("booked", $scope.initWizard.booked_dates.indexOf(dateformated), dateformated)
             selectslot = $scope.initWizard.time[$scope.initWizard.selecttime["SPE"]];
-            console.log(selectslot);
         }
 
 
         if ($scope.initWizard.partbooking.indexOf(dateformated) > -1) {
-            console.log("booked", $scope.initWizard.partbooking.indexOf(dateformated), dateformated)
             selectslot = $scope.initWizard.time[$scope.initWizard.selecttime["SPE"]];
         }
 
@@ -149,24 +146,26 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
     }
 
     //date blocking code
-    
-    
-    $scope.changeLocation = function(){
-   
-        if($scope.bookingArray.location == 'Central Branch'){
-            console.log($scope.bookingArray.select_date, $scope.bookingArray.location);
-        }
-        else{
-            
+
+
+    $scope.changeLocation = function () {
+
+        if ($scope.bookingArray.location == 'Central Branch') {
+
+        } else {
+            if ($scope.bookingArray.select_date == "2020-12-26") {
+                console.log("booking blocked")
+            }
+            ;
         }
     }
-    
-    
+
+
 
     $scope.initWizard = {
-        "enablebookingbutton":"1",
-        "enablemessage":"",
-        
+        "enablebookingbutton": "1",
+        "enablemessage": "",
+
         "split": ["00", "15", "30", "45"],
         "time": {
             "TS": ['12', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12:AM', '01:AM'],
@@ -177,8 +176,7 @@ App.controller('bookingController', function ($scope, $http, $timeout, $interval
         "timeslot": [],
         "booked_dates": listofbookeddate,
         "partbooking": [
-            "2020-12-10", "2020-12-11", "2020-12-12", "2020-12-13", "2020-12-14", "2020-12-15", "2020-12-16", "2020-12-17",
-            "2020-12-18", "2020-12-19", "2020-12-20", "2020-12-21", "2020-12-22", "2020-12-23"
+            '2021-01-06', '2021-01-07', '2021-01-08', '2021-01-09', '2021-01-10', '2021-01-11', '2021-01-12', '2021-01-13', '2021-01-14', '2021-01-15', '2021-01-16', '2021-01-17', '2021-01-18', '2021-01-19', '2021-01-20', '2021-01-21', '2021-01-22', '2021-01-23', '2021-01-24', '2021-01-25', '2021-01-26', '2021-01-27', '2021-01-28', '2021-01-29', '2021-01-30', '2021-01-31'
         ],
         "tables": {
             "zone_g": ["ZG1", "ZG2", "ZG3", "ZG4", "ZG5", "ZG6"],

@@ -469,5 +469,13 @@ class Shop extends CI_Controller {
     public function reviews() {
         $this->load->view('Pages/reviews');
     }
+    
+    public function test(){
+        for($i=1;$i<=26;$i++){
+           $tdate = date('Y-m-d', strtotime(" +$i day"));
+      
+           echo "'$tdate', ";
+        }
+    }
 
 }
