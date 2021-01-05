@@ -248,8 +248,8 @@
                         <div class="modal-body deliverymodal">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    position: absolute;
                                     right: 5px;"><span aria-hidden="true">&times;</span></button>
-                            <a hreflang="en-us"  href="https://www.foodpanda.hk/restaurant/s7je/baan-thai?preview=YToyOntzOjQ6ImRhdGUiO3M6MTk6IjIwMTktMTAtMzEgMDg6NTY6NDYiO3M6ODoiaWRWZW5kb3IiO3M6MzoiODAxIjt9" target="_blank">
-                                <img src="<?php echo base_url(); ?>assets/images/delivery.jpg" alt="Baanthai Deliery">
+                            <a hreflang="en-us"  href="https://deliveroo.hk/en/menu/hong-kong/soho/soi-7?day=today&geohash=wecnv8xg5nrz&time=ASAP" target="_blank">
+                                <img src="<?php echo base_url(); ?>assets/images/delivery_d.jpg" alt="Baanthai Deliery">
                             </a>
                         </div>
 

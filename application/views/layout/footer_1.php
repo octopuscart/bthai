@@ -96,9 +96,9 @@
 
     <div class="owl-carousel owl-theme">
         <?php
-        $promotion = [77, 1, 2, 8];
+        $promotion = [88, 1, 2, 8];
         $promotionlink = array(
-            "77" => site_url("gallery/events"),
+            "88" => site_url("/"),
             "1" => site_url("loyalprogram"),
             "8" => site_url("aboutus"),
             "2" => site_url("privateparties"),
@@ -494,6 +494,7 @@ $keywordsList = [
                                 }"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/Baan-Thai-Hong-Kong" class="circ_bot_title" target="_blank">Baan Thai</a></div></div>
                     </div>
                 </div>
+                
                 <div class="widget clearfix" style="margin-top: 40px;">
                     <div class="footertripadvisor">
                         <p>Ratings and reviews</p>
