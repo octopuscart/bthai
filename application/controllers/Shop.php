@@ -119,7 +119,7 @@ class Shop extends CI_Controller {
                 }
             }
         }
-        $this->load->view('Pages/loyalprogram', $data);
+        $this->load->view('Pages/loyalprogramcomming', $data);
     }
 
     public function joinTeam() {
