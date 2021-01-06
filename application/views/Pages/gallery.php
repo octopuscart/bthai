@@ -48,7 +48,7 @@ $galleryArray = array(
         "Brooklyn Draft Larger" => "2_Brooklyn_Draft_Larger.jpg",
         "Goose Island IPA Draft" => "3_Goose_Island_IPA_Draft.jpg",
         "Pressman's Bottled Cider" => "4_Pressmans_Bottled_Cider.jpg",
-        "Giusti Rosalia Prosecco" => "5_Giusti_Rosalia_Prosecco.jpg",
+//        "Giusti Rosalia Prosecco" => "5_Giusti_Rosalia_Prosecco.jpg",
         "Yau Beer"=>"YauBeer.jpeg"
     ),
     "cocktail" => array(
