@@ -96,9 +96,10 @@
 
     <div class="owl-carousel owl-theme">
         <?php
-        $promotion = [9, 10, 88, 1, 2, 8];
+        $promotion = [9, 11, 10, 88, 1, 2, 8];
         $promotionlink = array(
             "9" => site_url("aboutus"),
+            "11" => site_url("aboutus"),
             "10" => site_url("aboutus"),
             "88" => site_url("/"),
             "1" => site_url("loyalprogram"),
