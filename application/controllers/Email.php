@@ -124,7 +124,7 @@ class Email extends CI_Controller {
         if (count($ignore)) {
             $this->db->where_not_in('id', $ignore);
         }
-        $this->db->where('mailer_list_id', '1');
+        $this->db->where('mailer_list_id', '');
 
         $this->db->limit(10);
         $query = $this->db->get('mailer_contacts2');

@@ -20,7 +20,7 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top;" align="center">
-                                <a href="<?php echo site_url("/"); ?>" target="_blank">
+                                <a href="https://www.baanthaihk.com" target="_blank">
                                     <img src="<?php echo site_mail_logo; ?>" alt="Baan Thai" style="border:none;height:100px;"/></a>
                             </td>
                         </tr>
@@ -42,7 +42,7 @@
                             <tr>
                                 <td class="" style="text-align: center;">
 
-                                    <img src="https://baanthaihk.com/assets/images/adbanner/adbanner.jpg" style="width: 100%;"/>
+                                    <img src="https://baanthaihk.com/assets/images/adbanner/adbanner2.jpg" style="width: 100%;"/>
                                 </td>
                             </tr>
                             <tr>

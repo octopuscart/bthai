@@ -96,9 +96,10 @@
 
     <div class="owl-carousel owl-theme">
         <?php
-        $promotion = [9, 11, 10, 88, 1, 2, 8];
+        $promotion = [12, 9, 11, 10, 88, 1, 2, 8];
         $promotionlink = array(
             "9" => site_url("aboutus"),
+            "12" => site_url("aboutus"),
             "11" => site_url("aboutus"),
             "10" => site_url("aboutus"),
             "88" => site_url("/"),
@@ -378,7 +379,7 @@ $keywordsList = [
                         </div>
 
                         <div class="spost clearfix" style="    margin-top: 5px;
-    padding-top: 10px;">
+                             padding-top: 10px;">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
@@ -405,7 +406,7 @@ $keywordsList = [
                         </div>
 
                         <div class="spost clearfix" style="    margin-top: 5px;
-    padding-top: 10px;">
+                             padding-top: 10px;">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
@@ -497,7 +498,7 @@ $keywordsList = [
                                 }"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/Baan-Thai-Hong-Kong" class="circ_bot_title" target="_blank">Baan Thai</a></div></div>
                     </div>
                 </div>
-                
+
                 <div class="widget clearfix" style="margin-top: 40px;">
                     <div class="footertripadvisor">
                         <p>Ratings and reviews</p>
