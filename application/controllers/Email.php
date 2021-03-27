@@ -124,12 +124,12 @@ class Email extends CI_Controller {
         if (count($ignore)) {
             $this->db->where_not_in('id', $ignore);
         }
-        $this->db->where('mailer_list_id', '');
+        $this->db->where('mailer_list_id', '1');
 
         $this->db->limit(10);
         $query = $this->db->get('mailer_contacts2');
         $contactdata = $query->result_array();
-
+        print_r($contactdata);  
 
 
 
@@ -170,19 +170,19 @@ class Email extends CI_Controller {
                 $this->email->to($useremail);
 //        $this->email->to("tailor123hk@gmail.com");
                 $this->email->charset = "UTF-8";
-                $subject = "Baan Thai Opens New Restaurant in Western District";
+                $subject = "Baan Thai New Restaurant in Western District Now Open";
                 $this->email->subject($subject);
                 $checkcode = REPORT_MODE;
 
                 $emailhtml = $this->load->view('Email/webadv2', array(), true);
                 $result = "";
-                if ($checkcode == '') {
+                if ($checkcode == '1') {
                     echo $emailhtml;
                 } else {
-//                    $this->email->message($emailhtml);
-//                    echo $result = $this->email->send();
-//                    echo "<br/>-----<br/>";
-//                    $this->email->print_debugger();
+                    $this->email->message($emailhtml);
+                    echo $result = $this->email->send();
+                    echo "<br/>-----<br/>";
+                    $this->email->print_debugger();
                 }
 
                 $mailer_contacts2_check = array(

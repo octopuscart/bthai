@@ -31,7 +31,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <p style="color:#800000;">
+                                    <p style="color:#800000;font-weight: bold;">
                                         Dear Valued Baan Thai Customer,
                                         <br/>
                                         A short note, just to inform you about our new restaurant which recently opened in Hong Kong's Western District, right next to the B2 exit of the HKU MTR Station.
@@ -42,7 +42,7 @@
                             <tr>
                                 <td class="" style="text-align: center;">
 
-                                    <img src="https://baanthaihk.com/assets/images/adbanner/adbanner.jpg" style="height: 400px;"/>
+                                    <img src="https://baanthaihk.com/assets/images/adbanner/adbanner.jpg" style="width: 100%;"/>
                                 </td>
                             </tr>
                             <tr>
@@ -51,21 +51,13 @@
 
 
                                     <p>
-                                        For more info, email us at <b>info@baanthai.hk</b> or call for more details Tel. <b>2739 9188</b>
+                                        For more info, email us at <b>info@baanthai.hk</b>
 
                                     </p>
 
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <p style="text-align: center;">
-                                        <b>
-                                            Baan Thai Restaurant - G/F One South Lane, 1 South Lane, Shek Tong Tsui, Hong Kong.
-                                        </b>
-                                    </p>
-                                </td>
-                            </tr>
+                         
 
                         </tbody>
                     </table>
