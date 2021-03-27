@@ -22,7 +22,7 @@ class Email extends CI_Controller {
     }
 
     public function adEmail() {
-        $this->load->view('Email/webad');
+        $this->load->view('Email/webadv2');
     }
 
     public function checkEmailSend() {

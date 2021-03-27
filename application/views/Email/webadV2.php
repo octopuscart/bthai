@@ -12,7 +12,7 @@
         <div width="100%" style="background: #e5e5e5;padding:30px 0px;font-family:sans-serif; line-height:28px; height:100%;  width: 100%; color: #514d6a;">
             <div style="max-width: 700px; padding:50px 0;  margin: 0px auto; font-size: 14px;
                  background:url('https://www.baanthaihk.com/assets/images/newhotelback.jpg');  
-              
+
                  background-size: 700px;
                  background-position: center;
                  background-repeat: no-repeat;background-color:white;border: 1px solid #800000;border-radius: 50px;height:1000px;">
@@ -31,32 +31,24 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <h1 style="text-align: center;color:#800000;font-size: 30px;    font-family: serif;">
-                                        Baan Thai Opens in
-                                        Western District 
-                                    </h1>
-                                    <h2 style="margin-bottom: 50px;">
-                                        On October 28
-                                        th, 2020, Baan Thai opened a second
-                                        and new restaurant in Shek Tong Tsui, right next
-                                        to HKU MTR Station.
-                                    </h2>
+                                    <p style="color:#800000;">
+                                        Dear Valued Baan Thai Customer,
+                                        <br/>
+                                        A short note, just to inform you about our new restaurant which recently opened in Hong Kong's Western District, right next to the B2 exit of the HKU MTR Station.
+
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="" style="text-align: center;">
 
-                                    <img src="https://www.baanthaihk.com/assets/images/newhotel.jpg" style="height: 400px;"/>
+                                    <img src="https://baanthaihk.com/assets/images/adbanner/adbanner.jpg" style="height: 400px;"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="    text-align: center;font-size: 16px;font-weight: 500;">
 
-                                    <p style="color:#800000;">
-                                        Come down to Sai Wan and enjoy our popular and authentic Thai cuisine at the west of
-                                        Hong Kong island any day of the week. Also enjoy our extended delivery services (via Food
-                                        Panda and Deliveroo) covering the west of Hong Kong! 
-                                    </p>
+
 
                                     <p>
                                         For more info, email us at <b>info@baanthai.hk</b> or call for more details Tel. <b>2739 9188</b>
