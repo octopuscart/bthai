@@ -154,7 +154,10 @@
                         <a hreflang="en-us"  href="mailto:info@baanthai.hk" style="color:white"><i class="fa fa-envelope-o"></i> info@baanthai.hk</a> 
                     </span>
                     <span class="lefttopmenu">
-                        <a hreflang="en-us"  href="tel:info@baanthai.hk" style="color:white"><i class="fa fa-phone"></i> +(852) 2840 0041</a> 
+                        <b style="color:white;">Central:</b> &nbsp;    <a hreflang="en-us"  href="tel:+(852) 2840 0041" style="color:white"><i class="fa fa-phone"></i> +(852) 2840 0041</a> 
+                    </span>
+                       <span class="lefttopmenu">
+                     <b style="color:white;">Western:</b> &nbsp;     <a hreflang="en-us"  href="tel:+(852) 2739 9188" style="color:white"><i class="fa fa-phone"></i> +(852) 2739 9188</a> 
                     </span>
                     <div class="topmenuright hideonmobile">
                         <div class=" clearfix">
