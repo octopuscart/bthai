@@ -96,9 +96,10 @@
 
     <div class="owl-carousel owl-theme">
         <?php
-        $promotion = [12, 9, 11, 10, 88, 1, 2, 8];
+        $promotion = [12, 99, 9, 11, 10, 88, 1, 2, 8];
         $promotionlink = array(
             "9" => site_url("aboutus"),
+            "99" => "https://www.thestandard.com.hk/section-news/section/12/228992/Baan-Thai:-Bringing-authentic-Thai-flavours-to-Hong-Kong",
             "12" => site_url("aboutus"),
             "11" => site_url("aboutus"),
             "10" => site_url("aboutus"),
