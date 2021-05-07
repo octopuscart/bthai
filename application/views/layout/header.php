@@ -238,8 +238,8 @@
 
             </header><!-- #header end -->
             <div class="clear"></div>
-            <a class="btn btn-danger deliveryButton" hreflang="en-us"  href="<?php echo site_url('booknow'); ?>" style="    bottom: 150px;
-               background: #ff0000;line-height: 64px;"> Book Now</a>
+            <a class="btn btn-danger deliveryButton" hreflang="en-us"  href="https://cho.pe/dineatbaanthairestauranthk" style="    bottom: 150px;
+               background: #ff0000;line-height: 64px;"> Book</a>
 
             <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
 
