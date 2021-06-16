@@ -22,9 +22,9 @@ $menuitems = [
     array(
         "title" => "Book Now",
         "icon" => "ion-ios-create",
-//        "link" => site_url('booknow'),
-        "link"=>"https://cho.pe/dineatbaanthairestauranthk",
-        "class" => "externallink",
+        "link" => site_url('booknow'),
+//        "link"=>"https://cho.pe/dineatbaanthairestauranthk",
+        "class" => "",
     ),
     array(
         "title" => "Gallery",

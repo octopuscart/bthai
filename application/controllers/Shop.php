@@ -190,8 +190,8 @@ class Shop extends CI_Controller {
 
     //End of book now
     public function booknow() {
-        
-        redirect("https://cho.pe/dineatbaanthairestauranthk");
+
+//        redirect("https://cho.pe/dineatbaanthairestauranthk");
 
         if ($this->session_user) {
             $usertype = $this->user_id;
@@ -202,7 +202,7 @@ class Shop extends CI_Controller {
 
         $data = array();
         $data['submitdata'] = "";
-        
+
         $cdate = date("Y-m-d");
         $this->db->where('select_date >=', $cdate);
         $this->db->order_by("select_date");
@@ -338,10 +338,8 @@ class Shop extends CI_Controller {
 
 
         //end of email
-
-
-
-        $this->load->view('Pages/booknow', $data);
+//        $this->load->view('Pages/booknow', $data);
+        $this->load->view('Pages/booknow_chop', $data);
     }
 
     public function appointment() {
@@ -471,12 +469,12 @@ class Shop extends CI_Controller {
     public function reviews() {
         $this->load->view('Pages/reviews');
     }
-    
-    public function test(){
-        for($i=1;$i<=26;$i++){
-           $tdate = date('Y-m-d', strtotime(" +$i day"));
-      
-           echo "'$tdate', ";
+
+    public function test() {
+        for ($i = 1; $i <= 26; $i++) {
+            $tdate = date('Y-m-d', strtotime(" +$i day"));
+
+            echo "'$tdate', ";
         }
     }
 
