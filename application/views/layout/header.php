@@ -225,7 +225,7 @@
                                 <?php
                                 foreach ($menuitems as $key => $value) {
                                     ?>
-                                    <li  class="<?php echo current_url() == $value['link'] ? 'activemenu' : '' ?>"><a hreflang="en-us"  href="<?php echo $value['link']; ?>" class="<?php echo $value['class']; ?>"><div ><i class="<?php echo $value['icon']; ?>"></i><?php echo $value['title']; ?></div></a></li>
+                                    <li  class="<?php echo current_url() == $value['link'] ? 'activemenu' : '' ?>"><a hreflang="en-us"  href="<?php echo $value['link']; ?>" class="<?php echo $value['class']; ?>" target="<?php echo $value["class"]=='externallink' ? '_blank' : '';?>"><div ><i class="<?php echo $value['icon']; ?>"></i><?php echo $value['title']; ?></div></a></li>
                                 <?php } ?>
                                 <!--{{userLogin}}-->
                             </ul>
