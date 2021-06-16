@@ -190,6 +190,8 @@ class Shop extends CI_Controller {
 
     //End of book now
     public function booknow() {
+        
+        redirect("https://cho.pe/dineatbaanthairestauranthk");
 
         if ($this->session_user) {
             $usertype = $this->user_id;
