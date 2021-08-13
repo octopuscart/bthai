@@ -81,7 +81,7 @@ if (!function_exists('meta_tags')) {
                     . '<meta name="twitter:description" content="' . $desc . '"/>'
                     . '<meta name="twitter:image" content="' . $imgurl . '"/>';
         }
-
+        header('Content-Type: text/html; charset=utf-8');
         echo $output;
     }
 
