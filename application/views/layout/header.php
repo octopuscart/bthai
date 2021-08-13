@@ -2,12 +2,12 @@
 <html dir="ltr" lang="en-US">
     <head>
 
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="author" content="Baan Thai Hong Kong" />
         <!-- Startup configuration -->
         <link rel="manifest" href="<?php echo base_url() . 'assets/manifest.webmanifest';?>">
         <meta name="theme-color" content="#000">
-        <meta charset="UTF-8"> 
+       
         <?php
         meta_tags();
         ?>
