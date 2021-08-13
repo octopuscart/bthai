@@ -98,24 +98,36 @@
         <?php
         $promotion = [12, 99, 9, 11, 10, 88, 1, 2, 8];
         $promotionlink = array(
-            "9" => site_url("aboutus"),
-            "99" => "https://www.thestandard.com.hk/section-news/section/12/228992/Baan-Thai:-Bringing-authentic-Thai-flavours-to-Hong-Kong",
-            "12" => site_url("aboutus"),
-            "11" => site_url("aboutus"),
-            "10" => site_url("aboutus"),
-            "88" => site_url("/"),
-            "1" => site_url("loyalprogram"),
-            "8" => site_url("aboutus"),
-            "2" => site_url("privateparties"),
+            "9" => array("type" => "img", "link" => site_url("aboutus"),),
+            "99" => array("type" => "img", "link" => "https://www.thestandard.com.hk/section-news/section/12/228992/Baan-Thai:-Bringing-authentic-Thai-flavours-to-Hong-Kong",),
+            "12" => array("type" => "img", "link" => site_url("aboutus")),
+//            "11" => array("type" => "img", "link" => site_url("aboutus")),
+            "10" => array("type" => "img", "link" => site_url("aboutus")),
+            "88" => array("type" => "img", "link" => site_url("/")),
+            "1" => array("type" => "img", "link" => site_url("loyalprogram")),
+            "8" => array("type" => "img", "link" => site_url("aboutus")),
+            "2" => array("type" => "img", "link" => site_url("privateparties")),
+            "5" => array("type" => "video", "link" => site_url("privateparties")),
         );
 
         foreach ($promotionlink as $key => $value) {
             ?>
-            <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;" ng-click="selectePromotionImage('<?php echo $key; ?>', '<?php echo $value; ?>')">
-                <div class="thumbnail">
-                    <img alt="Baanthai Promotion <?php echo $key; ?>" src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
+            <?php if ($value["type"] == "img") { ?>
+                <div class="item" data-toggle="modal" data-target="#promotionModel" style="cursor: pointer;" ng-click="selectePromotionImage('<?php echo $key; ?>', '<?php echo $value["link"]; ?>')">
+                    <div class="thumbnail">
+                        <img alt="Baanthai Promotion <?php echo $key; ?>" src="<?php echo base_url(); ?>assets/promotion/<?php echo $key; ?>.jpg"/>
+                    </div>
                 </div>
-            </div>
+                <?php
+            } else {
+                ?>  <div class="item"  style="cursor: pointer;" >
+                    <div class="thumbnail">
+                        <iframe      height="316px" width="432px" src="https://www.youtube.com/embed/4ZxARSR_yus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
             <?php
         }
         ?>
@@ -249,35 +261,35 @@ $keywordsList = [
 
                         </small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
                 </div><script type='text/javascript'>
-                function init_map() {
-                    //22.2968045,114.1687551  22.2969039,114.1623853
-                    var myOptions = {zoom: 15, center: new google.maps.LatLng(22.281277, 114.15492),
-                        mapTypeId: google.maps.MapTypeId.ROADMAP};
-                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                    marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.281277, 114.15492)});
+                        function init_map() {
+                            //22.2968045,114.1687551  22.2969039,114.1623853
+                            var myOptions = {zoom: 15, center: new google.maps.LatLng(22.281277, 114.15492),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP};
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.281277, 114.15492)});
 
-                    marker2 = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.2852291, 114.1347675)});
-
-
-
-                    infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F and M/F, 57 Wyndham St,Central, Hong Kong<br></div>'});
-
-                    google.maps.event.addListener(marker, 'click', function () {
-                        infowindow.open(map, marker);
-                    });
-                    infowindow.open(map, marker);
+                            marker2 = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.2852291, 114.1347675)});
 
 
 
-                    infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F, One South Lane, No. 1 South Lane, Shek Tong Tsui, Sai Wan, Hong Kong.<br></div>'});
+                            infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F and M/F, 57 Wyndham St,Central, Hong Kong<br></div>'});
 
-                    google.maps.event.addListener(marker2, 'click', function () {
-                        infowindow.open(map, marker2);
-                    });
-                    infowindow.open(map, marker2);
+                            google.maps.event.addListener(marker, 'click', function () {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
 
-                }
-                google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+
+                            infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F, One South Lane, No. 1 South Lane, Shek Tong Tsui, Sai Wan, Hong Kong.<br></div>'});
+
+                            google.maps.event.addListener(marker2, 'click', function () {
+                                infowindow.open(map, marker2);
+                            });
+                            infowindow.open(map, marker2);
+
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);</script>
 
             </div>
             <?php
@@ -516,7 +528,7 @@ $keywordsList = [
                             <h4 style="margin: 0;"> We Accept</h4>
 
                             <br/>
-                            <img src="<?php echo base_url(); ?>assets/images/payments.png" alt="Baanthai payment" style="  height: 70px;">
+                            <img src="<?php echo base_url(); ?>assets/images/payments2.png" alt="Baanthai payment" style="  height: 70px;">
 
                         </div>
                     </div>
