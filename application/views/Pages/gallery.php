@@ -31,16 +31,15 @@ $galleryArray = array(
         "16" => "20190411_165934.jpg",
         "17" => "IMG-20180519-WA0007.jpg",
         "18" => "20190418_1625321.jpg",
-        "19"=>"1w.jpg",
-        "20"=>"2w.jpg",
-        "21"=>"3w.jpg",
-        "22"=>"4w.jpg",
-        "23"=>"5w.jpg",
-        "24"=>"6w.jpg",
-        "25"=>"7w.jpg",
-        "26"=>"8w.jpg",
-        "27"=>"9w.jpg",
-        
+        "19" => "1w.jpg",
+        "20" => "2w.jpg",
+        "21" => "3w.jpg",
+        "22" => "4w.jpg",
+        "23" => "5w.jpg",
+        "24" => "6w.jpg",
+        "25" => "7w.jpg",
+        "26" => "8w.jpg",
+        "27" => "9w.jpg",
     ),
     "snacks" => array(
         "Chicken Satay" => "1_Chicken_Satays.jpg",
@@ -58,7 +57,7 @@ $galleryArray = array(
         "Goose Island IPA Draft" => "3_Goose_Island_IPA_Draft.jpg",
         "Pressman's Bottled Cider" => "4_Pressmans_Bottled_Cider.jpg",
 //        "Giusti Rosalia Prosecco" => "5_Giusti_Rosalia_Prosecco.jpg",
-        "Yau Beer"=>"YauBeer.jpeg"
+        "Yau Beer" => "YauBeer.jpeg"
     ),
     "cocktail" => array(
         "1" => "IMG_8925.jpg",
@@ -81,9 +80,10 @@ $galleryArray = array(
         "11" => "IMG-20190904-WA0016.jpg",
         "12" => "wpimage.jpeg",
         "13" => "IMG-20180519-WA0011.jpg",
-        "14"=>"19032020.jpeg",
-        "15"=>"19032020_1.jpeg",
+        "14" => "19032020.jpeg",
+        "15" => "19032020_1.jpeg",
     ),
+    "videos" => array("1" => "https://www.youtube.com/embed/4ZxARSR_yus")
 );
 
 
@@ -95,6 +95,7 @@ $galleryArrayIncType = array(
     "drinks" => "txt",
     "cocktail" => "inc",
     "events" => "inc",
+    "videos" => "videos",
 );
 ?>
 
@@ -188,15 +189,23 @@ $galleryArrayIncType = array(
                                 </figcaption>
                             </figure>
                         </a>
+                        <a class="nav-item nav-link" id="nav-videos-tab"  href="<?php echo site_url('gallery/videos') ?>" role="tab" aria-controls="nav-venue" aria-selected="false">
+                            <figure class="figure bookingfigure" >
+                                <img src="<?php echo base_url(); ?>assets/icons/video.png" class="figure-img img-fluid rounded tabimage" alt="...">
+                                <figcaption class="figure-caption">
+                                    <p class="tabtitle">Videos</p>
+                                </figcaption>
+                            </figure>
+                        </a>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
 
-<?php
-$loopdata = $galleryArray[$gtype];
-$viewtype = $galleryArrayIncType[$gtype];
-if (1) {
-    ?>
+                    <?php
+                    $loopdata = $galleryArray[$gtype];
+                    $viewtype = $galleryArrayIncType[$gtype];
+                    if (1) {
+                        ?>
                         <div class="tab-pane fade" id="nav-<?php echo $gtype; ?>" role="tabpanel" aria-labelledby="nav-<?php echo $gtype; ?>-tab">
 
                             <div id="grid-gallery" class="grid-gallery taginntercontaint" >
@@ -204,37 +213,54 @@ if (1) {
                                     <ul class="grid">
                                         <li class="grid-sizer"></li><!-- for Masonry column width -->
 
-    <?php
-    $inctype = 1;
-    foreach ($loopdata as $key => $value) {
-        ?>
+                                        <?php
+                                        $inctype = 1;
+                                        foreach ($loopdata as $key => $value) {
+                                            if ($viewtype != "videos") {
+                                                ?>
 
-                                            <li style="    padding: 0px;" >
-                                                <div class="panel panel-default" style="border:none;margin: 0px;">
-                                                    <div class="panel-body" style="    padding: 5px;">
-                                                        <div class="thumbnail lookbook_thumb" >
+                                                <li style="    padding: 0px;" >
+                                                    <div class="panel panel-default" style="border:none;margin: 0px;">
+                                                        <div class="panel-body" style="    padding: 5px;">
+                                                            <div class="thumbnail lookbook_thumb" >
 
-                                                            <img src="<?php echo base_url() . "assets/images/gallery/$gtype/$value"; ?>" alt="img01" style="border-radius: 0;"/>
-                                                            <div class="caption" style="background: black;
-                                                                 color: white;
-                                                                 text-align: center;
-                                                                 padding: 1px 5px;">
-                                                                <p><?php
-                                    if ($viewtype == 'txt') {
-                                        echo $key;
-                                    } else {
-                                        echo $inctype;
-                                    }
-        ?></p>
+                                                                <img src="<?php echo base_url() . "assets/images/gallery/$gtype/$value"; ?>" alt="img01" style="border-radius: 0;"/>
+                                                                <div class="caption" style="background: black;
+                                                                     color: white;
+                                                                     text-align: center;
+                                                                     padding: 1px 5px;">
+                                                                    <p><?php
+                                                                        if ($viewtype == 'txt') {
+                                                                            echo $key;
+                                                                        } else {
+                                                                            echo $inctype;
+                                                                        }
+                                                                        ?></p>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </li>
-        <?php
-        $inctype++;
-    }
-    ?>
+                                                </li>
+                                                <?php
+                                                $inctype++;
+                                            } else {
+                                                ?>
+
+                                                <li style="    padding: 0px;" >
+                                                    <div class="panel panel-default" style="border:none;margin: 0px;">
+                                                        <div class="panel-body" style="    padding: 5px;">
+                                                            <div class="thumbnail lookbook_thumb" >
+
+                                                                <iframe      height="316px" width="432px" src="<?php echo $value;?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <?php
+                                            }
+                                        }
+                                        ?>
                                         <div style="clear:both"></div>
 
                                     </ul>
