@@ -7,7 +7,7 @@
         <!-- Startup configuration -->
         <link rel="manifest" href="<?php echo base_url() . 'assets/manifest.webmanifest';?>">
         <meta name="theme-color" content="#000">
-        <meta charset="utf-8"> 
+        <meta charset="UTF-8"> 
         <?php
         meta_tags();
         ?>
