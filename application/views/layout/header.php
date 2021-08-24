@@ -239,10 +239,10 @@
 
             </header><!-- #header end -->
             <div class="clear"></div>
-            <a class="btn btn-danger deliveryButton" hreflang="en-us"  href="https://cho.pe/dineatbaanthairestauranthk" style="    bottom: 150px;
+            <a class="btn btn-danger deliveryButton" hreflang="en-us"  href="https://cho.pe/dineatbaanthairestauranthk" style="    bottom: 110px;
                background: #ff0000;line-height: 64px;"> Book</a>
 
-            <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel"> Delivery</button>
+            <button class="btn btn-danger deliveryButton" data-toggle="modal" data-target="#deliverymodel" style="    bottom: 20px;"> Delivery</button>
 
             <!-- Modal -->
             <div class="modal fade" id="deliverymodel" tabindex="-1" role="dialog" aria-labelledby="deliverymodel">
