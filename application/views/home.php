@@ -13,10 +13,10 @@
 
         <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/logof.png'; ?>"/>
         <link rel="apple-touch-icon image_src" href="<?php echo base_url() . 'assets/images/logof.png'; ?>"/>
-        <link rel="icon" href="http://www.baanthai.hk/wp-content/uploads/2018/11/cropped-Baan-Thai-star-wheel-32x32.jpg" sizes="32x32" />
-        <link rel="icon" href="http://www.baanthai.hk/wp-content/uploads/2018/11/cropped-Baan-Thai-star-wheel-192x192.jpg" sizes="192x192" />
-        <link rel="apple-touch-icon-precomposed" href="http://www.baanthai.hk/wp-content/uploads/2018/11/cropped-Baan-Thai-star-wheel-180x180.jpg" />
-        <meta name="msapplication-TileImage" content="http://www.baanthai.hk/wp-content/uploads/2018/11/cropped-Baan-Thai-star-wheel-270x270.jpg" />
+        <link rel="icon" href="<?php echo base_url() . 'assets/images/logof.png'; ?>" sizes="32x32" />
+        <link rel="icon" href="<?php echo base_url() . 'assets/images/logof.png'; ?>" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="<?php echo base_url() . 'assets/images/logof.png'; ?>" />
+        <meta name="msapplication-TileImage" content="<?php echo base_url() . 'assets/images/logof.png'; ?>" />
         <!-- Stylesheets
         ============================================= -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
@@ -571,12 +571,12 @@
                                 <h4>Opening Hours</h4>
                             </div>
 
-                            <p>We serve you all days in a week.</p>
+                            <p>We serve you every day of the week.</p>
 
                             <ul class="iconlist nobottommargin">
-                                <li><i class="icon-time color"></i> <strong>Mondays-Wednesday:</strong><br/> 12:00 PM to 12:00 AM</li>
-                                <li><i class="icon-time color"></i> <strong>Thursday - Saturdays:</strong><br/> 12:00 PM to 02:00 AM</li>
-                                <li><i class="icon-time text-danger"></i> <strong>Sundays:</strong> <br/>12:00 PM to 12:00 AM</li>
+                                <li><i class="icon-time color"></i> <strong>Monday - Thursday:</strong><br/> 12:00 PM to 10:00 PM</li>
+                                <li><i class="icon-time color"></i> <strong>Friday - Saturday:</strong><br/> 12:00 PM to 12:00 AM</li>
+                                <li><i class="icon-time text-danger"></i> <strong>Sunday:</strong> <br/>12:00 PM to 10:00 PM</li>
                             </ul>
 
                         </div>
