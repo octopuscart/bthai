@@ -290,7 +290,7 @@ ensure customers that they enjoy that special taste of Thailand when dining at a
 
 
 
-            <div class="container clearfix" style="    padding: 60px 0px;">
+            <div class="container clearfix" style="    padding: 60px 0px 60px 20px;">
 
                 <div class="col_one_fourth nobottommargin">
 
