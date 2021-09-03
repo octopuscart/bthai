@@ -34,7 +34,7 @@ $this->load->view('layout/header');
                         </div>
 
                         <div class="spost clearfix" style="    margin-top: 5px;
-    padding-top: 10px;">
+                             padding-top: 10px;">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
@@ -61,7 +61,7 @@ $this->load->view('layout/header');
                             </div>
                         </div>
                         <div class="spost clearfix" style="    margin-top: 5px;
-    padding-top: 10px;">
+                             padding-top: 10px;">
                             <div class="entry-c">
                                 <div class="entry-title">
                                     <h4>
