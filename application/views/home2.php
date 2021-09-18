@@ -46,6 +46,15 @@ $this->load->view('layout/header');
         /* width: 40px; */
         border-top: 2px solid #fff;
     }
+    
+    .heading-block2 h3:after {
+        content: '';
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        /* width: 40px; */
+        border-top: 2px solid #561a26;
+    }
 
     .iconlist li{
         border-bottom: 1px solid #000;
@@ -192,7 +201,28 @@ $this->load->view('layout/header');
     <section id="content">
 
         <div class="content-wrap" style="padding: 0px;">
+            <div class="row clearfix common-height">
 
+                <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/flavors_bangkok.jpg) center center / cover no-repeat; height: 400px;">
+                    <div>&nbsp;</div>
+                </div>
+                <div class="col-lg-6 center col-padding" style="background-color: #fff; height: 400px;">
+                    <div>
+                        <div class="heading-block nobottomborder heading-block2" style="margin-bottom: 0px;">
+                            <h3>The Flavors of Bangkok</h3>
+                        </div>
+
+
+                        <p class="lead nobottommargin">
+                            Choose from our variety of special Combo Meals<br/> for a fuss-free delicious meal
+                        </p>
+                        <a href="https://baanthai.oddle.me/en_HK/"  class="button button-border button-large button-rounded topmargin-sm noleftmargin" target="_blank" style="color: #000;    border: 2px solid #000;">Order Now</a>
+
+                    </div>
+                </div>
+
+
+            </div>
             <div class="row clearfix common-height">
 
 
@@ -204,11 +234,11 @@ $this->load->view('layout/header');
 
 
                         <p class="lead nobottommargin">Our rustic and stylish restaurants are located in the heart of Central along Wyndham Street, as well as in Western District next to HKU Station, 
-with both restaurants showcasing the signature flavours of authentic Thai cuisine.
-Our menu is inspired by the popular flavours of Siam cuisine from the great cities of Bangkok and Udon Thani,
-specifically as we serve many small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, 
-that are cooked with fresh herbs and spices. All our chefs in both Central and Western branches are Thai so as to
-ensure customers that they enjoy that special taste of Thailand when dining at a Baan Thai restaurant.                        </p>
+                            with both restaurants showcasing the signature flavours of authentic Thai cuisine.
+                            Our menu is inspired by the popular flavours of Siam cuisine from the great cities of Bangkok and Udon Thani,
+                            specifically as we serve many small plates, curries, fresh seafood, noodles, stir fries and vegetarian options, 
+                            that are cooked with fresh herbs and spices. All our chefs in both Central and Western branches are Thai so as to
+                            ensure customers that they enjoy that special taste of Thailand when dining at a Baan Thai restaurant.                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 center col-padding" style="background: url(<?php echo base_url(); ?>assets/images/hotel.jpg) center center / cover no-repeat; height: 708px;">
@@ -300,11 +330,11 @@ ensure customers that they enjoy that special taste of Thailand when dining at a
 
                     <p>We serve you every day of the week.</p>
 
-                            <ul class="iconlist nobottommargin">
-                                <li><i class="icon-time color"></i> <strong>Monday - Thursday:</strong><br/> 12:00 PM to 10:00 PM</li>
-                                <li><i class="icon-time color"></i> <strong>Friday - Saturday:</strong><br/> 12:00 PM to 12:00 AM</li>
-                                <li><i class="icon-time text-danger"></i> <strong>Sunday:</strong> <br/>12:00 PM to 10:00 PM</li>
-                            </ul>
+                    <ul class="iconlist nobottommargin">
+                        <li><i class="icon-time color"></i> <strong>Monday - Thursday:</strong><br/> 12:00 PM to 10:00 PM</li>
+                        <li><i class="icon-time color"></i> <strong>Friday - Saturday:</strong><br/> 12:00 PM to 12:00 AM</li>
+                        <li><i class="icon-time text-danger"></i> <strong>Sunday:</strong> <br/>12:00 PM to 10:00 PM</li>
+                    </ul>
 
                 </div>
 

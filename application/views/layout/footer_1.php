@@ -98,6 +98,7 @@
         <?php
         $promotion = [12, 99, 9, 11, 10, 88, 1, 2, 8];
         $promotionlink = array(
+            "101" => array("type" => "img", "link" => "https://hk.sluurpy.com/%E9%A6%99%E6%B8%AF/restaurant/6335902/baan-thai-restaurant",),
             "9" => array("type" => "img", "link" => site_url("aboutus"),),
             "99" => array("type" => "img", "link" => "https://www.thestandard.com.hk/section-news/section/12/228992/Baan-Thai:-Bringing-authentic-Thai-flavours-to-Hong-Kong",),
             "12" => array("type" => "img", "link" => site_url("aboutus")),
@@ -261,35 +262,35 @@ $keywordsList = [
 
                         </small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
                 </div><script type='text/javascript'>
-                        function init_map() {
-                            //22.2968045,114.1687551  22.2969039,114.1623853
-                            var myOptions = {zoom: 15, center: new google.maps.LatLng(22.281277, 114.15492),
-                                mapTypeId: google.maps.MapTypeId.ROADMAP};
-                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                            marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.281277, 114.15492)});
+                    function init_map() {
+                        //22.2968045,114.1687551  22.2969039,114.1623853
+                        var myOptions = {zoom: 15, center: new google.maps.LatLng(22.281277, 114.15492),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP};
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.281277, 114.15492)});
 
-                            marker2 = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.2852291, 114.1347675)});
+                        marker2 = new google.maps.Marker({map: map, position: new google.maps.LatLng(22.2852291, 114.1347675)});
 
 
 
-                            infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F and M/F, 57 Wyndham St,Central, Hong Kong<br></div>'});
+                        infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F and M/F, 57 Wyndham St,Central, Hong Kong<br></div>'});
 
-                            google.maps.event.addListener(marker, 'click', function () {
-                                infowindow.open(map, marker);
-                            });
+                        google.maps.event.addListener(marker, 'click', function () {
                             infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
 
 
 
-                            infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F, One South Lane, No. 1 South Lane, Shek Tong Tsui, Sai Wan, Hong Kong.<br></div>'});
+                        infowindow = new google.maps.InfoWindow({content: '<div style="color:black"><strong>Baan Thai</strong><br>G/F, One South Lane, No. 1 South Lane, Shek Tong Tsui, Sai Wan, Hong Kong.<br></div>'});
 
-                            google.maps.event.addListener(marker2, 'click', function () {
-                                infowindow.open(map, marker2);
-                            });
+                        google.maps.event.addListener(marker2, 'click', function () {
                             infowindow.open(map, marker2);
+                        });
+                        infowindow.open(map, marker2);
 
-                        }
-                        google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);</script>
 
             </div>
             <?php
@@ -525,9 +526,9 @@ $keywordsList = [
 
                         <div class=" clearfix">
 
-<!--                            <h4 style="margin: 0;font-size: 15px"> We Accept</h4>
-
-                            <br/>-->
+                            <!--                            <h4 style="margin: 0;font-size: 15px"> We Accept</h4>
+                            
+                                                        <br/>-->
                             <img src="<?php echo base_url(); ?>assets/images/payments3.png" alt="Baanthai payment" style="  height: 60px;">
 
                         </div>
