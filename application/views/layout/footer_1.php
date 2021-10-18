@@ -98,6 +98,11 @@
         <?php
         $promotion = [12, 99, 9, 11, 10, 88, 1, 2, 8];
         $promotionlink = array(
+            "2021-10-18/deliveroooffer" => array("type" => "img", "link" => "#"),
+            "2021-10-18/baanfootball" => array("type" => "img", "link" => "#"),
+            "2021-10-18/baanburger" => array("type" => "img", "link" => "#"),
+            "2021-10-18/baanboat" => array("type" => "img", "link" => "#"),
+            
             "101" => array("type" => "img", "link" => "https://hk.sluurpy.com/%E9%A6%99%E6%B8%AF/restaurant/6335902/baan-thai-restaurant",),
             "9" => array("type" => "img", "link" => site_url("aboutus"),),
             "99" => array("type" => "img", "link" => "https://www.thestandard.com.hk/section-news/section/12/228992/Baan-Thai:-Bringing-authentic-Thai-flavours-to-Hong-Kong",),
