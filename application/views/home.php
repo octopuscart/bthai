@@ -602,9 +602,10 @@
                             <div class="masonry-thumbs grid-4 clearfix" data-lightbox="gallery" style="width: 100.3%;">
 
                                 <?php
-                                for ($i = 1; $i <= 8; $i++) {
+                                $frontimages = [1,2,3,4,5,7,8];
+                                foreach ($frontimages as $key => $value) {
                                     ?>
-                                    <a href="<?php echo base_url(); ?>assets/images/food/<?php echo $i; ?>.jpg" data-lightbox="gallery-item"><img class="image_fade" src="<?php echo base_url(); ?>assets/images/food/<?php echo $i; ?>.jpg" alt="Gallery Thumb 1" data-animate="zoomIn"></a>
+                                    <a href="<?php echo base_url(); ?>assets/images/food/<?php echo $$value; ?>.jpg" data-lightbox="gallery-item"><img class="image_fade" src="<?php echo base_url(); ?>assets/images/food/<?php echo $value; ?>.jpg" alt="Gallery Thumb 1" data-animate="zoomIn"></a>
 
                                 <?php } ?>
 

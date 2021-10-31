@@ -110,9 +110,9 @@
 //            "11" => array("type" => "img", "link" => site_url("aboutus")),
             "10" => array("type" => "img", "link" => site_url("aboutus")),
             "88" => array("type" => "img", "link" => site_url("/")),
-            "1" => array("type" => "img", "link" => site_url("loyalprogram")),
+//            "1" => array("type" => "img", "link" => site_url("loyalprogram")),
             "8" => array("type" => "img", "link" => site_url("aboutus")),
-            "2" => array("type" => "img", "link" => site_url("privateparties")),
+//            "2" => array("type" => "img", "link" => site_url("privateparties")),
             "5" => array("type" => "video", "link" => site_url("privateparties")),
         );
 
@@ -143,7 +143,7 @@
 </div>
 
 
-<div class="row clearfix common-height" style="margin: 0;padding: 20px;background: url('<?php echo base_url(); ?>assets/images/woodback.jpg') repeat fixed;">
+<!--<div class="row clearfix common-height" style="margin: 0;padding: 20px;background: url('<?php echo base_url(); ?>assets/images/woodback.jpg') repeat fixed;">
     <div class="col-md-4">
         <div class="pomotion">
             <h2>Not a Member Yet?</h2>
@@ -211,7 +211,7 @@
 
         </div>
     </div>
-</div>
+</div>-->
 
 <?php
 $mobilecheck = $this->session->userdata('checkmobile');
