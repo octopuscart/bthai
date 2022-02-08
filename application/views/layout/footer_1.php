@@ -533,7 +533,7 @@ $keywordsList = [
                             <!--                            <h4 style="margin: 0;font-size: 15px"> We Accept</h4>
                             
                                                         <br/>-->
-                            <img src="<?php echo base_url(); ?>assets/images/payments3.png" alt="Baanthai payment" style="  height: 60px;">
+                            <img src="<?php echo base_url(); ?>assets/images/payments4.png" alt="Baanthai payment" >
 
                         </div>
                     </div>
