@@ -589,10 +589,16 @@ $keywordsList = [
         var img = document.images['captchaimg'];
         img.src = img.src;
     }
-     jQuery("img").attr("alt", "Baanthai HK");
 
-    setInterval(function () {
+    function setAttrsFunction() {
         jQuery("img").attr("alt", "Baanthai HK");
+
+        jQuery(".flex-prev").attr("aria-label", "Previouse");
+        jQuery(".flex-next").attr("aria-label", "next");
+    }
+    setAttrsFunction();
+    setInterval(function () {
+        setAttrsFunction();
     }, 5000);
 
     jQuery(function () {
