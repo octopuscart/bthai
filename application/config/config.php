@@ -62,19 +62,8 @@ $config['rest_enable_keys'] = FALSE;
  */
 
 
-switch ($baselink) {
-    case "http://localhost":
-        $config['index_page'] = strpos($baselink, 'localhost') ? 'index.php/' : '';
-        break;
-    case "http://192.168.1.2":
-       $config['index_page'] = strpos($baselink, '192.168') ? 'index.php/' : '';
-        break;
-    case "http://192.168.1.3":
-       $config['index_page'] = strpos($baselink, '192.168') ? 'index.php/' : '';
-        break;
-    default:
-        $config['index_page'] = '';
-}
+$config['index_page'] = strpos($baselink, 'localhost') ? 'index.php/' : '';
+
 
 
 /*

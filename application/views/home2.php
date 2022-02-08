@@ -74,7 +74,7 @@ $this->load->view('layout/header');
 
                     <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/22.jpg" data-delay="12000"  data-saveperformance="off" data-title="Our rustic and stylish restaurant">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>assets/images/slider/22.jpg"  alt=" Baanthai kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="right center">
+                        <img src="<?php echo base_url(); ?>assets/images/slider/22.jpg"  alt="Baanthai Hong Kong"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="right center">
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 2 -->
@@ -123,7 +123,7 @@ $this->load->view('layout/header');
                     <!-- SLIDE  -->
                     <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="<?php echo base_url(); ?>assets/images/slider/33.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Special Taste Of Thailand">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>assets/images/slider/33.jpg"  alt=" Baanthai kenburns6"  data-bgposition="center top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="center center">
+                        <img src="<?php echo base_url(); ?>assets/images/slider/33.jpg"  alt="Baanthai Hong Kong"  data-bgposition="center top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-bgpositionend="center center">
                         <!-- LAYERS -->
 
 
