@@ -79,10 +79,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body" >
-                <a href='{{promotionImage.link}}'>
-                    <img alt="Baanthai Promotion" src="<?php echo base_url(); ?>assets/promotion/{{promotionImage.img}}.jpg">
-                </a>
+            <div class="modal-body" id="promotionhtml">
+               
             </div>
 
         </div>

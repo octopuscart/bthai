@@ -7,6 +7,8 @@
         <!-- Startup configuration -->
         <!--<link rel="manifest" href="<?php echo base_url() . 'assets/manifest.webmanifest';?>">-->
         <meta name="theme-color" content="#000">
+        <!--<meta http-equiv="Content-Security-Policy" content="script-src 'none'">-->
+
        
         <?php
         meta_tags();
@@ -135,6 +137,7 @@
                 $httpProvider.defaults.headers.post = {};
                 });
                 var baseurl = "<?php echo base_url(); ?>index.php/";
+                var baseurlcore = "<?php echo base_url(); ?>/";
                 var imageurlg = "<?php echo imageserver; ?>";
                 var globlecurrency = "<?php echo globle_currency; ?>";
                 var avaiblecredits = 0;

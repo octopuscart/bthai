@@ -20,13 +20,15 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
     }, 1000)
 
 
-    
 
-    $scope.promotionImage = {"img": "", "link":""};
+
+    $scope.promotionImage = {"img": "", "link": ""};
     $scope.selectePromotionImage = function (image, link) {
-        console.log(image, link)
-        $scope.promotionImage.img = image;
-        $scope.promotionImage.link = link;
+
+
+
+        var htmlpromot = "<a href=''><img alt='Baanthai Promotion' src=" + baseurlcore + "assets/promotion/" + image + '.jpg"></a>';
+        jQuery("#promotionhtml").html(htmlpromot);
     }
 
 
