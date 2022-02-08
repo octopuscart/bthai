@@ -4,17 +4,17 @@
 App.controller('ShopController', function ($scope, $http, $timeout, $interval, $filter) {
     $scope.userLogin = {};
 
-    $scope.getLoginDetails2 = function () {
-        var loginurl = baseurl + "Api/loginOperation"
-        $http.get(loginurl).then(function (rdata) {
-            let userdata = rdata.data;
-            console.log(userdata)
-            if (userdata) {
-                $scope.userLogin = userdata
-            }
-        })
-    }
-    $scope.getLoginDetails2();
+//    $scope.getLoginDetails2 = function () {
+//        var loginurl = baseurl + "Api/loginOperation"
+//        $http.get(loginurl).then(function (rdata) {
+//            let userdata = rdata.data;
+//            console.log(userdata)
+//            if (userdata) {
+//                $scope.userLogin = userdata
+//            }
+//        })
+//    }
+//    $scope.getLoginDetails2();
     $timeout(function () {
         jQuery(jQuery("i.ion-ios-create").parents("li")[0]).addClass("active")
     }, 1000)
