@@ -331,36 +331,36 @@ $keywordsList = [
                     <div class="widget clearfix" style="    margin-top: 30px;">
 
                         <div class=" clearfix">
-                            <a hreflang="en-us"  href="https://www.facebook.com/baanthaihk/" class="social-icon si-small si-borderless nobottommargin si-facebook">
+                            <a hreflang="en-us"  href="https://www.facebook.com/baanthaihk/" class="social-icon si-small si-borderless nobottommargin si-facebook" aria-label="facebook">
                                 <i class="icon-facebook"></i>
                                 <i class="icon-facebook"></i>
                             </a>
 
-                            <a hreflang="en-us"  href="https://twitter.com/baanthaihk" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                            <a hreflang="en-us"  href="https://twitter.com/baanthaihk" class="social-icon si-small si-borderless nobottommargin si-twitter"  aria-label="twitter">
                                 <i class="icon-twitter"></i>
                                 <i class="icon-twitter"></i>
                             </a>
 
-                            <a hreflang="en-us"  href="https://www.instagram.com/baanthaihk/" class="social-icon si-small si-borderless nobottommargin si-instagram">
+                            <a hreflang="en-us"  href="https://www.instagram.com/baanthaihk/" class="social-icon si-small si-borderless nobottommargin si-instagram"   aria-label="instagram">
                                 <i class="icon-instagram"></i>
                                 <i class="icon-instagram"></i>
                             </a>
 
 
 
-                            <a hreflang="en-us"  href="https://www.tripadvisor.in/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" class="social-icon si-small si-borderless nobottommargin si-tripadvisor">
+                            <a hreflang="en-us"  href="https://www.tripadvisor.in/Restaurant_Review-g294217-d15009776-Reviews-Baan_Thai_Restaurant-Hong_Kong.html" class="social-icon si-small si-borderless nobottommargin si-tripadvisor"  aria-label="tripadvisor">
                                 <i class="fa fa-tripadvisor"></i>
                                 <i class="fa fa-tripadvisor"></i>
                             </a>
 
 
-                            <a hreflang="en-us"  href="https://www.youtube.com/channel/UCrer3PmSJf5hlYvfETUS2Ew" class="social-icon si-small si-borderless nobottommargin si-youtube">
+                            <a hreflang="en-us"  href="https://www.youtube.com/channel/UCrer3PmSJf5hlYvfETUS2Ew" class="social-icon si-small si-borderless nobottommargin si-youtube"  aria-label="youtube">
                                 <i class="icon-youtube"></i>
                                 <i class="icon-youtube"></i>
                             </a>
 
 
-                            <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="social-icon si-small si-borderless nobottommargin si-yelp">
+                            <a hreflang="en-us"  href="https://www.yelp.com/biz/baan-thai-%E9%A6%99%E6%B8%AF?osq=Baan+Thai" class="social-icon si-small si-borderless nobottommargin si-yelp"  aria-label="yelp">
                                 <i class="icon-yelp"></i>
                                 <i class="icon-yelp"></i>
                             </a>

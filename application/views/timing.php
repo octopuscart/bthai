@@ -8,6 +8,6 @@
 
 <ul class="iconlist nobottommargin">
     <li><i class="icon-time color"></i> <strong>Sunday - Thursday:</strong><br/> 12:00 PM to 11:00 PM</li>
-    <br/>
+ 
     <li><i class="icon-time color"></i> <strong>Friday - Saturday:</strong><br/> 12:00 PM to 12:00 AM</li>
 </ul>
