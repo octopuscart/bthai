@@ -102,7 +102,6 @@
             "2021-10-18/baanfootball" => array("type" => "img", "link" => "#"),
             "2021-10-18/baanburger" => array("type" => "img", "link" => "#"),
             "2021-10-18/baanboat" => array("type" => "img", "link" => "#"),
-            
             "101" => array("type" => "img", "link" => "https://hk.sluurpy.com/%E9%A6%99%E6%B8%AF/restaurant/6335902/baan-thai-restaurant",),
             "9" => array("type" => "img", "link" => site_url("aboutus"),),
             "99" => array("type" => "img", "link" => "https://www.thestandard.com.hk/section-news/section/12/228992/Baan-Thai:-Bringing-authentic-Thai-flavours-to-Hong-Kong",),
@@ -590,6 +589,12 @@ $keywordsList = [
         var img = document.images['captchaimg'];
         img.src = img.src;
     }
+     jQuery("img").attr("alt", "Baanthai HK");
+
+    setInterval(function () {
+        jQuery("img").attr("alt", "Baanthai HK");
+    }, 5000);
+
     jQuery(function () {
 
 
